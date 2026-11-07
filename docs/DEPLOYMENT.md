@@ -32,7 +32,7 @@ The in-memory limiter (`src/lib/rate-limit.ts`) is per server instance: on serve
 ## Deploying
 
 Standard Next.js: `npm run build && npm start` on Node ≥ 20 (developed on Node 26), or any Next-compatible host (Vercel, a Node container, …).
-All content pages are statically generated (70 prerendered paths: 2 locales × 35); only `/api/rfq` and the unknown-URL 404 route render on demand.
+All content pages are statically generated (the build reports 70 static pages); only `/api/rfq` and the unknown-URL 404 route render on demand.
 Pre-launch checklist: set `NEXT_PUBLIC_SITE_URL` → set WhatsApp/e-mail → configure Resend → add privacy text → confirm catalog content → set `NEXT_PUBLIC_ALLOW_INDEXING=true` → rebuild → submit `sitemap.xml`.
 
 ## Catalog images — import status
@@ -62,4 +62,4 @@ Importing files does **not** publish products — add records to `src/data/catal
 **Technical:**
 7. E-mail provider credentials (RFQ is disabled until configured — by design).
 8. Shared-store rate limiting if hosted on multiple instances.
-9. Real-device/Core Web Vitals measurement on the deployed site (see "Not tested" in the handoff report).
+9. Core Web Vitals / Lighthouse and real-device testing on the deployed site — not measured yet (only local Chromium runs were executed).

@@ -1,0 +1,80 @@
+[
+  {
+    "id": "bedrooms",
+    "slug": "bedrooms",
+    "sort": 1,
+    "name": {
+      "en": "Bedroom Sets",
+      "ar": "غرف النوم"
+    },
+    "desc": {
+      "en": "Modern and classic designs to suit different tastes.",
+      "ar": "تصميمات مودرن وكلاسيك تناسب مختلف الأذواق."
+    }
+  },
+  {
+    "id": "kids-bedrooms",
+    "slug": "kids-bedrooms",
+    "sort": 2,
+    "name": {
+      "en": "Kids' Bedroom Sets",
+      "ar": "غرف الأطفال"
+    },
+    "desc": {
+      "en": "Practical furniture in a variety of designs for family needs.",
+      "ar": "أثاث عملي بتصميمات متنوعة تناسب احتياجات الأسرة."
+    }
+  },
+  {
+    "id": "corner-sofas",
+    "slug": "corner-sofas",
+    "sort": 3,
+    "name": {
+      "en": "Corner Sofas",
+      "ar": "الركن"
+    },
+    "desc": {
+      "en": "A variety of corner sofa designs for living rooms.",
+      "ar": "تصميمات متنوعة لغرف المعيشة."
+    }
+  },
+  {
+    "id": "living-rooms",
+    "slug": "living-rooms",
+    "sort": 4,
+    "name": {
+      "en": "Living Room Sofa Sets",
+      "ar": "الانتريهات"
+    },
+    "desc": {
+      "en": "Seating sets with multiple design, fabric and finish options.",
+      "ar": "أطقم جلوس بخيارات متعددة من التصميمات والأقمشة والتشطيبات."
+    }
+  },
+  {
+    "id": "china-cabinets",
+    "slug": "china-cabinets",
+    "sort": 5,
+    "name": {
+      "en": "China Cabinets",
+      "ar": "النيش"
+    },
+    "desc": {
+      "en": "Elegant designs that complement dining room furniture.",
+      "ar": "تصميمات أنيقة ومتكاملة مع أثاث غرف السفرة."
+    }
+  },
+  {
+    "id": "dining-rooms",
+    "slug": "dining-rooms",
+    "sort": 6,
+    "name": {
+      "en": "Dining Room Sets",
+      "ar": "غرف السفرة"
+    },
+    "desc": {
+      "en": "Coordinated tables, chairs and designs to suit different spaces.",
+      "ar": "طاولات وكراسي وتصميمات متناسقة تناسب مختلف المساحات."
+    }
+  }
+]

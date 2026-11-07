@@ -1,0 +1,128 @@
+[
+  {
+    "code": "SA",
+    "g": "gcc",
+    "en": "Saudi Arabia",
+    "ar": "السعودية"
+  },
+  {
+    "code": "AE",
+    "g": "gcc",
+    "en": "United Arab Emirates",
+    "ar": "الإمارات العربية المتحدة"
+  },
+  {
+    "code": "KW",
+    "g": "gcc",
+    "en": "Kuwait",
+    "ar": "الكويت"
+  },
+  {
+    "code": "QA",
+    "g": "gcc",
+    "en": "Qatar",
+    "ar": "قطر"
+  },
+  {
+    "code": "BH",
+    "g": "gcc",
+    "en": "Bahrain",
+    "ar": "البحرين"
+  },
+  {
+    "code": "OM",
+    "g": "gcc",
+    "en": "Oman",
+    "ar": "عُمان"
+  },
+  {
+    "code": "EG",
+    "g": "other",
+    "en": "Egypt",
+    "ar": "مصر"
+  },
+  {
+    "code": "JO",
+    "g": "other",
+    "en": "Jordan",
+    "ar": "الأردن"
+  },
+  {
+    "code": "IQ",
+    "g": "other",
+    "en": "Iraq",
+    "ar": "العراق"
+  },
+  {
+    "code": "LB",
+    "g": "other",
+    "en": "Lebanon",
+    "ar": "لبنان"
+  },
+  {
+    "code": "LY",
+    "g": "other",
+    "en": "Libya",
+    "ar": "ليبيا"
+  },
+  {
+    "code": "MA",
+    "g": "other",
+    "en": "Morocco",
+    "ar": "المغرب"
+  },
+  {
+    "code": "DZ",
+    "g": "other",
+    "en": "Algeria",
+    "ar": "الجزائر"
+  },
+  {
+    "code": "TN",
+    "g": "other",
+    "en": "Tunisia",
+    "ar": "تونس"
+  },
+  {
+    "code": "SD",
+    "g": "other",
+    "en": "Sudan",
+    "ar": "السودان"
+  },
+  {
+    "code": "TR",
+    "g": "other",
+    "en": "Türkiye",
+    "ar": "تركيا"
+  },
+  {
+    "code": "GB",
+    "g": "other",
+    "en": "United Kingdom",
+    "ar": "المملكة المتحدة"
+  },
+  {
+    "code": "DE",
+    "g": "other",
+    "en": "Germany",
+    "ar": "ألمانيا"
+  },
+  {
+    "code": "FR",
+    "g": "other",
+    "en": "France",
+    "ar": "فرنسا"
+  },
+  {
+    "code": "US",
+    "g": "other",
+    "en": "United States",
+    "ar": "الولايات المتحدة"
+  },
+  {
+    "code": "XX",
+    "g": "other",
+    "en": "Other country",
+    "ar": "دولة أخرى"
+  }
+]

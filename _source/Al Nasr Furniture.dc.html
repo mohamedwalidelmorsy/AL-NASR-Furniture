@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>AL NASR FURNITURE</title>
+<meta name="description" content="AL NASR FURNITURE — Egyptian furniture wholesale supply and export coordination for international B2B buyers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
+<script src="./site-content.js"></script>
+<style>
+html,body{margin:0;background:#FAF9F6;color:#252525;-webkit-text-size-adjust:100%}
+*,*::before,*::after{box-sizing:border-box}
+a{color:#584838;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#252525}
+:focus-visible{outline:2px solid #584838;outline-offset:3px;border-radius:4px}
+button,input,select,textarea{font:inherit;color:inherit}
+summary{list-style:none;cursor:pointer}
+summary::-webkit-details-marker{display:none}
+[dir="rtl"] *:not([data-keep-ls]){letter-spacing:0 !important}
+[dir="rtl"] h1,[dir="rtl"] h2,[dir="rtl"] h3{line-height:1.45 !important}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none !important;animation:none !important;scroll-behavior:auto !important}}
+</style>
+</helmet>
+<sc-if value="{{ ready }}" hint-placeholder-val="{{ true }}">
+<div lang="{{ lang }}" dir="{{ dir }}" style="min-height:100vh;display:flex;flex-direction:column;background:#FAF9F6;color:#252525;font-family:{{ ff }};font-size:16px;line-height:{{ lh }};overflow-x:clip">
+
+<button type="button" onClick="{{ skipToMain }}" style="position:absolute;top:8px;inset-inline-start:8px;z-index:100;padding:10px 16px;background:#584838;color:#fff;border:0;border-radius:6px;font-weight:600;transform:translateY(-200%)" style-focus="transform:none">{{ t.skip }}</button>
+
+<header style="position:sticky;top:0;z-index:50;background:#FAF9F6;border-bottom:1px solid #D8D2C9">
+  <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;height:{{ headerH }};display:flex;align-items:center;justify-content:space-between;gap:24px">
+    <a href="{{ links.home }}" aria-label="AL NASR FURNITURE" dir="ltr" style="display:flex;flex-direction:column;gap:5px;text-decoration:none;color:#252525;line-height:1;font-family:'Manrope',sans-serif;flex:none">
+      <span data-keep-ls="" style="font-size:19px;font-weight:700;letter-spacing:.22em">AL NASR</span>
+      <span data-keep-ls="" style="font-size:9.5px;font-weight:600;letter-spacing:.56em;color:#584838">FURNITURE</span>
+    </a>
+    <sc-if value="{{ fullNav }}" hint-placeholder-val="{{ true }}">
+      <nav aria-label="{{ t.nav.primary }}">
+        <ul style="list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:26px">
+          <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="5">
+            <li><a href="{{ n.href }}" aria-current="{{ n.aria }}" style="display:inline-flex;align-items:center;height:44px;font-size:15px;font-weight:500;color:{{ n.color }};text-decoration:none;border-bottom:1.5px solid {{ n.bc }}" style-hover="color:#252525">{{ n.label }}</a></li>
+          </sc-for>
+        </ul>
+      </nav>
+    </sc-if>
+    <div style="display:flex;align-items:center;gap:6px;flex:none">
+      <sc-if value="{{ notMobile }}" hint-placeholder-val="{{ true }}">
+        <a href="{{ langHref }}" hreflang="{{ otherLang }}" lang="{{ otherLang }}" aria-label="{{ langAria }}" style="display:inline-flex;align-items:center;height:44px;padding:0 10px;font-size:14px;font-weight:600;color:#584838;text-decoration:none;border-radius:6px" style-hover="background:#E9E4DC">{{ t.switchTo }}</a>
+      </sc-if>
+      <a href="{{ links.inquiry }}" aria-label="{{ inqAria }}" aria-current="{{ inqAriaCurrent }}" style="display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 10px;border-radius:6px;font-size:14px;font-weight:600;color:#252525;text-decoration:none" style-hover="background:#E9E4DC">
+        <span>{{ t.nav.inquiryShort }}</span>
+        <sc-if value="{{ hasInq }}"><span aria-hidden="true" style="min-width:22px;height:22px;padding:0 6px;border-radius:11px;background:#584838;color:#fff;font-size:12px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;line-height:1">{{ inqCount }}</span></sc-if>
+      </a>
+      <sc-if value="{{ notMobile }}" hint-placeholder-val="{{ true }}">
+        <a href="{{ links.contact }}" style="display:inline-flex;align-items:center;height:44px;padding:0 18px;border-radius:6px;background:#584838;color:#fff;font-size:15px;font-weight:600;text-decoration:none;transition:background .2s" style-hover="background:#43362A;color:#fff">{{ t.nav.rfq }}</a>
+      </sc-if>
+      <sc-if value="{{ compactNav }}">
+        <button type="button" ref="{{ menuBtnRef }}" onClick="{{ toggleMenu }}" aria-expanded="{{ menuExpanded }}" aria-controls="mobile-menu" aria-label="{{ menuLabel }}" style="width:44px;height:44px;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;background:transparent;border:1px solid #D8D2C9;border-radius:6px;cursor:pointer;margin-inline-start:4px">
+          <span style="width:18px;height:1.5px;background:#252525"></span>
+          <span style="width:18px;height:1.5px;background:#252525"></span>
+          <span style="width:18px;height:1.5px;background:#252525"></span>
+        </button>
+      </sc-if>
+    </div>
+  </div>
+  <sc-if value="{{ showMenu }}">
+    <div id="mobile-menu" style="position:fixed;top:{{ headerH }};left:0;right:0;bottom:0;background:#FAF9F6;overflow:auto;z-index:49;border-top:1px solid #D8D2C9">
+      <nav aria-label="{{ t.nav.primary }}" style="padding:16px clamp(20px,4vw,40px) 40px;display:flex;flex-direction:column;gap:24px">
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column">
+          <sc-for list="{{ navItems }}" as="n">
+            <li style="border-bottom:1px solid #D8D2C9"><a href="{{ n.href }}" aria-current="{{ n.aria }}" style="display:flex;align-items:center;justify-content:space-between;min-height:60px;font-size:22px;font-weight:600;color:{{ n.color }};text-decoration:none"><span>{{ n.label }}</span><span aria-hidden="true" style="color:#A58B64">{{ t.arrow }}</span></a></li>
+          </sc-for>
+        </ul>
+        <ul style="list-style:none;margin:-8px 0 0;padding:0;display:flex;flex-direction:column">
+          <sc-for list="{{ footerGuides }}" as="g">
+            <li><a href="{{ g.href }}" style="display:flex;align-items:center;min-height:48px;font-size:16px;font-weight:500;color:#625C54;text-decoration:none">{{ g.label }}</a></li>
+          </sc-for>
+        </ul>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <a href="{{ links.contact }}" style="display:flex;align-items:center;justify-content:center;height:52px;border-radius:6px;background:#584838;color:#fff;font-size:15px;font-weight:600;text-decoration:none">{{ t.nav.rfq }}</a>
+          <a href="{{ links.inquiry }}" style="display:flex;align-items:center;justify-content:center;gap:8px;height:52px;border-radius:6px;border:1px solid #584838;color:#584838;font-size:15px;font-weight:600;text-decoration:none">{{ t.nav.inquiry }} <sc-if value="{{ hasInq }}"><span>({{ inqCount }})</span></sc-if></a>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:8px;border-top:1px solid #D8D2C9">
+          <span style="font-size:14px;color:#625C54">{{ t.nav.lang }}</span>
+          <a href="{{ langHref }}" hreflang="{{ otherLang }}" lang="{{ otherLang }}" aria-label="{{ langAria }}" style="display:inline-flex;align-items:center;height:44px;padding:0 16px;border:1px solid #D8D2C9;border-radius:6px;font-weight:600;color:#584838;text-decoration:none">{{ t.switchTo }}</a>
+        </div>
+      </nav>
+    </div>
+  </sc-if>
+</header>
+
+<main id="main" ref="{{ mainRef }}" tabindex="-1" style="flex:1;outline:none">
+
+<!-- HOME -->
+<sc-if value="{{ page.home }}" hint-placeholder-val="{{ true }}">
+  <section aria-labelledby="hero-title" style="border-bottom:1px solid #D8D2C9">
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(40px,7vw,88px) clamp(20px,4vw,40px);box-sizing:content-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:clamp(32px,5vw,72px);align-items:center">
+      <div style="display:flex;flex-direction:column;align-items:flex-start">
+        <p style="margin:0 0 24px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#584838"><span aria-hidden="true" style="width:28px;height:1px;background:#A58B64;flex:none"></span>{{ t.hero.eyebrow }}</p>
+        <h1 id="hero-title" style="margin:0;font-size:clamp(36px,4.6vw,56px);line-height:1.12;font-weight:600;letter-spacing:-.025em;text-wrap:balance;max-width:16ch">{{ t.hero.title }}</h1>
+        <p style="margin:28px 0 0;font-size:17px;color:#625C54;max-width:52ch;text-wrap:pretty">{{ t.hero.body }}</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:36px">
+          <a href="{{ links.collections }}" style="display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 24px;border-radius:6px;background:#584838;color:#fff;font-size:15px;font-weight:600;text-decoration:none;transition:background .2s" style-hover="background:#43362A;color:#fff">{{ t.hero.cta1 }} <span aria-hidden="true">{{ t.arrow }}</span></a>
+          <a href="{{ links.contact }}" style="display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:6px;border:1px solid #584838;color:#584838;font-size:15px;font-weight:600;text-decoration:none;transition:background .2s" style-hover="background:#E9E4DC;color:#584838">{{ t.hero.cta2 }}</a>
+        </div>
+        <p style="margin:32px 0 0;padding-top:20px;border-top:1px solid #D8D2C9;font-size:14px;color:#625C54;max-width:52ch">{{ t.hero.note }}</p>
+      </div>
+      <div style="aspect-ratio:4/5;max-height:640px;width:100%;border-radius:10px;overflow:hidden;background:#E9E4DC"><img src="{{ heroImg.src }}" alt="{{ heroImg.alt }}" decoding="async" style="display:block;width:100%;height:100%;object-fit:contain"></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="feat-title" style="padding:clamp(56px,8vw,96px) 0">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 32px;margin-bottom:clamp(24px,3vw,40px)">
+        <div>
+          <p style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#584838"><span aria-hidden="true" style="width:28px;height:1px;background:#A58B64;flex:none"></span>{{ t.featured.eyebrow }}</p>
+          <h2 id="feat-title" style="margin:0;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.featured.title }}</h2>
+        </div>
+        <a href="{{ links.collections }}" style="display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:15px;font-weight:600;color:#584838;text-decoration:none" style-hover="text-decoration:underline">{{ t.featured.viewAll }} <span aria-hidden="true">{{ t.arrow }}</span></a>
+      </div>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,max(240px,calc((100% - 48px) / 3))),1fr));gap:clamp(16px,2vw,24px)">
+        <sc-for list="{{ featuredCats }}" as="c" hint-placeholder-count="3">
+          <li>
+            <a href="{{ c.href }}" style="display:flex;flex-direction:column;gap:16px;text-decoration:none;color:#252525">
+              <div style="border-radius:10px;overflow:hidden">
+                <img src="{{ c.img }}" alt="{{ c.alt }}" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 38%;transition:transform .25s ease" style-hover="transform:scale(1.02)">
+              </div>
+              <div style="display:flex;flex-direction:column;gap:6px">
+                <h3 style="margin:0;font-size:20px;line-height:1.4;font-weight:600">{{ c.name }}</h3>
+                <p style="margin:0;font-size:14px;color:#625C54">{{ c.desc }}</p>
+                <span style="margin-top:6px;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#584838">{{ t.featured.cta }} <span aria-hidden="true">{{ t.arrow }}</span></span>
+              </div>
+            </a>
+          </li>
+        </sc-for>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="intro-title" style="padding:clamp(56px,8vw,96px) 0;border-top:1px solid #D8D2C9">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:24px clamp(32px,6vw,96px)">
+      <div>
+        <p style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#584838"><span aria-hidden="true" style="width:28px;height:1px;background:#A58B64;flex:none"></span>{{ t.intro.eyebrow }}</p>
+        <h2 id="intro-title" style="margin:0;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em;text-wrap:balance">{{ t.intro.title }}</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:24px;padding-top:4px">
+        <p style="margin:0;font-size:17px;color:#252525;max-width:60ch;text-wrap:pretty">{{ t.intro.body }}</p>
+        <a href="{{ links.about }}" style="display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:15px;font-weight:600;color:#584838;text-decoration:none" style-hover="text-decoration:underline">{{ t.intro.link }} <span aria-hidden="true">{{ t.arrow }}</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="why-title" style="padding:clamp(56px,8vw,96px) 0;background:#E9E4DC">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <p style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#584838"><span aria-hidden="true" style="width:28px;height:1px;background:#A58B64;flex:none"></span>{{ t.why.eyebrow }}</p>
+      <h2 id="why-title" style="margin:0 0 clamp(32px,4vw,56px);font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em;max-width:22ch;text-wrap:balance">{{ t.why.title }}</h2>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(24px,3vw,40px)">
+        <sc-for list="{{ whyItems }}" as="w" hint-placeholder-count="3">
+          <li style="padding-top:24px;border-top:1px solid #C9C1B5;display:flex;flex-direction:column;gap:12px">
+            <span dir="ltr" style="font-size:13px;font-weight:600;color:#584838">{{ w.num }}</span>
+            <h3 style="margin:0;font-size:clamp(20px,2vw,22px);line-height:1.35;font-weight:600">{{ w.title }}</h3>
+            <p style="margin:0;font-size:15px;color:#4F4943;text-wrap:pretty">{{ w.body }}</p>
+            <a href="{{ w.href }}" style="margin-top:auto;display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:15px;font-weight:600;color:#584838;text-decoration:none;font-size:14px" style-hover="text-decoration:underline">{{ w.link }} <span aria-hidden="true">{{ t.arrow }}</span></a>
+          </li>
+        </sc-for>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="proc-title" style="padding:clamp(56px,8vw,96px) 0">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <p style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#584838"><span aria-hidden="true" style="width:28px;height:1px;background:#A58B64;flex:none"></span>{{ t.process.eyebrow }}</p>
+      <h2 id="proc-title" style="margin:0 0 clamp(32px,4vw,56px);font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.process.title }}</h2>
+      <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:32px 24px">
+        <sc-for list="{{ processSteps }}" as="p" hint-placeholder-count="4">
+          <li style="display:flex;flex-direction:column;gap:12px">
+            <div aria-hidden="true" style="display:flex;align-items:center;gap:12px"><span dir="ltr" style="font-size:13px;font-weight:700;color:#584838">{{ p.num }}</span><span style="flex:1;height:1px;background:#D8D2C9"></span></div>
+            <h3 style="margin:0;font-size:20px;line-height:1.4;font-weight:600">{{ p.title }}</h3>
+            <p style="margin:0;font-size:15px;color:#625C54">{{ p.body }}</p>
+          </li>
+        </sc-for>
+      </ol>
+      <div style="margin-top:48px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 32px">
+        <p style="margin:0;font-size:14px;color:#625C54;max-width:68ch">{{ t.process.note }}</p>
+        <a href="{{ links.sourcing }}" style="display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:15px;font-weight:600;color:#584838;text-decoration:none" style-hover="text-decoration:underline">{{ t.process.link }} <span aria-hidden="true">{{ t.arrow }}</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="proj-title" style="padding:clamp(56px,8vw,96px) 0;border-top:1px solid #D8D2C9">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:24px clamp(32px,6vw,96px)">
+      <div>
+        <p style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#584838"><span aria-hidden="true" style="width:28px;height:1px;background:#A58B64;flex:none"></span>{{ t.projects.eyebrow }}</p>
+        <h2 id="proj-title" style="margin:0;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em;text-wrap:balance">{{ t.projects.title }}</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-start;gap:24px;padding-top:4px">
+        <p style="margin:0;font-size:17px;max-width:60ch;text-wrap:pretty">{{ t.projects.body }}</p>
+        <a href="{{ links.custom }}" style="display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:15px;font-weight:600;color:#584838;text-decoration:none" style-hover="text-decoration:underline">{{ t.projects.link }} <span aria-hidden="true">{{ t.arrow }}</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="cta-title" style="background:#584838;color:#FAF9F6">
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(56px,8vw,96px) clamp(20px,4vw,40px);box-sizing:content-box;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px">
+      <div style="max-width:600px">
+        <h2 id="cta-title" style="margin:0 0 16px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.cta.title }}</h2>
+        <p style="margin:0;font-size:17px;color:#E9E4DC">{{ t.cta.body }}</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a href="{{ links.contact }}" style="display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:6px;background:#FAF9F6;color:#584838;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#E9E4DC;color:#584838">{{ t.cta.rfq }}</a>
+        <sc-if value="{{ waReady }}">
+          <a href="{{ waGeneral }}" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:6px;border:1px solid #E9E4DC;color:#FAF9F6;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#43362A;color:#FAF9F6">{{ t.cta.wa }}</a>
+        </sc-if>
+        <sc-if value="{{ waNotReady }}">
+          <button type="button" onClick="{{ onWaPending }}" style="display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 24px;border-radius:6px;border:1px dashed #E9E4DC;background:transparent;color:#FAF9F6;font-size:15px;font-weight:600;cursor:pointer">{{ t.cta.wa }} <span style="font-size:12px;font-weight:500;color:#E9E4DC">· PENDING</span></button>
+        </sc-if>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<!-- PAGE HEADER (shared by internal pages) -->
+<sc-if value="{{ showPageHeader }}">
+  <div style="border-bottom:1px solid #D8D2C9">
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(24px,3vw,32px) clamp(20px,4vw,40px) clamp(40px,5vw,64px);box-sizing:content-box">
+      <nav aria-label="{{ t.crumbs.label }}">
+        <ol style="list-style:none;margin:0 0 clamp(24px,4vw,48px);padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:14px;color:#625C54">
+          <sc-for list="{{ crumbs }}" as="c">
+            <li style="display:flex;align-items:center;gap:10px">
+              <sc-if value="{{ c.notFirst }}"><span aria-hidden="true" style="color:#A58B64">/</span></sc-if>
+              <sc-if value="{{ c.isLink }}"><a href="{{ c.href }}" style="color:#625C54;text-decoration:none" style-hover="color:#252525;text-decoration:underline">{{ c.label }}</a></sc-if>
+              <sc-if value="{{ c.isCurrent }}"><span aria-current="page" style="color:#252525">{{ c.label }}</span></sc-if>
+            </li>
+          </sc-for>
+        </ol>
+      </nav>
+      <sc-if value="{{ hasEyebrow }}"><p style="margin:0 0 16px;display:flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#584838"><span aria-hidden="true" style="width:28px;height:1px;background:#A58B64;flex:none"></span>{{ pageHead.eyebrow }}</p></sc-if>
+      <h1 style="margin:0;font-size:clamp(32px,4vw,48px);line-height:1.2;font-weight:600;letter-spacing:-.02em;max-width:22ch;text-wrap:balance">{{ pageHead.title }}</h1>
+      <sc-if value="{{ hasIntro }}"><p style="margin:20px 0 0;font-size:17px;color:#625C54;max-width:62ch;text-wrap:pretty">{{ pageHead.intro }}</p></sc-if>
+    </div>
+  </div>
+</sc-if>
+
+<!-- COLLECTIONS OVERVIEW -->
+<sc-if value="{{ page.collections }}">
+  <section style="padding:clamp(32px,4vw,48px) 0 clamp(56px,8vw,96px)">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <div role="search" style="max-width:560px;margin-bottom:clamp(32px,4vw,48px)">
+        <label for="cq" style="display:block;font-size:14px;font-weight:600;margin-bottom:8px">{{ t.collections.search }}</label>
+        <div style="display:flex;gap:8px">
+          <input id="cq" type="search" value="{{ cq }}" onChange="{{ onCq }}" placeholder="{{ t.collections.searchPh }}" autocomplete="off" style="flex:1;min-width:0;height:48px;padding:0 14px;border:1px solid #D8D2C9;border-radius:8px;background:#fff;font-size:16px" style-focus="border-color:#584838">
+          <sc-if value="{{ hasCq }}"><button type="button" onClick="{{ clearCq }}" style="height:48px;padding:0 16px;border:1px solid #D8D2C9;border-radius:8px;background:transparent;font-size:14px;font-weight:600;color:#584838;cursor:pointer">{{ t.collections.clear }}</button></sc-if>
+        </div>
+      </div>
+      <sc-if value="{{ hasCq }}">
+        <p role="status" style="margin:0 0 24px;font-size:15px;color:#625C54">{{ cqStatus }}</p>
+        <sc-if value="{{ cqEmpty }}">
+          <div style="padding:48px 24px;border:1px dashed #D8D2C9;border-radius:10px;text-align:center"><p style="margin:0;font-size:15px;color:#625C54">{{ t.collections.noResultsHint }}</p></div>
+        </sc-if>
+        <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,max(220px,calc((100% - 48px) / 3))),1fr));gap:clamp(16px,2vw,24px)">
+          <sc-for list="{{ cqResults }}" as="k">
+            <li>
+              <a href="{{ k.href }}" style="display:flex;flex-direction:column;gap:14px;text-decoration:none;color:#252525">
+                <div style="position:relative;border-radius:10px;overflow:hidden;background:#E9E4DC"><img src="{{ k.img }}" alt="{{ k.alt }}" width="{{ k.w }}" height="{{ k.h }}" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;transition:transform .25s ease" style-hover="transform:scale(1.02)"><span style="position:absolute;bottom:10px;inset-inline-start:10px;padding:3px 8px;border-radius:4px;background:rgba(250,249,246,.94);font-size:11px;font-weight:600;color:#4F4943">{{ t.illustrative }}</span></div>
+                <div style="display:flex;flex-direction:column;gap:4px">
+                  <span style="font-size:13px;color:#625C54">{{ k.cat }}</span>
+                  <h3 style="margin:0;font-size:clamp(18px,1.6vw,20px);line-height:1.4;font-weight:600">{{ k.name }}</h3>
+                  <span dir="ltr" data-keep-ls="" style="align-self:flex-start;font:500 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:#625C54;letter-spacing:.04em">{{ k.code }}</span>
+                  <span style="margin-top:6px;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#584838">{{ t.card.view }} <span aria-hidden="true">{{ t.arrow }}</span></span>
+                </div>
+              </a>
+            </li>
+          </sc-for>
+        </ul>
+      </sc-if>
+      <sc-if value="{{ noCq }}">
+        <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,max(240px,calc((100% - 48px) / 3))),1fr));gap:clamp(24px,3vw,40px) clamp(16px,2vw,24px)">
+          <sc-for list="{{ allCats }}" as="c" hint-placeholder-count="6">
+            <li>
+              <a href="{{ c.href }}" style="display:flex;flex-direction:column;gap:16px;text-decoration:none;color:#252525">
+                <div style="border-radius:10px;overflow:hidden;background:#E9E4DC"><img src="{{ c.img }}" alt="{{ c.alt }}" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:center 38%;transition:transform .25s ease" style-hover="transform:scale(1.02)"></div>
+                <div style="display:flex;flex-direction:column;gap:6px">
+                  <div style="display:flex;align-items:baseline;justify-content:space-between;gap:12px"><h2 style="margin:0;font-size:20px;line-height:1.4;font-weight:600">{{ c.name }}</h2><span style="font-size:13px;color:#625C54;flex:none">{{ c.count }}</span></div>
+                  <p style="margin:0;font-size:14px;color:#625C54">{{ c.desc }}</p>
+                  <span style="margin-top:6px;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#584838">{{ t.featured.cta }} <span aria-hidden="true">{{ t.arrow }}</span></span>
+                </div>
+              </a>
+            </li>
+          </sc-for>
+        </ul>
+      </sc-if>
+    </div>
+  </section>
+</sc-if>
+
+<!-- CATEGORY -->
+<sc-if value="{{ page.category }}">
+  <section style="padding:clamp(32px,4vw,48px) 0 clamp(56px,8vw,96px)">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <nav aria-label="{{ t.collections.allCats }}" style="margin-bottom:32px">
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ catTabs }}" as="c">
+            <li><a href="{{ c.href }}" aria-current="{{ c.aria }}" style="display:inline-flex;align-items:center;height:40px;padding:0 16px;border-radius:20px;border:1px solid {{ c.border }};background:{{ c.bg }};color:{{ c.color }};font-size:14px;font-weight:600;text-decoration:none">{{ c.name }}</a></li>
+          </sc-for>
+        </ul>
+      </nav>
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;gap:20px 32px;padding-bottom:24px;margin-bottom:32px;border-bottom:1px solid #D8D2C9">
+        <div role="search" style="flex:1 1 280px;max-width:420px">
+          <label for="catq" style="display:block;font-size:14px;font-weight:600;margin-bottom:8px">{{ t.category.search }}</label>
+          <input id="catq" type="search" value="{{ q }}" onChange="{{ onQ }}" placeholder="{{ t.collections.searchPh }}" autocomplete="off" style="width:100%;height:48px;padding:0 14px;border:1px solid #D8D2C9;border-radius:8px;background:#fff;font-size:16px" style-focus="border-color:#584838">
+        </div>
+        <sc-if value="{{ hasStyleChips }}">
+          <fieldset style="border:0;margin:0;padding:0;min-width:0">
+            <legend style="padding:0;font-size:14px;font-weight:600;margin-bottom:8px">{{ t.category.filter }}</legend>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <sc-for list="{{ styleChips }}" as="ch">
+                <button type="button" onClick="{{ ch.onClick }}" aria-pressed="{{ ch.pressed }}" style="height:40px;padding:0 16px;border-radius:20px;border:1px solid {{ ch.border }};background:{{ ch.bg }};color:{{ ch.color }};font-size:14px;font-weight:600;cursor:pointer">{{ ch.label }}</button>
+              </sc-for>
+            </div>
+          </fieldset>
+        </sc-if>
+        <p role="status" style="margin:0;margin-inline-start:auto;font-size:14px;color:#625C54;min-height:20px">{{ catCount }}</p>
+      </div>
+      <sc-if value="{{ catEmpty }}">
+        <div style="padding:56px 24px;border:1px dashed #D8D2C9;border-radius:10px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center">
+          <p style="margin:0;font-size:16px">{{ t.category.empty }}</p>
+          <button type="button" onClick="{{ resetFilters }}" style="height:44px;padding:0 20px;border-radius:6px;border:1px solid #584838;background:transparent;color:#584838;font-weight:600;font-size:15px;cursor:pointer">{{ t.category.reset }}</button>
+        </div>
+      </sc-if>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,max(220px,calc((100% - 48px) / 3))),1fr));gap:clamp(32px,4vw,48px) clamp(16px,2vw,24px)">
+        <sc-for list="{{ catCards }}" as="k" hint-placeholder-count="3">
+          <li>
+            <a href="{{ k.href }}" style="display:flex;flex-direction:column;gap:14px;text-decoration:none;color:#252525">
+              <div style="position:relative;border-radius:10px;overflow:hidden;background:#E9E4DC">
+                <img src="{{ k.img }}" alt="{{ k.alt }}" width="{{ k.w }}" height="{{ k.h }}" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;transition:transform .25s ease" style-hover="transform:scale(1.02)"><span style="position:absolute;bottom:10px;inset-inline-start:10px;padding:3px 8px;border-radius:4px;background:rgba(250,249,246,.94);font-size:11px;font-weight:600;color:#4F4943">{{ t.illustrative }}</span>
+                <sc-if value="{{ k.inList }}"><span style="position:absolute;top:12px;inset-inline-start:12px;padding:4px 10px;border-radius:4px;background:#584838;color:#fff;font-size:12px;font-weight:600">{{ t.nav.inquiryShort }} · {{ k.qty }}</span></sc-if>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:4px">
+                <span style="font-size:13px;color:#625C54">{{ k.style }}</span>
+                <h2 style="margin:0;font-size:clamp(18px,1.6vw,20px);line-height:1.4;font-weight:600">{{ k.name }}</h2>
+                <span dir="ltr" data-keep-ls="" style="align-self:flex-start;font:500 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:#625C54;letter-spacing:.04em">{{ k.code }}</span>
+                <span style="margin-top:6px;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#584838">{{ t.card.view }} <span aria-hidden="true">{{ t.arrow }}</span></span>
+              </div>
+            </a>
+          </li>
+        </sc-for>
+      </ul>
+    </div>
+  </section>
+</sc-if>
+
+<!-- COLLECTION DETAIL -->
+<sc-if value="{{ page.detail }}">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(20px,3vw,32px) clamp(20px,4vw,40px) 0;box-sizing:content-box">
+    <nav aria-label="{{ t.crumbs.label }}">
+      <ol style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:14px;color:#625C54">
+        <sc-for list="{{ crumbs }}" as="c">
+          <li style="display:flex;align-items:center;gap:10px">
+            <sc-if value="{{ c.notFirst }}"><span aria-hidden="true" style="color:#A58B64">/</span></sc-if>
+            <sc-if value="{{ c.isLink }}"><a href="{{ c.href }}" style="color:#625C54;text-decoration:none" style-hover="color:#252525;text-decoration:underline">{{ c.label }}</a></sc-if>
+            <sc-if value="{{ c.isCurrent }}"><span aria-current="page" style="color:#252525">{{ c.label }}</span></sc-if>
+          </li>
+        </sc-for>
+      </ol>
+    </nav>
+  </div>
+  <section style="padding:clamp(24px,3vw,40px) 0 clamp(48px,6vw,80px)">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:flex;flex-wrap:wrap;gap:clamp(32px,4vw,56px);align-items:flex-start">
+      <div aria-label="{{ t.detail.gallery }}" role="region" style="flex:3 1 520px;min-width:0;display:flex;flex-direction:column;gap:12px">
+        <div style="position:relative">
+          <button type="button" onClick="{{ d.openLightbox }}" onTouchStart="{{ d.touchStart }}" onTouchEnd="{{ d.touchEnd }}" aria-label="{{ d.enlargeLabel }}" style="display:block;width:100%;padding:0;border:0;background:transparent;cursor:zoom-in;border-radius:10px;overflow:hidden">
+            <div style="aspect-ratio:4/5;max-height:80vh;width:100%;background:#E9E4DC"><img src="{{ d.imgFull }}" alt="{{ d.imgAlt }}" decoding="async" style="display:block;width:100%;height:100%;object-fit:contain"></div>
+          </button>
+          <sc-if value="{{ d.multi }}">
+            <div style="position:absolute;bottom:16px;inset-inline-end:16px;display:flex;gap:8px">
+              <button type="button" onClick="{{ d.prev }}" aria-label="{{ t.detail.prev }}" style="width:44px;height:44px;border-radius:6px;border:1px solid #D8D2C9;background:#FAF9F6;font-size:18px;cursor:pointer">{{ t.back }}</button>
+              <button type="button" onClick="{{ d.next }}" aria-label="{{ t.detail.next }}" style="width:44px;height:44px;border-radius:6px;border:1px solid #D8D2C9;background:#FAF9F6;font-size:18px;cursor:pointer">{{ t.arrow }}</button>
+            </div>
+            <span aria-live="polite" style="position:absolute;top:16px;inset-inline-end:16px;padding:4px 10px;border-radius:4px;background:rgba(37,37,37,.8);color:#fff;font-size:12px;font-weight:600">{{ d.counter }}</span>
+          </sc-if>
+        </div>
+        <sc-if value="{{ d.multi }}">
+          <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:8px">
+            <sc-for list="{{ d.thumbs }}" as="th">
+              <li><button type="button" onClick="{{ th.onClick }}" aria-label="{{ th.label }}" aria-current="{{ th.aria }}" style="display:block;width:100%;aspect-ratio:1/1;padding:0;border-radius:6px;border:2px solid {{ th.border }};background:repeating-linear-gradient(135deg,#E9E4DC 0 6px,#E3DDD3 6px 12px);cursor:pointer;font:500 11px/1 ui-monospace,Menlo,monospace;color:#625C54">{{ th.num }}</button></li>
+            </sc-for>
+          </ul>
+        </sc-if>
+      </div>
+
+      <div style="flex:2 1 340px;min-width:0;display:flex;flex-direction:column;gap:24px">
+        <p style="margin:0;padding:10px 14px;border-radius:6px;background:#E9E4DC;font-size:13px;color:#4F4943">{{ t.detail.sampleNotice }}</p>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <a href="{{ d.catHref }}" style="align-self:flex-start;font-size:14px;color:#625C54;text-decoration:none" style-hover="text-decoration:underline;color:#252525">{{ d.catName }}</a>
+          <h1 style="margin:0;font-size:clamp(28px,3vw,40px);line-height:1.2;font-weight:600;letter-spacing:-.02em;text-wrap:balance">{{ d.name }}</h1>
+          <p style="margin:0;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;color:#625C54"><span>{{ t.card.ref }}</span><span dir="ltr" data-keep-ls="" style="font:600 13px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:#252525;letter-spacing:.04em">{{ d.code }}</span><span aria-hidden="true">·</span><span>{{ d.style }}</span></p>
+        </div>
+        <p style="margin:0;font-size:16px;color:#252525;text-wrap:pretty">{{ d.desc }}</p>
+
+        <div style="padding:24px;border:1px solid #D8D2C9;border-radius:10px;background:#fff;display:flex;flex-direction:column;gap:16px">
+          <div>
+            <label for="dqty" style="display:block;font-size:14px;font-weight:600;margin-bottom:8px">{{ d.qtyLabel }}</label>
+            <div style="display:flex;align-items:stretch;gap:0;width:max-content;border:1px solid #D8D2C9;border-radius:8px;overflow:hidden">
+              <button type="button" onClick="{{ d.dec }}" aria-label="{{ t.detail.dec }}" style="width:48px;height:48px;border:0;background:#FAF9F6;font-size:20px;cursor:pointer">−</button>
+              <input id="dqty" type="number" inputmode="numeric" min="1" step="1" value="{{ d.qty }}" onChange="{{ d.onQty }}" onBlur="{{ d.onQtyBlur }}" style="width:72px;height:48px;border:0;border-inline:1px solid #D8D2C9;text-align:center;font-size:16px;font-weight:600;background:#fff;-moz-appearance:textfield">
+              <button type="button" onClick="{{ d.inc }}" aria-label="{{ t.detail.inc }}" style="width:48px;height:48px;border:0;background:#FAF9F6;font-size:20px;cursor:pointer">+</button>
+            </div>
+          </div>
+          <button type="button" onClick="{{ d.onAdd }}" style="height:52px;border-radius:6px;border:0;background:#584838;color:#fff;font-size:15px;font-weight:600;cursor:pointer;transition:background .2s" style-hover="background:#43362A">{{ d.addLabel }}</button>
+          <sc-if value="{{ d.inList }}">
+            <p style="margin:0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-size:14px;color:#24634B"><span>{{ d.inListText }}</span><a href="{{ links.inquiry }}" style="font-weight:600">{{ t.detail.viewList }}</a></p>
+          </sc-if>
+          <sc-if value="{{ waReady }}">
+            <a href="{{ d.waHref }}" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:center;height:48px;border-radius:6px;border:1px solid #584838;color:#584838;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#E9E4DC;color:#584838">{{ t.detail.wa }}</a>
+          </sc-if>
+          <sc-if value="{{ waNotReady }}">
+            <button type="button" onClick="{{ onWaPending }}" style="height:48px;border-radius:6px;border:1px dashed #584838;background:transparent;color:#584838;font-size:15px;font-weight:600;cursor:pointer">{{ t.detail.wa }} <span style="font-size:12px;font-weight:500;color:#625C54">· PENDING</span></button>
+          </sc-if>
+          <p style="margin:0;font-size:13px;color:#625C54">{{ t.detail.noPrice }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="spec-title" style="padding:0 0 clamp(56px,8vw,96px)">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:40px clamp(32px,5vw,72px)">
+      <div>
+        <h2 id="spec-title" style="margin:0 0 20px;font-size:clamp(22px,2.4vw,26px);line-height:1.3;font-weight:600">{{ t.detail.pieces }}</h2>
+        <div role="table" aria-labelledby="spec-title" style="border-top:1px solid #252525">
+          <div role="row" style="display:grid;grid-template-columns:minmax(0,1.3fr) 56px minmax(0,1.5fr);gap:12px;padding:12px 0;border-bottom:1px solid #D8D2C9;font-size:13px;font-weight:600;color:#625C54">
+            <span role="columnheader">{{ t.detail.piece }}</span><span role="columnheader">{{ t.detail.qty }}</span><span role="columnheader">{{ t.detail.dims }}</span>
+          </div>
+          <sc-for list="{{ d.pieces }}" as="pc">
+            <div role="row" style="display:grid;grid-template-columns:minmax(0,1.3fr) 56px minmax(0,1.5fr);gap:12px;padding:14px 0;border-bottom:1px solid #D8D2C9;font-size:15px">
+              <span role="cell" style="font-weight:500">{{ pc.name }}</span>
+              <span role="cell" dir="ltr" style="text-align:start">{{ pc.qty }}</span>
+              <span role="cell" style="color:{{ pc.color }}"><bdi>{{ pc.dims }}</bdi></span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+      <sc-if value="{{ d.hasMaterials }}">
+        <div>
+          <h2 style="margin:0 0 20px;font-size:clamp(22px,2.4vw,26px);line-height:1.3;font-weight:600">{{ t.detail.materials }}</h2>
+          <p style="margin:0;padding-top:14px;border-top:1px solid #252525;font-size:15px">{{ d.materials }}</p>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <sc-if value="{{ d.hasRelated }}">
+    <section aria-labelledby="rel-title" style="padding:clamp(56px,8vw,96px) 0;background:#E9E4DC">
+      <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+        <h2 id="rel-title" style="margin:0 0 32px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.detail.related }}</h2>
+        <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,max(220px,calc((100% - 48px) / 3))),1fr));gap:clamp(16px,2vw,24px)">
+          <sc-for list="{{ d.related }}" as="k">
+            <li>
+              <a href="{{ k.href }}" style="display:flex;flex-direction:column;gap:14px;text-decoration:none;color:#252525">
+                <div style="position:relative;border-radius:10px;overflow:hidden;background:#FAF9F6"><img src="{{ k.img }}" alt="{{ k.alt }}" width="{{ k.w }}" height="{{ k.h }}" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:contain;transition:transform .25s ease" style-hover="transform:scale(1.02)"><span style="position:absolute;bottom:10px;inset-inline-start:10px;padding:3px 8px;border-radius:4px;background:rgba(250,249,246,.94);font-size:11px;font-weight:600;color:#4F4943">{{ t.illustrative }}</span></div>
+                <div style="display:flex;flex-direction:column;gap:4px">
+                  <h3 style="margin:0;font-size:clamp(18px,1.6vw,20px);line-height:1.4;font-weight:600">{{ k.name }}</h3>
+                  <span dir="ltr" data-keep-ls="" style="align-self:flex-start;font:500 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:#4F4943;letter-spacing:.04em">{{ k.code }}</span>
+                  <span style="margin-top:6px;display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:#584838">{{ t.card.view }} <span aria-hidden="true">{{ t.arrow }}</span></span>
+                </div>
+              </a>
+            </li>
+          </sc-for>
+        </ul>
+      </div>
+    </section>
+  </sc-if>
+</sc-if>
+
+<!-- INQUIRY LIST -->
+<sc-if value="{{ page.inquiry }}">
+  <section style="padding:clamp(32px,4vw,48px) 0 clamp(56px,8vw,96px)">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <sc-if value="{{ inqEmpty }}">
+        <div style="padding:clamp(40px,6vw,80px) 24px;border:1px dashed #D8D2C9;border-radius:10px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px">
+          <h2 style="margin:0;font-size:clamp(22px,2.4vw,26px);font-weight:600">{{ t.inquiry.emptyTitle }}</h2>
+          <p style="margin:0;max-width:52ch;color:#625C54">{{ t.inquiry.emptyBody }}</p>
+          <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:8px">
+            <a href="{{ links.collections }}" style="display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:6px;background:#584838;color:#fff;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#43362A;color:#fff">{{ t.inquiry.browse }}</a>
+            <a href="{{ links.contact }}" style="display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:6px;border:1px solid #584838;color:#584838;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#E9E4DC;color:#584838">{{ t.inquiry.general }}</a>
+          </div>
+        </div>
+      </sc-if>
+      <sc-if value="{{ hasInq }}">
+        <div style="display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,48px);align-items:flex-start">
+          <ul style="flex:3 1 520px;min-width:0;list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border-top:1px solid #252525">
+            <sc-for list="{{ inqItems }}" as="it">
+              <li style="display:grid;grid-template-columns:clamp(72px,14vw,112px) minmax(0,1fr);gap:clamp(16px,2vw,24px);padding:24px 0;border-bottom:1px solid #D8D2C9">
+                <a href="{{ it.href }}" aria-hidden="true" tabindex="-1" style="display:block;aspect-ratio:3/4;border-radius:6px;overflow:hidden;background:#E9E4DC"><img src="{{ it.img }}" alt="" loading="lazy" decoding="async" style="display:block;width:100%;height:100%;object-fit:contain"></a>
+                <div style="display:flex;flex-direction:column;gap:14px;min-width:0">
+                  <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px">
+                    <div style="min-width:0">
+                      <span style="font-size:13px;color:#625C54">{{ it.cat }}</span>
+                      <h2 style="margin:2px 0 4px;font-size:clamp(18px,1.6vw,20px);line-height:1.4;font-weight:600"><a href="{{ it.href }}" style="color:#252525;text-decoration:none" style-hover="text-decoration:underline">{{ it.name }}</a></h2>
+                      <span dir="ltr" data-keep-ls="" style="font:500 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:#625C54;letter-spacing:.04em">{{ it.code }}</span>
+                    </div>
+                    <button type="button" onClick="{{ it.onRemove }}" aria-label="{{ it.removeLabel }}" style="align-self:flex-start;height:40px;padding:0 12px;border-radius:6px;border:0;background:transparent;color:#B42318;font-size:14px;font-weight:600;cursor:pointer;text-decoration:underline;text-underline-offset:3px">{{ t.inquiry.remove }}</button>
+                  </div>
+                  <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end">
+                    <div>
+                      <label for="{{ it.qtyId }}" style="display:block;font-size:13px;font-weight:600;margin-bottom:6px">{{ it.qtyLabel }}</label>
+                      <div style="display:flex;border:1px solid #D8D2C9;border-radius:8px;overflow:hidden;width:max-content">
+                        <button type="button" onClick="{{ it.dec }}" aria-label="{{ t.detail.dec }}" style="width:44px;height:44px;border:0;background:#FAF9F6;font-size:18px;cursor:pointer">−</button>
+                        <input id="{{ it.qtyId }}" type="number" inputmode="numeric" min="1" step="1" value="{{ it.qty }}" onChange="{{ it.onQty }}" onBlur="{{ it.onQtyBlur }}" style="width:64px;height:44px;border:0;border-inline:1px solid #D8D2C9;text-align:center;font-size:16px;font-weight:600;background:#fff">
+                        <button type="button" onClick="{{ it.inc }}" aria-label="{{ t.detail.inc }}" style="width:44px;height:44px;border:0;background:#FAF9F6;font-size:18px;cursor:pointer">+</button>
+                      </div>
+                    </div>
+                    <div style="flex:1 1 220px;min-width:0">
+                      <label for="{{ it.noteId }}" style="display:block;font-size:13px;font-weight:600;margin-bottom:6px">{{ t.inquiry.note }}</label>
+                      <input id="{{ it.noteId }}" type="text" value="{{ it.note }}" onChange="{{ it.onNote }}" placeholder="{{ t.inquiry.notePh }}" maxlength="300" style="width:100%;height:44px;padding:0 12px;border:1px solid #D8D2C9;border-radius:8px;background:#fff;font-size:16px" style-focus="border-color:#584838">
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </sc-for>
+          </ul>
+          <aside aria-labelledby="inq-sum" style="flex:1 1 300px;min-width:0;position:sticky;top:104px;padding:28px;border-radius:10px;background:#E9E4DC;display:flex;flex-direction:column;gap:16px">
+            <h2 id="inq-sum" style="margin:0;font-size:20px;font-weight:600">{{ t.inquiry.summary }}</h2>
+            <p style="margin:0;font-size:16px">{{ inqSelectedText }}</p>
+            <p style="margin:0;font-size:14px;color:#4F4943">{{ t.inquiry.notCart }}</p>
+            <a href="{{ links.contact }}" style="display:flex;align-items:center;justify-content:center;gap:10px;height:52px;border-radius:6px;background:#584838;color:#fff;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#43362A;color:#fff">{{ t.inquiry.continueRfq }} <span aria-hidden="true">{{ t.arrow }}</span></a>
+            <a href="{{ links.collections }}" style="display:flex;align-items:center;justify-content:center;height:48px;border-radius:6px;border:1px solid #584838;color:#584838;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#DDD6CB;color:#584838">{{ t.inquiry.continueBrowsing }}</a>
+            <p style="margin:0;font-size:13px;color:#4F4943">{{ t.inquiry.saved }}</p>
+            <a href="{{ links.shipping }}" style="align-self:flex-start;font-size:14px;font-weight:600">{{ t.inquiry.guide }}</a>
+          </aside>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+</sc-if>
+
+<!-- CONTACT / RFQ -->
+<sc-if value="{{ page.contact }}">
+  <section style="padding:clamp(32px,4vw,48px) 0 clamp(56px,8vw,96px)">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:flex;flex-direction:column;gap:clamp(40px,6vw,72px)">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(16px,2vw,24px)">
+        <div style="padding:28px;border:1px solid #D8D2C9;border-radius:10px;background:#fff;display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+          <h2 style="margin:0;font-size:20px;font-weight:600">{{ t.contact.waTitle }}</h2>
+          <p style="margin:0;font-size:15px;color:#625C54">{{ t.contact.waBody }}</p>
+          <sc-if value="{{ waReady }}"><a href="{{ waGeneral }}" target="_blank" rel="noopener noreferrer" style="margin-top:8px;display:inline-flex;align-items:center;height:48px;padding:0 20px;border-radius:6px;background:#584838;color:#fff;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#43362A;color:#fff">{{ t.contact.waBtn }}</a></sc-if>
+          <sc-if value="{{ waNotReady }}"><p style="margin:8px 0 0;padding:10px 14px;border:1px dashed #D8D2C9;border-radius:6px;font-size:14px;color:#625C54">{{ t.contact.waPending }} · <span dir="ltr">PENDING</span></p></sc-if>
+        </div>
+        <div style="padding:28px;border:1px solid #D8D2C9;border-radius:10px;background:#fff;display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+          <h2 style="margin:0;font-size:20px;font-weight:600">{{ t.contact.emailTitle }}</h2>
+          <sc-if value="{{ emailReady }}"><a href="{{ emailHref }}" dir="ltr" style="font-size:16px;font-weight:600">{{ email }}</a></sc-if>
+          <sc-if value="{{ emailNotReady }}"><p style="margin:0;padding:10px 14px;border:1px dashed #D8D2C9;border-radius:6px;font-size:14px;color:#625C54">{{ t.contact.emailPending }} · <span dir="ltr">PENDING</span></p></sc-if>
+        </div>
+      </div>
+
+      <div id="rfq" style="display:flex;flex-wrap:wrap;gap:clamp(32px,5vw,64px);align-items:flex-start">
+        <div style="flex:3 1 520px;min-width:0">
+          <h2 style="margin:0 0 8px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.contact.rfqTitle }}</h2>
+          <p style="margin:0 0 32px;color:#625C54;max-width:60ch">{{ t.contact.rfqBody }}</p>
+
+          <sc-if value="{{ isSuccess }}">
+            <div ref="{{ successRef }}" tabindex="-1" role="status" style="padding:32px;border:1px solid #24634B;border-radius:10px;background:#fff;display:flex;flex-direction:column;gap:16px;outline:none">
+              <h3 style="margin:0;font-size:22px;font-weight:600;color:#24634B">{{ t.form.successTitle }}</h3>
+              <p style="margin:0">{{ t.form.successBody }}</p>
+              <sc-if value="{{ hasReference }}"><p style="margin:0;font-size:14px">{{ t.form.reference }}: <strong dir="ltr">{{ reference }}</strong></p></sc-if>
+              <sc-if value="{{ askClear }}">
+                <div style="padding-top:16px;border-top:1px solid #D8D2C9;display:flex;flex-direction:column;gap:12px">
+                  <p style="margin:0;font-size:15px">{{ t.form.clearQ }}</p>
+                  <div style="display:flex;flex-wrap:wrap;gap:12px">
+                    <button type="button" onClick="{{ clearAfterSuccess }}" style="height:44px;padding:0 18px;border-radius:6px;border:0;background:#584838;color:#fff;font-weight:600;cursor:pointer">{{ t.form.clear }}</button>
+                    <button type="button" onClick="{{ keepAfterSuccess }}" style="height:44px;padding:0 18px;border-radius:6px;border:1px solid #584838;background:transparent;color:#584838;font-weight:600;cursor:pointer">{{ t.form.keep }}</button>
+                  </div>
+                </div>
+              </sc-if>
+              <button type="button" onClick="{{ newRequest }}" style="align-self:flex-start;height:44px;padding:0;border:0;background:transparent;color:#584838;font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer">{{ t.form.newReq }}</button>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ notSuccess }}">
+            <form noValidate="{{ true }}" onSubmit="{{ onSubmit }}" aria-busy="{{ busy }}" style="display:flex;flex-direction:column;gap:24px">
+              <sc-if value="{{ hasErrors }}">
+                <div ref="{{ summaryRef }}" tabindex="-1" role="alert" style="padding:20px 24px;border:1px solid #B42318;border-radius:8px;background:#FDF3F2;outline:none">
+                  <p style="margin:0 0 10px;font-weight:600;color:#B42318">{{ t.form.summaryTitle }}</p>
+                  <ul style="margin:0;padding-inline-start:20px;display:flex;flex-direction:column;gap:4px">
+                    <sc-for list="{{ errorList }}" as="er">
+                      <li><button type="button" onClick="{{ er.focus }}" style="padding:2px 0;border:0;background:transparent;color:#B42318;text-decoration:underline;text-underline-offset:3px;cursor:pointer;font-size:15px;text-align:start">{{ er.msg }}</button></li>
+                    </sc-for>
+                  </ul>
+                </div>
+              </sc-if>
+
+              <div style="max-width:480px">
+                <label for="f-inquiryType" style="display:flex;justify-content:space-between;gap:8px;font-size:14px;font-weight:600;margin-bottom:8px"><span>{{ t.form.inquiryType }}</span><span style="font-weight:400;color:#625C54">{{ t.form.optional }}</span></label>
+                {{ inquiryTypeSelect }}
+              </div>
+
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:20px">
+                <div>
+                  <label for="f-name" style="display:flex;justify-content:space-between;gap:8px;font-size:14px;font-weight:600;margin-bottom:8px"><span>{{ t.form.name }}</span><span style="font-weight:400;color:#625C54">{{ t.form.required }}</span></label>
+                  <input id="f-name" type="text" autocomplete="name" value="{{ fields.name.value }}" onChange="{{ fields.name.onChange }}" aria-invalid="{{ fields.name.inv }}" aria-describedby="{{ fields.name.desc }}" aria-required="true" style="width:100%;height:48px;padding:0 14px;border:1px solid {{ fields.name.bc }};border-radius:8px;background:#fff;font-size:16px" style-focus="border-color:#584838">
+                  <sc-if value="{{ fields.name.has }}"><p id="f-name-err" style="margin:6px 0 0;font-size:14px;color:#B42318">{{ fields.name.err }}</p></sc-if>
+                </div>
+                <div>
+                  <label for="f-company" style="display:flex;justify-content:space-between;gap:8px;font-size:14px;font-weight:600;margin-bottom:8px"><span>{{ t.form.company }}</span><span style="font-weight:400;color:#625C54">{{ t.form.optional }}</span></label>
+                  <input id="f-company" type="text" autocomplete="organization" value="{{ fields.company.value }}" onChange="{{ fields.company.onChange }}" style="width:100%;height:48px;padding:0 14px;border:1px solid #D8D2C9;border-radius:8px;background:#fff;font-size:16px" style-focus="border-color:#584838">
+                </div>
+                <div>
+                  <label for="f-buyerType" style="display:flex;justify-content:space-between;gap:8px;font-size:14px;font-weight:600;margin-bottom:8px"><span>{{ t.form.buyerType }}</span><span style="font-weight:400;color:#625C54">{{ t.form.optional }}</span></label>
+                  {{ buyerTypeSelect }}
+                </div>
+                <div>
+                  <label for="f-country" style="display:flex;justify-content:space-between;gap:8px;font-size:14px;font-weight:600;margin-bottom:8px"><span>{{ t.form.country }}</span><span style="font-weight:400;color:#625C54">{{ t.form.required }}</span></label>
+                  {{ countrySelect }}
+                  <sc-if value="{{ fields.country.has }}"><p id="f-country-err" style="margin:6px 0 0;font-size:14px;color:#B42318">{{ fields.country.err }}</p></sc-if>
+                </div>
+              </div>
+
+              <fieldset style="margin:0;padding:20px;border:1px solid #D8D2C9;border-radius:10px;min-width:0">
+                <legend style="padding:0 8px;font-size:14px;font-weight:600">{{ t.form.contactHint }}</legend>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:20px">
+                  <div>
+                    <label for="f-email" style="display:block;font-size:14px;font-weight:600;margin-bottom:8px">{{ t.form.email }}</label>
+                    <input id="f-email" type="email" dir="ltr" autocomplete="email" inputmode="email" value="{{ fields.email.value }}" onChange="{{ fields.email.onChange }}" aria-invalid="{{ fields.email.inv }}" aria-describedby="{{ fields.email.desc }}" placeholder="name@company.com" style="width:100%;height:48px;padding:0 14px;border:1px solid {{ fields.email.bc }};border-radius:8px;background:#fff;font-size:16px;text-align:{{ ltrAlign }}" style-focus="border-color:#584838">
+                    <sc-if value="{{ fields.email.has }}"><p id="f-email-err" style="margin:6px 0 0;font-size:14px;color:#B42318">{{ fields.email.err }}</p></sc-if>
+                  </div>
+                  <div>
+                    <label for="f-phone" style="display:block;font-size:14px;font-weight:600;margin-bottom:8px">{{ t.form.phone }}</label>
+                    <input id="f-phone" type="tel" dir="ltr" autocomplete="tel" inputmode="tel" value="{{ fields.phone.value }}" onChange="{{ fields.phone.onChange }}" aria-invalid="{{ fields.phone.inv }}" aria-describedby="{{ fields.phone.desc }}" placeholder="+971 50 123 4567" style="width:100%;height:48px;padding:0 14px;border:1px solid {{ fields.phone.bc }};border-radius:8px;background:#fff;font-size:16px;text-align:{{ ltrAlign }}" style-focus="border-color:#584838">
+                    <p id="f-phone-hint" style="margin:6px 0 0;font-size:13px;color:#625C54">{{ t.form.phoneHint }}</p>
+                    <sc-if value="{{ fields.phone.has }}"><p id="f-phone-err" style="margin:4px 0 0;font-size:14px;color:#B42318">{{ fields.phone.err }}</p></sc-if>
+                  </div>
+                </div>
+                <div role="radiogroup" aria-labelledby="pref-label" style="margin-top:20px">
+                  <p id="pref-label" style="margin:0 0 10px;font-size:14px;font-weight:600">{{ t.form.pref }}</p>
+                  <div style="display:flex;flex-wrap:wrap;gap:8px">
+                    <sc-for list="{{ prefOptions }}" as="o">
+                      <label style="display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border:1px solid {{ o.border }};border-radius:8px;background:{{ o.bg }};font-size:15px;cursor:pointer;opacity:{{ o.opacity }}">
+                        <input type="radio" name="pref" value="{{ o.v }}" checked="{{ o.checked }}" disabled="{{ o.disabled }}" onChange="{{ o.onChange }}" style="accent-color:#584838;width:18px;height:18px;margin:0">
+                        {{ o.label }}
+                      </label>
+                    </sc-for>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset style="margin:0;padding:20px;border:1px solid #D8D2C9;border-radius:10px;min-width:0">
+                <legend style="padding:0 8px;font-size:14px;font-weight:600">{{ t.form.tradeTitle }} <span style="font-weight:400;color:#625C54">· {{ t.form.optional }}</span></legend>
+                <p style="margin:0 0 16px;font-size:13px;color:#625C54">{{ t.form.tradeHint }} <a href="{{ links.shipping }}" style="font-weight:600">{{ t.form.termsGuide }}</a></p>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:20px">
+                  <div>
+                    <label for="f-shipTerm" style="display:block;font-size:14px;font-weight:600;margin-bottom:8px">{{ t.form.shipTerm }}</label>
+                    {{ shipTermSelect }}
+                  </div>
+                  <div>
+                    <label for="f-payTerm" style="display:block;font-size:14px;font-weight:600;margin-bottom:8px">{{ t.form.payTerm }}</label>
+                    {{ payTermSelect }}
+                  </div>
+                  <div style="grid-column:1/-1">
+                    <label for="f-destPort" style="display:block;font-size:14px;font-weight:600;margin-bottom:8px">{{ t.form.destPort }}</label>
+                    <input id="f-destPort" type="text" value="{{ fields.destPort.value }}" onChange="{{ fields.destPort.onChange }}" placeholder="{{ t.form.destPortPh }}" maxlength="120" autocomplete="off" style="width:100%;height:48px;padding:0 14px;border:1px solid #D8D2C9;border-radius:8px;background:#fff;font-size:16px" style-focus="border-color:#584838">
+                  </div>
+                </div>
+              </fieldset>
+
+              <div>
+                <label for="f-message" style="display:flex;justify-content:space-between;gap:8px;font-size:14px;font-weight:600;margin-bottom:8px"><span>{{ t.form.message }}</span><span style="font-weight:400;color:#625C54">{{ messageReqLabel }}</span></label>
+                <textarea id="f-message" rows="5" value="{{ fields.message.value }}" onChange="{{ fields.message.onChange }}" placeholder="{{ messagePh }}" aria-invalid="{{ fields.message.inv }}" aria-describedby="{{ fields.message.desc }}" maxlength="3000" style="width:100%;padding:12px 14px;border:1px solid {{ fields.message.bc }};border-radius:8px;background:#fff;font-size:16px;line-height:1.6;resize:vertical" style-focus="border-color:#584838"></textarea>
+                <sc-if value="{{ fields.message.has }}"><p id="f-message-err" style="margin:6px 0 0;font-size:14px;color:#B42318">{{ fields.message.err }}</p></sc-if>
+              </div>
+
+              <div aria-hidden="true" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">
+                <label for="f-website">Website</label>
+                <input id="f-website" type="text" tabindex="-1" autocomplete="off" value="{{ fields.website.value }}" onChange="{{ fields.website.onChange }}">
+              </div>
+
+              <div>
+                <label style="display:flex;align-items:flex-start;gap:12px;font-size:15px;cursor:pointer">
+                  <input id="f-consent" type="checkbox" checked="{{ fields.consent.value }}" onChange="{{ fields.consent.onChange }}" aria-invalid="{{ fields.consent.inv }}" aria-describedby="{{ fields.consent.desc }}" style="accent-color:#584838;width:20px;height:20px;margin:2px 0 0;flex:none">
+                  <span>{{ t.form.consent }} <a href="{{ links.privacy }}">{{ t.form.privacy }}</a> <span style="color:#625C54;font-size:13px">{{ t.form.privacyPending }}</span></span>
+                </label>
+                <sc-if value="{{ fields.consent.has }}"><p id="f-consent-err" style="margin:6px 0 0;font-size:14px;color:#B42318">{{ fields.consent.err }}</p></sc-if>
+              </div>
+
+              <sc-if value="{{ isError }}">
+                <div ref="{{ errorRef }}" tabindex="-1" role="alert" style="padding:20px 24px;border:1px solid #B42318;border-radius:8px;background:#FDF3F2;display:flex;flex-direction:column;gap:8px;outline:none">
+                  <p style="margin:0;font-weight:600;color:#B42318">{{ submitErrTitle }}</p>
+                  <p style="margin:0;font-size:15px;color:#252525">{{ submitErrBody }}</p>
+                  <sc-if value="{{ waReady }}"><a href="{{ waGeneral }}" target="_blank" rel="noopener noreferrer" style="align-self:flex-start;font-weight:600">{{ t.contact.waBtn }}</a></sc-if>
+                </div>
+              </sc-if>
+
+              <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px">
+                <button type="submit" disabled="{{ busy }}" style="height:52px;padding:0 28px;border-radius:6px;border:0;background:{{ submitBg }};color:#fff;font-size:15px;font-weight:600;cursor:{{ submitCursor }};transition:background .2s">{{ submitLabel }}</button>
+                <p style="margin:0;font-size:13px;color:#625C54">{{ t.form.notOrder }}</p>
+              </div>
+            </form>
+          </sc-if>
+        </div>
+
+        <aside aria-labelledby="rfq-sel" style="flex:2 1 300px;min-width:0;position:sticky;top:104px;padding:28px;border-radius:10px;background:#E9E4DC;display:flex;flex-direction:column;gap:16px">
+          <h2 id="rfq-sel" style="margin:0;font-size:20px;font-weight:600">{{ t.form.selectedTitle }}</h2>
+          <sc-if value="{{ inqEmpty }}">
+            <p style="margin:0;font-size:15px;color:#4F4943">{{ t.form.noneSelected }}</p>
+            <a href="{{ links.collections }}" style="align-self:flex-start;font-weight:600;font-size:15px">{{ t.form.browse }}</a>
+          </sc-if>
+          <sc-if value="{{ hasInq }}">
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;border-top:1px solid #C9C1B5">
+              <sc-for list="{{ inqItems }}" as="it">
+                <li style="display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid #C9C1B5;font-size:15px">
+                  <span style="min-width:0"><span style="display:block;font-weight:600">{{ it.name }}</span><span dir="ltr" data-keep-ls="" style="font:500 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:#4F4943">{{ it.code }}</span><sc-if value="{{ it.hasNote }}"><span style="display:block;font-size:13px;color:#4F4943;margin-top:4px">{{ it.note }}</span></sc-if></span>
+                  <span style="flex:none;font-weight:600"><bdi>{{ it.qtyText }}</bdi></span>
+                </li>
+              </sc-for>
+            </ul>
+            <a href="{{ links.inquiry }}" style="align-self:flex-start;font-weight:600;font-size:15px">{{ t.form.editList }}</a>
+          </sc-if>
+          <div style="margin-top:8px;padding-top:20px;border-top:1px solid #C9C1B5">
+            <h3 style="margin:0 0 10px;font-size:15px;font-weight:600">{{ t.contact.includesTitle }}</h3>
+            <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:14px;color:#4F4943">
+              <sc-for list="{{ t.contact.includes }}" as="x" hint-placeholder-count="7"><li style="display:flex;align-items:baseline;gap:10px"><span aria-hidden="true" style="width:6px;height:6px;background:#A58B64;flex:none;transform:translateY(-3px)"></span><span>{{ x }}</span></li></sc-for>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<!-- ABOUT -->
+<sc-if value="{{ page.about }}">
+  <section style="padding:clamp(48px,6vw,80px) 0">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:clamp(32px,5vw,72px);align-items:start">
+      <div role="img" aria-label="{{ t.ph.about }}" style="aspect-ratio:4/3;border-radius:10px;background:repeating-linear-gradient(135deg,#E9E4DC 0 12px,#E3DDD3 12px 24px);display:flex;align-items:flex-end"><span style="margin:16px;padding:6px 10px;background:rgba(250,249,246,.92);border-radius:4px;font:500 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:#625C54">{{ t.ph.about }}</span></div>
+      <div>
+        <h2 style="margin:0 0 20px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.about.whoTitle }}</h2>
+        <div style="display:flex;flex-direction:column;gap:16px">
+          <sc-for list="{{ t.about.whoBody }}" as="para" hint-placeholder-count="3"><p style="margin:0;font-size:17px;max-width:60ch;text-wrap:pretty">{{ para }}</p></sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section aria-labelledby="ab-prod" style="padding:0 0 clamp(56px,8vw,96px)">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <h2 id="ab-prod" style="margin:0 0 24px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.about.productsTitle }}</h2>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));column-gap:clamp(32px,5vw,72px);border-top:1px solid #252525">
+        <sc-for list="{{ allCats }}" as="c" hint-placeholder-count="6">
+          <li style="border-bottom:1px solid #D8D2C9"><a href="{{ c.href }}" style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:18px 0;text-decoration:none;color:#252525" style-hover="color:#584838"><span style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-size:18px;font-weight:600">{{ c.name }}</span><span style="font-size:15px;color:#625C54">{{ c.desc }}</span></span><span aria-hidden="true" style="color:#A58B64;padding-top:2px">{{ t.arrow }}</span></a></li>
+        </sc-for>
+      </ul>
+    </div>
+  </section>
+  <section style="padding:clamp(56px,8vw,96px) 0;background:#E9E4DC">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <h2 style="margin:0 0 clamp(32px,4vw,48px);font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.about.mqTitle }}</h2>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(24px,3vw,40px)">
+        <sc-for list="{{ mqItems }}" as="w" hint-placeholder-count="3">
+          <li style="padding-top:24px;border-top:1px solid #C9C1B5;display:flex;flex-direction:column;gap:12px">
+            <span dir="ltr" style="font-size:13px;font-weight:600;color:#584838">{{ w.num }}</span>
+            <h3 style="margin:0;font-size:22px;line-height:1.35;font-weight:600">{{ w.title }}</h3>
+            <p style="margin:0;font-size:15px;color:#4F4943">{{ w.body }}</p>
+          </li>
+        </sc-for>
+      </ul>
+    </div>
+  </section>
+  <section style="padding:clamp(56px,8vw,96px) 0">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:48px clamp(32px,5vw,72px)">
+      <div>
+        <h2 style="margin:0 0 20px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.about.visionTitle }}</h2>
+        <p style="margin:0;padding-top:20px;border-top:1px solid #252525;font-size:clamp(19px,1.8vw,22px);line-height:1.6;font-weight:500;max-width:40ch;text-wrap:pretty">{{ t.about.visionBody }}</p>
+      </div>
+      <div>
+        <h2 style="margin:0 0 20px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.about.partnersTitle }}</h2>
+        <p style="margin:0;padding-top:20px;border-top:1px solid #252525;font-size:17px;max-width:56ch">{{ t.about.partnersBody }}</p>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<!-- SOURCING -->
+<sc-if value="{{ page.sourcing }}">
+  <section style="padding:clamp(48px,6vw,80px) 0">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:24px clamp(32px,6vw,96px)">
+      <h2 style="margin:0;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.sourcing.coordTitle }}</h2>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <sc-for list="{{ t.sourcing.coordBody }}" as="para" hint-placeholder-count="2"><p style="margin:0;font-size:17px;max-width:60ch;text-wrap:pretty">{{ para }}</p></sc-for>
+      </div>
+    </div>
+  </section>
+  <section aria-labelledby="steps-title" style="padding:clamp(56px,8vw,96px) 0;background:#E9E4DC">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <h2 id="steps-title" style="margin:0 0 clamp(32px,4vw,48px);font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.sourcing.processTitle }}</h2>
+      <ol style="list-style:none;margin:0;padding:0;border-top:1px solid #252525">
+        <sc-for list="{{ exportSteps }}" as="s" hint-placeholder-count="10">
+          <li style="display:grid;grid-template-columns:clamp(40px,6vw,72px) minmax(0,1fr);gap:12px;padding:22px 0;border-bottom:1px solid #C9C1B5">
+            <span dir="ltr" style="font-size:15px;font-weight:700;color:#584838;line-height:1.6">{{ s.num }}</span>
+            <div style="display:flex;flex-wrap:wrap;gap:6px clamp(24px,4vw,56px)">
+              <div style="flex:1 1 240px;min-width:0">
+                <h3 style="margin:0;font-size:19px;line-height:1.45;font-weight:600">{{ s.title }}</h3>
+                <sc-if value="{{ s.hasTerm }}"><span dir="ltr" lang="en" style="display:inline-block;margin-top:2px;font:500 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:#4F4943">{{ s.term }}</span></sc-if>
+              </div>
+              <p style="flex:2 1 340px;min-width:0;margin:0;font-size:15px;color:#4F4943;max-width:64ch">{{ s.body }}</p>
+            </div>
+          </li>
+        </sc-for>
+      </ol>
+    </div>
+  </section>
+  <section aria-labelledby="qc-title" style="padding:clamp(56px,8vw,96px) 0">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:40px clamp(32px,5vw,72px);align-items:start">
+      <div>
+        <h2 id="qc-title" style="margin:0 0 20px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.sourcing.qcTitle }}</h2>
+        <p style="margin:0 0 20px;font-size:17px;max-width:60ch">{{ t.sourcing.qcBody }}</p>
+        <ul style="list-style:none;margin:0 0 24px;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));column-gap:24px;border-top:1px solid #D8D2C9">
+          <sc-for list="{{ t.sourcing.qcChecks }}" as="x" hint-placeholder-count="7">
+            <li style="display:flex;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px solid #D8D2C9;font-size:15px"><span aria-hidden="true" style="width:6px;height:6px;background:#A58B64;flex:none;transform:translateY(-3px)"></span><span>{{ x }}</span></li>
+          </sc-for>
+        </ul>
+        <p style="margin:0;font-size:15px;color:#625C54;max-width:60ch">{{ t.sourcing.qcMedia }}</p>
+      </div>
+      <div style="padding:clamp(24px,3vw,32px);border:1px solid #D8D2C9;border-radius:10px;background:#fff;display:flex;flex-direction:column;gap:16px">
+        <h3 style="margin:0;font-size:22px;line-height:1.35;font-weight:600">{{ t.sourcing.tpiTitle }}</h3>
+        <p style="margin:0;font-size:15px">{{ t.sourcing.tpiBody }}</p>
+        <div>
+          <p style="margin:0 0 10px;font-size:13px;font-weight:600;color:#584838">{{ t.sourcing.tpiExamplesLabel }}</p>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px">
+            <sc-for list="{{ t.sourcing.tpiExamples }}" as="x"><li dir="ltr" lang="en" style="padding:6px 14px;border:1px solid #D8D2C9;border-radius:20px;font-size:14px;font-weight:600">{{ x }}</li></sc-for>
+          </ul>
+          <p style="margin:10px 0 0;font-size:13px;color:#625C54">{{ t.sourcing.tpiDisclaimer }}</p>
+        </div>
+        <p style="margin:0;padding-top:16px;border-top:1px solid #D8D2C9;font-size:15px;color:#4F4943">{{ t.sourcing.tpiScope }}</p>
+        <p style="margin:0;font-size:15px;color:#4F4943">{{ t.sourcing.tpiArrange }}</p>
+      </div>
+    </div>
+  </section>
+  <section aria-labelledby="guides-title" style="padding:0 0 clamp(56px,8vw,96px)">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <h2 id="guides-title" style="margin:0 0 24px;font-size:clamp(22px,2.4vw,26px);line-height:1.3;font-weight:600">{{ t.sourcing.guidesTitle }}</h2>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:clamp(16px,2vw,24px)">
+        <sc-for list="{{ guideCards }}" as="g" hint-placeholder-count="2">
+          <li><a href="{{ g.href }}" style="height:100%;display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:28px 24px;border-radius:10px;background:#E9E4DC;color:#252525;text-decoration:none;transition:background .2s" style-hover="background:#DDD6CB"><span style="display:flex;flex-direction:column;gap:6px"><span style="font-size:20px;font-weight:600;line-height:1.4">{{ g.title }}</span><span style="font-size:15px;color:#4F4943">{{ g.body }}</span></span><span aria-hidden="true" style="color:#584838;font-size:18px">{{ t.arrow }}</span></a></li>
+        </sc-for>
+      </ul>
+    </div>
+  </section>
+  <section style="padding:clamp(56px,8vw,96px) 0;border-top:1px solid #D8D2C9">
+    <div style="max-width:800px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <h2 style="margin:0 0 32px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.sourcing.faqTitle }}</h2>
+      <div style="border-top:1px solid #252525">
+        <sc-for list="{{ t.sourcing.faq }}" as="f">
+          <details style="border-bottom:1px solid #D8D2C9">
+            <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:64px;padding:12px 0;font-size:18px;font-weight:600"><span>{{ f.q }}</span><span aria-hidden="true" style="color:#584838;font-size:22px;font-weight:400">+</span></summary>
+            <p style="margin:0 0 24px;font-size:16px;color:#625C54;max-width:64ch">{{ f.a }}</p>
+          </details>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<!-- SHIPPING & PAYMENT GUIDE -->
+<sc-if value="{{ page.shipping }}">
+  <nav aria-label="{{ t.ship.tocLabel }}" style="padding:24px 0;border-bottom:1px solid #D8D2C9">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px">
+      <span style="font-size:13px;font-weight:600;color:#625C54">{{ t.ship.tocLabel }}</span>
+      <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px">
+        <sc-for list="{{ tocItems }}" as="ti" hint-placeholder-count="6">
+          <li><button type="button" onClick="{{ ti.onClick }}" style="height:40px;padding:0 16px;border-radius:20px;border:1px solid #D8D2C9;background:transparent;color:#252525;font-size:14px;font-weight:600;cursor:pointer" style-hover="border-color:#584838;color:#584838">{{ ti.label }}</button></li>
+        </sc-for>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="ship-pay" tabindex="-1" aria-labelledby="pay-title" style="padding:clamp(48px,6vw,80px) 0;outline:none">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <h2 id="pay-title" style="margin:0 0 20px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.ship.payTitle }}</h2>
+      <p style="margin:0 0 clamp(28px,3vw,40px);font-size:17px;color:#625C54;max-width:62ch">{{ t.ship.payIntro }}</p>
+      <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:clamp(16px,2vw,24px)">
+        <sc-for list="{{ payItems }}" as="p" hint-placeholder-count="3">
+          <li style="padding:28px 24px;border:1px solid #D8D2C9;border-radius:10px;background:#fff;display:flex;flex-direction:column;gap:12px">
+            <span dir="ltr" style="font-size:13px;font-weight:600;color:#584838">{{ p.num }}</span>
+            <h3 style="margin:0;font-size:19px;line-height:1.45;font-weight:600">{{ p.title }}</h3>
+            <sc-if value="{{ p.hasTerm }}"><span dir="ltr" lang="en" style="align-self:flex-start;font:500 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:#4F4943">{{ p.term }}</span></sc-if>
+            <p style="margin:0;font-size:15px;color:#4F4943">{{ p.body }}</p>
+          </li>
+        </sc-for>
+      </ol>
+      <p style="margin:24px 0 0;padding:16px 20px;border-radius:8px;background:#E9E4DC;font-size:15px;max-width:80ch">{{ t.ship.payNote }}</p>
+    </div>
+  </section>
+
+  <section id="ship-inco" tabindex="-1" aria-labelledby="inco-title" style="padding:clamp(56px,8vw,96px) 0;background:#E9E4DC;outline:none">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <h2 id="inco-title" style="margin:0 0 20px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.ship.incoTitle }}</h2>
+      <p style="margin:0 0 clamp(28px,3vw,40px);font-size:17px;color:#4F4943;max-width:66ch">{{ t.ship.incoIntro }}</p>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(16px,2vw,20px)">
+        <sc-for list="{{ t.ship.incoterms }}" as="inc" hint-placeholder-count="4">
+          <li style="padding:24px;border:1px solid #C9C1B5;border-radius:10px;background:#FAF9F6;display:flex;flex-direction:column;gap:18px;min-width:0">
+            <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-start">
+              <span dir="ltr" lang="en" data-keep-ls="" style="font-size:30px;font-weight:700;letter-spacing:.04em;line-height:1.1">{{ inc.code }}</span>
+              <span style="font-size:15px;font-weight:600">{{ inc.name }}</span>
+              <span style="padding:3px 10px;border-radius:12px;border:1px solid #C9C1B5;font-size:12px;color:#4F4943">{{ inc.mode }}</span>
+            </div>
+            <dl style="margin:0;display:flex;flex-direction:column;gap:14px;font-size:14px;line-height:1.6">
+              <div><dt style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#584838">{{ t.ship.incoLabels.seller }}</dt><dd style="margin:2px 0 0">{{ inc.seller }}</dd></div>
+              <div><dt style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#584838">{{ t.ship.incoLabels.buyer }}</dt><dd style="margin:2px 0 0">{{ inc.buyer }}</dd></div>
+              <div><dt style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#584838">{{ t.ship.incoLabels.cost }}</dt><dd style="margin:2px 0 0">{{ inc.cost }}</dd></div>
+              <div><dt style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#584838">{{ t.ship.incoLabels.risk }}</dt><dd style="margin:2px 0 0">{{ inc.risk }}</dd></div>
+              <div><dt style="font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#584838">{{ t.ship.incoLabels.insurance }}</dt><dd style="margin:2px 0 0">{{ inc.insurance }}</dd></div>
+            </dl>
+          </li>
+        </sc-for>
+      </ul>
+      <ul style="list-style:none;margin:32px 0 0;padding:0;display:flex;flex-direction:column;gap:10px;max-width:80ch">
+        <sc-for list="{{ t.ship.incoNotes }}" as="x"><li style="display:flex;align-items:baseline;gap:12px;font-size:15px;color:#252525"><span aria-hidden="true" style="width:6px;height:6px;background:#A58B64;flex:none;transform:translateY(-3px)"></span><span>{{ x }}</span></li></sc-for>
+      </ul>
+    </div>
+  </section>
+
+  <section id="ship-ports" tabindex="-1" aria-labelledby="ports-title" style="padding:clamp(56px,8vw,96px) 0;outline:none">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:32px clamp(32px,6vw,96px);align-items:start">
+      <div>
+        <h2 id="ports-title" style="margin:0 0 20px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.ship.portsTitle }}</h2>
+        <p style="margin:0;font-size:17px;color:#625C54;max-width:52ch">{{ t.ship.portsIntro }}</p>
+      </div>
+      <div>
+        <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #252525">
+          <sc-for list="{{ portItems }}" as="pt" hint-placeholder-count="4">
+            <li style="display:grid;grid-template-columns:48px minmax(0,1fr);gap:12px;align-items:baseline;padding:16px 0;border-bottom:1px solid #D8D2C9">
+              <span dir="ltr" style="font-size:13px;font-weight:700;color:#584838">{{ pt.num }}</span>
+              <span style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px"><span style="font-size:18px;font-weight:600">{{ pt.name }}</span><span dir="auto" style="font-size:14px;color:#625C54">{{ pt.alt }}</span></span>
+            </li>
+          </sc-for>
+        </ul>
+        <p style="margin:20px 0 0;font-size:14px;color:#625C54">{{ t.ship.portsNote }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ship-cont" tabindex="-1" aria-labelledby="cont-title" style="padding:clamp(56px,8vw,96px) 0;background:#E9E4DC;outline:none">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <h2 id="cont-title" style="margin:0 0 20px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.ship.contTitle }}</h2>
+      <p style="margin:0 0 clamp(28px,3vw,40px);font-size:17px;color:#4F4943;max-width:66ch">{{ t.ship.contIntro }}</p>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:clamp(16px,2vw,24px)">
+        <sc-for list="{{ t.ship.containers }}" as="ct" hint-placeholder-count="3">
+          <li style="padding:28px 24px;border:1px solid #C9C1B5;border-radius:10px;background:#FAF9F6;display:flex;flex-direction:column;gap:10px">
+            <h3 style="margin:0;font-size:20px;line-height:1.4;font-weight:600">{{ ct.name }}</h3>
+            <sc-if value="{{ ct.alt }}"><span dir="ltr" lang="en" style="align-self:flex-start;font:500 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:#4F4943">{{ ct.alt }}</span></sc-if>
+            <span dir="ltr" style="align-self:flex-start;margin-top:8px;font-size:44px;font-weight:600;letter-spacing:-.02em;line-height:1">{{ ct.range }}</span>
+            <span style="font-size:13px;color:#4F4943">{{ t.ship.contUnit }}</span>
+            <p style="margin:6px 0 0;padding-top:14px;border-top:1px solid #D8D2C9;font-size:15px;color:#4F4943">{{ ct.body }}</p>
+          </li>
+        </sc-for>
+      </ul>
+      <div style="margin-top:24px;padding:24px;border-radius:10px;background:#FAF9F6;display:flex;flex-direction:column;gap:10px;max-width:900px">
+        <h3 style="margin:0;font-size:17px;font-weight:600">{{ t.ship.contNoteTitle }}</h3>
+        <sc-for list="{{ t.ship.contNote }}" as="para"><p style="margin:0;font-size:15px;color:#4F4943">{{ para }}</p></sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="ship-cbm" tabindex="-1" aria-labelledby="cbm-title" style="padding:clamp(56px,8vw,96px) 0;outline:none">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:40px clamp(32px,5vw,72px);align-items:start">
+      <div>
+        <h2 id="cbm-title" style="margin:0 0 20px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.ship.cbmTitle }}</h2>
+        <p style="margin:0 0 24px;font-size:17px;color:#625C54;max-width:56ch">{{ t.ship.cbmIntro }}</p>
+        <p dir="auto" style="margin:0;padding:20px 24px;border-radius:10px;background:#252525;color:#FAF9F6;font:600 clamp(15px,1.6vw,18px)/1.6 ui-monospace,SFMono-Regular,Menlo,monospace">{{ t.ship.cbmFormula }}</p>
+        <p style="margin:16px 0 0;font-size:14px;color:#625C54"><strong style="color:#252525;font-weight:600">{{ t.ship.cbmExampleLabel }}:</strong> <bdi>{{ t.ship.cbmExample }}</bdi></p>
+      </div>
+      <div>
+        <h3 style="margin:0 0 12px;font-size:17px;font-weight:600">{{ t.ship.cbmFactorsTitle }}</h3>
+        <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #252525">
+          <sc-for list="{{ t.ship.cbmFactors }}" as="x" hint-placeholder-count="6"><li style="display:flex;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px solid #D8D2C9;font-size:15px"><span aria-hidden="true" style="width:6px;height:6px;background:#A58B64;flex:none;transform:translateY(-3px)"></span><span>{{ x }}</span></li></sc-for>
+        </ul>
+        <p style="margin:20px 0 0;font-size:14px;color:#625C54">{{ t.ship.cbmNote }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ship-transit" tabindex="-1" aria-labelledby="transit-title" style="padding:clamp(56px,8vw,96px) 0;border-top:1px solid #D8D2C9;outline:none">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:40px clamp(32px,5vw,72px);align-items:start">
+      <div>
+        <h2 id="transit-title" style="margin:0 0 20px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.ship.transitTitle }}</h2>
+        <p style="margin:0;font-size:17px;max-width:56ch">{{ t.ship.transitBody }}</p>
+      </div>
+      <div>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ t.ship.transitFactors }}" as="x" hint-placeholder-count="5"><li style="padding:8px 14px;border:1px solid #D8D2C9;border-radius:20px;font-size:14px">{{ x }}</li></sc-for>
+        </ul>
+        <p style="margin:20px 0 0;padding:16px 20px;border-radius:8px;background:#E9E4DC;font-size:15px">{{ t.ship.transitNote }}</p>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<!-- CUSTOM MANUFACTURING & PROJECTS -->
+<sc-if value="{{ page.custom }}">
+  <section aria-labelledby="cm-title" style="padding:clamp(48px,6vw,80px) 0">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:40px clamp(32px,5vw,72px);align-items:start">
+      <div>
+        <h2 id="cm-title" style="margin:0 0 20px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.custom.customTitle }}</h2>
+        <p style="margin:0;font-size:17px;max-width:56ch;text-wrap:pretty">{{ t.custom.customBody }}</p>
+      </div>
+      <div style="padding:clamp(24px,3vw,32px);border:1px solid #D8D2C9;border-radius:10px;background:#fff">
+        <h3 style="margin:0 0 12px;font-size:20px;font-weight:600">{{ t.custom.sendTitle }}</h3>
+        <ol style="list-style:none;margin:0;padding:0;border-top:1px solid #D8D2C9">
+          <sc-for list="{{ sendItems }}" as="si" hint-placeholder-count="6">
+            <li style="display:grid;grid-template-columns:40px minmax(0,1fr);gap:8px;align-items:baseline;padding:12px 0;border-bottom:1px solid #D8D2C9;font-size:15px"><span dir="ltr" style="font-size:13px;font-weight:700;color:#584838">{{ si.num }}</span><span>{{ si.label }}</span></li>
+          </sc-for>
+        </ol>
+        <p style="margin:16px 0 0;font-size:14px;color:#625C54">{{ t.custom.sendNote }}</p>
+      </div>
+    </div>
+  </section>
+  <section aria-labelledby="pj-title" style="padding:clamp(56px,8vw,96px) 0;background:#E9E4DC">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box">
+      <h2 id="pj-title" style="margin:0 0 20px;font-size:clamp(28px,3vw,36px);line-height:1.25;font-weight:600;letter-spacing:-.015em">{{ t.custom.projTitle }}</h2>
+      <p style="margin:0 0 clamp(32px,4vw,48px);font-size:17px;color:#4F4943;max-width:62ch">{{ t.custom.projBody }}</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:32px clamp(24px,4vw,56px)">
+        <div>
+          <h3 style="margin:0 0 12px;font-size:17px;font-weight:600">{{ t.custom.projTypesTitle }}</h3>
+          <ul style="list-style:none;margin:0;padding:0;border-top:1px solid #252525">
+            <sc-for list="{{ t.custom.projTypes }}" as="x" hint-placeholder-count="5"><li style="padding:14px 0;border-bottom:1px solid #C9C1B5;font-size:17px;font-weight:500">{{ x }}</li></sc-for>
+          </ul>
+        </div>
+        <div>
+          <h3 style="margin:0 0 12px;font-size:17px;font-weight:600">{{ t.custom.projCatsTitle }}</h3>
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px">
+            <sc-for list="{{ t.custom.projCats }}" as="x" hint-placeholder-count="8"><li style="padding:8px 14px;border:1px solid #C9C1B5;border-radius:20px;background:#FAF9F6;font-size:14px">{{ x }}</li></sc-for>
+          </ul>
+        </div>
+      </div>
+      <div style="margin-top:clamp(32px,4vw,48px);padding:24px;border-radius:10px;background:#FAF9F6;display:flex;flex-direction:column;gap:8px;max-width:900px">
+        <h3 style="margin:0;font-size:17px;font-weight:600">{{ t.custom.assessTitle }}</h3>
+        <p style="margin:0;font-size:15px">{{ t.custom.assessBody }}</p>
+        <p style="margin:0;font-size:14px;color:#625C54">{{ t.custom.focusNote }}</p>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<!-- SHARED CTA (about, sourcing, shipping, custom) -->
+<sc-if value="{{ showPageCta }}">
+  <section style="background:#584838;color:#FAF9F6">
+    <div style="max-width:1200px;margin:0 auto;padding:clamp(48px,7vw,80px) clamp(20px,4vw,40px);box-sizing:content-box;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px 32px">
+      <div style="max-width:640px;display:flex;flex-direction:column;gap:14px">
+        <h2 style="margin:0;font-size:clamp(26px,3vw,34px);line-height:1.25;font-weight:600">{{ pc.title }}</h2>
+        <sc-if value="{{ pc.hasBody }}"><p style="margin:0;font-size:17px;color:#E9E4DC">{{ pc.body }}</p></sc-if>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;gap:12px">
+        <a href="{{ pc.href1 }}" style="display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:6px;background:#FAF9F6;color:#584838;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#E9E4DC;color:#584838">{{ pc.label1 }}</a>
+        <a href="{{ pc.href2 }}" target="{{ pc.target2 }}" rel="{{ pc.rel2 }}" style="display:inline-flex;align-items:center;min-height:48px;padding:0 24px;border-radius:6px;border:1px solid #E9E4DC;color:#FAF9F6;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#43362A;color:#FAF9F6">{{ pc.label2 }}</a>
+      </div>
+    </div>
+  </section>
+</sc-if>
+
+<!-- PRIVACY -->
+<sc-if value="{{ page.privacy }}">
+  <section style="padding:clamp(40px,5vw,64px) 0 clamp(56px,8vw,96px)">
+    <div style="max-width:720px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:flex;flex-direction:column;gap:16px">
+      <p style="margin:0;font-size:17px">{{ t.privacy.body }}</p>
+      <p dir="auto" style="margin:0;padding:12px 16px;border:1px dashed #D8D2C9;border-radius:6px;font-size:14px;color:#625C54">{{ t.privacy.status }}</p>
+    </div>
+  </section>
+</sc-if>
+
+<!-- 404 -->
+<sc-if value="{{ page.notFound }}">
+  <section style="padding:clamp(40px,5vw,64px) 0 clamp(56px,8vw,96px)">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px);box-sizing:content-box;display:flex;flex-wrap:wrap;gap:12px">
+      <a href="{{ links.home }}" style="display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:6px;background:#584838;color:#fff;font-size:15px;font-weight:600;text-decoration:none" style-hover="background:#43362A;color:#fff">{{ t.notFound.home }}</a>
+      <a href="{{ links.collections }}" style="display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:6px;border:1px solid #584838;color:#584838;font-size:15px;font-weight:600;text-decoration:none">{{ t.notFound.browse }}</a>
+    </div>
+  </section>
+</sc-if>
+
+</main>
+
+<footer style="background:#252525;color:#E9E4DC">
+  <div style="max-width:1200px;margin:0 auto;padding:clamp(48px,6vw,80px) clamp(20px,4vw,40px) 32px;box-sizing:content-box">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:40px 32px;padding-bottom:48px;border-bottom:1px solid #4A4540">
+      <div style="display:flex;flex-direction:column;gap:20px;grid-column:span 1">
+        <div dir="ltr" style="display:flex;flex-direction:column;gap:6px;line-height:1;font-family:'Manrope',sans-serif;align-self:flex-start">
+          <span data-keep-ls="" style="font-size:22px;font-weight:700;letter-spacing:.22em;color:#FAF9F6">AL NASR</span>
+          <span data-keep-ls="" style="font-size:10.5px;font-weight:600;letter-spacing:.56em;color:#A58B64">FURNITURE</span>
+        </div>
+        <p lang="ar" dir="rtl" style="margin:0;font-family:'IBM Plex Sans Arabic',sans-serif;font-size:16px;color:#FAF9F6;align-self:flex-start">النصر للأثاث</p>
+        <p style="margin:0;font-size:14px;color:#CFC8BD;max-width:36ch">{{ t.footer.tagline }}</p>
+      </div>
+      <nav aria-label="{{ t.footer.explore }}">
+        <h2 style="margin:0 0 16px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#A58B64">{{ t.footer.explore }}</h2>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px">
+          <sc-for list="{{ navItems }}" as="n"><li><a href="{{ n.href }}" style="display:inline-flex;min-height:36px;align-items:center;color:#E9E4DC;text-decoration:none;font-size:15px" style-hover="color:#fff;text-decoration:underline">{{ n.label }}</a></li></sc-for>
+          <li><a href="{{ links.inquiry }}" style="display:inline-flex;min-height:36px;align-items:center;color:#E9E4DC;text-decoration:none;font-size:15px" style-hover="color:#fff;text-decoration:underline">{{ t.nav.inquiry }}</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="{{ t.footer.guides }}">
+        <h2 style="margin:0 0 16px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#A58B64">{{ t.footer.guides }}</h2>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px">
+          <sc-for list="{{ footerGuides }}" as="g"><li><a href="{{ g.href }}" style="display:inline-flex;min-height:36px;align-items:center;color:#E9E4DC;text-decoration:none;font-size:15px" style-hover="color:#fff;text-decoration:underline">{{ g.label }}</a></li></sc-for>
+        </ul>
+      </nav>
+      <div>
+        <h2 style="margin:0 0 16px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#A58B64">{{ t.footer.contact }}</h2>
+        <dl style="margin:0;display:flex;flex-direction:column;gap:14px;font-size:15px">
+          <div><dt style="color:#CFC8BD;font-size:13px">{{ t.footer.whatsapp }}</dt><dd style="margin:2px 0 0"><sc-if value="{{ waReady }}"><a href="{{ waGeneral }}" target="_blank" rel="noopener noreferrer" dir="ltr" style="color:#FAF9F6">+{{ waNum }}</a></sc-if><sc-if value="{{ waNotReady }}"><span style="color:#CFC8BD">{{ t.footer.pending }}</span></sc-if></dd></div>
+          <div><dt style="color:#CFC8BD;font-size:13px">{{ t.footer.email }}</dt><dd style="margin:2px 0 0"><sc-if value="{{ emailReady }}"><a href="{{ emailHref }}" dir="ltr" style="color:#FAF9F6">{{ email }}</a></sc-if><sc-if value="{{ emailNotReady }}"><span style="color:#CFC8BD">{{ t.footer.pending }}</span></sc-if></dd></div>
+        </dl>
+      </div>
+      <div>
+        <h2 style="margin:0 0 16px;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#A58B64">{{ t.footer.company }}</h2>
+        <div style="display:flex;flex-direction:column;gap:12px;font-size:14px;color:#CFC8BD">
+          <a href="{{ links.privacy }}" style="color:#E9E4DC;font-size:15px" style-hover="color:#fff">{{ t.footer.privacy }}</a>
+          <p style="margin:0">{{ t.footer.legal }}</p>
+          <a href="{{ langHref }}" hreflang="{{ otherLang }}" lang="{{ otherLang }}" aria-label="{{ langAria }}" style="align-self:flex-start;display:inline-flex;align-items:center;height:40px;padding:0 14px;border:1px solid #4A4540;border-radius:6px;color:#FAF9F6;text-decoration:none;font-weight:600" style-hover="border-color:#A58B64;color:#fff">{{ t.switchTo }}</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;font-size:13px;color:#CFC8BD">
+      <span>© {{ year }} {{ t.footer.rights }}</span>
+      <span>{{ t.footer.wordmark }}</span>
+    </div>
+  </div>
+</footer>
+
+<sc-if value="{{ showFloatWa }}">
+  <sc-if value="{{ waReady }}">
+    <a href="{{ floatWaHref }}" target="_blank" rel="noopener noreferrer" aria-label="{{ t.contact.waBtn }}" style="position:fixed;bottom:calc(20px + env(safe-area-inset-bottom));inset-inline-end:20px;z-index:45;display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 20px;border-radius:26px;background:#584838;color:#fff;font-size:15px;font-weight:600;text-decoration:none;box-shadow:0 4px 16px rgba(37,37,37,.18)" style-hover="background:#43362A;color:#fff"><span aria-hidden="true" style="width:8px;height:8px;border-radius:4px;background:#7FC8A0"></span>WhatsApp</a>
+  </sc-if>
+  <sc-if value="{{ waNotReady }}">
+    <button type="button" onClick="{{ onWaPending }}" aria-label="{{ waPendingAria }}" style="position:fixed;bottom:calc(20px + env(safe-area-inset-bottom));inset-inline-end:20px;z-index:45;display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 20px;border-radius:26px;border:0;background:#584838;color:#fff;font-size:15px;font-weight:600;cursor:pointer;box-shadow:0 4px 16px rgba(37,37,37,.18)"><span aria-hidden="true" style="width:8px;height:8px;border-radius:4px;background:#A58B64"></span>WhatsApp</button>
+  </sc-if>
+</sc-if>
+
+<div role="status" aria-live="polite" style="position:fixed;left:50%;transform:translateX(-50%);bottom:calc(88px + env(safe-area-inset-bottom));z-index:60;width:max-content;max-width:calc(100vw - 40px)">
+  <sc-if value="{{ hasToast }}">
+    <div style="display:flex;align-items:center;gap:16px;padding:12px 16px 12px 20px;border-radius:8px;background:#252525;color:#FAF9F6;font-size:15px;box-shadow:0 6px 24px rgba(37,37,37,.2)">
+      <span>{{ toastMsg }}</span>
+      <sc-if value="{{ toastUndo }}"><button type="button" onClick="{{ undoRemove }}" style="height:36px;padding:0 12px;border-radius:6px;border:1px solid #625C54;background:transparent;color:#FAF9F6;font-weight:600;cursor:pointer">{{ t.toast.undo }}</button></sc-if>
+      <sc-if value="{{ toastLink }}"><a href="{{ links.inquiry }}" style="color:#E9E4DC;font-weight:600;white-space:nowrap">{{ t.detail.viewList }}</a></sc-if>
+    </div>
+  </sc-if>
+</div>
+
+<sc-if value="{{ lightbox }}">
+  <div ref="{{ lbRef }}" role="dialog" aria-modal="true" aria-label="{{ d.counter }}" onKeyDown="{{ lbKeyDown }}" style="position:fixed;inset:0;z-index:80;background:rgba(37,37,37,.94);display:flex;flex-direction:column;padding:16px clamp(16px,3vw,32px) calc(16px + env(safe-area-inset-bottom))">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;color:#FAF9F6;min-height:48px">
+      <span style="font-size:14px">{{ d.name }} · {{ d.counter }}</span>
+      <button type="button" ref="{{ lbCloseRef }}" onClick="{{ closeLightbox }}" aria-label="{{ t.detail.close }}" style="width:48px;height:48px;border-radius:6px;border:1px solid #625C54;background:transparent;color:#FAF9F6;font-size:22px;cursor:pointer">×</button>
+    </div>
+    <div onTouchStart="{{ d.touchStart }}" onTouchEnd="{{ d.touchEnd }}" style="flex:1;min-height:0;display:flex;align-items:center;justify-content:center;padding:16px 0">
+      <img src="{{ d.imgFull }}" alt="{{ d.imgAlt }}" style="display:block;max-width:100%;max-height:100%;object-fit:contain;border-radius:8px">
+    </div>
+    <sc-if value="{{ d.multi }}">
+      <div style="display:flex;justify-content:center;gap:12px">
+        <button type="button" onClick="{{ d.prev }}" aria-label="{{ t.detail.prev }}" style="width:52px;height:52px;border-radius:6px;border:1px solid #625C54;background:transparent;color:#FAF9F6;font-size:20px;cursor:pointer">{{ t.back }}</button>
+        <button type="button" onClick="{{ d.next }}" aria-label="{{ t.detail.next }}" style="width:52px;height:52px;border-radius:6px;border:1px solid #625C54;background:transparent;color:#FAF9F6;font-size:20px;cursor:pointer">{{ t.arrow }}</button>
+      </div>
+    </sc-if>
+  </div>
+</sc-if>
+
+</div>
+</sc-if>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;defaultLang&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;en&quot;,&quot;ar&quot;],&quot;default&quot;:&quot;en&quot;,&quot;tsType&quot;:&quot;'en' | 'ar'&quot;,&quot;section&quot;:&quot;Locale&quot;},&quot;whatsappNumber&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Integrations&quot;},&quot;rfqEndpoint&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Integrations&quot;}}">
+class Component extends DCLogic {
+  state = {
+    route: this.parseHash(), vw: window.innerWidth || 1280, ready: !!window.ALNASR,
+    inquiry: [], menuOpen: false, q: '', style: 'all', cq: '', gIdx: 0, lightbox: false, detailQty: 1,
+    toast: null, form: this.emptyForm(), showErrors: false, submit: 'idle', submitErr: null, reference: null, askClear: false
+  };
+  menuBtnRef = React.createRef(); mainRef = React.createRef(); summaryRef = React.createRef(); errorRef = React.createRef();
+  successRef = React.createRef(); lbRef = React.createRef(); lbCloseRef = React.createRef();
+
+  emptyForm() { return { name: '', company: '', buyerType: '', country: '', email: '', phone: '', pref: '', message: '', consent: false, website: '', inquiryType: '', shipTerm: '', payTerm: '', destPort: '' }; }
+  presetForm(route, form) {
+    const ty = route.query && route.query.type;
+    if (route.parts[0] === 'contact' && ['wholesale', 'custom', 'project', 'shipping', 'general'].includes(ty) && form.inquiryType !== ty) return Object.assign({}, form, { inquiryType: ty });
+    return form;
+  }
+  parseHash() {
+    const raw = (location.hash || '').replace(/^#\/?/, '');
+    const qi = raw.indexOf('?');
+    const parts = (qi < 0 ? raw : raw.slice(0, qi)).split('/').filter(Boolean);
+    const query = {};
+    if (qi >= 0) raw.slice(qi + 1).split('&').forEach(kv => { const p = kv.split('='); if (p[0]) { try { query[p[0]] = decodeURIComponent(p[1] || ''); } catch (e) {} } });
+    let lang = null;
+    if (parts[0] === 'en' || parts[0] === 'ar') lang = parts.shift();
+    return { lang, parts, query };
+  }
+  keys() { return (window.ALNASR && window.ALNASR.config.storageKeys) || { inquiry: 'alnasr.inquiry.v1', draft: 'alnasr.rfqDraft.v1' }; }
+
+  componentDidMount() {
+    this._onHash = () => {
+      const h = location.hash;
+      if (h && !h.startsWith('#/')) return;
+      const route = this.parseHash();
+      this.setState(st => ({ route, menuOpen: false, lightbox: false, gIdx: 0, q: '', style: 'all', detailQty: this.qtyForRoute(route, st.inquiry), form: this.presetForm(route, st.form) }));
+      document.body.style.overflow = '';
+      window.scrollTo(0, 0);
+    };
+    this._onResize = () => this.setState({ vw: window.innerWidth });
+    this._onKey = (e) => {
+      if (e.key !== 'Escape') return;
+      if (this.state.lightbox) this.closeLightbox();
+      else if (this.state.menuOpen) { this.setMenu(false); this.menuBtnRef.current && this.menuBtnRef.current.focus(); }
+    };
+    window.addEventListener('hashchange', this._onHash);
+    window.addEventListener('resize', this._onResize);
+    window.addEventListener('keydown', this._onKey);
+    const boot = () => {
+      const k = this.keys(); let inquiry = [], form = this.emptyForm();
+      try { const v = JSON.parse(localStorage.getItem(k.inquiry) || '[]'); if (Array.isArray(v)) inquiry = v.filter(i => i && i.id); } catch (e) {}
+      try { const v = JSON.parse(localStorage.getItem(k.draft) || 'null'); if (v) form = Object.assign(form, v, { website: '' }); } catch (e) {}
+      this.setState({ ready: true, inquiry, form: this.presetForm(this.state.route, form), detailQty: this.qtyForRoute(this.state.route, inquiry) });
+    };
+    if (window.ALNASR) boot();
+    else this._poll = setInterval(() => { if (window.ALNASR) { clearInterval(this._poll); boot(); } }, 30);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('hashchange', this._onHash);
+    window.removeEventListener('resize', this._onResize);
+    window.removeEventListener('keydown', this._onKey);
+    clearInterval(this._poll); clearTimeout(this._toastT);
+  }
+  componentDidUpdate() {
+    if (this._lang) { document.documentElement.lang = this._lang; document.documentElement.dir = this._lang === 'ar' ? 'rtl' : 'ltr'; }
+    if (this._title && document.title !== this._title) document.title = this._title;
+  }
+
+  qtyForRoute(route, inquiry) {
+    const C = window.ALNASR; if (!C) return 1;
+    const p = route.parts;
+    if (p[0] !== 'collections' || !p[2]) return 1;
+    const col = C.collections.find(c => c.slug === p[2] && c.cat === p[1]);
+    const it = col && inquiry.find(i => i.id === col.id);
+    return it ? (parseInt(it.qty, 10) || 1) : 1;
+  }
+
+  setMenu(open) { document.body.style.overflow = open ? 'hidden' : ''; this.setState({ menuOpen: open }); }
+  showToast(key, opts) {
+    clearTimeout(this._toastT);
+    this.setState({ toast: Object.assign({ key }, opts || {}) });
+    this._toastT = setTimeout(() => this.setState({ toast: null }), 5000);
+  }
+  saveInq(items) { try { localStorage.setItem(this.keys().inquiry, JSON.stringify(items)); } catch (e) {} }
+  setInq(fn) { const items = fn(this.state.inquiry); this.saveInq(items); this.setState({ inquiry: items }); }
+  addToInquiry(id, qty) {
+    const exists = this.state.inquiry.some(i => i.id === id);
+    this.setInq(items => exists ? items.map(i => i.id === id ? Object.assign({}, i, { qty }) : i) : items.concat([{ id, qty, note: '' }]));
+    this.setState({ detailQty: qty });
+    this.showToast(exists ? 'updated' : 'added', { link: true });
+  }
+  updateItem(id, patch) { this.setInq(items => items.map(i => i.id === id ? Object.assign({}, i, patch) : i)); }
+  removeItem(id) {
+    const idx = this.state.inquiry.findIndex(i => i.id === id);
+    if (idx < 0) return;
+    this._removed = { item: this.state.inquiry[idx], idx };
+    this.setInq(items => items.filter(i => i.id !== id));
+    this.showToast('removed', { undo: true });
+  }
+  undoRemove = () => {
+    const r = this._removed; if (!r) return;
+    this.setInq(items => { if (items.some(i => i.id === r.item.id)) return items; const n = items.slice(); n.splice(r.idx, 0, r.item); return n; });
+    this._removed = null; this.setState({ toast: null });
+  };
+
+  setField(k, v) {
+    this.setState(s => {
+      const form = Object.assign({}, s.form, { [k]: v });
+      try { const d = Object.assign({}, form); delete d.website; localStorage.setItem(this.keys().draft, JSON.stringify(d)); } catch (e) {}
+      return { form, submit: s.submit === 'error' ? 'idle' : s.submit };
+    });
+  }
+  validate(form, items) {
+    const e = {}; const f = form;
+    if (!f.name.trim()) e.name = 'name';
+    if (!f.country) e.country = 'country';
+    const em = f.email.trim(), ph = f.phone.trim();
+    if (!em && !ph) { e.email = 'contact'; e.phone = 'contact'; }
+    if (em && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)) e.email = 'email';
+    if (ph) { const d = ph.replace(/[\s\-().]/g, ''); if (!/^\+?\d{7,15}$/.test(d)) e.phone = 'phone'; }
+    if (!items.length && !f.message.trim()) e.message = 'message';
+    if (!f.consent) e.consent = 'consent';
+    return e;
+  }
+  availablePrefs(f) {
+    const a = [];
+    if (f.email.trim()) a.push('email');
+    if (f.phone.trim()) a.push('whatsapp', 'phone');
+    return a;
+  }
+
+  /* RFQ submission service boundary. Success is only reported on a 2xx response from a real endpoint. */
+  async submitRFQ(payload) {
+    const C = window.ALNASR;
+    const ep = (this.props.rfqEndpoint || '').trim() || C.config.rfq.endpoint;
+    if (!ep || ep === C.PENDING) { const err = new Error('not_configured'); err.code = 'not_configured'; throw err; }
+    let res;
+    try {
+      res = await fetch(ep, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(payload) });
+    } catch (e) { const err = new Error('network'); err.code = 'network'; throw err; }
+    if (!res.ok) { const err = new Error('server'); err.code = 'server'; throw err; }
+    let data = {}; try { data = await res.json(); } catch (e) {}
+    return { reference: data && data.reference ? String(data.reference) : null };
+  }
+
+  onSubmit = async (ev) => {
+    ev.preventDefault();
+    if (this.state.submit === 'submitting') return;
+    const C = window.ALNASR, s = this.state;
+    const items = s.inquiry.filter(i => C.collections.some(c => c.id === i.id));
+    const errs = this.validate(s.form, items);
+    if (Object.keys(errs).length) {
+      this.setState({ showErrors: true }, () => setTimeout(() => this.summaryRef.current && this.summaryRef.current.focus(), 0));
+      return;
+    }
+    if (s.form.website) return; // honeypot: likely bot — do not send, do not fake success
+    const f = s.form, av = this.availablePrefs(f);
+    const pref = av.includes(f.pref) ? f.pref : av[0];
+    const lang = s.route.lang || this.props.defaultLang || 'en';
+    const payload = {
+      inquiry_id: null,
+      contact: { name: f.name.trim(), company: f.company.trim() || null, buyer_type: f.buyerType || null, email: f.email.trim() || null, phone: f.phone.trim() || null, preferred_method: pref },
+      destination_country: f.country,
+      items: items.map(i => { const c = C.collections.find(x => x.id === i.id); return { collection_id: c.id, code: c.code, quantity: Math.max(1, parseInt(i.qty, 10) || 1), unit: c.unit, notes: (i.note || '').trim() || null }; }),
+      inquiry_type: f.inquiryType || null,
+      trade_preferences: { delivery_term: f.shipTerm || null, payment_term: f.payTerm || null, destination_port_city: (f.destPort || '').trim() || null },
+      message: f.message.trim() || null,
+      consent: { given: true, text_version: C.config.rfq.consentTextVersion, at: new Date().toISOString() },
+      locale: lang, source_url: location.href, created_at: new Date().toISOString()
+    };
+    this.setState({ submit: 'submitting', submitErr: null });
+    try {
+      const r = await this.submitRFQ(payload);
+      try { localStorage.removeItem(this.keys().draft); } catch (e) {}
+      this.setState({ submit: 'success', reference: r.reference, askClear: items.length > 0, form: this.emptyForm(), showErrors: false },
+        () => setTimeout(() => this.successRef.current && this.successRef.current.focus(), 0));
+    } catch (err) {
+      this.setState({ submit: 'error', submitErr: err.code || 'network' }, () => setTimeout(() => this.errorRef.current && this.errorRef.current.focus(), 0));
+    }
+  };
+
+  openLightbox = () => { this._lbReturn = document.activeElement; this.setState({ lightbox: true }, () => setTimeout(() => this.lbCloseRef.current && this.lbCloseRef.current.focus(), 0)); document.body.style.overflow = 'hidden'; };
+  closeLightbox = () => { this.setState({ lightbox: false }); document.body.style.overflow = ''; const r = this._lbReturn; setTimeout(() => r && r.focus && r.focus(), 0); };
+
+  renderVals() {
+    const C = window.ALNASR, s = this.state;
+    if (!C || !s.ready) return { ready: false };
+    const lang = s.route.lang || (this.props.defaultLang === 'ar' ? 'ar' : 'en');
+    const rtl = lang === 'ar', t = C.i18n[lang], other = rtl ? 'en' : 'ar';
+    const L = (o) => o == null ? '' : (typeof o === 'string' ? o : (o[lang] != null ? o[lang] : o.en));
+    const fmt = (str, o) => String(str).replace(/\{(\w+)\}/g, (_, k) => o[k] != null ? o[k] : '');
+    const H = (p) => '#/' + lang + '/' + (p || '');
+    const parts = s.route.parts;
+    const pad = (n) => String(n).padStart(2, '0');
+
+    const cats = C.categories.slice().sort((a, b) => a.sort - b.sort).filter(c => C.collections.some(x => x.cat === c.id));
+    const catById = {}; cats.forEach(c => catById[c.id] = c);
+    const inqMap = {}; s.inquiry.forEach(i => inqMap[i.id] = i);
+
+    const ROUTES = { about: 'about', 'sourcing-export': 'sourcing', 'shipping-payment': 'shipping', 'custom-manufacturing': 'custom', contact: 'contact', inquiry: 'inquiry', privacy: 'privacy' };
+    let page = 'notFound', cat = null, col = null;
+    const [p0, p1, p2, p3] = parts;
+    if (!p0) page = 'home';
+    else if (p0 === 'collections') {
+      if (!p1) page = 'collections';
+      else { cat = cats.find(c => c.slug === p1); if (cat && !p2) page = 'category'; else if (cat && !p3) { col = C.collections.find(c => c.slug === p2 && c.cat === cat.id); if (col) page = 'detail'; } }
+    }
+    else if (!p1 && ROUTES[p0]) page = ROUTES[p0];
+    const pg = {}; ['home', 'collections', 'category', 'detail', 'about', 'sourcing', 'shipping', 'custom', 'contact', 'inquiry', 'privacy', 'notFound'].forEach(k => pg[k] = page === k);
+
+    const links = { home: H(''), collections: H('collections'), about: H('about'), sourcing: H('sourcing-export'), contact: H('contact'), inquiry: H('inquiry'), privacy: H('privacy'), shipping: H('shipping-payment'), custom: H('custom-manufacturing') };
+    const navDefs = [['home', '', t.nav.home, ['home']], ['collections', 'collections', t.nav.collections, ['collections', 'category', 'detail']], ['about', 'about', t.nav.about, ['about']], ['sourcing', 'sourcing-export', t.nav.sourcing, ['sourcing', 'shipping', 'custom']], ['contact', 'contact', t.nav.contact, ['contact']]];
+    const navItems = navDefs.map(([k, p, label, act]) => { const cur = act.includes(page); return { href: H(p), label, aria: cur ? 'page' : undefined, color: cur ? '#252525' : '#625C54', bc: cur ? '#A58B64' : 'transparent' }; });
+
+    const vw = s.vw, isMobile = vw < 640, fullNav = vw >= 1140;
+
+    // WhatsApp / email
+    const cfgWa = C.config.whatsappNumber !== C.PENDING ? String(C.config.whatsappNumber) : '';
+    const waNum = String(this.props.whatsappNumber || cfgWa || '').replace(/\D/g, '');
+    const waReady = waNum.length >= 8;
+    const wa = (msg) => waReady ? 'https://wa.me/' + waNum + (msg ? '?text=' + encodeURIComponent(msg) : '') : '';
+    const email = C.config.email !== C.PENDING ? C.config.email : '';
+
+    // cards
+    const pickImg = (c) => c && c.images ? (c.images[lang] || c.images.en || c.images.ar) : null;
+    const colCard = (c) => {
+      const ct = catById[c.cat]; const it = inqMap[c.id];
+      const im = pickImg(c);
+      return { href: H('collections/' + ct.slug + '/' + c.slug), name: L(c.name), code: c.code, cat: L(ct.name), style: c.style ? L(C.styles[c.style]) : t.illustrative,
+        img: im ? im.card : '', w: im ? im.w : undefined, h: im ? im.h : undefined,
+        ph: t.ph.collection, alt: L(c.name) + ' — ' + t.illustrativeAlt, inList: !!it, qty: it ? it.qty : '' };
+    };
+    const catCard = (c) => { const list = C.collections.filter(x => x.cat === c.id); const n = list.length; const im = pickImg(list[0]); return { href: H('collections/' + c.slug), name: L(c.name), desc: L(c.desc), ph: t.ph.category, img: im ? im.card : '', alt: L(c.name) + ' — ' + t.illustrativeAlt, count: n === 1 ? t.collections.count1 : fmt(t.collections.count, { n }) }; };
+    const match = (c, q) => { q = q.trim().toLowerCase(); if (!q) return true; const ct = catById[c.cat]; return [c.name.en, c.name.ar, c.code, ct.name.en, ct.name.ar].some(v => String(v).toLowerCase().includes(q)); };
+
+    // page header + crumbs
+    const crumbsRaw = [];
+    const head = { eyebrow: '', title: '', intro: '' };
+    let metaTitle = t.meta.notFound;
+    if (page === 'collections') { crumbsRaw.push([t.crumbs.home, links.home], [t.nav.collections]); Object.assign(head, { title: t.collections.title, intro: t.collections.intro }); metaTitle = t.meta.collections; }
+    if (page === 'category') { crumbsRaw.push([t.crumbs.home, links.home], [t.nav.collections, links.collections], [L(cat.name)]); Object.assign(head, { eyebrow: t.nav.collections, title: L(cat.name), intro: L(cat.desc) }); metaTitle = L(cat.name); }
+    if (page === 'detail') { const ct = catById[col.cat]; crumbsRaw.push([t.crumbs.home, links.home], [t.nav.collections, links.collections], [L(ct.name), H('collections/' + ct.slug)], [L(col.name)]); metaTitle = L(col.name) + ' (' + col.code + ')'; }
+    if (page === 'about') { crumbsRaw.push([t.crumbs.home, links.home], [t.nav.about]); Object.assign(head, { eyebrow: t.about.eyebrow, title: t.about.title, intro: t.about.lead }); metaTitle = t.meta.about; }
+    if (page === 'sourcing') { crumbsRaw.push([t.crumbs.home, links.home], [t.nav.sourcing]); Object.assign(head, { eyebrow: t.sourcing.eyebrow, title: t.sourcing.title, intro: t.sourcing.lead }); metaTitle = t.meta.sourcing; }
+    if (page === 'shipping') { crumbsRaw.push([t.crumbs.home, links.home], [t.nav.sourcing, links.sourcing], [t.ship.title]); Object.assign(head, { eyebrow: t.ship.eyebrow, title: t.ship.title, intro: t.ship.lead }); metaTitle = t.meta.shipping; }
+    if (page === 'custom') { crumbsRaw.push([t.crumbs.home, links.home], [t.nav.sourcing, links.sourcing], [t.custom.eyebrow]); Object.assign(head, { eyebrow: t.custom.eyebrow, title: t.custom.title, intro: t.custom.lead }); metaTitle = t.meta.custom; }
+    if (page === 'contact') { crumbsRaw.push([t.crumbs.home, links.home], [t.nav.contact]); Object.assign(head, { eyebrow: t.contact.eyebrow, title: t.contact.title, intro: t.contact.intro }); metaTitle = t.meta.contact; }
+    if (page === 'inquiry') { crumbsRaw.push([t.crumbs.home, links.home], [t.nav.inquiry]); Object.assign(head, { title: t.inquiry.title, intro: t.inquiry.intro }); metaTitle = t.meta.inquiry; }
+    if (page === 'privacy') { crumbsRaw.push([t.crumbs.home, links.home], [t.privacy.title]); Object.assign(head, { title: t.privacy.title }); metaTitle = t.meta.privacy; }
+    if (page === 'notFound') { crumbsRaw.push([t.crumbs.home, links.home], [t.notFound.title]); Object.assign(head, { title: t.notFound.title, intro: t.notFound.body }); }
+    if (page === 'home') metaTitle = t.meta.home;
+    const crumbs = crumbsRaw.map((c, i) => ({ label: c[0], href: c[1], isLink: !!c[1], isCurrent: !c[1], notFirst: i > 0 }));
+    this._lang = lang; this._title = metaTitle + ' — ' + L(C.config.brand);
+
+    // inquiry items
+    const items = s.inquiry.map(i => ({ i, c: C.collections.find(x => x.id === i.id) })).filter(x => x.c);
+    const inqItems = items.map(({ i, c }) => {
+      const ct = catById[c.cat], unit = t.detail.units[c.unit], q = parseInt(i.qty, 10);
+      return {
+        href: H('collections/' + ct.slug + '/' + c.slug), img: (pickImg(c) || {}).card || '', name: L(c.name), code: c.code, cat: L(ct.name), qty: i.qty, note: i.note || '', hasNote: !!(i.note || '').trim(),
+        qtyId: 'q-' + c.id, noteId: 'n-' + c.id, qtyLabel: t.inquiry.qty + ' (' + unit + ')', qtyText: (q || 1) + ' ' + unit,
+        removeLabel: t.inquiry.remove + ': ' + L(c.name),
+        dec: () => this.updateItem(c.id, { qty: Math.max(1, (parseInt(i.qty, 10) || 1) - 1) }),
+        inc: () => this.updateItem(c.id, { qty: Math.min(99999, (parseInt(i.qty, 10) || 0) + 1) }),
+        onQty: (e) => { const v = e.target.value; this.updateItem(c.id, { qty: v === '' ? '' : Math.max(1, Math.min(99999, parseInt(v, 10) || 1)) }); },
+        onQtyBlur: () => { if (!(parseInt(i.qty, 10) >= 1)) this.updateItem(c.id, { qty: 1 }); },
+        onNote: (e) => this.updateItem(c.id, { note: e.target.value.slice(0, 300) }),
+        onRemove: () => this.removeItem(c.id)
+      };
+    });
+    const inqCount = items.length;
+
+    // detail
+    let d = {};
+    if (col) {
+      const ct = catById[col.cat];
+      const imgLabels = [L(col.name)];
+      const dImg = pickImg(col) || {};
+      while (imgLabels.length < col.images) imgLabels.push(t.ph.gallery + ' ' + (imgLabels.length + 1));
+      const n = imgLabels.length, gi = Math.min(s.gIdx, n - 1);
+      const go = (delta) => this.setState(st => ({ gIdx: (st.gIdx + delta + n) % n }));
+      const inIt = inqMap[col.id];
+      const curQty = s.detailQty;
+      let tx = null;
+      const related = C.collections.filter(x => x.cat === col.cat && x.id !== col.id).slice(0, 3).map(colCard);
+      d = {
+        name: L(col.name), code: col.code, desc: L(col.desc), style: col.style ? L(C.styles[col.style]) : t.illustrative,
+        imgFull: dImg.full || '', imgAlt: L(col.name) + ' — ' + t.illustrativeAlt, catName: L(ct.name), catHref: H('collections/' + ct.slug),
+        multi: n > 1, counter: fmt(t.detail.imageOf, { i: gi + 1, n }),
+        mainLabel: t.sample + ' · ' + t.ph.gallery + ' ' + (gi + 1) + '/' + n + ' — ' + imgLabels[gi],
+        enlargeLabel: t.detail.enlarge + ' — ' + fmt(t.detail.imageOf, { i: gi + 1, n }),
+        thumbs: imgLabels.map((lb, k) => ({ num: pad(k + 1), label: fmt(t.detail.thumb, { i: k + 1 }) + ' — ' + lb, aria: k === gi ? 'true' : undefined, border: k === gi ? '#584838' : 'transparent', onClick: () => this.setState({ gIdx: k }) })),
+        prev: () => go(-1), next: () => go(1), openLightbox: this.openLightbox,
+        touchStart: (e) => { this._tx = e.touches[0].clientX; },
+        touchEnd: (e) => { if (this._tx == null) return; const dx = e.changedTouches[0].clientX - this._tx; this._tx = null; if (Math.abs(dx) > 40 && n > 1) { this._swiped = true; go((dx < 0) !== rtl ? 1 : -1); } },
+        pieces: col.pieces.length ? col.pieces.map(p => ({ name: L(p.name), qty: '× ' + p.qty, dims: p.dims ? p.dims.join(' × ') + ' ' + t.detail.cm : t.detail.onRequest, color: p.dims ? '#252525' : '#625C54' })) : [{ name: t.detail.piecesPending, qty: '—', dims: t.detail.onRequest, color: '#625C54' }],
+        hasMaterials: !!col.materials, materials: L(col.materials),
+        qtyLabel: t.detail.quantity + ' (' + t.detail.units[col.unit] + ')', qty: curQty,
+        onQty: (e) => { const v = e.target.value; this.setState({ detailQty: v === '' ? '' : Math.max(1, Math.min(99999, parseInt(v, 10) || 1)) }); },
+        onQtyBlur: () => { if (!(parseInt(this.state.detailQty, 10) >= 1)) this.setState({ detailQty: 1 }); },
+        dec: () => this.setState(st => ({ detailQty: Math.max(1, (parseInt(st.detailQty, 10) || 1) - 1) })),
+        inc: () => this.setState(st => ({ detailQty: Math.min(99999, (parseInt(st.detailQty, 10) || 0) + 1) })),
+        onAdd: () => this.addToInquiry(col.id, Math.max(1, parseInt(this.state.detailQty, 10) || 1)),
+        addLabel: inIt ? t.detail.update : t.detail.add, inList: !!inIt,
+        inListText: inIt ? fmt(t.detail.inList, { q: inIt.qty, u: t.detail.units[col.unit] }) : '',
+        waHref: wa(fmt(t.wa.product, { name: L(col.name), code: col.code, url: location.href })),
+        related, hasRelated: related.length > 0
+      };
+    }
+
+    // category
+    let catCards = [], styleChips = [], catCount = '';
+    if (cat) {
+      const list = C.collections.filter(x => x.cat === cat.id).sort((a, b) => a.sort - b.sort);
+      const stylesIn = [...new Set(list.map(x => x.style))];
+      const filtered = list.filter(x => (s.style === 'all' || x.style === s.style) && match(x, s.q));
+      catCards = filtered.map(colCard);
+      catCount = filtered.length === 1 ? t.category.count1 : fmt(t.category.count, { n: filtered.length });
+      if (stylesIn.length > 1) styleChips = ['all'].concat(stylesIn).map(k => { const on = s.style === k; return { label: k === 'all' ? t.category.all : L(C.styles[k]), pressed: on ? 'true' : 'false', bg: on ? '#584838' : 'transparent', color: on ? '#fff' : '#584838', border: on ? '#584838' : '#D8D2C9', onClick: () => this.setState({ style: k }) }; });
+    }
+    const catTabs = cats.map(c => { const on = cat && c.id === cat.id; return { href: H('collections/' + c.slug), name: L(c.name), aria: on ? 'page' : undefined, bg: on ? '#252525' : 'transparent', color: on ? '#FAF9F6' : '#252525', border: on ? '#252525' : '#D8D2C9' }; });
+
+    // collections search
+    const cqResults = s.cq.trim() ? C.collections.filter(c => catById[c.cat] && match(c, s.cq)).map(colCard) : [];
+
+    // form
+    const f = s.form;
+    const errs = s.showErrors ? this.validate(f, items.map(x => x.i)) : {};
+    const fv = (k) => ({ value: f[k], onChange: (e) => this.setField(k, e.target.type === 'checkbox' ? e.target.checked : e.target.value), err: errs[k] ? t.form.err[errs[k]] : '', has: !!errs[k], bc: errs[k] ? '#B42318' : '#D8D2C9', inv: errs[k] ? 'true' : undefined, desc: errs[k] ? 'f-' + k + '-err' : (k === 'phone' ? 'f-phone-hint' : undefined) });
+    const fields = {}; ['name', 'company', 'buyerType', 'country', 'email', 'phone', 'message', 'consent', 'website', 'inquiryType', 'shipTerm', 'payTerm', 'destPort'].forEach(k => fields[k] = fv(k));
+    const order = ['name', 'country', 'email', 'phone', 'message', 'consent'];
+    const seen = {}; const errorList = [];
+    order.forEach(k => { if (errs[k] && !seen[errs[k]]) { seen[errs[k]] = 1; errorList.push({ msg: t.form.err[errs[k]], focus: () => { const el = document.getElementById('f-' + k); if (el) { el.focus(); const y = el.getBoundingClientRect().top + window.scrollY - 120; window.scrollTo(0, y); } } }); } });
+    const av = this.availablePrefs(f);
+    const effPref = av.includes(f.pref) ? f.pref : (av[0] || '');
+    const prefOptions = ['email', 'whatsapp', 'phone'].map(v => { const dis = !av.includes(v), on = effPref === v; return { v, label: t.form.prefs[v], disabled: dis, checked: on, onChange: () => this.setField('pref', v), border: on ? '#584838' : '#D8D2C9', bg: on ? '#fff' : 'transparent', opacity: dis ? '0.5' : '1' }; });
+    const selStyle = (k) => ({ width: '100%', height: 48, padding: '0 14px', border: '1px solid ' + (errs[k] ? '#B42318' : '#D8D2C9'), borderRadius: 8, background: '#fff', fontSize: 16, color: '#252525' });
+    const h = React.createElement;
+    const countrySelect = h('select', { id: 'f-country', value: f.country, onChange: fields.country.onChange, 'aria-required': 'true', 'aria-invalid': fields.country.inv, 'aria-describedby': fields.country.desc, autoComplete: 'country', style: selStyle('country') },
+      h('option', { value: '' }, t.form.selectCountry),
+      h('optgroup', { label: t.form.gcc }, C.countries.filter(c => c.g === 'gcc').map(c => h('option', { key: c.code, value: c.code }, L(c)))),
+      h('optgroup', { label: t.form.other }, C.countries.filter(c => c.g !== 'gcc').map(c => h('option', { key: c.code, value: c.code }, L(c)))));
+    const buyerTypeSelect = h('select', { id: 'f-buyerType', value: f.buyerType, onChange: fields.buyerType.onChange, style: selStyle('buyerType') },
+      h('option', { value: '' }, t.form.select), t.form.buyerTypes.map(b => h('option', { key: b.v, value: b.v }, b.l)));
+    const optSel = (k, list, ph) => h('select', { id: 'f-' + k, value: f[k] || '', onChange: fields[k].onChange, style: selStyle(k) }, h('option', { value: '' }, ph), list.map(o => h('option', { key: o.v, value: o.v }, o.l)));
+    const inquiryTypeSelect = optSel('inquiryType', t.form.inquiryTypes, t.form.select);
+    const shipTermSelect = optSel('shipTerm', t.form.shipTerms, t.form.noPref);
+    const payTermSelect = optSel('payTerm', t.form.payTerms, t.form.noPref);
+    const busy = s.submit === 'submitting';
+    const errKey = s.submitErr === 'not_configured' ? 'notConfigured' : (s.submitErr === 'server' ? 'server' : 'network');
+
+    const toast = s.toast;
+    const lbKeyDown = (e) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') { const fwd = (e.key === 'ArrowRight') !== rtl; d.multi && (fwd ? d.next() : d.prev()); }
+      if (e.key === 'Tab' && this.lbRef.current) { const els = this.lbRef.current.querySelectorAll('button'); if (!els.length) return; const first = els[0], last = els[els.length - 1]; if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); } else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); } }
+    };
+
+    const waOr = (label) => waReady ? { label2: label, href2: wa(t.wa.general), target2: '_blank', rel2: 'noopener noreferrer' } : { label2: t.nav.contact, href2: links.contact };
+    const pcs = {
+      about: Object.assign({ title: t.about.ctaTitle, body: t.about.ctaBody, label1: t.about.cta1, href1: links.collections }, waOr(t.about.cta2)),
+      sourcing: Object.assign({ title: t.sourcing.ctaTitle, body: '', label1: t.cta.rfq, href1: links.contact }, waOr(t.cta.wa)),
+      shipping: Object.assign({ title: t.ship.ctaTitle, body: t.ship.ctaBody, label1: t.ship.cta, href1: H('contact?type=shipping') }, waOr(t.cta.wa)),
+      custom: { title: t.custom.ctaTitle, body: t.custom.ctaBody, label1: t.custom.cta, href1: H('contact?type=project'), label2: t.custom.cta2, href2: H('contact?type=custom') }
+    };
+    const pc = pcs[page] || null; if (pc) pc.hasBody = !!pc.body;
+    return {
+      ready: true, lang, dir: rtl ? 'rtl' : 'ltr', otherLang: other,
+      ff: rtl ? "'IBM Plex Sans Arabic', 'Manrope', system-ui, sans-serif" : "'Manrope', 'IBM Plex Sans Arabic', system-ui, sans-serif",
+      lh: rtl ? '1.85' : '1.65', ltrAlign: rtl ? 'right' : 'left',
+      t, page: pg, links, navItems, year: new Date().getFullYear(),
+      headerH: vw >= 1024 ? '80px' : '64px', fullNav, compactNav: !fullNav, notMobile: !isMobile,
+      showMenu: s.menuOpen && !fullNav, menuExpanded: s.menuOpen ? 'true' : 'false', menuLabel: s.menuOpen ? t.nav.close : t.nav.menu,
+      toggleMenu: () => this.setMenu(!s.menuOpen),
+      skipToMain: () => this.mainRef.current && this.mainRef.current.focus(),
+      langHref: '#/' + other + '/' + parts.join('/'), langAria: rtl ? 'Switch to English' : 'التبديل إلى العربية',
+      hasInq: inqCount > 0, inqEmpty: inqCount === 0, inqCount, inqItems,
+      inqAria: t.nav.inquiry + (inqCount ? ' (' + inqCount + ')' : ''), inqAriaCurrent: page === 'inquiry' ? 'page' : undefined,
+      inqSelectedText: inqCount === 1 ? t.inquiry.selected1 : fmt(t.inquiry.selected, { n: inqCount }),
+      waReady, waNotReady: !waReady, waNum, waGeneral: wa(t.wa.general), floatWaHref: col ? d.waHref : wa(t.wa.general),
+      waPendingAria: t.contact.waBtn + ' — ' + t.toast.waPending,
+      onWaPending: () => this.showToast('waPending'),
+      showFloatWa: !['contact', 'inquiry'].includes(page) && !s.menuOpen,
+      email, emailReady: !!email, emailNotReady: !email, emailHref: email ? 'mailto:' + email : '',
+      heroImg: (() => { const hc = C.collections.find(x => x.cat === 'bedrooms') || C.collections[0]; const im = pickImg(hc) || {}; return { src: im.full || '', alt: hc ? L(hc.name) + ' — ' + t.illustrativeAlt : '' }; })(),
+      featuredCats: cats.map(catCard), allCats: cats.map(catCard),
+      whyItems: t.why.items.map((x, i) => Object.assign({ num: pad(i + 1), href: H(x.to) }, x)),
+      processSteps: t.process.steps.map((x, i) => Object.assign({ num: pad(i + 1) }, x)),
+      mqItems: t.about.mq.map((x, i) => Object.assign({ num: pad(i + 1) }, x)),
+      exportSteps: t.sourcing.steps.map((x, i) => ({ num: pad(i + 1), title: x.title, body: x.body, term: x.term || '', hasTerm: !!x.term })),
+      guideCards: t.sourcing.guides.map(g => ({ title: g.title, body: g.body, href: H(g.to) })),
+      payItems: t.ship.payments.map((x, i) => ({ num: pad(i + 1), title: x.title, body: x.body, term: x.term || '', hasTerm: !!x.term })),
+      portItems: t.ship.ports.map((x, i) => ({ num: pad(i + 1), name: x.name, alt: x.alt })),
+      tocItems: t.ship.toc.map((label, i) => ({ label, onClick: () => {
+        const el = document.getElementById(['ship-pay', 'ship-inco', 'ship-ports', 'ship-cont', 'ship-cbm', 'ship-transit'][i]); if (!el) return;
+        const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 88, behavior: reduce ? 'auto' : 'smooth' });
+        el.focus({ preventScroll: true });
+      } })),
+      sendItems: t.custom.send.map((x, i) => ({ num: pad(i + 1), label: x })),
+      footerGuides: [{ href: links.shipping, label: t.nav.shipping }, { href: links.custom, label: t.nav.custom }],
+      showPageHeader: !['home', 'detail'].includes(page), crumbs, pageHead: head, hasEyebrow: !!head.eyebrow, hasIntro: !!head.intro,
+      showPageCta: !!pc, pc: pc || {},
+      cq: s.cq, hasCq: !!s.cq.trim(), noCq: !s.cq.trim(), onCq: (e) => this.setState({ cq: e.target.value }), clearCq: () => this.setState({ cq: '' }),
+      cqResults, cqEmpty: !!s.cq.trim() && cqResults.length === 0,
+      cqStatus: cqResults.length ? fmt(t.collections.results, { n: cqResults.length, q: s.cq.trim() }) : fmt(t.collections.noResults, { q: s.cq.trim() }),
+      q: s.q, onQ: (e) => this.setState({ q: e.target.value }), catCards, catCount, catEmpty: !!cat && catCards.length === 0,
+      styleChips, hasStyleChips: styleChips.length > 0, catTabs, resetFilters: () => this.setState({ q: '', style: 'all' }),
+      d, lightbox: s.lightbox && !!col, closeLightbox: this.closeLightbox, lbKeyDown,
+      fields, errorList, hasErrors: errorList.length > 0, prefOptions, countrySelect, buyerTypeSelect, inquiryTypeSelect, shipTermSelect, payTermSelect,
+      messageReqLabel: inqCount ? t.form.optional : t.form.required, messagePh: ({ custom: t.form.messagePhCustom, project: t.form.messagePhProject, shipping: t.form.messagePhShipping })[f.inquiryType] || (inqCount ? t.form.messagePhItems : t.form.messagePhGeneral),
+      onSubmit: this.onSubmit, busy, submitLabel: busy ? t.form.submitting : (s.submit === 'error' ? t.form.retry : t.form.submit),
+      submitBg: busy ? '#8A7D70' : '#584838', submitCursor: busy ? 'progress' : 'pointer',
+      isSuccess: s.submit === 'success', notSuccess: s.submit !== 'success', isError: s.submit === 'error',
+      submitErrTitle: t.form[errKey + 'Title'], submitErrBody: t.form[errKey],
+      hasReference: !!s.reference, reference: s.reference, askClear: s.askClear,
+      clearAfterSuccess: () => { this.setInq(() => []); this.setState({ askClear: false }); this.showToast('cleared'); },
+      keepAfterSuccess: () => this.setState({ askClear: false }),
+      newRequest: () => this.setState({ submit: 'idle', reference: null, askClear: false }),
+      hasToast: !!toast, toastMsg: toast ? t.toast[toast.key] : '', toastUndo: !!(toast && toast.undo), toastLink: !!(toast && toast.link) && page !== 'inquiry', undoRemove: this.undoRemove,
+      menuBtnRef: this.menuBtnRef, mainRef: this.mainRef, summaryRef: this.summaryRef, errorRef: this.errorRef, successRef: this.successRef, lbRef: this.lbRef, lbCloseRef: this.lbCloseRef
+    };
+  }
+}
+</script>
+</body>
+</html>

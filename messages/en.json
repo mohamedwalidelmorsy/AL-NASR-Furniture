@@ -1,0 +1,784 @@
+{
+  "dir": "ltr",
+  "arrow": "→",
+  "back": "←",
+  "switchTo": "العربية",
+  "switchCode": "AR",
+  "skip": "Skip to content",
+  "nav": {
+    "home": "Home",
+    "collections": "Collections",
+    "about": "About Us",
+    "sourcing": "Sourcing & Export",
+    "shipping": "Shipping & Payment Guide",
+    "custom": "Custom Manufacturing & Projects",
+    "contact": "Contact",
+    "rfq": "Request a Quote",
+    "inquiry": "Inquiry List",
+    "inquiryShort": "Inquiry",
+    "menu": "Menu",
+    "close": "Close menu",
+    "lang": "Language",
+    "primary": "Main navigation"
+  },
+  "sample": "Sample",
+  "illustrative": "Illustrative design",
+  "illustrativeAlt": "illustrative catalog design (AI-generated image)",
+  "wa": {
+    "general": "Hello AL NASR FURNITURE, I have a wholesale furniture inquiry.",
+    "product": "Hello AL NASR FURNITURE, I would like to ask about {name} (Ref. {code}). {url}"
+  },
+  "ph": {
+    "hero": "Hero photograph — approved furniture image",
+    "category": "Category cover — 4:3",
+    "collection": "Collection photo — 3:4",
+    "gallery": "Gallery image",
+    "about": "Approved company / product photograph",
+    "overview": "Set overview"
+  },
+  "hero": {
+    "eyebrow": "Egyptian furniture manufacturing & export solutions",
+    "title": "Egyptian furniture, produced and exported for wholesale buyers.",
+    "body": "AL NASR FURNITURE supplies Egyptian furniture to importers, wholesalers, distributors and retail showrooms — coordinating design, production, quality checks, packaging and export through the manufacturing network we work with in Egypt.",
+    "cta1": "Explore Collections",
+    "cta2": "Request a Quote",
+    "note": "B2B supply only, with an initial focus on GCC markets. Every order is quoted individually."
+  },
+  "featured": {
+    "eyebrow": "Our products",
+    "title": "Furniture categories",
+    "viewAll": "View all collections",
+    "cta": "View collections"
+  },
+  "intro": {
+    "eyebrow": "About AL NASR",
+    "title": "One commercial partner from design to shipment.",
+    "body": "We combine a range of designs, attention to detail and coordinated production to serve importers and furniture traders. Buyers deal with AL NASR FURNITURE as a single point of contact, while we coordinate manufacturing, quality checks, packaging and export with our partners in Egypt.",
+    "link": "About AL NASR"
+  },
+  "why": {
+    "eyebrow": "What we offer",
+    "title": "Manufacturing, export and quality — coordinated in one place",
+    "items": [
+      {
+        "title": "Manufacturing & supply",
+        "body": "Bedroom sets, kids' bedrooms, corner sofas, living room sets, china cabinets and dining rooms in modern and classic designs — with made-to-order designs, sizes and finishes subject to production feasibility.",
+        "link": "Custom manufacturing",
+        "to": "custom-manufacturing"
+      },
+      {
+        "title": "B2B export solutions",
+        "body": "Export packaging, shipping documents and international shipping arrangements, coordinated according to destination and contract terms.",
+        "link": "Shipping & payment guide",
+        "to": "shipping-payment"
+      },
+      {
+        "title": "Quality & inspection",
+        "body": "Products are reviewed against the agreed specifications before packing. Independent pre-shipment inspection can be arranged on request.",
+        "link": "Quality control process",
+        "to": "sourcing-export"
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "title": "From inquiry to shipment",
+    "steps": [
+      {
+        "title": "Inquiry & quotation",
+        "body": "Send products, quantities and specifications. We prepare a quotation covering products, delivery, payment and shipping terms."
+      },
+      {
+        "title": "Specifications & order",
+        "body": "Design, materials, colours, sizes, finishes and packing are agreed before the order is confirmed."
+      },
+      {
+        "title": "Production & quality control",
+        "body": "Products are made with our manufacturing partner and reviewed against the agreed specifications."
+      },
+      {
+        "title": "Packing & shipment",
+        "body": "Export packing, container loading and shipping documents are prepared, and goods ship under the agreed delivery term."
+      }
+    ],
+    "note": "A quote request does not confirm an order or a price. Every order is agreed individually.",
+    "link": "See the full 10-step export process"
+  },
+  "projects": {
+    "eyebrow": "Custom & projects",
+    "title": "Custom designs and project furnishing",
+    "body": "Send your own designs, drawings and specifications, or tell us about a hotel, residential or commercial project. Each request is reviewed for production feasibility and quoted separately.",
+    "link": "Custom manufacturing & projects"
+  },
+  "cta": {
+    "title": "Looking for a furniture supplier in Egypt?",
+    "body": "Send us the products you need. We will review your request and prepare a quotation — or talk to our sales team directly on WhatsApp.",
+    "rfq": "Request a Quote",
+    "wa": "WhatsApp Sales"
+  },
+  "footer": {
+    "tagline": "Egyptian furniture manufacturing & export solutions for international B2B buyers.",
+    "explore": "Explore",
+    "guides": "Buyer guides",
+    "company": "Company",
+    "contact": "Contact",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "pending": "Pending confirmation",
+    "privacy": "Privacy notice",
+    "legal": "AL NASR FURNITURE is the commercial brand of Al Nasr for Import & Export (مؤسسة النصر للاستيراد والتصدير). Registration details will be published once confirmed.",
+    "wordmark": "Provisional text wordmark — final logo pending.",
+    "rights": "AL NASR FURNITURE"
+  },
+  "crumbs": {
+    "home": "Home",
+    "label": "Breadcrumb"
+  },
+  "collections": {
+    "title": "Collections",
+    "intro": "Browse Egyptian furniture by category. Select collections and quantities to build one wholesale quotation request.",
+    "search": "Search all collections",
+    "searchPh": "Search by name or reference code",
+    "clear": "Clear search",
+    "results": "{n} results for “{q}”",
+    "noResults": "No collections match “{q}”.",
+    "noResultsHint": "Try another name or reference code, or browse by category.",
+    "count": "{n} collections",
+    "count1": "1 collection",
+    "allCats": "All categories"
+  },
+  "category": {
+    "filter": "Style",
+    "all": "All",
+    "count": "{n} collections",
+    "count1": "1 collection",
+    "search": "Search in this category",
+    "empty": "No collections match your search or filters.",
+    "reset": "Reset filters",
+    "others": "Other categories"
+  },
+  "card": {
+    "view": "View details",
+    "ref": "Internal ref."
+  },
+  "detail": {
+    "sampleNotice": "Illustrative design — this catalog image is AI-generated. Text inside the image (set contents, materials, dimensions) has not been verified; final specifications are confirmed during quotation.",
+    "piecesPending": "Set contents to be confirmed",
+    "category": "Category",
+    "pieces": "Included pieces",
+    "piece": "Piece",
+    "qty": "Qty",
+    "dims": "Dimensions (W × D × H)",
+    "onRequest": "Available on request",
+    "cm": "cm",
+    "materials": "Materials & finishes",
+    "description": "Description",
+    "quantity": "Requested quantity",
+    "units": {
+      "set": "sets",
+      "piece": "pieces"
+    },
+    "dec": "Decrease quantity",
+    "inc": "Increase quantity",
+    "add": "Add to Inquiry",
+    "update": "Update Inquiry",
+    "inList": "In your inquiry list: {q} {u}",
+    "viewList": "View inquiry list",
+    "wa": "Ask on WhatsApp",
+    "rfq": "Request a Quote",
+    "related": "Related collections",
+    "gallery": "Image gallery",
+    "enlarge": "View larger image",
+    "prev": "Previous image",
+    "next": "Next image",
+    "close": "Close image viewer",
+    "imageOf": "Image {i} of {n}",
+    "thumb": "Show image {i}",
+    "noPrice": "Prices are quoted individually based on volume, specifications and destination."
+  },
+  "inquiry": {
+    "title": "Inquiry List",
+    "intro": "Collections you have shortlisted for one quotation request. Adjust quantities, add notes, then continue to the request form.",
+    "emptyTitle": "Your inquiry list is empty",
+    "emptyBody": "Add collections from the catalog to request one consolidated quotation — or send a general inquiry without selecting products.",
+    "browse": "Browse Collections",
+    "general": "Send a general inquiry",
+    "qty": "Quantity",
+    "note": "Notes for this collection (optional)",
+    "notePh": "e.g. finish, colour or size changes",
+    "remove": "Remove",
+    "summary": "Summary",
+    "selected": "{n} collections selected",
+    "selected1": "1 collection selected",
+    "continueRfq": "Continue to quote request",
+    "continueBrowsing": "Continue browsing",
+    "notCart": "This is a shortlist for a quotation, not an order. No prices or payment are involved.",
+    "saved": "Saved in this browser.",
+    "guide": "How shipping & payment work"
+  },
+  "toast": {
+    "added": "Added to your inquiry list",
+    "updated": "Inquiry quantity updated",
+    "removed": "Removed from inquiry list",
+    "undo": "Undo",
+    "waPending": "WhatsApp number is pending configuration.",
+    "cleared": "Inquiry list cleared"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Contact our export sales team",
+    "intro": "Choose the channel that suits you: a direct WhatsApp conversation, or a quotation request through the form below.",
+    "waTitle": "Chat on WhatsApp",
+    "waBody": "Opens a direct conversation with sales. No form required.",
+    "waBtn": "Chat with Sales on WhatsApp",
+    "waPending": "WhatsApp number pending",
+    "emailTitle": "Email",
+    "emailPending": "Business email pending",
+    "rfqTitle": "Request a Quotation",
+    "rfqBody": "Send us the details of the products you need. We will review your request and prepare a quotation for exporting furniture from Egypt.",
+    "includesTitle": "Depending on the deal, a quotation may cover",
+    "includes": [
+      "Products and quantities",
+      "Specifications and dimensions",
+      "Shipment volume",
+      "Packaging options",
+      "Delivery and shipping terms",
+      "Payment method",
+      "Estimated production and shipping time"
+    ]
+  },
+  "form": {
+    "name": "Full name",
+    "company": "Company name",
+    "buyerType": "Buyer type",
+    "country": "Destination country",
+    "email": "Business email",
+    "phone": "Phone / WhatsApp",
+    "phoneHint": "Include country code, e.g. +971 50 123 4567",
+    "pref": "Preferred contact method",
+    "prefs": {
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "phone": "Phone call"
+    },
+    "contactHint": "Provide at least one: email or phone / WhatsApp.",
+    "inquiryType": "Inquiry type",
+    "inquiryTypes": [
+      {
+        "v": "wholesale",
+        "l": "Wholesale collections"
+      },
+      {
+        "v": "custom",
+        "l": "Custom design"
+      },
+      {
+        "v": "project",
+        "l": "Project / hotel furnishing"
+      },
+      {
+        "v": "shipping",
+        "l": "Shipping & logistics"
+      },
+      {
+        "v": "general",
+        "l": "General inquiry"
+      }
+    ],
+    "tradeTitle": "Trade preferences",
+    "tradeHint": "Preferences are discussed and confirmed in the quotation — they do not commit either party.",
+    "shipTerm": "Preferred delivery term",
+    "payTerm": "Preferred payment term",
+    "destPort": "Destination port / city",
+    "destPortPh": "e.g. Jebel Ali, Dubai",
+    "noPref": "No preference / discuss",
+    "shipTerms": [
+      {
+        "v": "EXW",
+        "l": "EXW — Ex Works"
+      },
+      {
+        "v": "FOB",
+        "l": "FOB — Free On Board"
+      },
+      {
+        "v": "CFR",
+        "l": "CFR — Cost and Freight"
+      },
+      {
+        "v": "CIF",
+        "l": "CIF — Cost, Insurance and Freight"
+      }
+    ],
+    "payTerms": [
+      {
+        "v": "advance-30-70",
+        "l": "30% advance + 70% against shipping documents"
+      },
+      {
+        "v": "lc-at-sight",
+        "l": "Irrevocable L/C at sight"
+      },
+      {
+        "v": "tt",
+        "l": "Direct bank transfer (T/T)"
+      }
+    ],
+    "termsGuide": "Shipping & payment guide",
+    "message": "Additional requirements",
+    "messagePhItems": "Specifications, customization requests, delivery destination, timing…",
+    "messagePhGeneral": "Describe the furniture types, quantities and specifications you are looking for…",
+    "messagePhCustom": "Describe the design, dimensions, materials, finishes and quantities. Our team will advise how to share drawings and images.",
+    "messagePhProject": "Describe the project type, number of units, products needed, specifications and timing…",
+    "messagePhShipping": "Describe the products, quantities, destination and any shipping or packaging requirements…",
+    "required": "Required",
+    "optional": "Optional",
+    "select": "Select…",
+    "selectCountry": "Select country",
+    "gcc": "GCC countries",
+    "other": "Other countries",
+    "buyerTypes": [
+      {
+        "v": "showroom",
+        "l": "Furniture showroom"
+      },
+      {
+        "v": "importer",
+        "l": "Importer"
+      },
+      {
+        "v": "wholesaler",
+        "l": "Wholesaler"
+      },
+      {
+        "v": "distributor",
+        "l": "Distributor"
+      },
+      {
+        "v": "retail-chain",
+        "l": "Retail chain"
+      },
+      {
+        "v": "project",
+        "l": "Project developer / contractor"
+      },
+      {
+        "v": "other",
+        "l": "Other"
+      }
+    ],
+    "consent": "I agree that AL NASR FURNITURE may use these details to respond to my inquiry.",
+    "privacy": "Privacy notice",
+    "privacyPending": "(text pending legal review)",
+    "submit": "Send quote request",
+    "submitting": "Sending request…",
+    "selectedTitle": "Selected collections",
+    "noneSelected": "No collections selected. Your request will be sent as a general sourcing inquiry.",
+    "editList": "Edit inquiry list",
+    "browse": "Browse collections",
+    "notOrder": "Sending this request does not place an order.",
+    "err": {
+      "name": "Enter your full name.",
+      "country": "Select the destination country.",
+      "contact": "Provide an email address or a phone / WhatsApp number.",
+      "email": "Enter a valid email address, e.g. name@company.com.",
+      "phone": "Enter a valid international number with country code, e.g. +971 50 123 4567.",
+      "message": "Describe your requirements, or add collections to your inquiry list.",
+      "consent": "Please confirm consent so we can respond to your inquiry."
+    },
+    "summaryTitle": "Please correct the following before sending:",
+    "notConfiguredTitle": "Request not sent",
+    "notConfigured": "Online quote requests are not yet connected to the AL NASR sales inbox, so this request has not been sent. Your details and selections are kept in this browser. Please contact sales on WhatsApp in the meantime.",
+    "networkTitle": "Connection problem",
+    "network": "We could not reach the server. Your details are kept — check your connection and try again.",
+    "serverTitle": "Request not accepted",
+    "server": "The server did not accept the request. Your details are kept — please try again.",
+    "retry": "Try again",
+    "successTitle": "Request received",
+    "successBody": "Thank you. Our sales team will review your requirements and follow up using your preferred contact method.",
+    "reference": "Reference",
+    "clearQ": "Clear your inquiry list now that the request has been received?",
+    "clear": "Clear inquiry list",
+    "keep": "Keep list",
+    "newReq": "Send another request"
+  },
+  "about": {
+    "eyebrow": "About us",
+    "title": "About AL NASR FURNITURE",
+    "lead": "Egyptian furniture manufacturing & export solutions for importers, furniture traders and project buyers.",
+    "whoTitle": "Who we are",
+    "whoBody": [
+      "AL NASR FURNITURE is the commercial brand of Al Nasr for Import & Export (مؤسسة النصر للاستيراد والتصدير), an Egyptian business focused on supplying and exporting Egyptian furniture to international markets. We combine coordinated manufacturing, a variety of designs and attention to detail to meet the needs of importers, furniture traders and buyers in different markets.",
+      "Through the manufacturing and showroom network we work with in Egypt, we offer a complete range of home furniture — bedroom sets, kids' bedrooms, corner sofas, living room sets, china cabinets and dining rooms — in modern and classic designs, with designs, sizes and finishes that can be produced to customer requirements.",
+      "We follow each order from design and specifications, through production, finishing and quality review, to packaging and export preparation — so every stage is coordinated to the requirements of the order and the target market."
+    ],
+    "productsTitle": "Our products",
+    "mqTitle": "Manufacturing, quality & export",
+    "mq": [
+      {
+        "title": "Manufacturing & quality",
+        "body": "We pay attention to every stage of furniture production — from selecting materials and defining specifications, through manufacturing and finishing, to reviewing products and preparing them for packing and shipment."
+      },
+      {
+        "title": "Made-to-order",
+        "body": "Made-to-order production can be coordinated, covering designs, sizes, finishes and quantities, according to available capabilities and agreement with the customer."
+      },
+      {
+        "title": "Export services",
+        "body": "Export of Egyptian furniture for importers, wholesalers, retailers and project furnishing companies — with packaging, export documents and international shipping coordinated according to destination and contract terms."
+      }
+    ],
+    "visionTitle": "Our vision",
+    "visionBody": "To become a trusted partner in manufacturing and exporting Egyptian furniture, and to expand the presence of our products in global markets through quality, design variety and long-term business relationships.",
+    "partnersTitle": "Our manufacturing & export network",
+    "partnersBody": "Production, finishing and showroom presentation are carried out through the manufacturing and showroom network we work with in Egypt, while AL NASR FURNITURE manages the commercial relationship with buyers. Partner names and facility imagery will be published only once their use is authorized.",
+    "ctaTitle": "Let's work together",
+    "ctaBody": "Whether you are a furniture importer, wholesaler, retailer or project developer, we are ready to discuss your requirements and offer furniture solutions suited to your market.",
+    "cta1": "Explore Collections",
+    "cta2": "Talk to Sales"
+  },
+  "sourcing": {
+    "eyebrow": "Sourcing & Export",
+    "title": "How export orders are handled",
+    "lead": "From the first inquiry to shipment — how a wholesale furniture order is specified, produced, checked, packed and shipped with our partners in Egypt.",
+    "coordTitle": "Export coordination",
+    "coordBody": [
+      "Our export service is built for importers, wholesalers, retailers and project furnishing companies who want one accountable contact in Egypt.",
+      "We coordinate packaging, export documents and international shipping arrangements with our partners according to the destination and the contract terms — so buyers do not have to manage each supplier separately."
+    ],
+    "processTitle": "The export process in 10 steps",
+    "steps": [
+      {
+        "title": "Inquiry",
+        "body": "The customer sends the required products, quantities, dimensions, designs and specifications."
+      },
+      {
+        "title": "Quotation",
+        "body": "The request is reviewed and a quotation is prepared covering products, quantities, specifications, and delivery, payment and shipping terms."
+      },
+      {
+        "title": "Specification confirmation",
+        "body": "Design, materials, colours, dimensions, final finishes and packaging requirements are agreed."
+      },
+      {
+        "title": "Order confirmation",
+        "body": "Once the commercial and technical details and contract terms are agreed, the order is confirmed and execution begins."
+      },
+      {
+        "title": "Production",
+        "body": "Products are manufactured and prepared to the agreed specifications, in coordination with the manufacturer."
+      },
+      {
+        "title": "Quality control (QC)",
+        "body": "Products are reviewed against the agreed specifications, including dimensions, materials, finishes and condition before packing."
+      },
+      {
+        "title": "Export packaging",
+        "body": "Packing materials and methods suited to the furniture and the transport mode are selected, to reduce the risk of scratches, impact and damage."
+      },
+      {
+        "title": "Container loading",
+        "body": "Products are arranged in the container to suit the shipment, make use of the available space and protect the goods."
+      },
+      {
+        "title": "Shipping documents",
+        "body": "Required documents are prepared according to the shipment, the importing country and the agreed payment and delivery terms."
+      },
+      {
+        "title": "Shipment",
+        "body": "Goods are shipped to the agreed port of arrival or place of delivery, under the delivery term specified in the contract."
+      }
+    ],
+    "qcTitle": "Quality control & inspection",
+    "qcBody": "Products are reviewed before shipment to check that they match the specifications agreed with the customer. Depending on the order, checks may include:",
+    "qcChecks": [
+      "Materials review",
+      "Dimensions and measurements",
+      "Design and colours",
+      "Finish quality",
+      "Product condition before packing",
+      "Packaging review",
+      "Container loading check"
+    ],
+    "qcMedia": "Photos or videos of preparation and inspection stages can be provided at the customer's request and by prior agreement.",
+    "tpiTitle": "Independent pre-shipment inspection",
+    "tpiBody": "An independent inspection of the shipment can be arranged before shipping, at the customer's request and by prior agreement between both parties.",
+    "tpiExamplesLabel": "Examples of international inspection companies",
+    "tpiExamples": [
+      "SGS",
+      "Bureau Veritas",
+      "Intertek"
+    ],
+    "tpiDisclaimer": "Listed only as examples of third-party inspection providers — not partners of, or certifications held by, AL NASR FURNITURE.",
+    "tpiScope": "Depending on the agreed scope, inspection may cover quantities, dimensions, specifications, finish quality, packaging and container loading.",
+    "tpiArrange": "The inspection company, scope, cost and timing are agreed in advance, and an inspection report can be issued according to the agreed service.",
+    "guidesTitle": "Buyer guides",
+    "guides": [
+      {
+        "title": "Shipping & payment guide",
+        "body": "Payment terms, delivery terms, Egyptian export ports, containers, CBM and transit time.",
+        "to": "shipping-payment"
+      },
+      {
+        "title": "Custom manufacturing & projects",
+        "body": "Made-to-order designs and furniture for hotel, residential and commercial projects.",
+        "to": "custom-manufacturing"
+      }
+    ],
+    "faqTitle": "Questions from wholesale buyers",
+    "faq": [
+      {
+        "q": "Can specifications be customized?",
+        "a": "Customization requests can be included in your inquiry. Whether a change is possible depends on the collection and manufacturing capabilities, and is confirmed during the quotation discussion."
+      },
+      {
+        "q": "Which delivery and payment terms are available?",
+        "a": "We work with EXW, FOB, CFR and CIF delivery terms and three payment options. The applicable terms are agreed for each order before confirmation; not every option is available for every order."
+      },
+      {
+        "q": "What details help us prepare a quotation?",
+        "a": "Collection references, quantities per collection, destination country and port, any specification or finish changes, your preferred delivery term and your preferred contact method."
+      },
+      {
+        "q": "Are prices, lead times or transit times published?",
+        "a": "No. They depend on volume, specifications, destination and sailing schedules, and are given as estimates in each quotation."
+      }
+    ],
+    "ctaTitle": "Ready to discuss an export order?"
+  },
+  "ship": {
+    "eyebrow": "Buyer guide",
+    "title": "Shipping & payment guide",
+    "lead": "How payment, delivery terms, ports, containers and shipment volume are handled for furniture export orders from Egypt. All terms are agreed per order before confirmation.",
+    "tocLabel": "On this page",
+    "toc": [
+      "Payment terms",
+      "Delivery terms",
+      "Export ports",
+      "Containers",
+      "CBM",
+      "Transit time"
+    ],
+    "payTitle": "Payment terms",
+    "payIntro": "We offer three payment options. The appropriate method is chosen according to the nature of the transaction and the contract terms.",
+    "payments": [
+      {
+        "title": "30% advance payment + 70% against shipping documents",
+        "term": "",
+        "body": "30% of the order value is paid in advance on order confirmation. The remaining 70% is paid against the shipping documents, according to the document-release terms agreed in the contract."
+      },
+      {
+        "title": "Irrevocable letter of credit at sight",
+        "term": "L/C at Sight",
+        "body": "Transactions can be made through an irrevocable documentary credit, with payment on presentation of shipping documents that comply with the credit terms, under the banking procedures agreed between both parties."
+      },
+      {
+        "title": "Direct bank transfer",
+        "term": "T/T",
+        "body": "The order value can be paid by direct bank transfer according to the payment terms agreed between both parties and set out in the quotation and commercial contract."
+      }
+    ],
+    "payNote": "The payment method, its conditions and the required documents are agreed before the order is confirmed and execution begins. Not every option is automatically available for every order.",
+    "incoTitle": "Delivery terms (Incoterms® 2020)",
+    "incoIntro": "We offer different delivery terms depending on the shipment destination, the nature of the order and the buyer's requirements. Terms are interpreted under Incoterms® 2020 and apply to the named place or port stated in the contract.",
+    "incoLabels": {
+      "seller": "Seller",
+      "buyer": "Buyer",
+      "cost": "Main transport cost",
+      "risk": "Risk transfers",
+      "insurance": "Insurance"
+    },
+    "incoterms": [
+      {
+        "code": "EXW",
+        "name": "Ex Works",
+        "mode": "Any transport mode",
+        "seller": "Prepares the goods and makes them available for collection at the agreed named place. Not required to load or export-clear the goods.",
+        "buyer": "Loading, export clearance, all transport, import clearance and subsequent procedures, as per the contract.",
+        "cost": "Buyer, from the named place.",
+        "risk": "When the goods are placed at the buyer's disposal at the named place.",
+        "insurance": "No obligation on either party; the buyer insures if desired."
+      },
+      {
+        "code": "FOB",
+        "name": "Free On Board",
+        "mode": "Sea & inland waterway only",
+        "seller": "Prepares the goods, handles export clearance and delivers them on board the vessel at the named port of shipment.",
+        "buyer": "Nominates the vessel, arranges and pays sea freight, and handles import clearance and duties.",
+        "cost": "Buyer pays the main sea freight.",
+        "risk": "When the goods are on board the vessel at the port of shipment.",
+        "insurance": "No obligation on either party; the buyer arranges cover if desired."
+      },
+      {
+        "code": "CFR",
+        "name": "Cost and Freight",
+        "mode": "Sea & inland waterway only",
+        "seller": "Handles export clearance; arranges and pays sea freight to the agreed port of destination.",
+        "buyer": "Import clearance and duties, and destination charges not included in the freight contract.",
+        "cost": "Seller pays sea freight to the destination port.",
+        "risk": "When the goods are on board the vessel at the port of shipment — before the main voyage.",
+        "insurance": "Not included; the seller has no obligation to insure. Buyer cover is recommended."
+      },
+      {
+        "code": "CIF",
+        "name": "Cost, Insurance and Freight",
+        "mode": "Sea & inland waterway only",
+        "seller": "As CFR, plus obtaining cargo insurance for the voyage to the destination port.",
+        "buyer": "Import clearance and duties, and destination charges not included in the freight contract.",
+        "cost": "Seller pays sea freight and insurance.",
+        "risk": "When the goods are on board the vessel at the port of shipment.",
+        "insurance": "Seller provides minimum cover (Institute Cargo Clauses C) unless broader cover is agreed separately."
+      }
+    ],
+    "incoNotes": [
+      "FOB, CFR and CIF are rules for sea and inland waterway transport.",
+      "For containerised cargo handed over at a terminal before loading on board, FCA or another rule may be more appropriate depending on the actual delivery arrangements; this is discussed case by case.",
+      "Under CFR and CIF the seller pays freight to destination, but risk passes to the buyer at the port of shipment."
+    ],
+    "portsTitle": "Egyptian export ports",
+    "portsIntro": "Shipments can be arranged from suitable Egyptian ports, depending on the destination, shipping line availability and cost.",
+    "ports": [
+      {
+        "name": "Alexandria Port",
+        "alt": "ميناء الإسكندرية"
+      },
+      {
+        "name": "El Dekheila Port",
+        "alt": "ميناء الدخيلة"
+      },
+      {
+        "name": "Damietta Port",
+        "alt": "ميناء دمياط"
+      },
+      {
+        "name": "Port Said",
+        "alt": "ميناء بورسعيد"
+      }
+    ],
+    "portsNote": "The final port of shipment depends on the nature of the order, where the goods are prepared, the available shipping line and the transport cost. These are possible departure ports — not a guarantee that every route is available at all times.",
+    "contTitle": "Container types & loading capacity",
+    "contIntro": "The container type is chosen according to shipment volume, furniture dimensions, packaging and how products are arranged inside, to make the best use of loading space.",
+    "containers": [
+      {
+        "name": "20 FT Standard",
+        "alt": "",
+        "range": "28–33",
+        "body": "Suited to small and medium shipments, depending on furniture volume and packing method."
+      },
+      {
+        "name": "40 FT Standard",
+        "alt": "",
+        "range": "56–60",
+        "body": "Suited to larger shipments, taking product dimensions and loading requirements into account."
+      },
+      {
+        "name": "40 FT High Cube",
+        "alt": "",
+        "range": "68–76",
+        "body": "Greater internal height than the standard 40 FT, giving extra flexibility when loading furniture and packing materials."
+      }
+    ],
+    "contUnit": "CBM · approx. loading volume",
+    "contNoteTitle": "Actual loading capacity",
+    "contNote": [
+      "These figures are indicative planning estimates, not guaranteed capacity. Usable furniture volume is lower than a container's geometric internal volume, and varies with item dimensions, packaging, knock-down (KD) versus assembled products, weight limits, and the loading and stowage method.",
+      "The most suitable container for each shipment is determined from the order details, product dimensions and packing method."
+    ],
+    "cbmTitle": "Calculating shipment volume (CBM)",
+    "cbmIntro": "Total shipment volume in cubic metres is used to determine the number of containers needed and to estimate shipping costs.",
+    "cbmFormula": "CBM = Length (m) × Width (m) × Height (m)",
+    "cbmExampleLabel": "Illustrative example",
+    "cbmExample": "One carton of 2.00 × 0.60 × 0.50 m = 0.60 CBM. 20 such cartons = 12.0 CBM.",
+    "cbmFactorsTitle": "The calculation depends on",
+    "cbmFactors": [
+      "Number of furniture pieces",
+      "Dimensions of each piece after packing",
+      "Packaging method and preparation",
+      "Whether the furniture can be knocked down and reassembled",
+      "How products are arranged in the container",
+      "Space needed to protect products in transit"
+    ],
+    "cbmNote": "Total CBM must use actual packed dimensions multiplied by quantities. A total below a container's rated range does not by itself guarantee that the goods will physically fit.",
+    "transitTitle": "Transit time",
+    "transitBody": "Sea transit time varies with the destination country and port, the shipping line, the number of transshipment stops, sailing schedules and port operating conditions.",
+    "transitFactors": [
+      "Destination country and port",
+      "Shipping line and sailing schedule",
+      "Transshipment stops",
+      "Port operations",
+      "Sea transport conditions"
+    ],
+    "transitNote": "An estimated transit time is provided for each order with the quotation. Actual times may vary with sailing schedules and transport conditions. We do not publish fixed transit times.",
+    "ctaTitle": "Plan your shipment with us",
+    "ctaBody": "Share products, quantities, destination and your preferred terms — we will prepare a quotation covering volume, packaging and shipping.",
+    "cta": "Request a Shipping & Furniture Quotation"
+  },
+  "custom": {
+    "eyebrow": "Custom manufacturing & projects",
+    "title": "Custom furniture & project supply",
+    "lead": "Alongside our wholesale collections, we review made-to-order designs and furnishing requests for qualified projects — subject to production feasibility.",
+    "customTitle": "Custom furniture",
+    "customBody": "We can review designs supplied by the customer and produce furniture to the required dimensions and specifications, depending on production feasibility. Not every design can be manufactured; feasibility is confirmed after review.",
+    "sendTitle": "What you can send",
+    "send": [
+      "Design images",
+      "Drawings and dimensions",
+      "Preferred wood type or materials",
+      "Colours and finishes",
+      "Quantities",
+      "Special technical requirements"
+    ],
+    "sendNote": "After reviewing the details, we prepare a suitable quotation. Our sales team will advise how to share drawings and image files after your first inquiry.",
+    "projTitle": "Projects & hotels",
+    "projBody": "We can review furniture requests for residential, commercial and hotel projects according to the required specifications and quantities.",
+    "projTypesTitle": "Project types",
+    "projTypes": [
+      "Hotels",
+      "Residential developments",
+      "Furnished apartments",
+      "Commercial projects",
+      "Large-scale furniture orders"
+    ],
+    "projCatsTitle": "Products that can be evaluated",
+    "projCats": [
+      "Bedrooms",
+      "Living rooms",
+      "Dining rooms",
+      "Hotel furniture",
+      "Residential furniture",
+      "Real-estate project furniture",
+      "Custom designs",
+      "Large orders to specification"
+    ],
+    "assessTitle": "How each project is assessed",
+    "assessBody": "Quantities, production duration, customization, contract and shipping terms are determined separately for every project.",
+    "focusNote": "Our core business remains wholesale supply to furniture importers, wholesalers, distributors and showrooms; project requests are evaluated individually.",
+    "ctaTitle": "Have a project or custom design in mind?",
+    "ctaBody": "Tell us about the project, quantities and specifications. We will review feasibility and come back to you with next steps.",
+    "cta": "Discuss Your Project",
+    "cta2": "Send a custom design request"
+  },
+  "privacy": {
+    "title": "Privacy notice",
+    "body": "The privacy notice for this website is pending legal review and will be published here before personal information is collected in production.",
+    "status": "Status: PENDING legal review"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "The page you are looking for does not exist or has moved.",
+    "home": "Back to home",
+    "browse": "Browse collections"
+  },
+  "meta": {
+    "home": "Egyptian Furniture Manufacturing & Export Solutions",
+    "collections": "Collections",
+    "about": "About Us",
+    "sourcing": "Sourcing & Export",
+    "shipping": "Shipping & Payment Guide",
+    "custom": "Custom Manufacturing & Projects",
+    "contact": "Contact & Request a Quote",
+    "inquiry": "Inquiry List",
+    "privacy": "Privacy",
+    "notFound": "Page not found"
+  }
+}

@@ -1,0 +1,830 @@
+[
+  {
+    "id": "pv-br-01",
+    "slug": "soft-arc-bedroom-set",
+    "code": "PV-BR-01",
+    "categoryId": "bedrooms",
+    "style": null,
+    "unit": "set",
+    "sort": 0,
+    "illustrative": true,
+    "name": {
+      "en": "Soft Arc Bedroom Set",
+      "ar": "طقم غرفة نوم بخطوط منحنية ناعمة"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/bedroom-sets/en/img-bedroom-sets-en-03-640.webp",
+          "full": "/assets/furniture/bedroom-sets/en/img-bedroom-sets-en-03-1400.webp",
+          "width": 1122,
+          "height": 1402,
+          "source": {
+            "driveFileId": "1Bbn0sWcvhlnFFy7GFZfm1dFDe__aL_V4",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-01-640.webp",
+          "full": "/assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-01-1400.webp",
+          "width": 1055,
+          "height": 1491,
+          "source": {
+            "driveFileId": "1SGtOOAB_BNKAVOFPob1-yag3DYGxUFqx",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-br-02",
+    "slug": "curve-bedroom-set",
+    "code": "PV-BR-02",
+    "categoryId": "bedrooms",
+    "style": null,
+    "unit": "set",
+    "sort": 1,
+    "illustrative": true,
+    "name": {
+      "en": "Curve Bedroom Set",
+      "ar": "طقم غرفة نوم بخطوط منحنية"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/bedroom-sets/en/img-bedroom-sets-en-07-640.webp",
+          "full": "/assets/furniture/bedroom-sets/en/img-bedroom-sets-en-07-1400.webp",
+          "width": 1122,
+          "height": 1402,
+          "source": {
+            "driveFileId": "18Eb4iamYjmvNHTBiyMp35bX51FZ56-_9",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-07-640.webp",
+          "full": "/assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-07-1400.webp",
+          "width": 1122,
+          "height": 1402,
+          "source": {
+            "driveFileId": "1P_UgohZgKmmKftNTHBUpjil8QEDPestN",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-br-03",
+    "slug": "upholstered-bedroom-set",
+    "code": "PV-BR-03",
+    "categoryId": "bedrooms",
+    "style": null,
+    "unit": "set",
+    "sort": 2,
+    "illustrative": true,
+    "name": {
+      "en": "Upholstered Bedroom Set",
+      "ar": "طقم غرفة نوم منجد"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/bedroom-sets/en/img-bedroom-sets-en-08-640.webp",
+          "full": "/assets/furniture/bedroom-sets/en/img-bedroom-sets-en-08-1400.webp",
+          "width": 1122,
+          "height": 1402,
+          "source": {
+            "driveFileId": "1_PvqoKUr8bjMF1Xx6iWtjg_8Ci9uhS_0",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-06-640.webp",
+          "full": "/assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-06-1400.webp",
+          "width": 1122,
+          "height": 1402,
+          "source": {
+            "driveFileId": "10YMYJ3fqvNuV2GLkXcG4YZz9uNTVmckz",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-br-04",
+    "slug": "luxe-bedroom-set",
+    "code": "PV-BR-04",
+    "categoryId": "bedrooms",
+    "style": null,
+    "unit": "set",
+    "sort": 3,
+    "illustrative": true,
+    "name": {
+      "en": "Luxe Bedroom Set",
+      "ar": "طقم غرفة نوم فاخر"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/bedroom-sets/en/img-bedroom-sets-en-10-640.webp",
+          "full": "/assets/furniture/bedroom-sets/en/img-bedroom-sets-en-10-1400.webp",
+          "width": 1122,
+          "height": 1402,
+          "source": {
+            "driveFileId": "1vMfGO5zUzLWQTw3XiRUXISSe3ZRuKQDi",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-08-640.webp",
+          "full": "/assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-08-1400.webp",
+          "width": 1122,
+          "height": 1402,
+          "source": {
+            "driveFileId": "1OT8h5F0xPzxyTfANIYvdkpNfKcQJ1-8f",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-kb-01",
+    "slug": "arch-line-kids-bedroom-set",
+    "code": "PV-KB-01",
+    "categoryId": "kids-bedrooms",
+    "style": null,
+    "unit": "set",
+    "sort": 4,
+    "illustrative": true,
+    "name": {
+      "en": "Arch Line Kids Bedroom Set",
+      "ar": "طقم غرفة أطفال بخطوط مقوسة"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/kids-bedrooms/en/img-kids-bedrooms-en-03-640.webp",
+          "full": "/assets/furniture/kids-bedrooms/en/img-kids-bedrooms-en-03-1400.webp",
+          "width": 1122,
+          "height": 1402,
+          "source": {
+            "driveFileId": "1fvYt6Z7oAcgH1DcaajBKlRHXHYICeSDV",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/kids-bedrooms/ar/img-kids-bedrooms-ar-03-640.webp",
+          "full": "/assets/furniture/kids-bedrooms/ar/img-kids-bedrooms-ar-03-1400.webp",
+          "width": 1055,
+          "height": 1491,
+          "source": {
+            "driveFileId": "1ecoWHChpxwJIUFJaaW0bXszeT08zZfUP",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-kb-02",
+    "slug": "butterfly-charm-kids-bedroom-set",
+    "code": "PV-KB-02",
+    "categoryId": "kids-bedrooms",
+    "style": null,
+    "unit": "set",
+    "sort": 5,
+    "illustrative": true,
+    "name": {
+      "en": "Butterfly Charm Kids Bedroom Set",
+      "ar": "طقم غرفة أطفال بتفاصيل فراشة"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/kids-bedrooms/en/img-kids-bedrooms-en-04-640.webp",
+          "full": "/assets/furniture/kids-bedrooms/en/img-kids-bedrooms-en-04-1400.webp",
+          "width": 1122,
+          "height": 1402,
+          "source": {
+            "driveFileId": "1AmxBraaiEN6zHGWpp0mUAqX5swxRdW_K",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/kids-bedrooms/ar/img-kids-bedrooms-ar-04-640.webp",
+          "full": "/assets/furniture/kids-bedrooms/ar/img-kids-bedrooms-ar-04-1400.webp",
+          "width": 1055,
+          "height": 1491,
+          "source": {
+            "driveFileId": "1rArr0OuJBGFItT0zjWjR2k_G3WPuFXvP",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-kb-03",
+    "slug": "study-nook-kids-bedroom-set",
+    "code": "PV-KB-03",
+    "categoryId": "kids-bedrooms",
+    "style": null,
+    "unit": "set",
+    "sort": 6,
+    "illustrative": true,
+    "name": {
+      "en": "Study Nook Kids Bedroom Set",
+      "ar": "طقم غرفة أطفال مع وحدة تخزين"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/kids-bedrooms/en/img-kids-bedrooms-en-08-640.webp",
+          "full": "/assets/furniture/kids-bedrooms/en/img-kids-bedrooms-en-08-1400.webp",
+          "width": 1122,
+          "height": 1402,
+          "source": {
+            "driveFileId": "1TwGoJ_RwiWSZcfnsxXEyuNy9JNhYqCEo",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/kids-bedrooms/ar/img-kids-bedrooms-ar-08-640.webp",
+          "full": "/assets/furniture/kids-bedrooms/ar/img-kids-bedrooms-ar-08-1400.webp",
+          "width": 1055,
+          "height": 1491,
+          "source": {
+            "driveFileId": "1xx7lBbgQy2YdO4mbIQL9yiCc3VXjCa3m",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-co-01",
+    "slug": "cocoa-modular-sectional",
+    "code": "PV-CO-01",
+    "categoryId": "corner-sofas",
+    "style": null,
+    "unit": "set",
+    "sort": 7,
+    "illustrative": true,
+    "name": {
+      "en": "Cocoa Modular Sectional",
+      "ar": "ركنة معيارية كاكاو"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/corner-sofas/en/img-corner-sofas-en-09-640.webp",
+          "full": "/assets/furniture/corner-sofas/en/img-corner-sofas-en-09-1400.webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "driveFileId": "1CIXknCQpZa_IB5MWDSjoL5KGC1WfjB6e",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/corner-sofas/ar/img-corner-sofas-ar-06-640.webp",
+          "full": "/assets/furniture/corner-sofas/ar/img-corner-sofas-ar-06-1400.webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "driveFileId": "1zOdxzqGpcZxGnZQW7T2nTpKydSSiBZ8r",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-co-02",
+    "slug": "minimal-white-sectional",
+    "code": "PV-CO-02",
+    "categoryId": "corner-sofas",
+    "style": null,
+    "unit": "set",
+    "sort": 8,
+    "illustrative": true,
+    "name": {
+      "en": "Minimal White Sectional",
+      "ar": "ركنة بيضاء مينيمال"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/corner-sofas/en/img-corner-sofas-en-06-640.webp",
+          "full": "/assets/furniture/corner-sofas/en/img-corner-sofas-en-06-1400.webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "driveFileId": "1f3qSLno1HcEWE28LqOqFXcp10SW9S9O5",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/corner-sofas/ar/img-corner-sofas-ar-10-640.webp",
+          "full": "/assets/furniture/corner-sofas/ar/img-corner-sofas-ar-10-1400.webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "driveFileId": "1nl1u1ydGB4dnLKFeyutK85MnfaC4l0UF",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-co-03",
+    "slug": "olive-curve-sofa",
+    "code": "PV-CO-03",
+    "categoryId": "corner-sofas",
+    "style": null,
+    "unit": "set",
+    "sort": 9,
+    "illustrative": true,
+    "name": {
+      "en": "Olive Curve Sofa",
+      "ar": "كنبة منحنية زيتونية"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/corner-sofas/en/img-corner-sofas-en-01-640.webp",
+          "full": "/assets/furniture/corner-sofas/en/img-corner-sofas-en-01-1400.webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "driveFileId": "13Xe65UDpmuY9fTdjAlRMfwnIbAdnyPU8",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/corner-sofas/ar/img-corner-sofas-ar-01-640.webp",
+          "full": "/assets/furniture/corner-sofas/ar/img-corner-sofas-ar-01-1400.webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "driveFileId": "1Nw1YgwyZRIwY6RGk0CGMSYxPB1Z3TTfA",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-lr-01",
+    "slug": "soft-arc-corner-sofa",
+    "code": "PV-LR-01",
+    "categoryId": "living-rooms",
+    "style": null,
+    "unit": "set",
+    "sort": 10,
+    "illustrative": true,
+    "name": {
+      "en": "Soft Arc Corner Sofa",
+      "ar": "ركنة قوس ناعم"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/living-room-sofas/en/img-living-room-sofas-en-07-640.webp",
+          "full": "/assets/furniture/living-room-sofas/en/img-living-room-sofas-en-07-1400.webp",
+          "width": 1122,
+          "height": 1402,
+          "source": {
+            "driveFileId": "1BhVKi0afHLkmlaS7m-ex3Z4yM1It4bYi",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/living-room-sofas/ar/img-living-room-sofas-ar-07-640.webp",
+          "full": "/assets/furniture/living-room-sofas/ar/img-living-room-sofas-ar-07-1400.webp",
+          "width": 1055,
+          "height": 1491,
+          "source": {
+            "driveFileId": "1q7IIpFGsV5c56aqcAtogz3MI_v37UBQe",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-lr-02",
+    "slug": "teal-sectional-sofa",
+    "code": "PV-LR-02",
+    "categoryId": "living-rooms",
+    "style": null,
+    "unit": "set",
+    "sort": 11,
+    "illustrative": true,
+    "name": {
+      "en": "Teal Sectional Sofa",
+      "ar": "ركنة تيل لاين"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/living-room-sofas/en/img-living-room-sofas-en-08-640.webp",
+          "full": "/assets/furniture/living-room-sofas/en/img-living-room-sofas-en-08-1400.webp",
+          "width": 1122,
+          "height": 1402,
+          "source": {
+            "driveFileId": "1fevSqveUPw89MtSckglKPpj8NX6G_y52",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/living-room-sofas/ar/img-living-room-sofas-ar-08-640.webp",
+          "full": "/assets/furniture/living-room-sofas/ar/img-living-room-sofas-ar-08-1400.webp",
+          "width": 1055,
+          "height": 1491,
+          "source": {
+            "driveFileId": "1o9GU9BDsNmH59-BLFp5ZvMMYDwTEUbMh",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-lr-03",
+    "slug": "luxury-corner-sofa",
+    "code": "PV-LR-03",
+    "categoryId": "living-rooms",
+    "style": null,
+    "unit": "set",
+    "sort": 12,
+    "illustrative": true,
+    "name": {
+      "en": "Luxury Corner Sofa",
+      "ar": "ركنة رويال كونتراست"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/living-room-sofas/en/img-living-room-sofas-en-10-640.webp",
+          "full": "/assets/furniture/living-room-sofas/en/img-living-room-sofas-en-10-1400.webp",
+          "width": 1122,
+          "height": 1402,
+          "source": {
+            "driveFileId": "1uDuf5f3esOyJnS9P8_tnrGoN0122Lvdq",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/living-room-sofas/ar/img-living-room-sofas-ar-10-640.webp",
+          "full": "/assets/furniture/living-room-sofas/ar/img-living-room-sofas-ar-10-1400.webp",
+          "width": 1055,
+          "height": 1491,
+          "source": {
+            "driveFileId": "1qDSM3rT1fDdHFtxuqDgE58naJXWCZbBI",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-cc-01",
+    "slug": "elegant-buffet-and-display-set",
+    "code": "PV-CC-01",
+    "categoryId": "china-cabinets",
+    "style": null,
+    "unit": "set",
+    "sort": 13,
+    "illustrative": true,
+    "name": {
+      "en": "Elegant Buffet & Display Set",
+      "ar": "طقم بوفيه ونيش أنيق"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/china-cabinets/en/img-china-dining-mixed-en-02-640.webp",
+          "full": "/assets/furniture/china-cabinets/en/img-china-dining-mixed-en-02-1400.webp",
+          "width": 1055,
+          "height": 1491,
+          "source": {
+            "driveFileId": "1GngAdIo8zynnLE6gGcbk_ixsLIi4-VWx",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/china-cabinets/ar/img-china-dining-mixed-ar-02-640.webp",
+          "full": "/assets/furniture/china-cabinets/ar/img-china-dining-mixed-ar-02-1400.webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "driveFileId": "1d5kSqiC1YYwG69uQfaGD9zyMcNJUwGan",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-cc-02",
+    "slug": "mirrored-sideboard-set",
+    "code": "PV-CC-02",
+    "categoryId": "china-cabinets",
+    "style": null,
+    "unit": "set",
+    "sort": 14,
+    "illustrative": true,
+    "name": {
+      "en": "Mirrored Sideboard Set",
+      "ar": "طقم بوفيه مرايا"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/china-cabinets/en/img-china-dining-mixed-en-04-640.webp",
+          "full": "/assets/furniture/china-cabinets/en/img-china-dining-mixed-en-04-1400.webp",
+          "width": 1055,
+          "height": 1491,
+          "source": {
+            "driveFileId": "1UfSi3PEWsroKEfS-_grcLRLT_HoJTYAO",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/china-cabinets/ar/img-china-dining-mixed-ar-04-640.webp",
+          "full": "/assets/furniture/china-cabinets/ar/img-china-dining-mixed-ar-04-1400.webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "driveFileId": "1N9OwoNBXxeeitriCu3aptzP3FzBQ1XJU",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-cc-03",
+    "slug": "curved-display-cabinet-set",
+    "code": "PV-CC-03",
+    "categoryId": "china-cabinets",
+    "style": null,
+    "unit": "set",
+    "sort": 15,
+    "illustrative": true,
+    "name": {
+      "en": "Curved Display Cabinet Set",
+      "ar": "طقم نيش منحني"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/china-cabinets/en/img-china-dining-mixed-en-05-640.webp",
+          "full": "/assets/furniture/china-cabinets/en/img-china-dining-mixed-en-05-1400.webp",
+          "width": 1055,
+          "height": 1491,
+          "source": {
+            "driveFileId": "1Epd_1D8AKMnN4OGcT05gh3FDcoMfusBw",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/china-cabinets/ar/img-china-dining-mixed-ar-05-640.webp",
+          "full": "/assets/furniture/china-cabinets/ar/img-china-dining-mixed-ar-05-1400.webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "driveFileId": "1W88pro7ivDKSE94N7l9mAxj_Lo6w93V0",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-dr-01",
+    "slug": "dining-room-set",
+    "code": "PV-DR-01",
+    "categoryId": "dining-rooms",
+    "style": null,
+    "unit": "set",
+    "sort": 16,
+    "illustrative": true,
+    "name": {
+      "en": "Dining Room Set",
+      "ar": "طقم سفرة"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/dining-room-sets/en/img-china-dining-mixed-en-03-640.webp",
+          "full": "/assets/furniture/dining-room-sets/en/img-china-dining-mixed-en-03-1400.webp",
+          "width": 1055,
+          "height": 1491,
+          "source": {
+            "driveFileId": "1XqGqMxxJ7XMlrlD78P1-eu6g43jokxNl",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/dining-room-sets/ar/img-china-dining-mixed-ar-03-640.webp",
+          "full": "/assets/furniture/dining-room-sets/ar/img-china-dining-mixed-ar-03-1400.webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "driveFileId": "1CPcm40iyLyUthou1c1Un1Ap7aY1Qw8Mo",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "pv-dr-02",
+    "slug": "luxury-dining-set",
+    "code": "PV-DR-02",
+    "categoryId": "dining-rooms",
+    "style": null,
+    "unit": "set",
+    "sort": 17,
+    "illustrative": true,
+    "name": {
+      "en": "Luxury Dining Set",
+      "ar": "طقم سفرة فاخر"
+    },
+    "description": {
+      "en": "Illustrative design from the AL NASR FURNITURE catalog. The image is AI-generated and shows a design concept; final pieces, materials, finishes and dimensions are confirmed during quotation.",
+      "ar": "تصميم توضيحي من كتالوج النصر للأثاث. الصورة مُنشأة بالذكاء الاصطناعي وتعرض فكرة تصميمية، ويتم تأكيد القطع والخامات والتشطيبات والمقاسات النهائية أثناء إعداد عرض السعر."
+    },
+    "pieces": [],
+    "materials": null,
+    "gallery": {
+      "en": [
+        {
+          "card": "/assets/furniture/dining-room-sets/en/img-china-dining-mixed-en-07-640.webp",
+          "full": "/assets/furniture/dining-room-sets/en/img-china-dining-mixed-en-07-1400.webp",
+          "width": 1055,
+          "height": 1491,
+          "source": {
+            "driveFileId": "1k24X5fqRxekds9Zjz4Ee3q2UGbT2gJv5",
+            "locale": "en"
+          }
+        }
+      ],
+      "ar": [
+        {
+          "card": "/assets/furniture/dining-room-sets/ar/img-china-dining-mixed-ar-07-640.webp",
+          "full": "/assets/furniture/dining-room-sets/ar/img-china-dining-mixed-ar-07-1400.webp",
+          "width": 1024,
+          "height": 1536,
+          "source": {
+            "driveFileId": "1eVUNtUqHeJli9q6jD3KM1Z1QXo8zS-Qj",
+            "locale": "ar"
+          }
+        }
+      ]
+    }
+  }
+]

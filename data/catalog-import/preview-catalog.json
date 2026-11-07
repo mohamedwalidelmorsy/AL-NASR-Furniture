@@ -1,0 +1,510 @@
+{
+  "generatedAt": "2026-10-27T10:51:02.137Z",
+  "note": "Visual catalog preview. Codes are internal preview IDs, not manufacturer product codes.",
+  "products": [
+    {
+      "id": "pv-br-01",
+      "slug": "soft-arc-bedroom-set",
+      "code": "PV-BR-01",
+      "cat": "bedrooms",
+      "name": {
+        "en": "Soft Arc Bedroom Set",
+        "ar": "طقم غرفة نوم بخطوط منحنية ناعمة"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/bedroom-sets/en/img-bedroom-sets-en-03-1400.webp",
+          "card": "assets/furniture/bedroom-sets/en/img-bedroom-sets-en-03-640.webp",
+          "w": 1122,
+          "h": 1402,
+          "driveFileId": "1Bbn0sWcvhlnFFy7GFZfm1dFDe__aL_V4",
+          "imageId": "img-bedroom-sets-en-03"
+        },
+        "ar": {
+          "full": "assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-01-1400.webp",
+          "card": "assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-01-640.webp",
+          "w": 1055,
+          "h": 1491,
+          "driveFileId": "1SGtOOAB_BNKAVOFPob1-yag3DYGxUFqx",
+          "imageId": "img-bedroom-sets-ar-01"
+        }
+      }
+    },
+    {
+      "id": "pv-br-02",
+      "slug": "curve-bedroom-set",
+      "code": "PV-BR-02",
+      "cat": "bedrooms",
+      "name": {
+        "en": "Curve Bedroom Set",
+        "ar": "طقم غرفة نوم بخطوط منحنية"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/bedroom-sets/en/img-bedroom-sets-en-07-1400.webp",
+          "card": "assets/furniture/bedroom-sets/en/img-bedroom-sets-en-07-640.webp",
+          "w": 1122,
+          "h": 1402,
+          "driveFileId": "18Eb4iamYjmvNHTBiyMp35bX51FZ56-_9",
+          "imageId": "img-bedroom-sets-en-07"
+        },
+        "ar": {
+          "full": "assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-07-1400.webp",
+          "card": "assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-07-640.webp",
+          "w": 1122,
+          "h": 1402,
+          "driveFileId": "1P_UgohZgKmmKftNTHBUpjil8QEDPestN",
+          "imageId": "img-bedroom-sets-ar-07"
+        }
+      }
+    },
+    {
+      "id": "pv-br-03",
+      "slug": "upholstered-bedroom-set",
+      "code": "PV-BR-03",
+      "cat": "bedrooms",
+      "name": {
+        "en": "Upholstered Bedroom Set",
+        "ar": "طقم غرفة نوم منجد"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/bedroom-sets/en/img-bedroom-sets-en-08-1400.webp",
+          "card": "assets/furniture/bedroom-sets/en/img-bedroom-sets-en-08-640.webp",
+          "w": 1122,
+          "h": 1402,
+          "driveFileId": "1_PvqoKUr8bjMF1Xx6iWtjg_8Ci9uhS_0",
+          "imageId": "img-bedroom-sets-en-08"
+        },
+        "ar": {
+          "full": "assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-06-1400.webp",
+          "card": "assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-06-640.webp",
+          "w": 1122,
+          "h": 1402,
+          "driveFileId": "10YMYJ3fqvNuV2GLkXcG4YZz9uNTVmckz",
+          "imageId": "img-bedroom-sets-ar-06"
+        }
+      }
+    },
+    {
+      "id": "pv-br-04",
+      "slug": "luxe-bedroom-set",
+      "code": "PV-BR-04",
+      "cat": "bedrooms",
+      "name": {
+        "en": "Luxe Bedroom Set",
+        "ar": "طقم غرفة نوم فاخر"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/bedroom-sets/en/img-bedroom-sets-en-10-1400.webp",
+          "card": "assets/furniture/bedroom-sets/en/img-bedroom-sets-en-10-640.webp",
+          "w": 1122,
+          "h": 1402,
+          "driveFileId": "1vMfGO5zUzLWQTw3XiRUXISSe3ZRuKQDi",
+          "imageId": "img-bedroom-sets-en-10"
+        },
+        "ar": {
+          "full": "assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-08-1400.webp",
+          "card": "assets/furniture/bedroom-sets/ar/img-bedroom-sets-ar-08-640.webp",
+          "w": 1122,
+          "h": 1402,
+          "driveFileId": "1OT8h5F0xPzxyTfANIYvdkpNfKcQJ1-8f",
+          "imageId": "img-bedroom-sets-ar-08"
+        }
+      }
+    },
+    {
+      "id": "pv-kb-01",
+      "slug": "arch-line-kids-bedroom-set",
+      "code": "PV-KB-01",
+      "cat": "kids-bedrooms",
+      "name": {
+        "en": "Arch Line Kids Bedroom Set",
+        "ar": "طقم غرفة أطفال بخطوط مقوسة"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/kids-bedrooms/en/img-kids-bedrooms-en-03-1400.webp",
+          "card": "assets/furniture/kids-bedrooms/en/img-kids-bedrooms-en-03-640.webp",
+          "w": 1122,
+          "h": 1402,
+          "driveFileId": "1fvYt6Z7oAcgH1DcaajBKlRHXHYICeSDV",
+          "imageId": "img-kids-bedrooms-en-03"
+        },
+        "ar": {
+          "full": "assets/furniture/kids-bedrooms/ar/img-kids-bedrooms-ar-03-1400.webp",
+          "card": "assets/furniture/kids-bedrooms/ar/img-kids-bedrooms-ar-03-640.webp",
+          "w": 1055,
+          "h": 1491,
+          "driveFileId": "1ecoWHChpxwJIUFJaaW0bXszeT08zZfUP",
+          "imageId": "img-kids-bedrooms-ar-03"
+        }
+      }
+    },
+    {
+      "id": "pv-kb-02",
+      "slug": "butterfly-charm-kids-bedroom-set",
+      "code": "PV-KB-02",
+      "cat": "kids-bedrooms",
+      "name": {
+        "en": "Butterfly Charm Kids Bedroom Set",
+        "ar": "طقم غرفة أطفال بتفاصيل فراشة"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/kids-bedrooms/en/img-kids-bedrooms-en-04-1400.webp",
+          "card": "assets/furniture/kids-bedrooms/en/img-kids-bedrooms-en-04-640.webp",
+          "w": 1122,
+          "h": 1402,
+          "driveFileId": "1AmxBraaiEN6zHGWpp0mUAqX5swxRdW_K",
+          "imageId": "img-kids-bedrooms-en-04"
+        },
+        "ar": {
+          "full": "assets/furniture/kids-bedrooms/ar/img-kids-bedrooms-ar-04-1400.webp",
+          "card": "assets/furniture/kids-bedrooms/ar/img-kids-bedrooms-ar-04-640.webp",
+          "w": 1055,
+          "h": 1491,
+          "driveFileId": "1rArr0OuJBGFItT0zjWjR2k_G3WPuFXvP",
+          "imageId": "img-kids-bedrooms-ar-04"
+        }
+      }
+    },
+    {
+      "id": "pv-kb-03",
+      "slug": "study-nook-kids-bedroom-set",
+      "code": "PV-KB-03",
+      "cat": "kids-bedrooms",
+      "name": {
+        "en": "Study Nook Kids Bedroom Set",
+        "ar": "طقم غرفة أطفال مع وحدة تخزين"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/kids-bedrooms/en/img-kids-bedrooms-en-08-1400.webp",
+          "card": "assets/furniture/kids-bedrooms/en/img-kids-bedrooms-en-08-640.webp",
+          "w": 1122,
+          "h": 1402,
+          "driveFileId": "1TwGoJ_RwiWSZcfnsxXEyuNy9JNhYqCEo",
+          "imageId": "img-kids-bedrooms-en-08"
+        },
+        "ar": {
+          "full": "assets/furniture/kids-bedrooms/ar/img-kids-bedrooms-ar-08-1400.webp",
+          "card": "assets/furniture/kids-bedrooms/ar/img-kids-bedrooms-ar-08-640.webp",
+          "w": 1055,
+          "h": 1491,
+          "driveFileId": "1xx7lBbgQy2YdO4mbIQL9yiCc3VXjCa3m",
+          "imageId": "img-kids-bedrooms-ar-08"
+        }
+      }
+    },
+    {
+      "id": "pv-co-01",
+      "slug": "cocoa-modular-sectional",
+      "code": "PV-CO-01",
+      "cat": "corner-sofas",
+      "name": {
+        "en": "Cocoa Modular Sectional",
+        "ar": "ركنة معيارية كاكاو"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/corner-sofas/en/img-corner-sofas-en-09-1400.webp",
+          "card": "assets/furniture/corner-sofas/en/img-corner-sofas-en-09-640.webp",
+          "w": 1024,
+          "h": 1536,
+          "driveFileId": "1CIXknCQpZa_IB5MWDSjoL5KGC1WfjB6e",
+          "imageId": "img-corner-sofas-en-09"
+        },
+        "ar": {
+          "full": "assets/furniture/corner-sofas/ar/img-corner-sofas-ar-06-1400.webp",
+          "card": "assets/furniture/corner-sofas/ar/img-corner-sofas-ar-06-640.webp",
+          "w": 1024,
+          "h": 1536,
+          "driveFileId": "1zOdxzqGpcZxGnZQW7T2nTpKydSSiBZ8r",
+          "imageId": "img-corner-sofas-ar-06"
+        }
+      }
+    },
+    {
+      "id": "pv-co-02",
+      "slug": "minimal-white-sectional",
+      "code": "PV-CO-02",
+      "cat": "corner-sofas",
+      "name": {
+        "en": "Minimal White Sectional",
+        "ar": "ركنة بيضاء مينيمال"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/corner-sofas/en/img-corner-sofas-en-06-1400.webp",
+          "card": "assets/furniture/corner-sofas/en/img-corner-sofas-en-06-640.webp",
+          "w": 1024,
+          "h": 1536,
+          "driveFileId": "1f3qSLno1HcEWE28LqOqFXcp10SW9S9O5",
+          "imageId": "img-corner-sofas-en-06"
+        },
+        "ar": {
+          "full": "assets/furniture/corner-sofas/ar/img-corner-sofas-ar-10-1400.webp",
+          "card": "assets/furniture/corner-sofas/ar/img-corner-sofas-ar-10-640.webp",
+          "w": 1024,
+          "h": 1536,
+          "driveFileId": "1nl1u1ydGB4dnLKFeyutK85MnfaC4l0UF",
+          "imageId": "img-corner-sofas-ar-10"
+        }
+      }
+    },
+    {
+      "id": "pv-co-03",
+      "slug": "olive-curve-sofa",
+      "code": "PV-CO-03",
+      "cat": "corner-sofas",
+      "name": {
+        "en": "Olive Curve Sofa",
+        "ar": "كنبة منحنية زيتونية"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/corner-sofas/en/img-corner-sofas-en-01-1400.webp",
+          "card": "assets/furniture/corner-sofas/en/img-corner-sofas-en-01-640.webp",
+          "w": 1024,
+          "h": 1536,
+          "driveFileId": "13Xe65UDpmuY9fTdjAlRMfwnIbAdnyPU8",
+          "imageId": "img-corner-sofas-en-01"
+        },
+        "ar": {
+          "full": "assets/furniture/corner-sofas/ar/img-corner-sofas-ar-01-1400.webp",
+          "card": "assets/furniture/corner-sofas/ar/img-corner-sofas-ar-01-640.webp",
+          "w": 1024,
+          "h": 1536,
+          "driveFileId": "1Nw1YgwyZRIwY6RGk0CGMSYxPB1Z3TTfA",
+          "imageId": "img-corner-sofas-ar-01"
+        }
+      }
+    },
+    {
+      "id": "pv-lr-01",
+      "slug": "soft-arc-corner-sofa",
+      "code": "PV-LR-01",
+      "cat": "living-rooms",
+      "name": {
+        "en": "Soft Arc Corner Sofa",
+        "ar": "ركنة قوس ناعم"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/living-room-sofas/en/img-living-room-sofas-en-07-1400.webp",
+          "card": "assets/furniture/living-room-sofas/en/img-living-room-sofas-en-07-640.webp",
+          "w": 1122,
+          "h": 1402,
+          "driveFileId": "1BhVKi0afHLkmlaS7m-ex3Z4yM1It4bYi",
+          "imageId": "img-living-room-sofas-en-07"
+        },
+        "ar": {
+          "full": "assets/furniture/living-room-sofas/ar/img-living-room-sofas-ar-07-1400.webp",
+          "card": "assets/furniture/living-room-sofas/ar/img-living-room-sofas-ar-07-640.webp",
+          "w": 1055,
+          "h": 1491,
+          "driveFileId": "1q7IIpFGsV5c56aqcAtogz3MI_v37UBQe",
+          "imageId": "img-living-room-sofas-ar-07"
+        }
+      }
+    },
+    {
+      "id": "pv-lr-02",
+      "slug": "teal-sectional-sofa",
+      "code": "PV-LR-02",
+      "cat": "living-rooms",
+      "name": {
+        "en": "Teal Sectional Sofa",
+        "ar": "ركنة تيل لاين"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/living-room-sofas/en/img-living-room-sofas-en-08-1400.webp",
+          "card": "assets/furniture/living-room-sofas/en/img-living-room-sofas-en-08-640.webp",
+          "w": 1122,
+          "h": 1402,
+          "driveFileId": "1fevSqveUPw89MtSckglKPpj8NX6G_y52",
+          "imageId": "img-living-room-sofas-en-08"
+        },
+        "ar": {
+          "full": "assets/furniture/living-room-sofas/ar/img-living-room-sofas-ar-08-1400.webp",
+          "card": "assets/furniture/living-room-sofas/ar/img-living-room-sofas-ar-08-640.webp",
+          "w": 1055,
+          "h": 1491,
+          "driveFileId": "1o9GU9BDsNmH59-BLFp5ZvMMYDwTEUbMh",
+          "imageId": "img-living-room-sofas-ar-08"
+        }
+      }
+    },
+    {
+      "id": "pv-lr-03",
+      "slug": "luxury-corner-sofa",
+      "code": "PV-LR-03",
+      "cat": "living-rooms",
+      "name": {
+        "en": "Luxury Corner Sofa",
+        "ar": "ركنة رويال كونتراست"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/living-room-sofas/en/img-living-room-sofas-en-10-1400.webp",
+          "card": "assets/furniture/living-room-sofas/en/img-living-room-sofas-en-10-640.webp",
+          "w": 1122,
+          "h": 1402,
+          "driveFileId": "1uDuf5f3esOyJnS9P8_tnrGoN0122Lvdq",
+          "imageId": "img-living-room-sofas-en-10"
+        },
+        "ar": {
+          "full": "assets/furniture/living-room-sofas/ar/img-living-room-sofas-ar-10-1400.webp",
+          "card": "assets/furniture/living-room-sofas/ar/img-living-room-sofas-ar-10-640.webp",
+          "w": 1055,
+          "h": 1491,
+          "driveFileId": "1qDSM3rT1fDdHFtxuqDgE58naJXWCZbBI",
+          "imageId": "img-living-room-sofas-ar-10"
+        }
+      }
+    },
+    {
+      "id": "pv-cc-01",
+      "slug": "elegant-buffet-and-display-set",
+      "code": "PV-CC-01",
+      "cat": "china-cabinets",
+      "name": {
+        "en": "Elegant Buffet & Display Set",
+        "ar": "طقم بوفيه ونيش أنيق"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/china-cabinets/en/img-china-dining-mixed-en-02-1400.webp",
+          "card": "assets/furniture/china-cabinets/en/img-china-dining-mixed-en-02-640.webp",
+          "w": 1055,
+          "h": 1491,
+          "driveFileId": "1GngAdIo8zynnLE6gGcbk_ixsLIi4-VWx",
+          "imageId": "img-china-dining-mixed-en-02"
+        },
+        "ar": {
+          "full": "assets/furniture/china-cabinets/ar/img-china-dining-mixed-ar-02-1400.webp",
+          "card": "assets/furniture/china-cabinets/ar/img-china-dining-mixed-ar-02-640.webp",
+          "w": 1024,
+          "h": 1536,
+          "driveFileId": "1d5kSqiC1YYwG69uQfaGD9zyMcNJUwGan",
+          "imageId": "img-china-dining-mixed-ar-02"
+        }
+      }
+    },
+    {
+      "id": "pv-cc-02",
+      "slug": "mirrored-sideboard-set",
+      "code": "PV-CC-02",
+      "cat": "china-cabinets",
+      "name": {
+        "en": "Mirrored Sideboard Set",
+        "ar": "طقم بوفيه مرايا"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/china-cabinets/en/img-china-dining-mixed-en-04-1400.webp",
+          "card": "assets/furniture/china-cabinets/en/img-china-dining-mixed-en-04-640.webp",
+          "w": 1055,
+          "h": 1491,
+          "driveFileId": "1UfSi3PEWsroKEfS-_grcLRLT_HoJTYAO",
+          "imageId": "img-china-dining-mixed-en-04"
+        },
+        "ar": {
+          "full": "assets/furniture/china-cabinets/ar/img-china-dining-mixed-ar-04-1400.webp",
+          "card": "assets/furniture/china-cabinets/ar/img-china-dining-mixed-ar-04-640.webp",
+          "w": 1024,
+          "h": 1536,
+          "driveFileId": "1N9OwoNBXxeeitriCu3aptzP3FzBQ1XJU",
+          "imageId": "img-china-dining-mixed-ar-04"
+        }
+      }
+    },
+    {
+      "id": "pv-cc-03",
+      "slug": "curved-display-cabinet-set",
+      "code": "PV-CC-03",
+      "cat": "china-cabinets",
+      "name": {
+        "en": "Curved Display Cabinet Set",
+        "ar": "طقم نيش منحني"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/china-cabinets/en/img-china-dining-mixed-en-05-1400.webp",
+          "card": "assets/furniture/china-cabinets/en/img-china-dining-mixed-en-05-640.webp",
+          "w": 1055,
+          "h": 1491,
+          "driveFileId": "1Epd_1D8AKMnN4OGcT05gh3FDcoMfusBw",
+          "imageId": "img-china-dining-mixed-en-05"
+        },
+        "ar": {
+          "full": "assets/furniture/china-cabinets/ar/img-china-dining-mixed-ar-05-1400.webp",
+          "card": "assets/furniture/china-cabinets/ar/img-china-dining-mixed-ar-05-640.webp",
+          "w": 1024,
+          "h": 1536,
+          "driveFileId": "1W88pro7ivDKSE94N7l9mAxj_Lo6w93V0",
+          "imageId": "img-china-dining-mixed-ar-05"
+        }
+      }
+    },
+    {
+      "id": "pv-dr-01",
+      "slug": "dining-room-set",
+      "code": "PV-DR-01",
+      "cat": "dining-rooms",
+      "name": {
+        "en": "Dining Room Set",
+        "ar": "طقم سفرة"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/dining-room-sets/en/img-china-dining-mixed-en-03-1400.webp",
+          "card": "assets/furniture/dining-room-sets/en/img-china-dining-mixed-en-03-640.webp",
+          "w": 1055,
+          "h": 1491,
+          "driveFileId": "1XqGqMxxJ7XMlrlD78P1-eu6g43jokxNl",
+          "imageId": "img-china-dining-mixed-en-03"
+        },
+        "ar": {
+          "full": "assets/furniture/dining-room-sets/ar/img-china-dining-mixed-ar-03-1400.webp",
+          "card": "assets/furniture/dining-room-sets/ar/img-china-dining-mixed-ar-03-640.webp",
+          "w": 1024,
+          "h": 1536,
+          "driveFileId": "1CPcm40iyLyUthou1c1Un1Ap7aY1Qw8Mo",
+          "imageId": "img-china-dining-mixed-ar-03"
+        }
+      }
+    },
+    {
+      "id": "pv-dr-02",
+      "slug": "luxury-dining-set",
+      "code": "PV-DR-02",
+      "cat": "dining-rooms",
+      "name": {
+        "en": "Luxury Dining Set",
+        "ar": "طقم سفرة فاخر"
+      },
+      "images": {
+        "en": {
+          "full": "assets/furniture/dining-room-sets/en/img-china-dining-mixed-en-07-1400.webp",
+          "card": "assets/furniture/dining-room-sets/en/img-china-dining-mixed-en-07-640.webp",
+          "w": 1055,
+          "h": 1491,
+          "driveFileId": "1k24X5fqRxekds9Zjz4Ee3q2UGbT2gJv5",
+          "imageId": "img-china-dining-mixed-en-07"
+        },
+        "ar": {
+          "full": "assets/furniture/dining-room-sets/ar/img-china-dining-mixed-ar-07-1400.webp",
+          "card": "assets/furniture/dining-room-sets/ar/img-china-dining-mixed-ar-07-640.webp",
+          "w": 1024,
+          "h": 1536,
+          "driveFileId": "1eVUNtUqHeJli9q6jD3KM1Z1QXo8zS-Qj",
+          "imageId": "img-china-dining-mixed-ar-07"
+        }
+      }
+    }
+  ]
+}

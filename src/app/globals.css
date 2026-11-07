@@ -1,0 +1,51 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "./states.generated.css";
+
+/* Design tokens from 03-UI-Design-System.md (the approved palette). Available as Tailwind utilities (bg-bone, text-walnut…). */
+@theme {
+  --color-bone: #FAF9F6;
+  --color-sand: #E9E4DC;
+  --color-sand-deep: #DDD6CB;
+  --color-ink: #252525;
+  --color-walnut: #584838;
+  --color-walnut-deep: #43362A;
+  --color-brass: #A58B64;
+  --color-line: #D8D2C9;
+  --color-muted: #625C54;
+  --color-danger: #B42318;
+  --color-success: #24634B;
+  --font-sans: var(--font-manrope), var(--font-plex-ar), system-ui, sans-serif;
+  --breakpoint-sm: 640px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-nav: 1140px;
+}
+
+/* Base — carried over 1:1 from the prototype (Tailwind preflight is intentionally not imported). */
+html, body { margin: 0; background: #FAF9F6; color: #252525; -webkit-text-size-adjust: 100%; }
+*, *::before, *::after { box-sizing: border-box; }
+a { color: #584838; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: #252525; }
+:focus-visible { outline: 2px solid #584838; outline-offset: 3px; border-radius: 4px; }
+button, input, select, textarea { font: inherit; color: inherit; }
+summary { list-style: none; cursor: pointer; }
+summary::-webkit-details-marker { display: none; }
+[dir="rtl"] *:not([data-keep-ls]) { letter-spacing: 0 !important; }
+[dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 { line-height: 1.45 !important; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+/* the prototype hides number-input spinners on the detail quantity field */
+input[type="number"] { -moz-appearance: textfield; }
+
+/* Responsive chrome — the prototype switched on window.innerWidth in JS; the same breakpoints are pure CSS here (no hydration flash). */
+:root { --header-h: 64px; }
+@media (min-width: 1024px) { :root { --header-h: 80px; } }
+.ctn-full, .ctn-notmobile { display: none; }
+.ctn-compact { display: contents; }
+@media (min-width: 640px) { .ctn-notmobile { display: contents; } }
+@media (min-width: 1140px) {
+  .ctn-full { display: contents; }
+  .ctn-compact { display: none; }
+  .mobile-menu { display: none !important; }
+}

@@ -1,0 +1,14 @@
+{
+  "modern": {
+    "en": "Modern",
+    "ar": "مودرن"
+  },
+  "classic": {
+    "en": "Classic",
+    "ar": "كلاسيك"
+  },
+  "contemporary": {
+    "en": "Contemporary",
+    "ar": "معاصر"
+  }
+}

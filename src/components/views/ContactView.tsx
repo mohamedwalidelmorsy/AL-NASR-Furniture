@@ -42,8 +42,6 @@ export function ContactView({ products }: { products: ProductCard[] }) {
   const emailHref = email ? 'mailto:' + email : '';
 
   const resolver = useMemo(() => zodResolver(rfqFormSchema(hasInq)), [hasInq]);
-  // React Hook Form is not React-Compiler compatible; this component opts out of compilation by design.
-  // eslint-disable-next-line react-hooks/incompatible-library
   const form = useForm<RfqFormValues>({ defaultValues: emptyRfqForm(), resolver, mode: 'onSubmit', reValidateMode: 'onChange' });
   const { watch, control, setValue, reset, trigger, handleSubmit, formState } = form;
   const f = useWatch({ control }) as RfqFormValues;
@@ -67,10 +65,16 @@ export function ContactView({ products }: { products: ProductCard[] }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [typeParam]);
   useEffect(() => {
+    // React Hook Form's watch() subscription is not React-Compiler compatible; this component opts out of compilation by design.
+    // eslint-disable-next-line react-hooks/incompatible-library
     const sub = watch((v) => {
       const d = { ...v } as Partial<RfqFormValues>;
       delete d.website;
-      try { localStorage.setItem(siteConfig.storageKeys.draft, JSON.stringify(d)); } catch { /* storage unavailable */ }
+      const pristine = JSON.stringify({ ...emptyRfqForm(), website: undefined }) === JSON.stringify({ ...emptyRfqForm(), ...d, website: undefined });
+      try {
+        if (pristine) localStorage.removeItem(siteConfig.storageKeys.draft);
+        else localStorage.setItem(siteConfig.storageKeys.draft, JSON.stringify(d));
+      } catch { /* storage unavailable */ }
     });
     return () => sub.unsubscribe();
   }, [watch]);
@@ -83,7 +87,7 @@ export function ContactView({ products }: { products: ProductCard[] }) {
     return {
       value: f[k] as string & boolean,
       onChange: (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) =>
-        setValue(k, (e.target.type === 'checkbox' ? (e.target as HTMLInputElement).checked : e.target.value) as never, { shouldValidate: showErrors, shouldDirty: true }),
+        { setValue(k, (e.target.type === 'checkbox' ? (e.target as HTMLInputElement).checked : e.target.value) as never, { shouldDirty: true }); if (showErrors) void trigger(); },
       err: key ? t.form.err[key as keyof typeof t.form.err] : '',
       has: !!key, bc: key ? '#B42318' : '#D8D2C9', inv: key ? ('true' as const) : undefined,
       desc: key ? 'f-' + k + '-err' : k === 'phone' ? 'f-phone-hint' : undefined,
@@ -150,9 +154,9 @@ export function ContactView({ products }: { products: ProductCard[] }) {
     setSubmit('submitting'); setSubmitErr(null);
     try {
       const r = await submitRfq(payload);
+      reset(emptyRfqForm());
       try { localStorage.removeItem(siteConfig.storageKeys.draft); } catch { /* ignore */ }
       setReference(r.reference); setAskClear(items.length > 0); setSubmit('success');
-      reset(emptyRfqForm());
       setTimeout(() => successRef.current?.focus(), 0);
     } catch (e) {
       setSubmitErr(e instanceof RfqSubmitError ? e.code : 'network'); setSubmit('error');

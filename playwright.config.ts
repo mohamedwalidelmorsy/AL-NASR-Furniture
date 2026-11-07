@@ -9,7 +9,7 @@ export default defineConfig({
   reporter: [['list']],
   use: { baseURL: `http://localhost:${PORT}`, trace: 'retain-on-failure' },
   webServer: {
-    command: `npm run build && npx next start -p ${PORT}`,
+    command: `npm run build && RFQ_RATE_LIMIT_MAX=1000 npx next start -p ${PORT}`,
     url: `http://localhost:${PORT}/en`,
     reuseExistingServer: true,
     timeout: 300_000,

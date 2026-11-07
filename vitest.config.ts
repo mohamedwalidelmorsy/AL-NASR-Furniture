@@ -6,8 +6,9 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '@messages': path.resolve(__dirname, 'messages'),
+      '@': path.resolve(import.meta.dirname, 'src'),
+      '@messages': path.resolve(import.meta.dirname, 'messages'),
+      'server-only': path.resolve(import.meta.dirname, 'tests/stubs/server-only.ts'),
     },
   },
   test: {

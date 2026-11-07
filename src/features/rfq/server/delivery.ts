@@ -76,7 +76,7 @@ const NOT_CONFIGURED: RfqDelivery = {
   send: async () => { throw new DeliveryError(503); },
 };
 
-export function getDelivery(env: NodeJS.ProcessEnv = process.env): RfqDelivery {
+export function getDelivery(env: Record<string, string | undefined> = process.env): RfqDelivery {
   const { RESEND_API_KEY, RFQ_TO_EMAIL, RFQ_FROM_EMAIL } = env;
   if (RESEND_API_KEY && RFQ_TO_EMAIL && RFQ_FROM_EMAIL) return new ResendDelivery(RESEND_API_KEY, RFQ_TO_EMAIL, RFQ_FROM_EMAIL);
   return NOT_CONFIGURED;

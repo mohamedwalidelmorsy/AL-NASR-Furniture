@@ -57,7 +57,7 @@ export function Header() {
 <header style={{ position: "sticky", top: "0", zIndex: "50", background: "#FAF9F6", borderBottom: "1px solid #D8D2C9" }}>
   <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 clamp(20px,4vw,40px)", boxSizing: "content-box", height: "var(--header-h)", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "24px" }}>
     <A href={links.home} aria-label="AL NASR FURNITURE" dir="ltr" style={{ display: "flex", flexDirection: "column", gap: "5px", textDecoration: "none", color: "#252525", lineHeight: "1", fontFamily: "var(--font-manrope),sans-serif", flex: "none" }}>
-      <span data-keep-ls="" style={{ fontSize: "19px", fontWeight: "700", letterSpacing: ".22em" }}>AL NASR</span>
+      <span data-keep-ls="" style={{ fontSize: "19px", fontWeight: "700", letterSpacing: ".22em" }}>AL NASR</span>{" "}
       <span data-keep-ls="" style={{ fontSize: "9.5px", fontWeight: "600", letterSpacing: ".56em", color: "#584838" }}>FURNITURE</span>
     </A>
     <div className="ctn-full">

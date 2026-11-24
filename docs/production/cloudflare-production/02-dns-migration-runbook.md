@@ -16,6 +16,7 @@
 | Autodiscover | SRV `_autodiscover._tcp` → `0 0 443 autoconfig.spacemail.com` (TTL 300) | Mail-client setup |
 | DMARC | **None** | Optional to add after the move |
 | Website | No A/AAAA/`www` records today | No existing site to preserve |
+| Snapshot | Complete public snapshot taken 2026-11-25 (NS, SOA, MX ×2, SPF, DKIM, SRV, DNSKEY ×2, DS); no `www`/`mail`/`autoconfig` names | Matches this table; the Spaceship panel export is still needed for names that cannot be discovered by query |
 
 ## 0. Preconditions (all must be true)
 1. The production Worker has passed its `workers.dev` check: deployed with indexing off, production smoke test, controlled RFQ (00-production-config.md).
@@ -27,10 +28,21 @@
 2. Spacemail → mailbox / domain settings. Note any **required DNS records** Spacemail lists that are not in the table above.
 3. Take a public snapshot from the authoritative server and keep it in a private folder (not in the repository):
    ```bash
-   D=alnasrfurniture.com; NS=launch1.spaceship.net
-   for q in "NS $D" "SOA $D" "A $D" "AAAA $D" "MX $D" "TXT $D" "CAA $D" "TXT _dmarc.$D" "TXT spacemail._domainkey.$D" "SRV _autodiscover._tcp.$D" "CNAME www.$D" "CNAME autoconfig.$D" "CNAME autodiscover.$D" "CNAME mail.$D"; do
-     echo "== $q"; dig +noall +answer $q @$NS; done > dns-backup-spaceship-$(date +%F).txt
-   dig +noall +answer DS $D @a.gtld-servers.net >> dns-backup-spaceship-$(date +%F).txt
+   D=alnasrfurniture.com; NS=launch1.spaceship.net; OUT=dns-backup-spaceship-$(date +%F).txt
+   # `while read t n` works the same in zsh and bash (zsh does not word-split "$q" in a for loop).
+   while read -r t n; do echo "== $t $n"; dig +noall +answer "$t" "$n" @"$NS"; done > "$OUT" <<EOF
+   NS $D
+   SOA $D
+   MX $D
+   TXT $D
+   CAA $D
+   TXT _dmarc.$D
+   TXT spacemail._domainkey.$D
+   SRV _autodiscover._tcp.$D
+   CNAME www.$D
+   DNSKEY $D
+   EOF
+   dig +noall +answer DS "$D" @a.gtld-servers.net >> "$OUT"
    ```
    A full zone transfer is not available, so the panel screenshots are the source of truth for names not listed above.
 
@@ -54,7 +66,15 @@
 Query each record directly on a Cloudflare nameserver. The answers must match the backup **exactly** (values, priorities):
 ```bash
 CF=<first-assigned>.ns.cloudflare.com; D=alnasrfurniture.com
-for q in "MX $D" "TXT $D" "TXT spacemail._domainkey.$D" "SRV _autodiscover._tcp.$D" "MX send.$D" "TXT send.$D" "TXT resend._domainkey.$D"; do echo "== $q"; dig +short $q @$CF; done
+while read -r t n; do echo "== $t $n"; dig +short "$t" "$n" @"$CF"; done <<EOF
+MX $D
+TXT $D
+TXT spacemail._domainkey.$D
+SRV _autodiscover._tcp.$D
+MX send.$D
+TXT send.$D
+TXT resend._domainkey.$D
+EOF
 ```
 Any difference → fix it in Cloudflare and repeat. Do not continue with a mismatch.
 

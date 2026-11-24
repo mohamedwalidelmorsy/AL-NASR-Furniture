@@ -46,6 +46,28 @@ const catSlug = (id) => categories.find((c) => c.id === id)?.slug ?? id;
   }
 }
 
+// 2b. Returning visitor: browsers send back the locale cookie set on the first visit, so every request after
+// the first carries a Cookie header (@opennextjs/cloudflare 1.20.18 answered 500 to all of them, #1506).
+{
+  const first = await get('/ar');
+  const setCookie = (first.headers.getSetCookie?.() ?? []).map((c) => c.split(';')[0]).join('; ');
+  record('cookies', 'first visit sets a cookie', setCookie.length > 0, setCookie.replace(/=.*/, '=…'));
+  const jar = { Cookie: `${setCookie || 'NEXT_LOCALE=ar'}; a=b` };
+  for (const p of ['/en', '/ar/collections', '/en/inquiry']) {
+    const r = await get(p, { headers: jar });
+    record('cookies', `GET ${p} with cookies → 200`, r.status === 200, `got ${r.status}`);
+  }
+  // Next 16 answers an RSC request without a valid `_rsc` param with a 307 that adds it; browsers follow it.
+  const rscH = { ...jar, RSC: '1', 'Next-Router-Prefetch': '1' };
+  let rsc = await get('/en/collections', { headers: rscH });
+  if (rsc.status === 307 && rsc.headers.get('location')) rsc = await get(new URL(rsc.headers.get('location'), BASE + '/').pathname + new URL(rsc.headers.get('location'), BASE + '/').search, { headers: rscH });
+  record('cookies', 'RSC prefetch with cookies → 200 text/x-component', rsc.status === 200 && (rsc.headers.get('content-type') ?? '').includes('text/x-component'), `${rsc.status} ${rsc.headers.get('content-type')}`);
+  const fav = await get('/favicon.ico', { headers: jar });
+  record('cookies', '/favicon.ico with cookies → not 5xx', fav.status < 500, `got ${fav.status}`);
+  const rfq = await fetch(BASE + '/api/rfq', { method: 'POST', redirect: 'manual', headers: { ...authH, ...jar, 'Content-Type': 'application/json', Origin: BASE }, body: '{}' });
+  record('cookies', 'RFQ POST with cookies → 422/429 (reaches the app, not 500)', [422, 429].includes(rfq.status), `got ${rfq.status}`);
+}
+
 // 3. Every URL in the sitemap (all pre-rendered locale pages)
 const sm = await (await get('/sitemap.xml')).text();
 const urls = [...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);

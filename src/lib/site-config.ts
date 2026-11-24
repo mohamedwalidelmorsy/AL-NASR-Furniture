@@ -18,6 +18,8 @@ export const siteConfig = {
   /** Search engines are blocked until the business confirms real content (set NEXT_PUBLIC_ALLOW_INDEXING=true at launch). */
   allowIndexing: process.env.NEXT_PUBLIC_ALLOW_INDEXING === 'true',
   rfqEndpoint: '/api/rfq',
+  /** NEXT_PUBLIC_RFQ_ENABLED=false hides online submission (e.g. launch before e-mail delivery is set up); contact links remain. */
+  rfqEnabled: process.env.NEXT_PUBLIC_RFQ_ENABLED !== 'false',
   storageKeys: { inquiry: 'alnasr.inquiry.v1', draft: 'alnasr.rfqDraft.v1' },
 } as const;
 

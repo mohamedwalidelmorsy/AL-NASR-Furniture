@@ -30,10 +30,20 @@ if [ "$TARGET" = production ]; then
   # Production must never ship "PENDING" business data. CF_ALLOW_INCOMPLETE=1 allows a LOCAL test build only:
   # it is marked production-incomplete, which cf:deploy:production refuses.
   missing=""
-  for v in NEXT_PUBLIC_SITE_URL NEXT_PUBLIC_WHATSAPP_NUMBER NEXT_PUBLIC_SALES_EMAIL NEXT_PUBLIC_CONSENT_TEXT_VERSION; do
-    eval "val=\${$v:-}"
-    case "$val" in ""|PENDING|STAGING-TEST|*CHANGE-ME*) missing="$missing $v" ;; esac
-  done
+  unset_or_placeholder() { case "$1" in ""|PENDING|STAGING-TEST|*CHANGE-ME*) return 0 ;; *) return 1 ;; esac; }
+  unset_or_placeholder "${NEXT_PUBLIC_SITE_URL:-}" && missing="$missing NEXT_PUBLIC_SITE_URL"
+  if [ "${NEXT_PUBLIC_RFQ_ENABLED:-true}" = "false" ]; then
+    # Online RFQ off (MVP launch before e-mail delivery): no personal data is collected, but buyers need at least
+    # one real contact channel.
+    if unset_or_placeholder "${NEXT_PUBLIC_WHATSAPP_NUMBER:-}" && unset_or_placeholder "${NEXT_PUBLIC_SALES_EMAIL:-}"; then
+      missing="$missing NEXT_PUBLIC_WHATSAPP_NUMBER|NEXT_PUBLIC_SALES_EMAIL(at-least-one)"
+    fi
+  else
+    for v in NEXT_PUBLIC_WHATSAPP_NUMBER NEXT_PUBLIC_SALES_EMAIL NEXT_PUBLIC_CONSENT_TEXT_VERSION; do
+      eval "val=\${$v:-}"
+      unset_or_placeholder "$val" && missing="$missing $v"
+    done
+  fi
   case "${NEXT_PUBLIC_SITE_URL:-}" in
     https://*.workers.dev*|http://*) echo "error: NEXT_PUBLIC_SITE_URL must be the https production origin" >&2; exit 1 ;;
   esac

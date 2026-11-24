@@ -458,6 +458,8 @@
     "unavailableTitle": "Requests temporarily unavailable",
     "unavailable": "Online quote requests are temporarily unavailable because of a technical issue, so this request has not been sent. Your details and selections are kept in this browser. Please try again in a few minutes, or contact sales directly.",
     "emailSales": "Email the sales team",
+    "disabledTitle": "Online quote requests are not open yet",
+    "disabledBody": "This form cannot be sent online for now. Please send your request to our sales team directly using the contact option below. Your product selections are kept in this browser.",
     "minutes": {"one": "1 minute", "two": "{n} minutes", "few": "{n} minutes", "many": "{n} minutes"},
     "retry": "Try again",
     "successTitle": "Request received",

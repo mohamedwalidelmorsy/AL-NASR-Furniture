@@ -138,6 +138,8 @@ export function ContactView({ products }: { products: ProductCard[] }) {
   const payTermSelect = optSel('payTerm', t.form.payTerms, t.form.noPref);
 
   const busy = submit === 'submitting';
+  // Online submission switched off (NEXT_PUBLIC_RFQ_ENABLED=false): nothing is sent, contact links are offered instead.
+  const rfqOff = !siteConfig.rfqEnabled;
   const isSuccess = submit === 'success';
   const notSuccess = !isSuccess;
   const isError = submit === 'error';
@@ -153,12 +155,12 @@ export function ContactView({ products }: { products: ProductCard[] }) {
   const messageReqLabel = hasInq ? t.form.optional : t.form.required;
   const messagePh = ({ custom: t.form.messagePhCustom, project: t.form.messagePhProject, shipping: t.form.messagePhShipping } as Record<string, string>)[f.inquiryType] || (hasInq ? t.form.messagePhItems : t.form.messagePhGeneral);
   const submitLabel = busy ? t.form.submitting : submit === 'error' ? t.form.retry : t.form.submit;
-  const submitBg = busy ? '#8A7D70' : '#584838';
-  const submitCursor = busy ? 'progress' : 'pointer';
+  const submitBg = busy || rfqOff ? '#8A7D70' : '#584838';
+  const submitCursor = busy ? 'progress' : rfqOff ? 'not-allowed' : 'pointer';
   const hasReference = !!reference;
 
   const send = async (values: RfqFormValues) => {
-    if (busy) return;
+    if (busy || rfqOff) return; // never send while online submission is off
     if (values.website) return; // honeypot: likely a bot — do not send, do not fake success
     const items = resolveItems(inq.validItems);
     const payload = buildRfqPayload(values, items, lang, window.location.href);
@@ -222,6 +224,14 @@ export function ContactView({ products }: { products: ProductCard[] }) {
 
           {(notSuccess) && (<>
             <form data-testid="rfq-form" noValidate onSubmit={onSubmit} aria-busy={busy} style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+              {(rfqOff) && (<>
+                <div role="status" data-testid="rfq-disabled" style={{ padding: "20px 24px", border: "1px solid #584838", borderRadius: "8px", background: "#F3EFE8", display: "flex", flexDirection: "column", gap: "8px" }}>
+                  <p style={{ margin: "0", fontWeight: "600" }}>{t.form.disabledTitle}</p>
+                  <p id="rfq-off-note" style={{ margin: "0", fontSize: "15px" }}>{t.form.disabledBody}</p>
+                  {(waReady) && (<><A href={waGeneral} target="_blank" rel="noopener noreferrer" style={{ alignSelf: "flex-start", fontWeight: "600" }}>{t.contact.waBtn}</A></>)}
+                  {(emailReady) && (<><A href={emailHref} style={{ alignSelf: "flex-start", fontWeight: "600" }}>{t.form.emailSales} <span dir="ltr">({email})</span></A></>)}
+                </div>
+              </>)}
               {(hasErrors) && (<>
                 <div ref={summaryRef} tabIndex={-1} role="alert" style={{ padding: "20px 24px", border: "1px solid #B42318", borderRadius: "8px", background: "#FDF3F2", outline: "none" }}>
                   <p style={{ margin: "0 0 10px", fontWeight: "600", color: "#B42318" }}>{t.form.summaryTitle}</p>
@@ -335,7 +345,7 @@ export function ContactView({ products }: { products: ProductCard[] }) {
               </>)}
 
               <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "16px" }}>
-                <button type="submit" disabled={busy} style={{ height: "52px", padding: "0 28px", borderRadius: "6px", border: "0", background: submitBg, color: "#fff", fontSize: "15px", fontWeight: "600", cursor: submitCursor, transition: "background .2s" }}>{submitLabel}</button>
+                <button type="submit" disabled={busy || rfqOff} aria-describedby={rfqOff ? 'rfq-off-note' : undefined} style={{ height: "52px", padding: "0 28px", borderRadius: "6px", border: "0", background: submitBg, color: "#fff", fontSize: "15px", fontWeight: "600", cursor: submitCursor, transition: "background .2s" }}>{submitLabel}</button>
                 <p style={{ margin: "0", fontSize: "13px", color: "#625C54" }}>{t.form.notOrder}</p>
               </div>
             </form>

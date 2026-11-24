@@ -67,6 +67,8 @@ describe('Cloudflare staging and production stay isolated', () => {
     const p = envFile('cloudflare/production/build.env');
     expect(p.NEXT_PUBLIC_SITE_URL).toMatch(/^https:\/\/(www\.)?alnasrfurniture\.com$/);
     expect(p.NEXT_PUBLIC_ALLOW_INDEXING).toBe('false');
+    // MVP launch: online RFQ stays off until Resend is configured (the form shows contact links instead).
+    expect(p.NEXT_PUBLIC_RFQ_ENABLED).toBe('false');
     expect(production.vars.ALLOW_INDEXING).toBe('false');
   });
 });

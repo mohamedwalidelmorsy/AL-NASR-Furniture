@@ -12,7 +12,10 @@
     "test": "vitest run",
     "test:e2e": "playwright test",
     "catalog:import": "node scripts/import-drive-catalog.ts",
-    "catalog:extract": "node scripts/extract-prototype-data.mjs"
+    "catalog:extract": "node scripts/extract-prototype-data.mjs",
+    "cf:build:staging": "sh ./cloudflare/staging/build.sh",
+    "cf:preview:staging": "sh ./cloudflare/staging/build.sh && wrangler dev",
+    "cf:deploy:staging": "sh ./cloudflare/staging/build.sh && wrangler deploy"
   },
   "dependencies": {
     "@hookform/resolvers": "^7.0.3",
@@ -26,6 +29,7 @@
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.14.0",
+    "@opennextjs/cloudflare": "1.20.18",
     "@playwright/test": "^1.65.0",
     "@tailwindcss/postcss": "^4.3.5",
     "@testing-library/jest-dom": "^7.0.1",
@@ -41,6 +45,7 @@
     "sharp": "^0.35.5",
     "tailwindcss": "^4.3.5",
     "typescript": "^6.0.3",
-    "vitest": "^5.1.0"
+    "vitest": "^5.1.0",
+    "wrangler": "4.168.0"
   }
 }

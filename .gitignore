@@ -22,3 +22,8 @@ docs/**/*.zip
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Cloudflare / OpenNext build output and local secrets
+.open-next
+.wrangler
+.dev.vars

@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // STAGING worker on a temporary workers.dev subdomain. No custom domain / routes: the production
+  // domain and its DNS (Spaceship + Spacemail) are untouched.
+  "name": "al-nasr-furniture-staging",
+  "main": "cloudflare/staging/worker.mjs",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    // Self-reference required by OpenNext (https://opennext.js.org/cloudflare/caching)
+    { "binding": "WORKER_SELF_REFERENCE", "service": "al-nasr-furniture-staging" }
+  ],
+  // next/image → Cloudflare Images binding. On the Images Free plan, transformations beyond
+  // 5,000 unique/month return error 9422 instead of being billed (nothing paid is enabled).
+  "images": { "binding": "IMAGES" },
+  // Workers Logs (Free: 200k events/day, 3-day retention) — used to read real CPU time per request.
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  // Non-secret runtime config. Secrets (STAGING_BASIC_AUTH, RESEND_API_KEY, RFQ_TO_EMAIL, RFQ_FROM_EMAIL)
+  // are set in the Cloudflare dashboard or with `wrangler secret put`, never committed.
+  "vars": {
+    "RFQ_RATE_LIMIT_MAX": "5",
+    "RFQ_RATE_LIMIT_WINDOW_SECONDS": "600"
+  }
+}

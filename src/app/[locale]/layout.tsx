@@ -23,6 +23,9 @@ const manrope = Manrope({ subsets: ['latin'], weight: ['400', '500', '600', '700
 const plexAr = IBM_Plex_Sans_Arabic({ subsets: ['arabic', 'latin'], weight: ['400', '500', '600', '700'], variable: '--font-plex-ar', display: 'swap' });
 
 export const generateStaticParams = () => locales.map((locale) => ({ locale }));
+// Only the generated locales exist: any other first segment (e.g. /favicon.ico, which the proxy matcher skips)
+// is a 404 before pages run generateMetadata with an unknown locale (which threw → 500).
+export const dynamicParams = false;
 
 export const metadata: Metadata = { metadataBase: new URL(siteConfig.siteUrl) };
 

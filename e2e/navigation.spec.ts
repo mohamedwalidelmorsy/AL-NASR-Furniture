@@ -50,6 +50,15 @@ test.describe('navigation & metadata', () => {
     await expect(page.locator('html')).toHaveAttribute('dir', 'rtl');
   });
 
+  test('paths outside any locale answer 404, never 5xx', async ({ request }) => {
+    // Browsers request /favicon.ico and /apple-touch-icon.png on their own, and bots probe paths like /wp-login.php.
+    // The proxy skips dotted paths, so these reach the [locale] segment with an unknown "locale".
+    for (const path of ['/favicon.ico', '/apple-touch-icon.png', '/wp-login.php', '/not-a-locale.txt/about']) {
+      const res = await request.get(path, { maxRedirects: 0 });
+      expect(res.status(), path).toBe(404);
+    }
+  });
+
   test('every page has a title, canonical and AR/EN hreflang alternates', async ({ page }) => {
     for (const path of ['/en', '/ar/about', '/en/collections/bedrooms', '/en/collections/bedrooms/soft-arc-bedroom-set']) {
       await gotoReady(page, path);

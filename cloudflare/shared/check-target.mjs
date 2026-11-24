@@ -21,8 +21,15 @@ if (!allowed.includes(built)) {
   console.error(`error: .open-next was built for "${built || 'unknown'}", expected ${allowed.join(' or ')}. Rebuild for the right target.`);
   process.exit(1);
 }
+// The prerendered route cache must be in the assets, or every page is server-rendered and fails on Workers Free.
+const countFiles = (d) => { try { return fs.readdirSync(d, { recursive: true, withFileTypes: true }).filter((e) => e.isFile()).length; } catch { return 0; } };
+const cacheFiles = countFiles('.open-next/assets/cdn-cgi/_next_cache');
+if (cacheFiles < 1) {
+  console.error('error: .open-next/assets/cdn-cgi/_next_cache is missing; rebuild with cloudflare/shared/build.sh (it runs populateCache).');
+  process.exit(1);
+}
 if (clean) {
   const dirty = execFileSync('git', ['status', '--porcelain', '--untracked-files=no'], { encoding: 'utf8' }).trim();
   if (dirty) { console.error('error: uncommitted changes to tracked files; commit first so the deploy maps to one commit.'); process.exit(1); }
 }
-console.log(`[deploy-target] ${built} OK${clean ? ', working tree clean' : ''}`);
+console.log(`[deploy-target] ${built} OK, route-cache files: ${cacheFiles}${clean ? ', working tree clean' : ''}`);

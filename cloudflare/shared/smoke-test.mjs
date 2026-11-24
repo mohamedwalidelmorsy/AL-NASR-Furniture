@@ -86,17 +86,21 @@ if (MODE === 'staging') {
 const sm = await (await get('/sitemap.xml')).text();
 const urls = [...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
 record('pages', 'sitemap.xml lists pages', urls.length > 0, `${urls.length} urls`);
-let pageFail = 0; const imgSet = new Set(); const times = [];
+let pageFail = 0; let cacheMiss = 0; const imgSet = new Set(); const times = [];
 for (const p of urls) {
   const t0 = performance.now();
   const r = await get(p);
   times.push(performance.now() - t0);
   const html = r.status === 200 ? await r.text() : '';
+  // Pages must come from the prerendered route cache (x-opennext-cache: HIT); on-demand rendering exceeds the
+  // Workers Free CPU limit. A missing cache (deploy without populateCache) shows up here as MISS/absent.
+  if (r.status === 200 && r.headers.get('x-opennext-cache') !== 'HIT') cacheMiss++;
   const robotsOk = EXPECT_INDEXING ? !/<meta[^>]+name="robots"[^>]+noindex/.test(html) : html.includes('noindex');
   if (r.status !== 200 || !robotsOk) { pageFail++; record('pages', p, false, `status ${r.status}${html && !robotsOk ? (EXPECT_INDEXING ? ' (noindex present)' : ' (no noindex)') : ''}`); }
   for (const m of html.matchAll(/\/_next\/image\?url=[^"\s,]+/g)) imgSet.add(m[0].replace(/&amp;/g, '&'));
 }
 record('pages', `all sitemap pages 200 + ${EXPECT_INDEXING ? 'indexable' : 'noindex'} (${urls.length})`, pageFail === 0, `${pageFail} failed`);
+record('pages', 'all sitemap pages served from the prerender cache (x-opennext-cache: HIT)', cacheMiss === 0, `${cacheMiss} not HIT`);
 if (SITE_URL) {
   const origins = [...new Set([...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).origin))];
   record('pages', `sitemap URLs use ${SITE_URL}`, origins.length === 1 && origins[0] === SITE_URL, origins.join(','));

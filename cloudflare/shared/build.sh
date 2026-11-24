@@ -73,6 +73,15 @@ fi
 
 rm -f ./.open-next/deploy-target
 npx opennextjs-cloudflare build -c "$CONFIG"
+# Copy the prerendered route cache into the static assets (static-assets incremental cache; a local file copy,
+# no remote call). Without it every page is server-rendered on request, which exceeds the Workers Free CPU
+# limit and fails. A plain `wrangler deploy -c …` does NOT do this step, so the build always does it.
+npx opennextjs-cloudflare populateCache local -c "$CONFIG"
+CACHE_FILES="$(find ./.open-next/assets/cdn-cgi/_next_cache -type f 2>/dev/null | wc -l | tr -d ' ')"
+if [ "${CACHE_FILES:-0}" -lt 1 ]; then
+  echo "error: prerendered route cache missing in .open-next/assets/cdn-cgi/_next_cache — refusing to mark the build deployable." >&2
+  exit 1
+fi
 cp "$DIR/_headers" ./.open-next/assets/_headers
 printf '%s\n' "$MARKER" > ./.open-next/deploy-target
-echo "$TARGET bundle ready in .open-next/ (marker: $MARKER, site URL: $NEXT_PUBLIC_SITE_URL)"
+echo "$TARGET bundle ready in .open-next/ (marker: $MARKER, route-cache files: $CACHE_FILES, site URL: $NEXT_PUBLIC_SITE_URL)"

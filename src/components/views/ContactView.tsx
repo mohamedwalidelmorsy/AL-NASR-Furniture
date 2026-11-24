@@ -10,6 +10,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import countries from '@/data/countries.json';
 import { useT } from '@/lib/use-t';
 import { buildLinks } from '@/lib/links';
+import { countMessage } from '@/lib/plural';
 import { siteConfig, waLink, whatsappReady } from '@/lib/site-config';
 import { useInquiry } from '@/features/inquiry/inquiry-provider';
 import { useInquiryRows } from '@/features/inquiry/use-rows';
@@ -331,6 +332,10 @@ export function ContactView({ products }: { products: ProductCard[] }) {
 
         <aside aria-labelledby="rfq-sel" style={{ flex: "2 1 300px", minWidth: "0", position: "sticky", top: "104px", padding: "28px", borderRadius: "10px", background: "#E9E4DC", display: "flex", flexDirection: "column", gap: "16px" }}>
           <h2 id="rfq-sel" style={{ margin: "0", fontSize: "20px", fontWeight: "600" }}>{t.form.selectedTitle}</h2>
+          {(inq.archivedItems.length > 0) && (<div role="status" data-testid="rfq-archived-notice" style={{ padding: "12px 14px", borderRadius: "6px", background: "#FAF9F6", border: "1px solid #D8D2C9", display: "flex", flexDirection: "column", gap: "10px", fontSize: "14px" }}>
+            <span>{countMessage(lang, inq.archivedItems.length, { one: t.inquiry.archivedNotice1, two: t.inquiry.archivedNotice2, few: t.inquiry.archivedNotice, many: t.inquiry.archivedNoticeMany })}</span>
+            <button type="button" onClick={inq.removeArchived} style={{ alignSelf: "flex-start", height: "40px", padding: "0 14px", borderRadius: "6px", border: "1px solid #B42318", background: "transparent", color: "#B42318", fontSize: "14px", fontWeight: "600", cursor: "pointer" }}>{t.inquiry.removeArchived}</button>
+          </div>)}
           {(inqEmpty) && (<>
             <p style={{ margin: "0", fontSize: "15px", color: "#4F4943" }}>{t.form.noneSelected}</p>
             <A href={links.collections} style={{ alignSelf: "flex-start", fontWeight: "600", fontSize: "15px" }}>{t.form.browse}</A>

@@ -1,13 +1,13 @@
 import { expect, test } from '@playwright/test';
 import { gotoReady, PRODUCT } from './helpers';
 
-const CATEGORIES = ['bedrooms', 'kids-bedrooms', 'corner-sofas', 'living-rooms', 'china-cabinets', 'dining-rooms'];
+const CATEGORIES = ['bedrooms', 'dressing-rooms', 'kids-bedrooms', 'corner-sofas', 'living-rooms', 'china-cabinets', 'dining-rooms'];
 
 test.describe('categories, product pages, galleries', () => {
-  test('collections overview shows all six categories with counts', async ({ page }) => {
+  test('collections overview shows all seven categories with counts', async ({ page }) => {
     await gotoReady(page, '/en/collections');
     const cards = page.locator('main ul li a[href*="/en/collections/"]');
-    await expect(cards).toHaveCount(6);
+    await expect(cards).toHaveCount(7);
     for (const slug of CATEGORIES) await expect(page.locator(`main a[href="/en/collections/${slug}"]`)).toBeVisible();
     await expect(page.getByText(/\d+ collections?/).first()).toBeVisible();
   });
@@ -30,7 +30,7 @@ test.describe('categories, product pages, galleries', () => {
     await box.fill('soft arc');
     await expect(page.locator('main [role="status"]')).toContainText(/\d+ results?/);
     await expect(page.locator('main').getByRole('heading', { name: 'Soft Arc Bedroom Set' })).toBeVisible();
-    await box.fill('PV-KB-01');
+    await box.fill('PV-KB-04');
     await expect(page.locator('main h3')).toHaveCount(1);
     await box.fill('طقم');
     expect(await page.locator('main h3').count()).toBeGreaterThan(0);
@@ -70,8 +70,10 @@ test.describe('categories, product pages, galleries', () => {
     await expect(dlg).toBeVisible();
     await expect(dlg).toHaveAttribute('aria-modal', 'true');
     await expect(page.getByRole('button', { name: 'Close image viewer' })).toBeFocused();
-    await page.keyboard.press('Tab');
-    await expect(page.getByRole('button', { name: 'Close image viewer' })).toBeFocused(); // single control → focus stays trapped
+    for (let i = 0; i < 8; i++) { // multi-image galleries have prev/next controls: focus must never leave the dialog
+      await page.keyboard.press('Tab');
+      expect(await dlg.evaluate((d) => d.contains(document.activeElement))).toBe(true);
+    }
     await page.keyboard.press('Escape');
     await expect(dlg).toBeHidden();
     await expect(main).toBeFocused();

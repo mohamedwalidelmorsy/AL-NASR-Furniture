@@ -1,5 +1,5 @@
 import { siteConfig } from '@/lib/site-config';
-import { parseStoredInquiry, reinsert, upsertItem, type InquiryItem } from './storage';
+import { migrateMergedItems, parseStoredInquiry, reinsert, upsertItem, type InquiryItem } from './storage';
 
 /**
  * Tiny external store for the Inquiry List, persisted in localStorage under the prototype's key
@@ -61,6 +61,12 @@ export const inquiryStore = {
     removed = null;
   },
   clear() { ensureLoaded(); set([]); },
+  /** Applies the approved duplicate→continuing id map to the saved list (see migrateMergedItems). */
+  migrate(map: Record<string, string>) {
+    ensureLoaded();
+    const next = migrateMergedItems(snapshot.items, map);
+    if (next !== snapshot.items) set(next);
+  },
   /** Test helper: forget in-memory state so the next subscriber re-reads storage. */
   _reset() { snapshot = SERVER_SNAPSHOT; removed = null; },
 };

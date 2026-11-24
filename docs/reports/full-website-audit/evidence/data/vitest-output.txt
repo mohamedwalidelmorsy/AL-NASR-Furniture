@@ -1,0 +1,9 @@
+
+ RUN  v5.1.0 /Users/mohamedwalid/Desktop/al-nasr-furniture
+
+
+ Test Files  8 passed (8)
+      Tests  73 passed (73)
+   Start at  12:32:20
+   Duration  1.72s (environment 69%, setup 13%, tests 8%, import 7%, transform 4%, worker 1%)
+

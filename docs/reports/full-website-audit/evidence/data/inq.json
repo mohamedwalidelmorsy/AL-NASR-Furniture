@@ -1,0 +1,332 @@
+{
+ "pv-br-02": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-br-04": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-br-03": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-br-01": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-kb-01": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-kb-03": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-co-01": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-kb-02": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-co-02": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-co-03": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-lr-02": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-lr-01": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-lr-03": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-cc-03": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-cc-01": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-cc-02": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-dr-01": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-dr-02": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-br-05": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-br-06": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-br-07": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-br-10": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-br-08": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-br-09": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-br-11": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-br-12": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-kb-05": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-kb-04": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-kb-06": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-kb-07": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-kb-09": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-kb-08": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-kb-10": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-dg-02": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-dg-01": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-kb-11": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-dg-03": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-dg-04": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-dg-05": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-dg-06": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-co-04": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-co-05": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-co-06": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-co-07": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-lr-04": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-lr-05": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-lr-07": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-lr-06": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-lr-08": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-lr-11": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-lr-10": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-lr-09": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-lr-13": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-lr-12": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ },
+ "pv-cc-04": {
+  "stored": true,
+  "arName": true,
+  "enName": true,
+  "code": true
+ }
+}

@@ -10,71 +10,114 @@
     "desc": {
       "en": "Modern and classic designs to suit different tastes.",
       "ar": "تصميمات مودرن وكلاسيك تناسب مختلف الأذواق."
-    }
+    },
+    "dimensionProfile": "bedroom-standard",
+    "relatedCategoryId": "dressing-rooms",
+    "cardRatio": "4/3",
+    "coverProductId": "pv-br-06",
+    "relatedNote": {
+      "en": "Looking for fitted wardrobes or a walk-in dressing room?",
+      "ar": "تبحث عن دواليب مدمجة أو غرفة ملابس؟"
+    },
+    "unitKind": "bedroom-set"
+  },
+  {
+    "id": "dressing-rooms",
+    "slug": "dressing-rooms",
+    "sort": 2,
+    "name": {
+      "en": "Dressing Rooms",
+      "ar": "غرف ملابس"
+    },
+    "desc": {
+      "en": "Walk-in and fitted wardrobe and dressing-room designs, planned around the customer's space.",
+      "ar": "تصميمات غرف ملابس ودواليب مدمجة تُخطَّط بحسب مساحة العميل."
+    },
+    "dimensionProfile": "made-to-measure",
+    "relatedCategoryId": "bedrooms",
+    "cardRatio": "4/3",
+    "coverProductId": "pv-dg-03",
+    "relatedNote": {
+      "en": "Looking for a complete bedroom set?",
+      "ar": "تبحث عن غرفة نوم كاملة؟"
+    },
+    "unitKind": "dressing-room"
   },
   {
     "id": "kids-bedrooms",
     "slug": "kids-bedrooms",
-    "sort": 2,
+    "sort": 3,
     "name": {
       "en": "Kids' Bedroom Sets",
-      "ar": "غرف الأطفال"
+      "ar": "غرف نوم أطفال"
     },
     "desc": {
       "en": "Practical furniture in a variety of designs for family needs.",
       "ar": "أثاث عملي بتصميمات متنوعة تناسب احتياجات الأسرة."
-    }
+    },
+    "dimensionProfile": "kids-standard",
+    "cardRatio": "4/3",
+    "coverProductId": "pv-kb-06",
+    "unitKind": "kids-set"
   },
   {
     "id": "corner-sofas",
     "slug": "corner-sofas",
-    "sort": 3,
+    "sort": 4,
     "name": {
       "en": "Corner Sofas",
-      "ar": "الركن"
+      "ar": "كنب زاوية"
     },
     "desc": {
       "en": "A variety of corner sofa designs for living rooms.",
-      "ar": "تصميمات متنوعة لغرف المعيشة."
-    }
+      "ar": "تصميمات متنوعة من كنب الزاوية لغرف المعيشة."
+    },
+    "cardRatio": "3/4",
+    "unitKind": "corner-sofa"
   },
   {
     "id": "living-rooms",
     "slug": "living-rooms",
-    "sort": 4,
+    "sort": 5,
     "name": {
       "en": "Living Room Sofa Sets",
-      "ar": "الانتريهات"
+      "ar": "أطقم كنب"
     },
     "desc": {
-      "en": "Seating sets with multiple design, fabric and finish options.",
-      "ar": "أطقم جلوس بخيارات متعددة من التصميمات والأقمشة والتشطيبات."
-    }
+      "en": "Sofas, chaise longues and seating sets in a range of designs.",
+      "ar": "كنب وشيزلونج وأطقم جلوس بتصميمات متنوعة."
+    },
+    "cardRatio": "3/4",
+    "unitKind": "sofa"
   },
   {
     "id": "china-cabinets",
     "slug": "china-cabinets",
-    "sort": 5,
+    "sort": 6,
     "name": {
       "en": "China Cabinets",
-      "ar": "النيش"
+      "ar": "خزائن عرض"
     },
     "desc": {
       "en": "Elegant designs that complement dining room furniture.",
       "ar": "تصميمات أنيقة ومتكاملة مع أثاث غرف السفرة."
-    }
+    },
+    "cardRatio": "3/4",
+    "unitKind": "display-cabinet"
   },
   {
     "id": "dining-rooms",
     "slug": "dining-rooms",
-    "sort": 6,
+    "sort": 7,
     "name": {
       "en": "Dining Room Sets",
-      "ar": "غرف السفرة"
+      "ar": "غرف سفرة"
     },
     "desc": {
       "en": "Coordinated tables, chairs and designs to suit different spaces.",
       "ar": "طاولات وكراسي وتصميمات متناسقة تناسب مختلف المساحات."
-    }
+    },
+    "cardRatio": "3/4",
+    "unitKind": "dining-set"
   }
 ]

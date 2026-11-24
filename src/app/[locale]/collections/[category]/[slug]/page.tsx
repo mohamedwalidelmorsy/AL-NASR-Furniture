@@ -3,7 +3,10 @@ import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { DetailView, type DetailProduct } from '@/components/views/DetailView';
 import { JsonLd } from '@/components/json-ld';
-import { allProducts, categoryById, galleryFor, loc, productBySlug, relatedProducts, styles } from '@/lib/catalog';
+import { allProducts, categoryById, dimensionProfileOf, unitKindOf, galleryFor, loc, productBySlug, relatedProducts, styles } from '@/lib/catalog';
+import { ArchivedProductView } from '@/components/pages/ArchivedProductView';
+import { buildDimensions } from '@/lib/dimensions';
+import { allMessages } from '@/lib/messages';
 import { locales, type Locale } from '@/i18n/routing';
 import { href } from '@/lib/links';
 import { getPageCtx } from '@/lib/page-ctx';
@@ -14,13 +17,13 @@ type Props = { params: Promise<{ locale: Locale; category: string; slug: string 
 
 export const dynamicParams = false;
 export const generateStaticParams = () =>
-  locales.flatMap((locale) => allProducts().flatMap((p) => { const c = categoryById(p.categoryId); return c ? [{ locale, category: c.slug, slug: p.slug }] : []; }));
+  locales.flatMap((locale) => allProducts().filter((p) => p.status !== 'draft' && p.status !== 'merged').flatMap((p) => { const c = categoryById(p.categoryId); return c ? [{ locale, category: c.slug, slug: p.slug }] : []; }));
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, category, slug } = await params;
   const p = productBySlug(category, slug);
   if (!p) return {};
-  return pageMetadata({ locale, path: `collections/${category}/${slug}`, title: `${loc(p.name, locale)} (${p.code})`, description: loc(p.description, locale) });
+  return pageMetadata({ locale, path: `collections/${category}/${slug}`, title: `${loc(p.name, locale)} (${p.code})`, description: loc(p.description, locale), noindex: p.status === 'archived' });
 }
 
 export default async function ProductPage({ params }: Props) {
@@ -31,6 +34,9 @@ export default async function ProductPage({ params }: Props) {
   if (!p || !cat) notFound();
   const { t, links } = getPageCtx(locale);
   const catHref = href(locale, `collections/${cat.slug}`);
+  if (p.status === 'archived') {
+    return <ArchivedProductView ctx={getPageCtx(locale)} code={p.code} catName={loc(cat.name, locale)} catHref={catHref} />;
+  }
   const crumbs = [
     { label: t.crumbs.home, href: links.home },
     { label: t.nav.collections, href: links.collections },
@@ -39,9 +45,10 @@ export default async function ProductPage({ params }: Props) {
   ];
   const product: DetailProduct = {
     id: p.id, name: loc(p.name, locale), code: p.code, desc: loc(p.description, locale),
-    style: p.style ? loc(styles[p.style], locale) : t.illustrative, unit: p.unit,
+    style: p.style ? loc(styles[p.style], locale) : t.illustrative, unit: p.unit, unitKind: unitKindOf(p),
     catName: loc(cat.name, locale), catHref, imgAlt: `${loc(p.name, locale)} — ${t.illustrativeAlt}`,
-    images: galleryFor(p, locale).map((i) => ({ full: i.full, width: i.width, height: i.height })),
+    images: galleryFor(p, locale).map((i) => ({ full: i.full, card: i.card, width: i.width, height: i.height, label: i.alt ? loc(i.alt, locale) : undefined })),
+    dimensions: (() => { const dp = dimensionProfileOf(p); return dp ? buildDimensions(dp, allMessages[locale]) : null; })(),
     pieces: p.pieces.map((x) => ({ name: loc(x.name, locale), qty: x.qty, dims: x.dims })),
     materials: loc(p.materials, locale),
   };

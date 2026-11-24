@@ -1,0 +1,200 @@
+[
+ {
+  "vn": "desktop",
+  "u": "/en",
+  "initialImgKB": 125,
+  "afterScrollImgKB": 125,
+  "imgs": 8,
+  "cls": 0,
+  "lcp": 560
+ },
+ {
+  "vn": "desktop",
+  "u": "/ar",
+  "initialImgKB": 128,
+  "afterScrollImgKB": 128,
+  "imgs": 8,
+  "cls": 0,
+  "lcp": 144
+ },
+ {
+  "vn": "desktop",
+  "u": "/en/collections",
+  "initialImgKB": 110,
+  "afterScrollImgKB": 110,
+  "imgs": 7,
+  "cls": 0,
+  "lcp": 472
+ },
+ {
+  "vn": "desktop",
+  "u": "/en/collections/bedrooms",
+  "initialImgKB": 150,
+  "afterScrollImgKB": 150,
+  "imgs": 12,
+  "cls": 0,
+  "lcp": 136
+ },
+ {
+  "vn": "desktop",
+  "u": "/en/collections/kids-bedrooms",
+  "initialImgKB": 131,
+  "afterScrollImgKB": 131,
+  "imgs": 11,
+  "cls": 0,
+  "lcp": 116
+ },
+ {
+  "vn": "desktop",
+  "u": "/en/collections/dressing-rooms",
+  "initialImgKB": 49,
+  "afterScrollImgKB": 49,
+  "imgs": 6,
+  "cls": 0,
+  "lcp": 112
+ },
+ {
+  "vn": "desktop",
+  "u": "/en/collections/living-rooms",
+  "initialImgKB": 262,
+  "afterScrollImgKB": 262,
+  "imgs": 14,
+  "cls": 0,
+  "lcp": 120
+ },
+ {
+  "vn": "desktop",
+  "u": "/en/collections/bedrooms/curved-headboard-bench-bedroom-set",
+  "initialImgKB": 46,
+  "afterScrollImgKB": 46,
+  "imgs": 11,
+  "cls": 0,
+  "lcp": 464
+ },
+ {
+  "vn": "desktop",
+  "u": "/en/collections/dressing-rooms/taupe-panel-dressing-room",
+  "initialImgKB": 43,
+  "afterScrollImgKB": 43,
+  "imgs": 8,
+  "cls": 0,
+  "lcp": 100
+ },
+ {
+  "vn": "desktop",
+  "u": "/en/collections/living-rooms/sculpted-white-sofa",
+  "initialImgKB": 90,
+  "afterScrollImgKB": 90,
+  "imgs": 4,
+  "cls": 0,
+  "lcp": 96
+ },
+ {
+  "vn": "desktop",
+  "u": "/en/collections/bedrooms/soft-arc-bedroom-set",
+  "initialImgKB": 59,
+  "afterScrollImgKB": 59,
+  "imgs": 4,
+  "cls": 0,
+  "lcp": 104
+ },
+ {
+  "vn": "mobile",
+  "u": "/en",
+  "initialImgKB": 228,
+  "afterScrollImgKB": 228,
+  "imgs": 8,
+  "cls": 0,
+  "lcp": 104
+ },
+ {
+  "vn": "mobile",
+  "u": "/ar",
+  "initialImgKB": 232,
+  "afterScrollImgKB": 232,
+  "imgs": 8,
+  "cls": 0,
+  "lcp": 108
+ },
+ {
+  "vn": "mobile",
+  "u": "/en/collections",
+  "initialImgKB": 195,
+  "afterScrollImgKB": 195,
+  "imgs": 7,
+  "cls": 0,
+  "lcp": 100
+ },
+ {
+  "vn": "mobile",
+  "u": "/en/collections/bedrooms",
+  "initialImgKB": 121,
+  "afterScrollImgKB": 266,
+  "imgs": 12,
+  "cls": 0,
+  "lcp": 96
+ },
+ {
+  "vn": "mobile",
+  "u": "/en/collections/kids-bedrooms",
+  "initialImgKB": 110,
+  "afterScrollImgKB": 224,
+  "imgs": 11,
+  "cls": 0,
+  "lcp": 104
+ },
+ {
+  "vn": "mobile",
+  "u": "/en/collections/dressing-rooms",
+  "initialImgKB": 81,
+  "afterScrollImgKB": 81,
+  "imgs": 6,
+  "cls": 0,
+  "lcp": 88
+ },
+ {
+  "vn": "mobile",
+  "u": "/en/collections/living-rooms",
+  "initialImgKB": 205,
+  "afterScrollImgKB": 469,
+  "imgs": 14,
+  "cls": 0,
+  "lcp": 112
+ },
+ {
+  "vn": "mobile",
+  "u": "/en/collections/bedrooms/curved-headboard-bench-bedroom-set",
+  "initialImgKB": 90,
+  "afterScrollImgKB": 90,
+  "imgs": 11,
+  "cls": 0,
+  "lcp": 416
+ },
+ {
+  "vn": "mobile",
+  "u": "/en/collections/dressing-rooms/taupe-panel-dressing-room",
+  "initialImgKB": 79,
+  "afterScrollImgKB": 79,
+  "imgs": 8,
+  "cls": 0,
+  "lcp": 576
+ },
+ {
+  "vn": "mobile",
+  "u": "/en/collections/living-rooms/sculpted-white-sofa",
+  "initialImgKB": 173,
+  "afterScrollImgKB": 173,
+  "imgs": 4,
+  "cls": 0,
+  "lcp": 748
+ },
+ {
+  "vn": "mobile",
+  "u": "/en/collections/bedrooms/soft-arc-bedroom-set",
+  "initialImgKB": 113,
+  "afterScrollImgKB": 113,
+  "imgs": 4,
+  "cls": 0,
+  "lcp": 800
+ }
+]

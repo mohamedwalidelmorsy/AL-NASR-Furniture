@@ -82,3 +82,30 @@ describe('product image gallery (multi-image)', () => {
     expect(inquiryStore.getSnapshot().items).toEqual([{ id: 'pv-br-01', qty: 8, note: '' }]);
   });
 });
+
+describe('gallery thumbnails are real images (not numbered placeholder tiles)', () => {
+  it('renders an <img> inside each thumbnail button with the image label as accessible name', () => {
+    const withCards: DetailProduct = {
+      ...product,
+      images: [1, 2, 3].map((n) => ({ full: `/img-${n}.webp`, card: `/img-${n}-640.webp`, width: 400, height: 300, label: `View ${n}` })),
+    };
+    render(
+      <NextIntlClientProvider locale="en" messages={pickClientMessages(allMessages.en)}>
+        <ToastProvider>
+          <InquiryProvider validIds={['pv-br-01']}>
+            <DetailView product={withCards} related={[]} crumbs={[{ label: 'Home', href: '/en' }, { label: 'Test Set' }]} />
+          </InquiryProvider>
+        </ToastProvider>
+      </NextIntlClientProvider>,
+    );
+    const thumbs = screen.getAllByTestId('gallery-thumb');
+    expect(thumbs).toHaveLength(3);
+    for (const [i, th] of thumbs.entries()) {
+      expect(th.querySelector('img')?.getAttribute('src')).toBe(`/img-${i + 1}-640.webp`);
+      expect(th.textContent).toBe('');
+      expect(th.getAttribute('aria-label')).toContain(`View ${i + 1}`);
+    }
+    // frame follows the cover's orientation (4:3 landscape)
+    expect(screen.getByTestId('gallery-frame').getAttribute('style')).toContain('aspect-ratio: 1.33');
+  });
+});

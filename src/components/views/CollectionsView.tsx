@@ -17,7 +17,7 @@ export function CollectionsView({ allCats, products }: { allCats: CatCard[]; pro
   const needle = cq.trim().toLowerCase();
   const cqResults = hasCq ? products.filter((p) => p.search.includes(needle)) : [];
   const cqEmpty = hasCq && cqResults.length === 0;
-  const cqStatus = cqResults.length ? fmt(t.collections.results, { n: cqResults.length, q: cq.trim() }) : fmt(t.collections.noResults, { q: cq.trim() });
+  const cqStatus = cqResults.length ? (cqResults.length === 1 ? fmt(t.collections.results1, { q: cq.trim() }) : fmt(t.collections.results, { n: cqResults.length, q: cq.trim() })) : fmt(t.collections.noResults, { q: cq.trim() });
   const onCq = (e: ChangeEvent<HTMLInputElement>) => setCq(e.target.value);
   const clearCq = () => setCq('');
   return (
@@ -40,7 +40,7 @@ export function CollectionsView({ allCats, products }: { allCats: CatCard[]; pro
           {cqResults.map((k, __i) => (<Fragment key={__i}>
             <li>
               <A href={k.href} style={{ display: "flex", flexDirection: "column", gap: "14px", textDecoration: "none", color: "#252525" }}>
-                <div style={{ position: "relative", borderRadius: "10px", overflow: "hidden", background: "#E9E4DC" }}><Img src={k.img} alt={k.alt} width={k.w} height={k.h} loading="lazy" decoding="async" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "contain", transition: "transform .25s ease" }} className="sh6" /><span style={{ position: "absolute", bottom: "10px", insetInlineStart: "10px", padding: "3px 8px", borderRadius: "4px", background: "rgba(250,249,246,.94)", fontSize: "11px", fontWeight: "600", color: "#4F4943" }}>{t.illustrative}</span></div>
+                <div style={{ position: "relative", borderRadius: "10px", overflow: "hidden", background: "#E9E4DC" }}><Img src={k.img} alt={k.alt} width={k.w} height={k.h} loading="lazy" decoding="async" style={{ display: "block", width: "100%", height: "auto", aspectRatio: k.box, objectFit: k.fit, transition: "transform .25s ease" }} className="sh6" /><span style={{ position: "absolute", bottom: "10px", insetInlineStart: "10px", padding: "3px 8px", borderRadius: "4px", background: "rgba(250,249,246,.94)", fontSize: "11px", fontWeight: "600", color: "#4F4943" }}>{t.illustrative}</span></div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
                   <span style={{ fontSize: "13px", color: "#625C54" }}>{k.cat}</span>
                   <h3 style={{ margin: "0", fontSize: "clamp(18px,1.6vw,20px)", lineHeight: "1.4", fontWeight: "600" }}>{k.name}</h3>
@@ -57,7 +57,7 @@ export function CollectionsView({ allCats, products }: { allCats: CatCard[]; pro
           {allCats.map((c, __i) => (<Fragment key={__i}>
             <li>
               <A href={c.href} style={{ display: "flex", flexDirection: "column", gap: "16px", textDecoration: "none", color: "#252525" }}>
-                <div style={{ borderRadius: "10px", overflow: "hidden", background: "#E9E4DC" }}><Img src={c.img} alt={c.alt} loading="lazy" decoding="async" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "4/3", objectFit: "cover", objectPosition: "center 38%", transition: "transform .25s ease" }} className="sh6" /></div>
+                <div style={{ borderRadius: "10px", overflow: "hidden", background: "#E9E4DC" }}><Img src={c.img} alt={c.alt} loading={__i < 3 ? "eager" : "lazy"} decoding="async" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "4/3", objectFit: "cover", objectPosition: "center 38%", transition: "transform .25s ease" }} className="sh6" /></div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
                   <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", gap: "12px" }}><h2 style={{ margin: "0", fontSize: "20px", lineHeight: "1.4", fontWeight: "600" }}>{c.name}</h2><span style={{ fontSize: "13px", color: "#625C54", flex: "none" }}>{c.count}</span></div>
                   <p style={{ margin: "0", fontSize: "14px", color: "#625C54" }}>{c.desc}</p>

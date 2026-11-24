@@ -1,5 +1,11 @@
 import { expect, test } from '@playwright/test';
 import { gotoReady } from './helpers';
+import fs from 'node:fs';
+import path from 'node:path';
+
+// Active product count derived from the catalog data files (not a hard-coded number).
+const readJson = (f: string) => JSON.parse(fs.readFileSync(path.resolve(import.meta.dirname, '../src/data/catalog', f), 'utf8')) as { status?: string }[];
+const ACTIVE_PRODUCTS = [...readJson('products.json'), ...readJson('products.expansion.json')].filter((p) => (p.status ?? 'active') === 'active').length;
 
 const SEEDS = ['/en', '/ar', '/en/collections', '/en/collections/bedrooms', '/en/collections/bedrooms/soft-arc-bedroom-set', '/ar/collections/kids-bedrooms', '/en/sourcing-export', '/en/shipping-payment', '/en/custom-manufacturing', '/en/contact', '/ar/shipping-payment'];
 
@@ -21,7 +27,7 @@ test.describe('link & image integrity', () => {
 
   test('every <img> loads (naturalWidth > 0) on catalog pages in both languages', async ({ page, isMobile }) => {
     test.skip(isMobile, 'same DOM as desktop');
-    for (const p of ['/en', '/ar', '/en/collections', '/ar/collections/bedrooms', '/en/collections/living-rooms', '/ar/collections/china-cabinets/', '/en/collections/bedrooms/soft-arc-bedroom-set', '/en/collections/dining-rooms']) {
+    for (const p of ['/en', '/ar', '/en/collections', '/ar/collections/bedrooms', '/en/collections/living-rooms', '/en/collections/dressing-rooms', '/ar/collections/kids-bedrooms', '/ar/collections/china-cabinets/', '/en/collections/bedrooms/soft-arc-bedroom-set', '/en/collections/dining-rooms']) {
       await gotoReady(page, p);
       // force lazy images to load
       await page.evaluate(async () => { for (let y = 0; y < document.body.scrollHeight; y += 600) { window.scrollTo(0, y); await new Promise((r) => setTimeout(r, 60)); } });
@@ -35,7 +41,8 @@ test.describe('link & image integrity', () => {
     test.skip(isMobile, 'same DOM as desktop');
     const sm = await (await request.get('/sitemap.xml')).text();
     const urls = [...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
-    expect(urls.filter((u) => /\/collections\/[^/]+\/[^/]+$/.test(u)).length).toBe(36);
+    // one detail URL per ACTIVE product per language — derived from the catalog data, not a hard-coded number
+    expect(urls.filter((u) => /\/collections\/[^/]+\/[^/]+$/.test(u)).length).toBe(ACTIVE_PRODUCTS * 2);
     for (const u of urls) expect((await request.get(u)).status(), u).toBe(200);
     await gotoReady(page, '/en/collections/bedrooms');
     const missing = await page.locator('img:not([alt])').count();

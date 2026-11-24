@@ -40,16 +40,16 @@ describe('inquiry store persistence', () => {
   it('persists add/update/remove/undo/clear to localStorage', () => {
     expect(inquiryStore.add('pv-br-01', 2)).toBe('added');
     expect(inquiryStore.add('pv-br-01', 4)).toBe('updated');
-    inquiryStore.add('pv-kb-01', 1);
-    expect(JSON.parse(localStorage.getItem(KEY)!)).toEqual([{ id: 'pv-br-01', qty: 4, note: '' }, { id: 'pv-kb-01', qty: 1, note: '' }]);
+    inquiryStore.add('pv-kb-04', 1);
+    expect(JSON.parse(localStorage.getItem(KEY)!)).toEqual([{ id: 'pv-br-01', qty: 4, note: '' }, { id: 'pv-kb-04', qty: 1, note: '' }]);
 
-    inquiryStore.update('pv-kb-01', { note: 'blue' });
+    inquiryStore.update('pv-kb-04', { note: 'blue' });
     expect(inquiryStore.getSnapshot().items[1].note).toBe('blue');
 
     expect(inquiryStore.remove('pv-br-01')).toBe(true);
-    expect(inquiryStore.getSnapshot().items.map((i) => i.id)).toEqual(['pv-kb-01']);
+    expect(inquiryStore.getSnapshot().items.map((i) => i.id)).toEqual(['pv-kb-04']);
     inquiryStore.undoRemove();
-    expect(inquiryStore.getSnapshot().items.map((i) => i.id)).toEqual(['pv-br-01', 'pv-kb-01']);
+    expect(inquiryStore.getSnapshot().items.map((i) => i.id)).toEqual(['pv-br-01', 'pv-kb-04']);
 
     inquiryStore.clear();
     expect(JSON.parse(localStorage.getItem(KEY)!)).toEqual([]);

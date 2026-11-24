@@ -11,3 +11,14 @@ test-results
 next-env.d.ts
 .DS_Store
 .catalog-cache
+
+# Redundant zip archives of report/plan folders (folders are committed)
+docs/**/*.zip
+
+# Secrets / local tooling
+*.pem
+*.key
+.vercel
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

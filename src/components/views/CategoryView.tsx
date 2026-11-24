@@ -5,7 +5,8 @@ import { A } from '@/components/ui/A';
 import { Img } from '@/components/ui/Img';
 import { useState, type ChangeEvent } from 'react';
 import { useT } from '@/lib/use-t';
-import { fmt } from '@/lib/messages';
+import { useLocale } from 'next-intl';
+import { countMessage } from '@/lib/plural';
 import { useInquiry } from '@/features/inquiry/inquiry-provider';
 import type { ProductCard } from '@/lib/product-cards';
 
@@ -17,6 +18,7 @@ export interface CategoryViewProps {
 
 export function CategoryView({ products, catTabs: tabs, styleOptions }: CategoryViewProps) {
   const t = useT();
+  const lang = useLocale() as 'en' | 'ar';
   const { validItems } = useInquiry();
   const [q, setQ] = useState('');
   const [style, setStyle] = useState('all');
@@ -24,7 +26,7 @@ export function CategoryView({ products, catTabs: tabs, styleOptions }: Category
   const needle = q.trim().toLowerCase();
   const filtered = products.filter((p) => (style === 'all' || p.styleKey === style) && (!needle || p.search.includes(needle)));
   const catCards = filtered.map((p) => ({ ...p, inList: inq.has(p.id), qty: inq.get(p.id)?.qty ?? '' }));
-  const catCount = filtered.length === 1 ? t.category.count1 : fmt(t.category.count, { n: filtered.length });
+  const catCount = countMessage(lang, filtered.length, { one: t.category.count1, two: t.category.count2, few: t.category.count, many: t.category.countMany });
   const catEmpty = filtered.length === 0;
   const onQ = (e: ChangeEvent<HTMLInputElement>) => setQ(e.target.value);
   const resetFilters = () => { setQ(''); setStyle('all'); };
@@ -73,11 +75,11 @@ export function CategoryView({ products, catTabs: tabs, styleOptions }: Category
           <li>
             <A href={k.href} style={{ display: "flex", flexDirection: "column", gap: "14px", textDecoration: "none", color: "#252525" }}>
               <div style={{ position: "relative", borderRadius: "10px", overflow: "hidden", background: "#E9E4DC" }}>
-                <Img src={k.img} alt={k.alt} width={k.w} height={k.h} loading="lazy" decoding="async" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "contain", transition: "transform .25s ease" }} className="sh6" /><span style={{ position: "absolute", bottom: "10px", insetInlineStart: "10px", padding: "3px 8px", borderRadius: "4px", background: "rgba(250,249,246,.94)", fontSize: "11px", fontWeight: "600", color: "#4F4943" }}>{t.illustrative}</span>
+                <Img src={k.img} alt={k.alt} width={k.w} height={k.h} loading={__i < 3 ? "eager" : "lazy"} decoding="async" style={{ display: "block", width: "100%", height: "auto", aspectRatio: k.box, objectFit: k.fit, transition: "transform .25s ease" }} className="sh6" /><span style={{ position: "absolute", bottom: "10px", insetInlineStart: "10px", padding: "3px 8px", borderRadius: "4px", background: "rgba(250,249,246,.94)", fontSize: "11px", fontWeight: "600", color: "#4F4943" }}>{t.illustrative}</span>
                 {(k.inList) && (<><span style={{ position: "absolute", top: "12px", insetInlineStart: "12px", padding: "4px 10px", borderRadius: "4px", background: "#584838", color: "#fff", fontSize: "12px", fontWeight: "600" }}>{t.nav.inquiryShort} · {k.qty}</span></>)}
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-                <span style={{ fontSize: "13px", color: "#625C54" }}>{k.style}</span>
+                <span style={{ fontSize: "13px", color: "#625C54" }}>{k.style}{k.chip ? ` · ${k.chip}` : ''}</span>
                 <h2 style={{ margin: "0", fontSize: "clamp(18px,1.6vw,20px)", lineHeight: "1.4", fontWeight: "600" }}>{k.name}</h2>
                 <span dir="ltr" data-keep-ls="" style={{ alignSelf: "flex-start", font: "500 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace", color: "#625C54", letterSpacing: ".04em" }}>{k.code}</span>
                 <span style={{ marginTop: "6px", display: "inline-flex", alignItems: "center", gap: "8px", fontSize: "14px", fontWeight: "600", color: "#584838" }}>{t.card.view} <span aria-hidden="true">{t.arrow}</span></span>

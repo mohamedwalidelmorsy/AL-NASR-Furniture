@@ -1,0 +1,302 @@
+[
+ {
+  "w": 1440,
+  "loc": "en",
+  "frame": [
+   564,
+   376
+  ],
+  "ratio": 1.5,
+  "y": 291,
+  "natural": [
+   559,
+   314
+  ],
+  "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=1280&q=75",
+  "dpr": 2,
+  "needed": 1128,
+  "sharp": false,
+  "cls": 0,
+  "lcp": {
+   "t": 184,
+   "url": "_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=1280&q=75",
+   "size": 211975
+  },
+  "sideBySide": true,
+  "textBottom": 465,
+  "frameBottom": 667,
+  "fit": "cover",
+  "fold": 900,
+  "overflow": 0
+ },
+ {
+  "w": 1440,
+  "loc": "ar",
+  "frame": [
+   564,
+   376
+  ],
+  "ratio": 1.5,
+  "y": 242,
+  "natural": [
+   559,
+   314
+  ],
+  "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=640&q=75",
+  "dpr": 1,
+  "needed": 564,
+  "sharp": true,
+  "cls": 0,
+  "lcp": {
+   "t": 140,
+   "url": "_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=640&q=75",
+   "size": 211923
+  },
+  "sideBySide": true,
+  "textBottom": 379,
+  "frameBottom": 618,
+  "fit": "cover",
+  "fold": 900,
+  "overflow": 0
+ },
+ {
+  "w": 1280,
+  "loc": "en",
+  "frame": [
+   568,
+   379
+  ],
+  "ratio": 1.5,
+  "y": 290,
+  "natural": [
+   559,
+   314
+  ],
+  "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=1280&q=75",
+  "dpr": 2,
+  "needed": 1136,
+  "sharp": false,
+  "cls": 0,
+  "lcp": {
+   "t": 144,
+   "url": "_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=1280&q=75",
+   "size": 214704
+  },
+  "sideBySide": true,
+  "textBottom": 465,
+  "frameBottom": 668,
+  "fit": "cover",
+  "fold": 800,
+  "overflow": 0
+ },
+ {
+  "w": 1280,
+  "loc": "ar",
+  "frame": [
+   568,
+   379
+  ],
+  "ratio": 1.5,
+  "y": 240,
+  "natural": [
+   559,
+   314
+  ],
+  "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=640&q=75",
+  "dpr": 1,
+  "needed": 568,
+  "sharp": true,
+  "cls": 0,
+  "lcp": {
+   "t": 136,
+   "url": "_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=640&q=75",
+   "size": 215032
+  },
+  "sideBySide": true,
+  "textBottom": 379,
+  "frameBottom": 619,
+  "fit": "cover",
+  "fold": 800,
+  "overflow": 0
+ },
+ {
+  "w": 768,
+  "loc": "en",
+  "frame": [
+   707,
+   471
+  ],
+  "ratio": 1.5,
+  "y": 687,
+  "natural": [
+   384,
+   216
+  ],
+  "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=768&q=75",
+  "dpr": 2,
+  "needed": 1413,
+  "sharp": false,
+  "cls": 0,
+  "lcp": {
+   "t": 444,
+   "url": "_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=768&q=75",
+   "size": 237241
+  },
+  "sideBySide": false,
+  "textBottom": 325,
+  "frameBottom": 1158,
+  "fit": "cover",
+  "fold": 1024,
+  "overflow": 0
+ },
+ {
+  "w": 768,
+  "loc": "ar",
+  "frame": [
+   707,
+   471
+  ],
+  "ratio": 1.5,
+  "y": 621,
+  "natural": [
+   384,
+   216
+  ],
+  "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=480&q=75",
+  "dpr": 1,
+  "needed": 707,
+  "sharp": false,
+  "cls": 0,
+  "lcp": {
+   "t": 252,
+   "url": "_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=480&q=75",
+   "size": 110889
+  },
+  "sideBySide": false,
+  "textBottom": 271,
+  "frameBottom": 1092,
+  "fit": "cover",
+  "fold": 1024,
+  "overflow": 0
+ },
+ {
+  "w": 390,
+  "loc": "en",
+  "frame": [
+   350,
+   233
+  ],
+  "ratio": 1.5,
+  "y": 833,
+  "natural": [
+   390,
+   219
+  ],
+  "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=1024&q=75",
+  "dpr": 2,
+  "needed": 700,
+  "sharp": false,
+  "cls": 0,
+  "lcp": {
+   "t": 104,
+   "url": "",
+   "size": 60738
+  },
+  "sideBySide": false,
+  "textBottom": 333,
+  "frameBottom": 1066,
+  "fit": "cover",
+  "fold": 844,
+  "overflow": 0
+ },
+ {
+  "w": 390,
+  "loc": "ar",
+  "frame": [
+   350,
+   233
+  ],
+  "ratio": 1.5,
+  "y": 692,
+  "natural": [
+   389,
+   219
+  ],
+  "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=480&q=75",
+  "dpr": 1,
+  "needed": 350,
+  "sharp": true,
+  "cls": 0,
+  "lcp": {
+   "t": 108,
+   "url": "_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=480&q=75",
+   "size": 53200
+  },
+  "sideBySide": false,
+  "textBottom": 257,
+  "frameBottom": 925,
+  "fit": "cover",
+  "fold": 844,
+  "overflow": 0
+ },
+ {
+  "w": 360,
+  "loc": "en",
+  "frame": [
+   320,
+   213
+  ],
+  "ratio": 1.5,
+  "y": 854,
+  "natural": [
+   359,
+   202
+  ],
+  "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=768&q=75",
+  "dpr": 2,
+  "needed": 640,
+  "sharp": false,
+  "cls": 0,
+  "lcp": {
+   "t": 112,
+   "url": "",
+   "size": 60738
+  },
+  "sideBySide": false,
+  "textBottom": 355,
+  "frameBottom": 1067,
+  "fit": "cover",
+  "fold": 740,
+  "overflow": 0
+ },
+ {
+  "w": 360,
+  "loc": "ar",
+  "frame": [
+   320,
+   213
+  ],
+  "ratio": 1.5,
+  "y": 776,
+  "natural": [
+   360,
+   203
+  ],
+  "src": "http://localhost:3000/_next/image?url=%2Fimages%2Fhero%2Fwarm-neutral-living-room-1672.webp&w=360&q=75",
+  "dpr": 1,
+  "needed": 320,
+  "sharp": true,
+  "cls": 0,
+  "lcp": {
+   "t": 112,
+   "url": "",
+   "size": 48471
+  },
+  "sideBySide": false,
+  "textBottom": 310,
+  "frameBottom": 989,
+  "fit": "cover",
+  "fold": 740,
+  "overflow": 0
+ }
+]

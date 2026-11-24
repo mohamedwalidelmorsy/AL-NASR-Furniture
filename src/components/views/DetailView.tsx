@@ -17,7 +17,9 @@ import { useSetProductWa } from '@/components/product-wa';
 import type { Crumb } from '@/components/layout/PageHeader';
 import type { ProductCard } from '@/lib/product-cards';
 import type { Locale } from '@/i18n/routing';
-import type { Unit } from '@/lib/catalog';
+import type { Unit, UnitKind } from '@/lib/catalog';
+import { unitLabel } from '@/lib/unit-label';
+import type { DimensionsView } from '@/lib/dimensions';
 
 export interface DetailProduct {
   id: string;
@@ -26,13 +28,19 @@ export interface DetailProduct {
   desc: string;
   style: string;
   unit: Unit;
+  unitKind?: UnitKind;
   catName: string;
   catHref: string;
   imgAlt: string;
-  images: { full: string; width: number; height: number }[];
+  images: { full: string; card?: string; width: number; height: number; label?: string }[];
+  /** Approved reference dimensions / made-to-measure copy for this product's category (null = none). */
+  dimensions?: DimensionsView | null;
   pieces: { name: string; qty: number; dims: number[] | null }[];
   materials: string;
 }
+
+/** Small source images (detail crops of 300–560 px) are never shown more than ~15 % above their native size, so they stay as crisp as the file allows instead of being stretched to fill the frame. */
+const displayLimit = (im?: { width: number; height: number }) => (im ? { maxWidth: `min(100%, ${Math.round(im.width * 1.15)}px)`, maxHeight: `min(100%, ${Math.round(im.height * 1.15)}px)` } : {});
 
 export function DetailView({ product, related, crumbs: rawCrumbs }: { product: DetailProduct; related: ProductCard[]; crumbs: Crumb[] }) {
   const crumbs = rawCrumbs.map((c, i) => ({ label: c.label, href: c.href ?? '', isLink: !!c.href, isCurrent: !c.href, notFirst: i > 0 }));
@@ -61,7 +69,10 @@ export function DetailView({ product, related, crumbs: rawCrumbs }: { product: D
   const gi = Math.min(gIdx, n - 1);
   const go = (delta: number) => setGIdx((i) => (i + delta + n) % n);
   const cur = product.images[gi] ?? product.images[0];
-  const labels = product.images.map((_, k) => (k === 0 ? product.name : t.ph.gallery + ' ' + (k + 1)));
+  const labels = product.images.map((im, k) => im.label || (k === 0 ? product.name : t.ph.gallery + ' ' + (k + 1)));
+  // Frame follows the first image's orientation (portrait posters keep the approved 4:5 frame; landscape room renders get a wider frame), so the frame never jumps between thumbnails.
+  const first = product.images[0];
+  const frameRatio = first ? Math.min(1.78, Math.max(0.8, first.width / first.height)) : 0.8;
   const pad = (k: number) => String(k).padStart(2, '0');
 
   const openLightbox = () => { setReturnFocus(document.activeElement as HTMLElement | null); setLightbox(true); };
@@ -82,9 +93,9 @@ export function DetailView({ product, related, crumbs: rawCrumbs }: { product: D
 
   const d = {
     name: product.name, code: product.code, desc: product.desc, style: product.style,
-    imgFull: cur?.full ?? '', imgAlt: product.imgAlt, catName: product.catName, catHref: product.catHref,
+    imgFull: cur?.full ?? '', imgAlt: gi > 0 && labels[gi] ? `${product.name} — ${labels[gi]}` : product.imgAlt, catName: product.catName, catHref: product.catHref,
     multi: n > 1, counter, enlargeLabel: t.detail.enlarge + ' — ' + counter,
-    thumbs: labels.map((lb, k) => ({ num: pad(k + 1), label: fmt(t.detail.thumb, { i: k + 1 }) + ' — ' + lb, aria: k === gi ? ('true' as const) : undefined, border: k === gi ? '#584838' : 'transparent', onClick: () => setGIdx(k) })),
+    thumbs: labels.map((lb, k) => ({ num: pad(k + 1), src: product.images[k]?.card ?? product.images[k]?.full ?? '', w: product.images[k]?.width, h: product.images[k]?.height, label: fmt(t.detail.thumb, { i: k + 1 }) + ' — ' + lb, aria: k === gi ? ('true' as const) : undefined, border: k === gi ? '#584838' : 'transparent', onClick: () => setGIdx(k) })),
     prev: () => go(-1), next: () => go(1), openLightbox,
     touchStart: (e: TouchEvent) => setTouchX(e.touches[0].clientX),
     touchEnd: (e: TouchEvent) => {
@@ -97,14 +108,14 @@ export function DetailView({ product, related, crumbs: rawCrumbs }: { product: D
       ? product.pieces.map((p) => ({ name: p.name, qty: '× ' + p.qty, dims: p.dims ? p.dims.join(' × ') + ' ' + t.detail.cm : t.detail.onRequest, color: p.dims ? '#252525' : '#625C54' }))
       : [{ name: t.detail.piecesPending, qty: '—', dims: t.detail.onRequest, color: '#625C54' }],
     hasMaterials: !!product.materials, materials: product.materials,
-    qtyLabel: t.detail.quantity + ' (' + t.detail.units[product.unit] + ')', qty: detailQty,
+    qtyLabel: t.detail.quantity + ' (' + unitLabel(t.detail, product.unitKind ?? 'bedroom-set') + ')', qty: detailQty,
     onQty: (e: ChangeEvent<HTMLInputElement>) => setDetailQty(clampQty(e.target.value)),
     onQtyBlur: () => { if (!(parseInt(String(detailQty), 10) >= 1)) setDetailQty(1); },
     dec: () => setDetailQty((q) => Math.max(1, (parseInt(String(q), 10) || 1) - 1)),
     inc: () => setDetailQty((q) => Math.min(99999, (parseInt(String(q), 10) || 0) + 1)),
     onAdd: () => { const q = Math.max(1, parseInt(String(detailQty), 10) || 1); add(product.id, q); setQtyEdit(null); },
     addLabel: inIt ? t.detail.update : t.detail.add, inList: !!inIt,
-    inListText: inIt ? fmt(t.detail.inList, { q: inIt.qty, u: t.detail.units[product.unit] }) : '',
+    inListText: inIt ? fmt(t.detail.inList, { q: inIt.qty, u: unitLabel(t.detail, product.unitKind ?? 'bedroom-set', parseInt(String(inIt.qty), 10) || 1) }) : '',
     waHref, related, hasRelated: related.length > 0,
   };
   const lbKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
@@ -140,7 +151,7 @@ export function DetailView({ product, related, crumbs: rawCrumbs }: { product: D
       <div aria-label={t.detail.gallery} role="region" style={{ flex: "3 1 520px", minWidth: "0", display: "flex", flexDirection: "column", gap: "12px" }}>
         <div style={{ position: "relative" }}>
           <button type="button" onClick={d.openLightbox} onTouchStart={d.touchStart} onTouchEnd={d.touchEnd} aria-label={d.enlargeLabel} style={{ display: "block", width: "100%", padding: "0", border: "0", background: "transparent", cursor: "zoom-in", borderRadius: "10px", overflow: "hidden" }}>
-            <div style={{ aspectRatio: "4/5", maxHeight: "80vh", width: "100%", background: "#E9E4DC" }}><Img priority sizes="(min-width: 1200px) 640px, (min-width: 640px) 60vw, 100vw" src={d.imgFull} alt={d.imgAlt} decoding="async" style={{ display: "block", width: "100%", height: "100%", objectFit: "contain" }} /></div>
+            <div data-testid="gallery-frame" style={{ aspectRatio: String(frameRatio), maxHeight: "80vh", width: "100%", background: "#E9E4DC", display: "flex", alignItems: "center", justifyContent: "center" }}><Img priority sizes="(min-width: 1200px) 640px, (min-width: 640px) 60vw, 100vw" src={d.imgFull} width={cur?.width} height={cur?.height} alt={d.imgAlt} decoding="async" style={{ display: "block", width: "100%", height: "100%", objectFit: "contain", ...displayLimit(cur) }} /></div>
           </button>
           {(d.multi) && (<>
             <div style={{ position: "absolute", bottom: "16px", insetInlineEnd: "16px", display: "flex", gap: "8px" }}>
@@ -153,7 +164,7 @@ export function DetailView({ product, related, crumbs: rawCrumbs }: { product: D
         {(d.multi) && (<>
           <ul style={{ listStyle: "none", margin: "0", padding: "0", display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(72px,1fr))", gap: "8px" }}>
             {d.thumbs.map((th, __i) => (<Fragment key={__i}>
-              <li><button type="button" onClick={th.onClick} aria-label={th.label} aria-current={th.aria} style={{ display: "block", width: "100%", aspectRatio: "1/1", padding: "0", borderRadius: "6px", border: `2px solid ${th.border}`, background: "repeating-linear-gradient(135deg,#E9E4DC 0 6px,#E3DDD3 6px 12px)", cursor: "pointer", font: "500 11px/1 ui-monospace,Menlo,monospace", color: "#625C54" }}>{th.num}</button></li>
+              <li><button type="button" onClick={th.onClick} aria-label={th.label} aria-current={th.aria} data-testid="gallery-thumb" style={{ display: "block", width: "100%", aspectRatio: "1/1", padding: "0", borderRadius: "6px", border: `2px solid ${th.border}`, background: "#E9E4DC", cursor: "pointer", overflow: "hidden", position: "relative" }}><Img src={th.src} alt="" width={th.w} height={th.h} sizes="112px" loading="lazy" decoding="async" style={{ display: "block", width: "100%", height: "100%", objectFit: "cover" }} /></button></li>
             </Fragment>))}
           </ul>
         </>)}
@@ -219,6 +230,29 @@ export function DetailView({ product, related, crumbs: rawCrumbs }: { product: D
     </div>
   </section>
 
+  {(product.dimensions) && (<>
+  <section aria-labelledby="dim-title" data-testid="dimensions-block" style={{ padding: "0 0 clamp(56px,8vw,96px)" }}>
+    <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 clamp(20px,4vw,40px)", boxSizing: "content-box" }}>
+      <div style={{ padding: "clamp(24px,3vw,36px)", border: "1px solid #D8D2C9", borderRadius: "10px", background: "#fff", display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,380px),1fr))", gap: "24px clamp(32px,5vw,72px)" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+          <h2 id="dim-title" style={{ margin: "0", fontSize: "clamp(22px,2.4vw,26px)", lineHeight: "1.3", fontWeight: "600" }}>{product.dimensions.title}</h2>
+          {(product.dimensions.intro) && (<p style={{ margin: "0", fontSize: "15px", color: "#4F4943" }}>{product.dimensions.intro}</p>)}
+          {(product.dimensions.rows.length > 0) && (<>
+            <dl style={{ margin: "0", borderTop: "1px solid #252525" }}>
+              {product.dimensions.rows.map((r, __i) => (<div key={__i} style={{ display: "grid", gridTemplateColumns: "minmax(0,1fr) minmax(0,1.6fr)", gap: "12px", padding: "12px 0", borderBottom: "1px solid #D8D2C9", fontSize: "15px" }}><dt style={{ fontWeight: "500" }}>{r.label}</dt><dd style={{ margin: "0" }}><bdi>{r.value}</bdi></dd></div>))}
+            </dl>
+            <p style={{ margin: "0", fontSize: "13px", color: "#625C54" }}>{t.dimensions.unitNote} {product.dimensions.reference}</p>
+          </>)}
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", gap: "16px", alignItems: "flex-start" }}>
+          <p style={{ margin: "0", fontSize: "16px", textWrap: "pretty" }}>{product.dimensions.customization}</p>
+          <A href={links.contact} style={{ display: "inline-flex", alignItems: "center", height: "48px", padding: "0 24px", borderRadius: "6px", border: "1px solid #584838", color: "#584838", fontSize: "15px", fontWeight: "600", textDecoration: "none" }} className="sh4">{product.dimensions.ctaLabel}</A>
+        </div>
+      </div>
+    </div>
+  </section>
+  </>)}
+
   {(d.hasRelated) && (<>
     <section aria-labelledby="rel-title" style={{ padding: "clamp(56px,8vw,96px) 0", background: "#E9E4DC" }}>
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 clamp(20px,4vw,40px)", boxSizing: "content-box" }}>
@@ -227,7 +261,7 @@ export function DetailView({ product, related, crumbs: rawCrumbs }: { product: D
           {d.related.map((k, __i) => (<Fragment key={__i}>
             <li>
               <A href={k.href} style={{ display: "flex", flexDirection: "column", gap: "14px", textDecoration: "none", color: "#252525" }}>
-                <div style={{ position: "relative", borderRadius: "10px", overflow: "hidden", background: "#FAF9F6" }}><Img src={k.img} alt={k.alt} width={k.w} height={k.h} loading="lazy" decoding="async" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "3/4", objectFit: "contain", transition: "transform .25s ease" }} className="sh6" /><span style={{ position: "absolute", bottom: "10px", insetInlineStart: "10px", padding: "3px 8px", borderRadius: "4px", background: "rgba(250,249,246,.94)", fontSize: "11px", fontWeight: "600", color: "#4F4943" }}>{t.illustrative}</span></div>
+                <div style={{ position: "relative", borderRadius: "10px", overflow: "hidden", background: "#FAF9F6" }}><Img src={k.img} alt={k.alt} width={k.w} height={k.h} loading="lazy" decoding="async" style={{ display: "block", width: "100%", height: "auto", aspectRatio: k.box, objectFit: k.fit, transition: "transform .25s ease" }} className="sh6" /><span style={{ position: "absolute", bottom: "10px", insetInlineStart: "10px", padding: "3px 8px", borderRadius: "4px", background: "rgba(250,249,246,.94)", fontSize: "11px", fontWeight: "600", color: "#4F4943" }}>{t.illustrative}</span></div>
                 <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
                   <h3 style={{ margin: "0", fontSize: "clamp(18px,1.6vw,20px)", lineHeight: "1.4", fontWeight: "600" }}>{k.name}</h3>
                   <span dir="ltr" data-keep-ls="" style={{ alignSelf: "flex-start", font: "500 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace", color: "#4F4943", letterSpacing: ".04em" }}>{k.code}</span>
@@ -246,7 +280,7 @@ export function DetailView({ product, related, crumbs: rawCrumbs }: { product: D
       <button type="button" ref={lbCloseRef} onClick={closeLightbox} aria-label={t.detail.close} style={{ width: "48px", height: "48px", borderRadius: "6px", border: "1px solid #625C54", background: "transparent", color: "#FAF9F6", fontSize: "22px", cursor: "pointer" }}>×</button>
     </div>
     <div onTouchStart={d.touchStart} onTouchEnd={d.touchEnd} style={{ flex: "1", minHeight: "0", display: "flex", alignItems: "center", justifyContent: "center", padding: "16px 0" }}>
-      <Img src={d.imgFull} alt={d.imgAlt} style={{ display: "block", maxWidth: "100%", maxHeight: "100%", objectFit: "contain", borderRadius: "8px" }} />
+      <Img src={d.imgFull} width={cur?.width} height={cur?.height} alt={d.imgAlt} style={{ display: "block", maxWidth: "100%", maxHeight: "100%", width: "auto", height: "auto", objectFit: "contain", borderRadius: "8px", ...displayLimit(cur) }} />
     </div>
     {(d.multi) && (<>
       <div style={{ display: "flex", justifyContent: "center", gap: "12px" }}>

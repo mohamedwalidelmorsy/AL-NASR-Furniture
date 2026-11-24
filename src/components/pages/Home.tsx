@@ -20,7 +20,7 @@ export function Home({ ctx }: { ctx: PageCtx }) {
         </div>
         <p style={{ margin: "32px 0 0", paddingTop: "20px", borderTop: "1px solid #D8D2C9", fontSize: "14px", color: "#625C54", maxWidth: "52ch" }}>{t.hero.note}</p>
       </div>
-      <div style={{ aspectRatio: "4/5", maxHeight: "640px", width: "100%", borderRadius: "10px", overflow: "hidden", background: "#E9E4DC" }}><Img priority sizes="(min-width: 1200px) 560px, (min-width: 640px) 50vw, 100vw" src={heroImg.src} alt={heroImg.alt} decoding="async" style={{ display: "block", width: "100%", height: "100%", objectFit: "contain" }} /></div>
+      <div data-testid="hero-frame" style={{ aspectRatio: "3/2", width: "100%", borderRadius: "10px", overflow: "hidden", background: "#E9E4DC" }}><Img priority sizes="(min-width: 1200px) 560px, (min-width: 1024px) 48vw, 100vw" src={heroImg.src} width={heroImg.width} height={heroImg.height} alt={heroImg.alt} decoding="async" style={{ display: "block", width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 50%" }} /></div>
     </div>
   </section>
 
@@ -38,7 +38,7 @@ export function Home({ ctx }: { ctx: PageCtx }) {
           <li>
             <A href={c.href} style={{ display: "flex", flexDirection: "column", gap: "16px", textDecoration: "none", color: "#252525" }}>
               <div style={{ borderRadius: "10px", overflow: "hidden" }}>
-                <Img src={c.img} alt={c.alt} loading="lazy" decoding="async" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "4/3", objectFit: "cover", objectPosition: "center 38%", transition: "transform .25s ease" }} className="sh6" />
+                <Img src={c.img} alt={c.alt} loading={__i < 3 ? "eager" : "lazy"} decoding="async" style={{ display: "block", width: "100%", height: "auto", aspectRatio: "4/3", objectFit: "cover", objectPosition: "center 38%", transition: "transform .25s ease" }} className="sh6" />
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
                 <h3 style={{ margin: "0", fontSize: "20px", lineHeight: "1.4", fontWeight: "600" }}>{c.name}</h3>

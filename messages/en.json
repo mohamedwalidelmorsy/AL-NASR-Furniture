@@ -42,7 +42,8 @@
     "body": "AL NASR FURNITURE supplies Egyptian furniture to importers, wholesalers, distributors and retail showrooms — coordinating design, production, quality checks, packaging and export through the manufacturing network we work with in Egypt.",
     "cta1": "Explore Collections",
     "cta2": "Request a Quote",
-    "note": "B2B supply only, with an initial focus on GCC markets. Every order is quoted individually."
+    "note": "B2B supply only, with an initial focus on GCC markets. Every order is quoted individually.",
+    "imageAlt": "Cream upholstered sofa and armchair with a walnut and marble coffee table in a sunlit living room — illustrative design"
   },
   "featured": {
     "eyebrow": "Our products",
@@ -62,7 +63,7 @@
     "items": [
       {
         "title": "Manufacturing & supply",
-        "body": "Bedroom sets, kids' bedrooms, corner sofas, living room sets, china cabinets and dining rooms in modern and classic designs — with made-to-order designs, sizes and finishes subject to production feasibility.",
+        "body": "Bedroom sets, kids' bedrooms, dressing rooms, corner sofas, living room sofa sets, china cabinets and dining rooms in modern and classic designs — with made-to-order designs, sizes and finishes subject to production feasibility.",
         "link": "Custom manufacturing",
         "to": "custom-manufacturing"
       },
@@ -145,7 +146,10 @@
     "noResultsHint": "Try another name or reference code, or browse by category.",
     "count": "{n} collections",
     "count1": "1 collection",
-    "allCats": "All categories"
+    "allCats": "All categories",
+    "count2": "{n} collections",
+    "countMany": "{n} collections",
+    "results1": "1 result for “{q}”"
   },
   "category": {
     "filter": "Style",
@@ -155,7 +159,10 @@
     "search": "Search in this category",
     "empty": "No collections match your search or filters.",
     "reset": "Reset filters",
-    "others": "Other categories"
+    "others": "Other categories",
+    "relatedCta": "View {cat}",
+    "count2": "{n} collections",
+    "countMany": "{n} collections"
   },
   "card": {
     "view": "View details",
@@ -194,7 +201,48 @@
     "close": "Close image viewer",
     "imageOf": "Image {i} of {n}",
     "thumb": "Show image {i}",
-    "noPrice": "Prices are quoted individually based on volume, specifications and destination."
+    "noPrice": "Prices are quoted individually based on volume, specifications and destination.",
+    "customSizes": "Custom sizes available",
+    "standardSub": "Standard sizes · customizable",
+    "gallery2": "Gallery",
+    "unitKinds": {
+      "bedroom-set": {
+        "one": "bedroom set",
+        "other": "bedroom sets"
+      },
+      "kids-set": {
+        "one": "kids' bedroom set",
+        "other": "kids' bedroom sets"
+      },
+      "dressing-room": {
+        "one": "dressing-room design",
+        "other": "dressing-room designs"
+      },
+      "corner-sofa": {
+        "one": "corner sofa",
+        "other": "corner sofas"
+      },
+      "sofa": {
+        "one": "sofa",
+        "other": "sofas"
+      },
+      "chaise": {
+        "one": "chaise longue",
+        "other": "chaise longues"
+      },
+      "sofa-set": {
+        "one": "sofa set",
+        "other": "sofa sets"
+      },
+      "dining-set": {
+        "one": "dining set",
+        "other": "dining sets"
+      },
+      "display-cabinet": {
+        "one": "display cabinet set",
+        "other": "display cabinet sets"
+      }
+    }
   },
   "inquiry": {
     "title": "Inquiry List",
@@ -214,7 +262,19 @@
     "continueBrowsing": "Continue browsing",
     "notCart": "This is a shortlist for a quotation, not an order. No prices or payment are involved.",
     "saved": "Saved in this browser.",
-    "guide": "How shipping & payment work"
+    "guide": "How shipping & payment work",
+    "archivedLabel": "Sample design — no longer available",
+    "archivedKept": "Your quantity and note are kept until you remove this item.",
+    "archivedNotice1": "1 unavailable item will not be included in your request.",
+    "archivedNotice": "{n} unavailable items will not be included in your request.",
+    "removeArchived": "Remove unavailable items",
+    "archivedOnly": "Only unavailable items remain. Remove them to continue, or send a general inquiry.",
+    "archivedBrowse": "Browse current collections",
+    "mergedFrom": "Combined with your earlier selection {codes}: it is the same design (quantities and notes were added together).",
+    "selected2": "{n} collections selected",
+    "selectedMany": "{n} collections selected",
+    "archivedNotice2": "{n} unavailable items will not be included in your request.",
+    "archivedNoticeMany": "{n} unavailable items will not be included in your request."
   },
   "toast": {
     "added": "Added to your inquiry list",
@@ -409,7 +469,7 @@
     "whoTitle": "Who we are",
     "whoBody": [
       "AL NASR FURNITURE is the commercial brand of Al Nasr for Import & Export (مؤسسة النصر للاستيراد والتصدير), an Egyptian business focused on supplying and exporting Egyptian furniture to international markets. We combine coordinated manufacturing, a variety of designs and attention to detail to meet the needs of importers, furniture traders and buyers in different markets.",
-      "Through the manufacturing and showroom network we work with in Egypt, we offer a complete range of home furniture — bedroom sets, kids' bedrooms, corner sofas, living room sets, china cabinets and dining rooms — in modern and classic designs, with designs, sizes and finishes that can be produced to customer requirements.",
+      "Through the manufacturing and showroom network we work with in Egypt, we offer a complete range of home furniture — bedroom sets, kids' bedrooms, dressing rooms, corner sofas, living room sofa sets, china cabinets and dining rooms — in modern and classic designs, with designs, sizes and finishes that can be produced to customer requirements.",
       "We follow each order from design and specifications, through production, finishing and quality review, to packaging and export preparation — so every stage is coordinated to the requirements of the order and the target market."
     ],
     "productsTitle": "Our products",
@@ -742,6 +802,8 @@
     "projCatsTitle": "Products that can be evaluated",
     "projCats": [
       "Bedrooms",
+      "Dressing rooms",
+      "Kids' bedrooms",
       "Living rooms",
       "Dining rooms",
       "Hotel furniture",
@@ -780,5 +842,45 @@
     "inquiry": "Inquiry List",
     "privacy": "Privacy",
     "notFound": "Page not found"
+  },
+  "dimensions": {
+    "title": "Standard dimensions & customization",
+    "referenceLabel": "Standard reference dimensions",
+    "unitNote": "All sizes in centimetres.",
+    "notThisProduct": "Category reference sizes — not the confirmed dimensions of the design shown.",
+    "bedroomIntro": "Our standard bedroom set is built around these reference sizes:",
+    "kidsIntro": "Our standard kids' bedroom set includes:",
+    "bedroom": {
+      "wardrobe": "Wardrobe",
+      "wardrobeValue": "{w} cm wide × {h} cm high",
+      "bed": "Bed",
+      "bedValue": "{size} cm",
+      "nightstand": "Nightstands",
+      "nightstandValue": "{count} pieces, {size} cm each",
+      "dressingTable": "Dressing table",
+      "dressingTableValue": "{min}–{max} cm"
+    },
+    "kids": {
+      "beds": "Beds",
+      "bedsValue": "{count} beds, {size} cm each",
+      "wardrobe": "Wardrobe",
+      "wardrobeValue": "{size} cm",
+      "nightstand": "Nightstand",
+      "nightstandValue": "{count} nightstand",
+      "dressingTable": "Dressing table",
+      "dressingTableValue": "Available on request"
+    },
+    "customization": "These are standard reference sizes, not fixed ones. Every size can be adjusted to your requirements, subject to production feasibility. Wardrobe depth and other unspecified dimensions are confirmed in your quotation. The pieces included in each design and the final specifications are confirmed in your quotation.",
+    "kidsCustomization": "Standard sizes can be changed to suit your requirements and what production allows. Included pieces and final specifications are confirmed in your quotation.",
+    "madeToMeasureTitle": "Made to measure",
+    "madeToMeasureBody": "Dressing rooms are planned around your space. Layout, dimensions, finishes and accessories are defined with you and confirmed in the quotation, subject to production feasibility.",
+    "cta": "Request a quotation"
+  },
+  "archived": {
+    "title": "This design is no longer available",
+    "body": "This sample design has been retired and is no longer available for new inquiries. Browse the current designs, or send us a request describing what you need.",
+    "browse": "Browse {cat}",
+    "rfq": "Request a Quote",
+    "note": "Reference: {code}"
   }
 }

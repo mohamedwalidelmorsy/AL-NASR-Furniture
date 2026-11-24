@@ -1,4 +1,4 @@
-import { allProducts } from '@/lib/catalog';
+import { activeProducts } from '@/lib/catalog';
 import { siteConfig } from '@/lib/site-config';
 import type { InquiryItem } from '@/features/inquiry/storage';
 import { CONTACT_METHODS, type RfqFormValues, type RfqPayload } from './schema';
@@ -18,8 +18,8 @@ export function effectivePref(f: Pick<RfqFormValues, 'email' | 'phone' | 'pref'>
   return f.pref && av.includes(f.pref) ? f.pref : (av[0] ?? '');
 }
 
-/** Only inquiry entries that still exist in the catalog are sent (stale prototype IDs are dropped). */
-export const resolveItems = (items: InquiryItem[]) => items.filter((i) => allProducts().some((p) => p.id === i.id));
+/** Only inquiry entries for ACTIVE catalog products are sent: stale ids are dropped and archived products are never submitted. */
+export const resolveItems = (items: InquiryItem[]) => items.filter((i) => activeProducts().some((p) => p.id === i.id));
 
 export function buildRfqPayload(f: RfqFormValues, items: InquiryItem[], locale: 'en' | 'ar', sourceUrl: string, now = new Date()): RfqPayload {
   const pref = effectivePref(f) as Method;
@@ -35,7 +35,7 @@ export function buildRfqPayload(f: RfqFormValues, items: InquiryItem[], locale: 
     },
     destination_country: f.country,
     items: resolveItems(items).map((i) => {
-      const p = allProducts().find((x) => x.id === i.id)!;
+      const p = activeProducts().find((x) => x.id === i.id)!;
       return { collection_id: p.id, code: p.code, quantity: Math.max(1, parseInt(String(i.qty), 10) || 1), unit: p.unit, notes: i.note.trim() || null };
     }),
     inquiry_type: (f.inquiryType || null) as RfqPayload['inquiry_type'],

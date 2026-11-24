@@ -1,0 +1,157 @@
+[
+ {
+  "n": "add to inquiry stores id+qty",
+  "ok": true,
+  "d": "[{\"id\":\"pv-br-05\",\"qty\":3,\"note\":\"\"}]"
+ },
+ {
+  "n": "qty restored after refresh",
+  "ok": true,
+  "d": ""
+ },
+ {
+  "n": "language switch keeps product page",
+  "ok": false,
+  "d": "http://localhost:3000/en/collections/bedrooms/two-tone-panel-bedroom-set"
+ },
+ {
+  "n": "AR page shows inquiry qty restored",
+  "ok": true,
+  "d": ""
+ },
+ {
+  "n": "browser back returns to EN page",
+  "ok": false,
+  "d": "about:blank"
+ },
+ {
+  "n": "browser forward returns to AR",
+  "ok": false,
+  "d": ""
+ },
+ {
+  "n": "AR inquiry lists product in Arabic",
+  "ok": true,
+  "d": ""
+ },
+ {
+  "n": "remove item empties storage",
+  "ok": true,
+  "d": "[]"
+ },
+ {
+  "n": "qty 0 → 1",
+  "ok": true,
+  "d": ""
+ },
+ {
+  "n": "qty clamps to 99999",
+  "ok": true,
+  "d": "99999"
+ },
+ {
+  "n": "kids room 2 has 6 thumbs",
+  "ok": true,
+  "d": "6"
+ },
+ {
+  "n": "low-res detail shown in main frame (nat vs shown)",
+  "ok": true,
+  "d": "[540,175,693,389]"
+ },
+ {
+  "n": "URL /en/collections/bedrooms/not-a-product",
+  "ok": true,
+  "d": "404 → /en/collections/bedrooms/not-a-product"
+ },
+ {
+  "n": "URL /en/collections/corner-sofas/soft-arc-corner-sofa",
+  "ok": true,
+  "d": "404 → /en/collections/corner-sofas/soft-arc-corner-sofa"
+ },
+ {
+  "n": "URL /en/collections/not-a-category",
+  "ok": true,
+  "d": "404 → /en/collections/not-a-category"
+ },
+ {
+  "n": "URL /en/collections/living-rooms/soft-arc-corner-sofa",
+  "ok": true,
+  "d": "200 → /en/collections/living-rooms/soft-arc-corner-sofa"
+ },
+ {
+  "n": "URL /en/collections/bedrooms/soft-arc-bedroom-set/",
+  "ok": true,
+  "d": "200 → /en/collections/bedrooms/soft-arc-bedroom-set"
+ },
+ {
+  "n": "URL /EN",
+  "ok": true,
+  "d": "200 → /en"
+ },
+ {
+  "n": "Corner page card for pv-lr-01 links to",
+  "ok": true,
+  "d": "/en/collections/living-rooms/soft-arc-corner-sofa"
+ },
+ {
+  "n": "breadcrumb after arriving from Corner Sofas",
+  "ok": true,
+  "d": "Home / Collections / Living Room Sofa Sets / Soft Arc Corner Sofa"
+ },
+ {
+  "n": "404 title",
+  "ok": true,
+  "d": "\"\""
+ },
+ {
+  "n": "mobile menu opens with links",
+  "ok": true,
+  "d": "Home\n→|Collections\n→|About Us\n→|Sourcing & Export\n→|Contact\n→|Shipping & Payment Guide|Custom Manufacturing & Projects|Request a Quote|Inquiry List|العربية|Home|Collections|About Us|Sourcing & Export|Contact|Inquiry List|Shipping & Payment Guide|Custom Manufacturing & Projects"
+ },
+ {
+  "n": "Escape closes menu",
+  "ok": true,
+  "d": ""
+ },
+ {
+  "n": "empty RFQ submit shows validation",
+  "ok": true,
+  "d": "Please correct the following before sending:\n\nEnter your full name.\nSelect the destination country.\nProvide an email address or a phone / WhatsApp number.\nPlease confirm consent so we can respond to your inquiry. | Enter your full name. | Select the destination country."
+ },
+ {
+  "n": "API rejects empty body",
+  "ok": true,
+  "d": "422"
+ },
+ {
+  "n": "search \"sofa\"",
+  "ok": true,
+  "d": "20 results for “sofa”"
+ },
+ {
+  "n": "search \"dressing\"",
+  "ok": true,
+  "d": "6 results for “dressing”"
+ },
+ {
+  "n": "search \"طقم\"",
+  "ok": true,
+  "d": "30 results for “طقم”"
+ },
+ {
+  "n": "search \"PV-DG-03\"",
+  "ok": true,
+  "d": "1 results for “PV-DG-03”"
+ },
+ {
+  "n": "search \"teddy\"",
+  "ok": true,
+  "d": "1 results for “teddy”"
+ },
+ {
+  "n": "search \"xyz123\"",
+  "ok": true,
+  "d": "No collections match “xyz123”."
+ }
+]

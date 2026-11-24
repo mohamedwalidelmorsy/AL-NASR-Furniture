@@ -1,0 +1,221 @@
+
+Running 216 tests using 5 workers
+
+[1/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en
+[2/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/collections/bedrooms/soft-arc-bedroom-set
+[3/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/collections
+[4/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/about
+[5/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/collections/bedrooms
+[6/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/sourcing-export
+[7/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/shipping-payment
+[8/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/custom-manufacturing
+[9/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/contact
+[10/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/inquiry
+[11/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/privacy
+[12/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar
+[13/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/collections
+[14/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/collections/bedrooms
+[15/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/collections/bedrooms/soft-arc-bedroom-set
+[16/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/about
+[17/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/sourcing-export
+[18/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/shipping-payment
+[19/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/custom-manufacturing
+[20/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/contact
+[21/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/inquiry
+[22/216] [desktop] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/privacy
+[23/216] [desktop] › e2e/catalog.spec.ts:7:3 › categories, product pages, galleries › collections overview shows all seven categories with counts
+[24/216] [desktop] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: bedrooms
+[25/216] [desktop] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: dressing-rooms
+[26/216] [desktop] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: kids-bedrooms
+[27/216] [desktop] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: corner-sofas
+[28/216] [desktop] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: living-rooms
+[29/216] [desktop] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: china-cabinets
+[30/216] [desktop] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: dining-rooms
+[31/216] [desktop] › e2e/catalog.spec.ts:27:3 › categories, product pages, galleries › global search finds products by name and code (EN + AR) and shows an empty state
+[32/216] [desktop] › e2e/catalog.spec.ts:41:3 › categories, product pages, galleries › category search filters and can be reset
+[33/216] [desktop] › e2e/catalog.spec.ts:50:3 › categories, product pages, galleries › product detail page: identity, illustrative notice, no price, related items
+[34/216] [desktop] › e2e/catalog.spec.ts:62:3 › categories, product pages, galleries › image gallery: main image loads, lightbox opens, traps focus, closes on Escape and restores focus
+[35/216] [desktop] › e2e/catalog.spec.ts:80:3 › categories, product pages, galleries › WhatsApp control is honest while no number is configured
+[36/216] [desktop] › e2e/expansion.spec.ts:9:3 › catalog expansion › hero uses the selected living-room image in a 3:2 frame (two-column layout kept)
+[37/216] [desktop] › e2e/expansion.spec.ts:25:3 › catalog expansion › Dressing Rooms is a top-level category with real covers and a link from Bedroom Sets
+[38/216] [desktop] › e2e/expansion.spec.ts:36:3 › catalog expansion › gallery thumbnails are real images, selecting one changes the main image, keyboard works
+[39/216] [desktop] › e2e/expansion.spec.ts:58:3 › catalog expansion › landscape covers keep their proportions (no stretching)
+[40/216] [desktop] › e2e/expansion.spec.ts:67:3 › catalog expansion › standard dimensions block: wardrobe 250 wide × 230 high, no depth (EN + AR); kids standard; dressing made-to-measure
+[41/216] [desktop] › e2e/expansion.spec.ts:84:3 › catalog expansion › Kids Room 3 cover is the clean render, not the specification infographic
+[42/216] [desktop] › e2e/expansion.spec.ts:92:3 › catalog expansion › legacy and continuing products keep their ids and URLs; Soft Arc Corner Sofa is listed under both Living Rooms and Corner Sofas
+[43/216] [desktop] › e2e/expansion.spec.ts:101:3 › catalog expansion › persisted Inquiry List entries for legacy products keep working; new products can be added
+[44/216] [desktop] › e2e/inquiry.spec.ts:7:3 › Inquiry List › add → badge → persists across reload and navigation; no duplicates
+[45/216] [desktop] › e2e/inquiry.spec.ts:26:3 › Inquiry List › edit quantity and note on the list; remove and undo
+[46/216] [desktop] › e2e/inquiry.spec.ts:42:3 › Inquiry List › stale prototype IDs are ignored but not destroyed; empty state has no flash
+[47/216] [desktop] › e2e/inquiry.spec.ts:49:3 › Inquiry List › empty list offers a way forward
+[48/216] [desktop] › e2e/inquiry.spec.ts:55:3 › Inquiry List › category cards flag items already on the list
+[49/216] [desktop] › e2e/integrity.spec.ts:13:3 › link & image integrity › all internal links on key pages resolve (no 404s)
+[50/216] [desktop] › e2e/integrity.spec.ts:28:3 › link & image integrity › every <img> loads (naturalWidth > 0) on catalog pages in both languages
+[51/216] [desktop] › e2e/integrity.spec.ts:40:3 › link & image integrity › all product pages (both languages) respond 200 and every image has alt text
+[52/216] [desktop] › e2e/integrity.spec.ts:52:3 › link & image integrity › no console errors on core pages
+[53/216] [desktop] › e2e/language.spec.ts:5:3 › language switching, RTL/LTR › English is LTR, Arabic is RTL, with correct lang attributes
+[54/216] [desktop] › e2e/language.spec.ts:15:5 › language switching, RTL/LTR › switching keeps the same page: /
+[55/216] [desktop] › e2e/language.spec.ts:15:5 › language switching, RTL/LTR › switching keeps the same page: /about
+[56/216] [desktop] › e2e/language.spec.ts:15:5 › language switching, RTL/LTR › switching keeps the same page: /collections
+[57/216] [desktop] › e2e/language.spec.ts:15:5 › language switching, RTL/LTR › switching keeps the same page: /collections/bedrooms
+[58/216] [desktop] › e2e/language.spec.ts:15:5 › language switching, RTL/LTR › switching keeps the same page: /shipping-payment
+[59/216] [desktop] › e2e/language.spec.ts:15:5 › language switching, RTL/LTR › switching keeps the same page: /contact
+[60/216] [desktop] › e2e/language.spec.ts:26:3 › language switching, RTL/LTR › product identity and localized image variant are kept across languages
+[61/216] [desktop] › e2e/language.spec.ts:39:3 › language switching, RTL/LTR › layout actually mirrors in RTL (logical properties)
+[62/216] [desktop] › e2e/language.spec.ts:50:3 › language switching, RTL/LTR › Arabic copy renders in the Arabic typeface and uses Arabic UI strings
+[63/216] [desktop] › e2e/language.spec.ts:58:3 › language switching, RTL/LTR › Inquiry List survives a language switch
+[64/216] [desktop] › e2e/navigation.spec.ts:5:3 › navigation & metadata › root redirects to the default locale
+[65/216] [desktop] › e2e/navigation.spec.ts:10:3 › navigation & metadata › primary navigation reaches every top-level page
+[66/216] [desktop] › e2e/navigation.spec.ts:25:3 › navigation & metadata › buyer-guide pages are reachable from Sourcing & Export
+[67/216] [desktop] › e2e/navigation.spec.ts:35:3 › navigation & metadata › active nav item is marked with aria-current
+[68/216] [desktop] › e2e/navigation.spec.ts:44:3 › navigation & metadata › unknown URLs return a real 404 with the localized page
+[69/216] [desktop] › e2e/navigation.spec.ts:53:3 › navigation & metadata › every page has a title, canonical and AR/EN hreflang alternates
+[70/216] [desktop] › e2e/navigation.spec.ts:66:3 › navigation & metadata › sitemap lists both languages with alternates; robots blocks indexing until launch
+[71/216] [desktop] › e2e/navigation.spec.ts:75:3 › navigation & metadata › document structure: skip link, one h1, landmarks
+[72/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en
+[73/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/collections
+[74/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/collections/bedrooms
+[75/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/collections/bedrooms/soft-arc-bedroom-set
+[76/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/about
+[77/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/sourcing-export
+[78/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/shipping-payment
+[79/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/custom-manufacturing
+[80/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/contact
+[81/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/inquiry
+[82/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/privacy
+[83/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar
+[84/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/collections
+[85/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/collections/bedrooms
+[86/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/collections/bedrooms/soft-arc-bedroom-set
+[87/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/about
+[88/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/sourcing-export
+[89/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/shipping-payment
+[90/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/custom-manufacturing
+[91/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/contact
+[92/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/inquiry
+[93/216] [desktop] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/privacy
+[94/216] [desktop] › e2e/responsive.spec.ts:16:3 › responsive layout › mobile: hamburger opens the menu, links navigate, Escape closes and returns focus
+[95/216] [desktop] › e2e/responsive.spec.ts:34:3 › responsive layout › mobile: language switch lives in the menu and in the footer
+[96/216] [desktop] › e2e/responsive.spec.ts:43:3 › responsive layout › desktop: full navigation and Request a Quote CTA are visible; no hamburger
+[97/216] [desktop] › e2e/responsive.spec.ts:51:3 › responsive layout › touch targets in the header are at least 44px
+[98/216] [desktop] › e2e/responsive.spec.ts:57:3 › responsive layout › product page on a narrow screen keeps gallery and purchase panel usable
+[99/216] [desktop] › e2e/rfq.spec.ts:13:3 › Request a Quote › shows a summary and per-field errors for an empty submit; fixing clears them
+[100/216] [desktop] › e2e/rfq.spec.ts:27:3 › Request a Quote › validates email/phone formats and requires a contact method
+[101/216] [desktop] › e2e/rfq.spec.ts:40:3 › Request a Quote › message is optional once the inquiry list has items
+[102/216] [desktop] › e2e/rfq.spec.ts:55:3 › Request a Quote › without a configured provider the API refuses (503) and the UI never fakes success
+[103/216] [desktop] › e2e/rfq.spec.ts:67:3 › Request a Quote › server and network failures show distinct errors; success shows the reference and clears the draft
+[104/216] [desktop] › e2e/rfq.spec.ts:89:3 › Request a Quote › draft is saved locally and restored after reload (never the honeypot)
+[105/216] [desktop] › e2e/rfq.spec.ts:99:3 › Request a Quote › CTAs preset the inquiry type; trade preferences are optional and sent when chosen
+[106/216] [desktop] › e2e/rfq.spec.ts:114:3 › Request a Quote › Arabic form validates in Arabic
+[107/216] [desktop] › e2e/rfq.spec.ts:121:3 › Request a Quote › contact page offers WhatsApp/e-mail channels honestly (PENDING until configured)
+[108/216] [desktop] › e2e/rfq.spec.ts:128:3 › RFQ API (real server) › rejects wrong content type, invalid bodies and GET
+[109/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en
+[110/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/collections
+[111/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/collections/bedrooms
+[112/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/collections/bedrooms/soft-arc-bedroom-set
+[113/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/about
+[114/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/sourcing-export
+[115/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/shipping-payment
+[116/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/custom-manufacturing
+[117/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/contact
+[118/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/inquiry
+[119/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /en/privacy
+[120/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar
+[121/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/collections
+[122/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/collections/bedrooms
+[123/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/collections/bedrooms/soft-arc-bedroom-set
+[124/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/about
+[125/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/sourcing-export
+[126/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/shipping-payment
+[127/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/custom-manufacturing
+[128/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/contact
+[129/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/inquiry
+[130/216] [mobile] › e2e/a11y.spec.ts:10:7 › accessibility (axe-core, WCAG 2.1 A/AA) › /ar/privacy
+[131/216] [mobile] › e2e/catalog.spec.ts:7:3 › categories, product pages, galleries › collections overview shows all seven categories with counts
+[132/216] [mobile] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: bedrooms
+[133/216] [mobile] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: dressing-rooms
+[134/216] [mobile] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: kids-bedrooms
+[135/216] [mobile] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: corner-sofas
+[136/216] [mobile] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: living-rooms
+[137/216] [mobile] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: china-cabinets
+[138/216] [mobile] › e2e/catalog.spec.ts:16:5 › categories, product pages, galleries › category page renders products: dining-rooms
+[139/216] [mobile] › e2e/catalog.spec.ts:27:3 › categories, product pages, galleries › global search finds products by name and code (EN + AR) and shows an empty state
+[140/216] [mobile] › e2e/catalog.spec.ts:41:3 › categories, product pages, galleries › category search filters and can be reset
+[141/216] [mobile] › e2e/catalog.spec.ts:50:3 › categories, product pages, galleries › product detail page: identity, illustrative notice, no price, related items
+[142/216] [mobile] › e2e/catalog.spec.ts:62:3 › categories, product pages, galleries › image gallery: main image loads, lightbox opens, traps focus, closes on Escape and restores focus
+[143/216] [mobile] › e2e/catalog.spec.ts:80:3 › categories, product pages, galleries › WhatsApp control is honest while no number is configured
+[144/216] [mobile] › e2e/expansion.spec.ts:9:3 › catalog expansion › hero uses the selected living-room image in a 3:2 frame (two-column layout kept)
+[145/216] [mobile] › e2e/expansion.spec.ts:25:3 › catalog expansion › Dressing Rooms is a top-level category with real covers and a link from Bedroom Sets
+[146/216] [mobile] › e2e/expansion.spec.ts:36:3 › catalog expansion › gallery thumbnails are real images, selecting one changes the main image, keyboard works
+[147/216] [mobile] › e2e/expansion.spec.ts:58:3 › catalog expansion › landscape covers keep their proportions (no stretching)
+[148/216] [mobile] › e2e/expansion.spec.ts:67:3 › catalog expansion › standard dimensions block: wardrobe 250 wide × 230 high, no depth (EN + AR); kids standard; dressing made-to-measure
+[149/216] [mobile] › e2e/expansion.spec.ts:84:3 › catalog expansion › Kids Room 3 cover is the clean render, not the specification infographic
+[150/216] [mobile] › e2e/expansion.spec.ts:92:3 › catalog expansion › legacy and continuing products keep their ids and URLs; Soft Arc Corner Sofa is listed under both Living Rooms and Corner Sofas
+[151/216] [mobile] › e2e/expansion.spec.ts:101:3 › catalog expansion › persisted Inquiry List entries for legacy products keep working; new products can be added
+[152/216] [mobile] › e2e/inquiry.spec.ts:7:3 › Inquiry List › add → badge → persists across reload and navigation; no duplicates
+[153/216] [mobile] › e2e/inquiry.spec.ts:26:3 › Inquiry List › edit quantity and note on the list; remove and undo
+[154/216] [mobile] › e2e/inquiry.spec.ts:42:3 › Inquiry List › stale prototype IDs are ignored but not destroyed; empty state has no flash
+[155/216] [mobile] › e2e/inquiry.spec.ts:49:3 › Inquiry List › empty list offers a way forward
+[156/216] [mobile] › e2e/inquiry.spec.ts:55:3 › Inquiry List › category cards flag items already on the list
+[157/216] [mobile] › e2e/integrity.spec.ts:13:3 › link & image integrity › all internal links on key pages resolve (no 404s)
+[158/216] [mobile] › e2e/integrity.spec.ts:28:3 › link & image integrity › every <img> loads (naturalWidth > 0) on catalog pages in both languages
+[159/216] [mobile] › e2e/integrity.spec.ts:40:3 › link & image integrity › all product pages (both languages) respond 200 and every image has alt text
+[160/216] [mobile] › e2e/integrity.spec.ts:52:3 › link & image integrity › no console errors on core pages
+[161/216] [mobile] › e2e/language.spec.ts:5:3 › language switching, RTL/LTR › English is LTR, Arabic is RTL, with correct lang attributes
+[162/216] [mobile] › e2e/language.spec.ts:15:5 › language switching, RTL/LTR › switching keeps the same page: /
+[163/216] [mobile] › e2e/language.spec.ts:15:5 › language switching, RTL/LTR › switching keeps the same page: /about
+[164/216] [mobile] › e2e/language.spec.ts:15:5 › language switching, RTL/LTR › switching keeps the same page: /collections
+[165/216] [mobile] › e2e/language.spec.ts:15:5 › language switching, RTL/LTR › switching keeps the same page: /collections/bedrooms
+[166/216] [mobile] › e2e/language.spec.ts:15:5 › language switching, RTL/LTR › switching keeps the same page: /shipping-payment
+[167/216] [mobile] › e2e/language.spec.ts:15:5 › language switching, RTL/LTR › switching keeps the same page: /contact
+[168/216] [mobile] › e2e/language.spec.ts:26:3 › language switching, RTL/LTR › product identity and localized image variant are kept across languages
+[169/216] [mobile] › e2e/language.spec.ts:39:3 › language switching, RTL/LTR › layout actually mirrors in RTL (logical properties)
+[170/216] [mobile] › e2e/language.spec.ts:50:3 › language switching, RTL/LTR › Arabic copy renders in the Arabic typeface and uses Arabic UI strings
+[171/216] [mobile] › e2e/language.spec.ts:58:3 › language switching, RTL/LTR › Inquiry List survives a language switch
+[172/216] [mobile] › e2e/navigation.spec.ts:5:3 › navigation & metadata › root redirects to the default locale
+[173/216] [mobile] › e2e/navigation.spec.ts:10:3 › navigation & metadata › primary navigation reaches every top-level page
+[174/216] [mobile] › e2e/navigation.spec.ts:25:3 › navigation & metadata › buyer-guide pages are reachable from Sourcing & Export
+[175/216] [mobile] › e2e/navigation.spec.ts:35:3 › navigation & metadata › active nav item is marked with aria-current
+[176/216] [mobile] › e2e/navigation.spec.ts:44:3 › navigation & metadata › unknown URLs return a real 404 with the localized page
+[177/216] [mobile] › e2e/navigation.spec.ts:53:3 › navigation & metadata › every page has a title, canonical and AR/EN hreflang alternates
+[178/216] [mobile] › e2e/navigation.spec.ts:66:3 › navigation & metadata › sitemap lists both languages with alternates; robots blocks indexing until launch
+[179/216] [mobile] › e2e/navigation.spec.ts:75:3 › navigation & metadata › document structure: skip link, one h1, landmarks
+[180/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en
+[181/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/collections
+[182/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/collections/bedrooms
+[183/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/collections/bedrooms/soft-arc-bedroom-set
+[184/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/about
+[185/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/sourcing-export
+[186/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/shipping-payment
+[187/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/custom-manufacturing
+[188/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/contact
+[189/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/inquiry
+[190/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /en/privacy
+[191/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar
+[192/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/collections
+[193/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/collections/bedrooms
+[194/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/collections/bedrooms/soft-arc-bedroom-set
+[195/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/about
+[196/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/sourcing-export
+[197/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/shipping-payment
+[198/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/custom-manufacturing
+[199/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/contact
+[200/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/inquiry
+[201/216] [mobile] › e2e/responsive.spec.ts:9:7 › responsive layout › no horizontal overflow: /ar/privacy
+[202/216] [mobile] › e2e/responsive.spec.ts:16:3 › responsive layout › mobile: hamburger opens the menu, links navigate, Escape closes and returns focus
+[203/216] [mobile] › e2e/responsive.spec.ts:34:3 › responsive layout › mobile: language switch lives in the menu and in the footer
+[204/216] [mobile] › e2e/responsive.spec.ts:43:3 › responsive layout › desktop: full navigation and Request a Quote CTA are visible; no hamburger
+[205/216] [mobile] › e2e/responsive.spec.ts:51:3 › responsive layout › touch targets in the header are at least 44px
+[206/216] [mobile] › e2e/responsive.spec.ts:57:3 › responsive layout › product page on a narrow screen keeps gallery and purchase panel usable
+[207/216] [mobile] › e2e/rfq.spec.ts:13:3 › Request a Quote › shows a summary and per-field errors for an empty submit; fixing clears them
+[208/216] [mobile] › e2e/rfq.spec.ts:27:3 › Request a Quote › validates email/phone formats and requires a contact method
+[209/216] [mobile] › e2e/rfq.spec.ts:40:3 › Request a Quote › message is optional once the inquiry list has items
+[210/216] [mobile] › e2e/rfq.spec.ts:55:3 › Request a Quote › without a configured provider the API refuses (503) and the UI never fakes success
+[211/216] [mobile] › e2e/rfq.spec.ts:67:3 › Request a Quote › server and network failures show distinct errors; success shows the reference and clears the draft
+[212/216] [mobile] › e2e/rfq.spec.ts:89:3 › Request a Quote › draft is saved locally and restored after reload (never the honeypot)
+[213/216] [mobile] › e2e/rfq.spec.ts:99:3 › Request a Quote › CTAs preset the inquiry type; trade preferences are optional and sent when chosen
+[214/216] [mobile] › e2e/rfq.spec.ts:114:3 › Request a Quote › Arabic form validates in Arabic
+[215/216] [mobile] › e2e/rfq.spec.ts:121:3 › Request a Quote › contact page offers WhatsApp/e-mail channels honestly (PENDING until configured)
+[216/216] [mobile] › e2e/rfq.spec.ts:128:3 › RFQ API (real server) › rejects wrong content type, invalid bodies and GET
+  8 skipped
+  208 passed (1.0m)

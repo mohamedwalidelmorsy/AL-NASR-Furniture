@@ -1,10 +1,12 @@
 import 'server-only';
 import type { Locale } from '@/i18n/routing';
 import { dirOf, otherLocale } from '@/i18n/routing';
-import { allMessages, fmt, type Messages } from '@/lib/messages';
+import { allMessages, type Messages } from '@/lib/messages';
 import { buildLinks, href, type Links } from '@/lib/links';
 import { siteConfig, waLink, whatsappReady } from '@/lib/site-config';
-import { categories, galleryFor, loc, productsInCategory, allProducts, type Category } from '@/lib/catalog';
+import { categories, galleryFor, loc, productsInCategory, productById, type Category } from '@/lib/catalog';
+import { HERO_IMAGE } from '@/lib/hero';
+import { countMessage } from '@/lib/plural';
 
 export interface CatCard { href: string; name: string; desc: string; img: string; alt: string; count: string }
 
@@ -16,7 +18,7 @@ export interface PageCtx {
   links: Links;
   allCats: CatCard[];
   featuredCats: CatCard[];
-  heroImg: { src: string; alt: string };
+  heroImg: { src: string; width: number; height: number; alt: string };
   whyItems: (Messages['why']['items'][number] & { num: string; href: string })[];
   processSteps: (Messages['process']['steps'][number] & { num: string })[];
   mqItems: (Messages['about']['mq'][number] & { num: string })[];
@@ -43,7 +45,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
 function catCard(c: Category, lang: Locale, t: Messages): CatCard {
   const list = productsInCategory(c.id);
   const n = list.length;
-  const first = list[0];
+  const first = (c.coverProductId ? productById(c.coverProductId) : undefined) ?? list[0];
   const im = first ? galleryFor(first, lang)[0] : undefined;
   return {
     href: href(lang, `collections/${c.slug}`),
@@ -51,7 +53,7 @@ function catCard(c: Category, lang: Locale, t: Messages): CatCard {
     desc: loc(c.desc, lang),
     img: im?.card ?? '',
     alt: `${loc(c.name, lang)} — ${t.illustrativeAlt}`,
-    count: n === 1 ? t.collections.count1 : fmt(t.collections.count, { n }),
+    count: countMessage(lang, n, { one: t.collections.count1, two: t.collections.count2, few: t.collections.count, many: t.collections.countMany }),
   };
 }
 
@@ -61,8 +63,6 @@ export function getPageCtx(lang: Locale): PageCtx {
   const H = (p: string) => href(lang, p);
   const cards = categories.map((c) => catCard(c, lang, t));
 
-  const heroProduct = allProducts().find((x) => x.categoryId === 'bedrooms') ?? allProducts()[0];
-  const heroIm = heroProduct ? galleryFor(heroProduct, lang)[0] : undefined;
   const waNum = siteConfig.whatsappNumber ?? '';
   const waReady = whatsappReady(siteConfig.whatsappNumber);
   const email = siteConfig.email ?? '';
@@ -70,7 +70,7 @@ export function getPageCtx(lang: Locale): PageCtx {
   return {
     lang, otherLang: otherLocale(lang), rtl: dirOf(lang) === 'rtl', t, links,
     allCats: cards, featuredCats: cards,
-    heroImg: { src: heroIm?.full ?? '', alt: heroProduct ? `${loc(heroProduct.name, lang)} — ${t.illustrativeAlt}` : '' },
+    heroImg: { src: HERO_IMAGE.src, width: HERO_IMAGE.width, height: HERO_IMAGE.height, alt: t.hero.imageAlt },
     whyItems: t.why.items.map((x, i) => ({ num: pad(i + 1), href: H(x.to), ...x })),
     processSteps: t.process.steps.map((x, i) => ({ num: pad(i + 1), ...x })),
     mqItems: t.about.mq.map((x, i) => ({ num: pad(i + 1), ...x })),

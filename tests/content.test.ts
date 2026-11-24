@@ -30,8 +30,8 @@ describe('translations', () => {
 
 describe('catalog', () => {
   const pub = path.resolve(__dirname, '../public');
-  it('has the six approved categories in order', () => {
-    expect(categories.map((c) => c.slug)).toEqual(['bedrooms', 'kids-bedrooms', 'corner-sofas', 'living-rooms', 'china-cabinets', 'dining-rooms']);
+  it('has the seven approved categories in order (Dressing Rooms is an independent top-level category)', () => {
+    expect(categories.map((c) => c.slug)).toEqual(['bedrooms', 'dressing-rooms', 'kids-bedrooms', 'corner-sofas', 'living-rooms', 'china-cabinets', 'dining-rooms']);
   });
   it('has unique ids, slugs (per category) and codes', () => {
     const p = allProducts();
@@ -85,10 +85,15 @@ describe('catalog import tooling', () => {
     expect(verifyOriginal(rec, Buffer.alloc(64)).problems[0]).toMatch(/PNG/);
     expect(renditionPath(rec, 640)).toBe('public/assets/furniture/bedroom-sets/en/img-x-640.webp');
   });
-  it('every inventory file referenced by a product exists in the inventory with a Drive ID', async () => {
-    const inv = (await import('../data/catalog-import/drive-inventory.json')).default as { files: { driveFileId: string }[]; totals: { files: number } };
-    expect(inv.files).toHaveLength(94);
+  it('every image source references the active Drive inventory, or is explicitly flagged (remapped / orphaned / deleted-by-decision)', async () => {
+    const inv = (await import('../data/catalog-import/drive-inventory-2026-11-09.json')).default as { activeImages: number; files: { driveFileId: string }[]; deletedExcludedIds: string[] };
+    expect(inv.activeImages).toBe(inv.files.length);
     const ids = new Set(inv.files.map((f) => f.driveFileId));
-    for (const p of allProducts()) for (const loc of ['en', 'ar'] as const) for (const im of p.gallery[loc]) expect(ids.has(im.source.driveFileId), `${p.id}/${loc}`).toBe(true);
+    for (const p of allProducts()) for (const loc of ['en', 'ar'] as const) for (const im of p.gallery[loc]) {
+      const st = im.source.status;
+      expect(st, `${p.id}/${loc} needs a source status`).toBeTruthy();
+      if (st === 'valid' || st === 'remapped') expect(ids.has(im.source.driveFileId), `${p.id}/${loc}`).toBe(true);
+      else expect(['orphaned', 'deleted-by-decision']).toContain(st);
+    }
   });
 });

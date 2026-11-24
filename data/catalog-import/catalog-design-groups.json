@@ -1,0 +1,1401 @@
+{
+ "generatedFor": "catalog-expansion 2026-11-09",
+ "notes": "Hand-reviewed design groups (visual review of contact sheets). Posters 1/1 of China/Dining are NOT published: AR#1 and EN#1 depict different designs.",
+ "products": [
+  {
+   "id": "pv-br-05",
+   "slug": "two-tone-panel-bedroom-set",
+   "category": "bedrooms",
+   "name": {
+    "en": "Two-Tone Panel Bedroom Set",
+    "ar": "طقم غرفة نوم بألواح ثنائية اللون"
+   },
+   "images": [
+    {
+     "folder": "Bedroom/room 1",
+     "match": "01_Main",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Bedroom/room 1",
+     "match": "02_Bed",
+     "label": {
+      "en": "Headboard detail",
+      "ar": "تفصيلة الهيدبورد"
+     }
+    },
+    {
+     "folder": "Bedroom/room 1",
+     "match": "03_Wardrobe",
+     "label": {
+      "en": "Wardrobe detail",
+      "ar": "تفصيلة الدولاب"
+     }
+    },
+    {
+     "folder": "Bedroom/room 1",
+     "match": "04_Dressing",
+     "label": {
+      "en": "Dressing table detail",
+      "ar": "تفصيلة التسريحة"
+     }
+    },
+    {
+     "folder": "Bedroom/room 1",
+     "match": "05_Drawer",
+     "label": {
+      "en": "Drawer detail",
+      "ar": "تفصيلة الدرج"
+     }
+    }
+   ],
+   "folder": "Bedroom/room 1"
+  },
+  {
+   "id": "pv-br-06",
+   "slug": "ivory-storage-bench-bedroom-set",
+   "category": "bedrooms",
+   "name": {
+    "en": "Ivory Storage-Bench Bedroom Set",
+    "ar": "طقم غرفة نوم عاجي مع بنش تخزين"
+   },
+   "images": [
+    {
+     "folder": "Bedroom/room 2",
+     "match": "-1.png",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Bedroom/room 2",
+     "match": "-4.png",
+     "label": {
+      "en": "Bed",
+      "ar": "السرير"
+     }
+    },
+    {
+     "folder": "Bedroom/room 2",
+     "match": "-2.png",
+     "label": {
+      "en": "Wardrobe detail",
+      "ar": "تفصيلة الدولاب"
+     }
+    },
+    {
+     "folder": "Bedroom/room 2",
+     "match": "-3.png",
+     "label": {
+      "en": "Dressing table detail",
+      "ar": "تفصيلة التسريحة"
+     }
+    },
+    {
+     "folder": "Bedroom/room 2",
+     "match": "-5.png",
+     "label": {
+      "en": "Bench detail",
+      "ar": "تفصيلة البنش"
+     }
+    }
+   ],
+   "folder": "Bedroom/room 2"
+  },
+  {
+   "id": "pv-br-07",
+   "slug": "cream-panel-bedroom-set",
+   "category": "bedrooms",
+   "name": {
+    "en": "Cream Panel Bedroom Set",
+    "ar": "طقم غرفة نوم بألواح كريمي"
+   },
+   "images": [
+    {
+     "folder": "Bedroom/room 3",
+     "match": "-1.png",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Bedroom/room 3",
+     "match": "-2.png",
+     "label": {
+      "en": "Bed",
+      "ar": "السرير"
+     }
+    },
+    {
+     "folder": "Bedroom/room 3",
+     "match": "-3.png",
+     "label": {
+      "en": "Wardrobe detail",
+      "ar": "تفصيلة الدولاب"
+     }
+    },
+    {
+     "folder": "Bedroom/room 3",
+     "match": "-4.png",
+     "label": {
+      "en": "Dressing table detail",
+      "ar": "تفصيلة التسريحة"
+     }
+    }
+   ],
+   "folder": "Bedroom/room 3",
+   "review": {
+    "possibleDuplicateOf": "pv-br-04",
+    "note": "Visual look-alike of legacy Luxe Bedroom Set; owner confirmation required. Not remapped."
+   }
+  },
+  {
+   "id": "pv-br-08",
+   "slug": "curved-headboard-bench-bedroom-set",
+   "category": "bedrooms",
+   "name": {
+    "en": "Curved-Headboard Bench Bedroom Set",
+    "ar": "طقم غرفة نوم بهيدبورد منحني وبنش"
+   },
+   "images": [
+    {
+     "folder": "Bedroom/room 4",
+     "match": "01_Main",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Bedroom/room 4",
+     "match": "02_Headboard",
+     "label": {
+      "en": "Headboard detail",
+      "ar": "تفصيلة الهيدبورد"
+     }
+    },
+    {
+     "folder": "Bedroom/room 4",
+     "match": "03_Wardrobe",
+     "label": {
+      "en": "Wardrobe detail",
+      "ar": "تفصيلة الدولاب"
+     }
+    },
+    {
+     "folder": "Bedroom/room 4",
+     "match": "04_Dressing",
+     "label": {
+      "en": "Dressing table detail",
+      "ar": "تفصيلة التسريحة"
+     }
+    },
+    {
+     "folder": "Bedroom/room 4",
+     "match": "05_Bench",
+     "label": {
+      "en": "Bench detail",
+      "ar": "تفصيلة البنش"
+     }
+    },
+    {
+     "folder": "Bedroom/room 4",
+     "match": "06_Nightstand",
+     "label": {
+      "en": "Nightstand detail",
+      "ar": "تفصيلة الكومود"
+     }
+    },
+    {
+     "folder": "Bedroom/room 4",
+     "match": "07_Drawer",
+     "label": {
+      "en": "Drawer detail",
+      "ar": "تفصيلة الدرج"
+     }
+    }
+   ],
+   "folder": "Bedroom/room 4",
+   "review": {
+    "possibleDuplicateOf": "pv-br-02",
+    "note": "Visual look-alike of legacy Curve Bedroom Set; owner confirmation required. Not remapped."
+   }
+  },
+  {
+   "id": "pv-br-09",
+   "slug": "padded-headboard-bedroom-set",
+   "category": "bedrooms",
+   "name": {
+    "en": "Padded-Headboard Bedroom Set",
+    "ar": "طقم غرفة نوم بهيدبورد مبطن"
+   },
+   "images": [
+    {
+     "folder": "Bedroom/room 5",
+     "match": "01_Main",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Bedroom/room 5",
+     "match": "02_Headboard",
+     "label": {
+      "en": "Headboard detail",
+      "ar": "تفصيلة الهيدبورد"
+     }
+    },
+    {
+     "folder": "Bedroom/room 5",
+     "match": "03_Wardrobe",
+     "label": {
+      "en": "Wardrobe detail",
+      "ar": "تفصيلة الدولاب"
+     }
+    },
+    {
+     "folder": "Bedroom/room 5",
+     "match": "04_Nightstand",
+     "label": {
+      "en": "Nightstand detail",
+      "ar": "تفصيلة الكومود"
+     }
+    },
+    {
+     "folder": "Bedroom/room 5",
+     "match": "05_Bench",
+     "label": {
+      "en": "Bench detail",
+      "ar": "تفصيلة البنش"
+     }
+    },
+    {
+     "folder": "Bedroom/room 5",
+     "match": "06_Dressing",
+     "label": {
+      "en": "Dressing table detail",
+      "ar": "تفصيلة التسريحة"
+     }
+    }
+   ],
+   "folder": "Bedroom/room 5",
+   "review": {
+    "possibleDuplicateOf": "pv-br-03",
+    "note": "Weaker visual similarity to legacy Upholstered Bedroom Set; owner confirmation required. Not remapped."
+   }
+  },
+  {
+   "id": "pv-br-10",
+   "slug": "grey-glass-door-bedroom-set",
+   "category": "bedrooms",
+   "name": {
+    "en": "Grey Glass-Door Bedroom Set",
+    "ar": "طقم غرفة نوم رمادي بدولاب بأبواب زجاجية"
+   },
+   "images": [
+    {
+     "folder": "Bedroom/room 6",
+     "match": "01_Main",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Bedroom/room 6",
+     "match": "02_Headboard",
+     "label": {
+      "en": "Headboard detail",
+      "ar": "تفصيلة الهيدبورد"
+     }
+    },
+    {
+     "folder": "Bedroom/room 6",
+     "match": "03_Wardrobe",
+     "label": {
+      "en": "Wardrobe detail",
+      "ar": "تفصيلة الدولاب"
+     }
+    },
+    {
+     "folder": "Bedroom/room 6",
+     "match": "04_Dressing",
+     "label": {
+      "en": "Dressing table detail",
+      "ar": "تفصيلة التسريحة"
+     }
+    },
+    {
+     "folder": "Bedroom/room 6",
+     "match": "05_Bed_Footboard",
+     "label": {
+      "en": "Bed footboard detail",
+      "ar": "تفصيلة نهاية السرير"
+     }
+    },
+    {
+     "folder": "Bedroom/room 6",
+     "match": "06_Nightstand",
+     "label": {
+      "en": "Nightstand detail",
+      "ar": "تفصيلة الكومود"
+     }
+    },
+    {
+     "folder": "Bedroom/room 6",
+     "match": "07_Drawer",
+     "label": {
+      "en": "Drawer detail",
+      "ar": "تفصيلة الدرج"
+     }
+    }
+   ],
+   "folder": "Bedroom/room 6"
+  },
+  {
+   "id": "pv-br-11",
+   "slug": "octagon-mirror-bedroom-set",
+   "category": "bedrooms",
+   "name": {
+    "en": "Octagon-Mirror Bedroom Set",
+    "ar": "طقم غرفة نوم بمرآة ثمانية الأضلاع"
+   },
+   "images": [
+    {
+     "folder": "Bedroom/room 7",
+     "match": "-1.png",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Bedroom/room 7",
+     "match": "-2.png",
+     "label": {
+      "en": "Bed",
+      "ar": "السرير"
+     }
+    },
+    {
+     "folder": "Bedroom/room 7",
+     "match": "-3.png",
+     "label": {
+      "en": "Wardrobe detail",
+      "ar": "تفصيلة الدولاب"
+     }
+    },
+    {
+     "folder": "Bedroom/room 7",
+     "match": "-4.png",
+     "label": {
+      "en": "Dressing table detail",
+      "ar": "تفصيلة التسريحة"
+     }
+    }
+   ],
+   "folder": "Bedroom/room 7"
+  },
+  {
+   "id": "pv-br-12",
+   "slug": "arc-headboard-bedroom-set",
+   "category": "bedrooms",
+   "name": {
+    "en": "Arc-Headboard Bedroom Set",
+    "ar": "طقم غرفة نوم بهيدبورد قوسي"
+   },
+   "images": [
+    {
+     "folder": "Bedroom/room 8",
+     "match": "-1.png",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Bedroom/room 8",
+     "match": "-2.png",
+     "label": {
+      "en": "Headboard detail",
+      "ar": "تفصيلة الهيدبورد"
+     }
+    },
+    {
+     "folder": "Bedroom/room 8",
+     "match": "-3.png",
+     "label": {
+      "en": "Wardrobe detail",
+      "ar": "تفصيلة الدولاب"
+     }
+    },
+    {
+     "folder": "Bedroom/room 8",
+     "match": "-4.png",
+     "label": {
+      "en": "Dressing table detail",
+      "ar": "تفصيلة التسريحة"
+     }
+    },
+    {
+     "folder": "Bedroom/room 8",
+     "match": "-5.png",
+     "label": {
+      "en": "Bench detail",
+      "ar": "تفصيلة البنش"
+     }
+    }
+   ],
+   "folder": "Bedroom/room 8",
+   "review": {
+    "possibleDuplicateOf": "pv-br-01",
+    "note": "Strong visual look-alike of legacy Soft Arc Bedroom Set; owner confirmation required. Not remapped. The WhatsApp photo in this folder is excluded pending business confirmation."
+   }
+  },
+  {
+   "id": "pv-kb-04",
+   "slug": "grey-headboard-kids-bedroom-set",
+   "category": "kids-bedrooms",
+   "name": {
+    "en": "Grey-Headboard Kids' Bedroom Set",
+    "ar": "طقم غرفة أطفال بهيدبورد رمادي"
+   },
+   "images": [
+    {
+     "folder": "Kids/New folder/room 1",
+     "match": "01_Main",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     },
+     "cropBottom": 36,
+     "note": "Display-only crop above the stitched thumbnail strip; original untouched."
+    },
+    {
+     "folder": "Kids/New folder/room 1",
+     "match": "02_Wardrobe",
+     "label": {
+      "en": "Wardrobe detail",
+      "ar": "تفصيلة الدولاب"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 1",
+     "match": "03_Headboard",
+     "label": {
+      "en": "Headboard detail",
+      "ar": "تفصيلة الهيدبورد"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 1",
+     "match": "04_Vanity",
+     "label": {
+      "en": "Dressing table detail",
+      "ar": "تفصيلة التسريحة"
+     }
+    }
+   ],
+   "folder": "Kids/New folder/room 1"
+  },
+  {
+   "id": "pv-kb-05",
+   "slug": "study-wall-twin-kids-bedroom-set",
+   "category": "kids-bedrooms",
+   "name": {
+    "en": "Study-Wall Twin Kids' Bedroom Set",
+    "ar": "طقم غرفة أطفال توأم بحائط مذاكرة"
+   },
+   "images": [
+    {
+     "folder": "Kids/New folder/room 2",
+     "match": "01_Main",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 2",
+     "match": "02_Wardrobe_Study",
+     "label": {
+      "en": "Wardrobe and study unit",
+      "ar": "الدولاب ووحدة المذاكرة"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 2",
+     "match": "03_Bed_Headboard",
+     "label": {
+      "en": "Headboard detail",
+      "ar": "تفصيلة الهيدبورد"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 2",
+     "match": "04_Nightstand",
+     "label": {
+      "en": "Nightstand and mirror",
+      "ar": "الكومود والمرآة"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 2",
+     "match": "05_Bed_Foot",
+     "label": {
+      "en": "Bed foot detail",
+      "ar": "تفصيلة نهاية السرير"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 2",
+     "match": "06_Storage",
+     "label": {
+      "en": "Shelf unit detail",
+      "ar": "تفصيلة وحدة الأرفف"
+     }
+    }
+   ],
+   "folder": "Kids/New folder/room 2",
+   "gap": "07_Wardrobe_Interior_Detail.jpg was not persisted by the connector (returned inline)."
+  },
+  {
+   "id": "pv-kb-06",
+   "slug": "blush-arch-twin-kids-bedroom-set",
+   "category": "kids-bedrooms",
+   "name": {
+    "en": "Blush Arch Twin Kids' Bedroom Set",
+    "ar": "طقم غرفة أطفال توأم بلون وردي وأقواس"
+   },
+   "images": [
+    {
+     "folder": "Kids/New folder/room 3",
+     "match": "PM-2.png",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 3",
+     "match": "PM-3.png",
+     "label": {
+      "en": "Wardrobe wall",
+      "ar": "حائط الدواليب"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 3",
+     "match": "PM-4.png",
+     "label": {
+      "en": "Bed",
+      "ar": "السرير"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 3",
+     "match": "PM-5.png",
+     "label": {
+      "en": "Nightstand and mirror",
+      "ar": "الكومود والمرآة"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 3",
+     "match": "PM-6.png",
+     "label": {
+      "en": "Shelf unit detail",
+      "ar": "تفصيلة وحدة الأرفف"
+     }
+    }
+   ],
+   "folder": "Kids/New folder/room 3",
+   "excluded": [
+    "Blush Glow Kids Bedroom Set (1).png: infographic with unverified printed specifications — not used as an image"
+   ]
+  },
+  {
+   "id": "pv-kb-07",
+   "slug": "light-tone-twin-kids-bedroom-set",
+   "category": "kids-bedrooms",
+   "name": {
+    "en": "Light-Tone Twin Kids' Bedroom Set",
+    "ar": "طقم غرفة أطفال توأم بلون فاتح"
+   },
+   "images": [
+    {
+     "folder": "Kids/New folder/room 4",
+     "match": "PM-3.png",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 4",
+     "match": "PM-4.png",
+     "label": {
+      "en": "Desk and storage",
+      "ar": "المكتب والتخزين"
+     }
+    }
+   ],
+   "folder": "Kids/New folder/room 4"
+  },
+  {
+   "id": "pv-kb-08",
+   "slug": "study-corner-kids-bedroom-set",
+   "category": "kids-bedrooms",
+   "name": {
+    "en": "Study-Corner Kids' Bedroom Set",
+    "ar": "طقم غرفة أطفال بركن مذاكرة"
+   },
+   "images": [
+    {
+     "folder": "Kids/New folder/room 5",
+     "match": "PM-1.png",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 5",
+     "match": "Cozy",
+     "label": {
+      "en": "Study corner",
+      "ar": "ركن المذاكرة"
+     }
+    }
+   ],
+   "folder": "Kids/New folder/room 5"
+  },
+  {
+   "id": "pv-kb-09",
+   "slug": "jungle-theme-twin-kids-bedroom-set",
+   "category": "kids-bedrooms",
+   "name": {
+    "en": "Jungle-Theme Twin Kids' Bedroom Set",
+    "ar": "طقم غرفة أطفال توأم بطابع الغابة"
+   },
+   "images": [
+    {
+     "folder": "Kids/New folder/room 6",
+     "match": "Sunlit",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 6",
+     "match": "PM-1.png",
+     "label": {
+      "en": "Desk and storage",
+      "ar": "المكتب والتخزين"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 6",
+     "match": "PM-2.png",
+     "label": {
+      "en": "Bed",
+      "ar": "السرير"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 6",
+     "match": "PM-3.png",
+     "label": {
+      "en": "Nightstand detail",
+      "ar": "تفصيلة الكومود"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 6",
+     "match": "PM-4.png",
+     "label": {
+      "en": "Shelf unit detail",
+      "ar": "تفصيلة وحدة الأرفف"
+     }
+    }
+   ],
+   "folder": "Kids/New folder/room 6"
+  },
+  {
+   "id": "pv-kb-10",
+   "slug": "symmetrical-twin-kids-bedroom-set",
+   "category": "kids-bedrooms",
+   "name": {
+    "en": "Symmetrical Twin Kids' Bedroom Set",
+    "ar": "طقم غرفة أطفال توأم متماثل"
+   },
+   "images": [
+    {
+     "folder": "Kids/New folder/room 7",
+     "match": "Symmetrical",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 7",
+     "match": "Study Wall",
+     "label": {
+      "en": "Desk and storage",
+      "ar": "المكتب والتخزين"
+     }
+    }
+   ],
+   "folder": "Kids/New folder/room 7"
+  },
+  {
+   "id": "pv-kb-11",
+   "slug": "teddy-theme-kids-bedroom-set",
+   "category": "kids-bedrooms",
+   "name": {
+    "en": "Teddy-Theme Kids' Bedroom Set",
+    "ar": "طقم غرفة أطفال بطابع الدببة"
+   },
+   "images": [
+    {
+     "folder": "Kids/New folder/room 8",
+     "match": "Warm Modern",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 8",
+     "match": "01_Bed",
+     "label": {
+      "en": "Bed",
+      "ar": "السرير"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 8",
+     "match": "02_Wardrobe",
+     "label": {
+      "en": "Wardrobe detail",
+      "ar": "تفصيلة الدولاب"
+     }
+    },
+    {
+     "folder": "Kids/New folder/room 8",
+     "match": "03_Nightstand",
+     "label": {
+      "en": "Nightstand detail",
+      "ar": "تفصيلة الكومود"
+     }
+    }
+   ],
+   "folder": "Kids/New folder/room 8",
+   "review": {
+    "possibleDuplicateOf": "pv-kb-03",
+    "confidence": "low",
+    "note": "Low-confidence partial look-alike of legacy Study Nook Kids Bedroom Set; owner confirmation required."
+   }
+  },
+  {
+   "id": "pv-dg-01",
+   "slug": "glass-door-walk-in-dressing-room",
+   "category": "dressing-rooms",
+   "name": {
+    "en": "Glass-Door Walk-in Dressing Room",
+    "ar": "غرفة دريسينج بأبواب زجاجية"
+   },
+   "images": [
+    {
+     "folder": "Dressing/After/1",
+     "match": "01_Main",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Dressing/After/1",
+     "match": "03_Detail",
+     "label": {
+      "en": "Shelving and storage",
+      "ar": "الأرفف والتخزين"
+     }
+    },
+    {
+     "folder": "Dressing/After/1",
+     "match": "04_Detail",
+     "label": {
+      "en": "Hanging space",
+      "ar": "مساحة التعليق"
+     }
+    }
+   ],
+   "folder": "Dressing/After/1",
+   "gap": "02_Detail_1.jpg is absent from the Drive folder."
+  },
+  {
+   "id": "pv-dg-02",
+   "slug": "taupe-panel-dressing-room",
+   "category": "dressing-rooms",
+   "name": {
+    "en": "Taupe Panel Dressing Room",
+    "ar": "غرفة دريسينج بألواح بيج داكن"
+   },
+   "images": [
+    {
+     "folder": "Dressing/After/2",
+     "match": "01_Main",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Dressing/After/2",
+     "match": "02_Detail",
+     "label": {
+      "en": "Mirror door detail",
+      "ar": "تفصيلة باب المرآة"
+     }
+    },
+    {
+     "folder": "Dressing/After/2",
+     "match": "03_Detail",
+     "label": {
+      "en": "Door detail",
+      "ar": "تفصيلة الأبواب"
+     }
+    },
+    {
+     "folder": "Dressing/After/2",
+     "match": "04_Detail",
+     "label": {
+      "en": "Panel detail",
+      "ar": "تفصيلة الألواح"
+     }
+    }
+   ],
+   "folder": "Dressing/After/2"
+  },
+  {
+   "id": "pv-dg-03",
+   "slug": "corner-glass-door-dressing-room-with-vanity",
+   "category": "dressing-rooms",
+   "name": {
+    "en": "Corner Glass-Door Dressing Room with Vanity",
+    "ar": "غرفة دريسينج ركنية بأبواب زجاجية وتسريحة"
+   },
+   "images": [
+    {
+     "folder": "Dressing/After/3",
+     "match": "01_Main",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Dressing/After/3",
+     "match": "02_Detail",
+     "label": {
+      "en": "Vanity niche",
+      "ar": "ركن التسريحة"
+     }
+    },
+    {
+     "folder": "Dressing/After/3",
+     "match": "03_Detail",
+     "label": {
+      "en": "Glass shelving",
+      "ar": "أرفف زجاجية"
+     }
+    },
+    {
+     "folder": "Dressing/After/3",
+     "match": "04_Detail",
+     "label": {
+      "en": "Hanging space",
+      "ar": "مساحة التعليق"
+     }
+    }
+   ],
+   "folder": "Dressing/After/3"
+  },
+  {
+   "id": "pv-dg-04",
+   "slug": "white-wardrobe-wall-with-mirror-niche",
+   "category": "dressing-rooms",
+   "name": {
+    "en": "White Wardrobe Wall with Mirror Niche",
+    "ar": "حائط دواليب أبيض بنيش مرآة"
+   },
+   "images": [
+    {
+     "folder": "Dressing/After/4",
+     "match": "01_Main",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Dressing/After/4",
+     "match": "02_Detail",
+     "label": {
+      "en": "Vanity niche",
+      "ar": "ركن التسريحة"
+     }
+    },
+    {
+     "folder": "Dressing/After/4",
+     "match": "03_Detail",
+     "label": {
+      "en": "Display tower",
+      "ar": "برج العرض"
+     }
+    },
+    {
+     "folder": "Dressing/After/4",
+     "match": "04_Detail",
+     "label": {
+      "en": "Handle detail",
+      "ar": "تفصيلة المقابض"
+     }
+    }
+   ],
+   "folder": "Dressing/After/4"
+  },
+  {
+   "id": "pv-dg-05",
+   "slug": "open-interior-glass-door-dressing-unit",
+   "category": "dressing-rooms",
+   "name": {
+    "en": "Open-Interior Glass-Door Dressing Unit",
+    "ar": "وحدة دريسينج مفتوحة بأبواب زجاجية"
+   },
+   "images": [
+    {
+     "folder": "Dressing/After/5",
+     "match": "01_Main",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Dressing/After/5",
+     "match": "02_Detail",
+     "label": {
+      "en": "Wooden interior",
+      "ar": "الداخل الخشبي"
+     }
+    },
+    {
+     "folder": "Dressing/After/5",
+     "match": "03_Detail",
+     "label": {
+      "en": "Hanging space",
+      "ar": "مساحة التعليق"
+     }
+    },
+    {
+     "folder": "Dressing/After/5",
+     "match": "04_Detail",
+     "label": {
+      "en": "Display cabinet",
+      "ar": "وحدة العرض"
+     }
+    }
+   ],
+   "folder": "Dressing/After/5"
+  },
+  {
+   "id": "pv-dg-06",
+   "slug": "slatted-panel-dressing-unit",
+   "category": "dressing-rooms",
+   "name": {
+    "en": "Slatted-Panel Dressing Unit",
+    "ar": "وحدة دريسينج بألواح مضلعة"
+   },
+   "images": [
+    {
+     "folder": "Dressing/After/6",
+     "match": "01_Main",
+     "label": {
+      "en": "Full view",
+      "ar": "منظر كامل"
+     }
+    },
+    {
+     "folder": "Dressing/After/6",
+     "match": "02_Detail",
+     "label": {
+      "en": "Slatted panel",
+      "ar": "الألواح المضلعة"
+     }
+    },
+    {
+     "folder": "Dressing/After/6",
+     "match": "03_Detail",
+     "label": {
+      "en": "Display tower",
+      "ar": "برج العرض"
+     }
+    },
+    {
+     "folder": "Dressing/After/6",
+     "match": "04_Detail",
+     "label": {
+      "en": "Door fronts",
+      "ar": "واجهات الأبواب"
+     }
+    }
+   ],
+   "folder": "Dressing/After/6"
+  },
+  {
+   "id": "pv-co-04",
+   "slug": "urban-l-shape-sofa",
+   "category": "corner-sofas",
+   "name": {
+    "en": "Urban L-Shape Sofa",
+    "ar": "ركنة حرف L عصرية"
+   },
+   "images": [
+    {
+     "folder": "Corner Sofas (ركن/عربي)",
+     "match": "03_00_16 PM-2.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Corner Sofas (ركن/عربي)"
+  },
+  {
+   "id": "pv-co-05",
+   "slug": "contour-corner-sofa",
+   "category": "corner-sofas",
+   "name": {
+    "en": "Contour Corner Sofa",
+    "ar": "ركنة كونتور"
+   },
+   "images": [
+    {
+     "folder": "Corner Sofas (ركن/عربي)",
+     "match": "03_00_22 PM-4.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Corner Sofas (ركن/عربي)"
+  },
+  {
+   "id": "pv-co-06",
+   "slug": "grande-u-shape-sofa",
+   "category": "corner-sofas",
+   "name": {
+    "en": "Grande U-Shape Sofa",
+    "ar": "ركنة حرف U كبيرة"
+   },
+   "images": [
+    {
+     "folder": "Corner Sofas (ركن/عربي)",
+     "match": "03_00_25 PM-5.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Corner Sofas (ركن/عربي)"
+  },
+  {
+   "id": "pv-co-07",
+   "slug": "blush-luxe-corner-sofa",
+   "category": "corner-sofas",
+   "name": {
+    "en": "Blush Luxe Corner Sofa",
+    "ar": "ركنة بلاش لوكس"
+   },
+   "images": [
+    {
+     "folder": "Corner Sofas (ركن/عربي)",
+     "match": "03_00_51 PM-9.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Corner Sofas (ركن/عربي)"
+  },
+  {
+   "id": "pv-lr-04",
+   "slug": "sculpted-modern-sofa",
+   "category": "living-rooms",
+   "name": {
+    "en": "Sculpted Modern Sofa",
+    "ar": "كنبة مودرن منحوتة"
+   },
+   "images": [
+    {
+     "folder": "Living Room Sofa Sets (انتريه/عربي)",
+     "match": "03_00_13 PM-1.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Living Room Sofa Sets (انتريه/عربي)",
+   "review": {
+    "possibleDuplicateOf": "pv-lr-07",
+    "note": "Similar sculpted white sofa family as pv-lr-07 / pv-lr-10; owner to confirm whether distinct."
+   }
+  },
+  {
+   "id": "pv-lr-05",
+   "slug": "nordic-sofa",
+   "category": "living-rooms",
+   "name": {
+    "en": "Nordic Sofa",
+    "ar": "كنبة نورديك"
+   },
+   "images": [
+    {
+     "folder": "Living Room Sofa Sets (انتريه/عربي)",
+     "match": "11_45_59 AM-2.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Living Room Sofa Sets (انتريه/عربي)"
+  },
+  {
+   "id": "pv-lr-06",
+   "slug": "harmony-living-room-set",
+   "category": "living-rooms",
+   "name": {
+    "en": "Harmony Living Room Set",
+    "ar": "طقم معيشة هارموني"
+   },
+   "images": [
+    {
+     "folder": "Living Room Sofa Sets (انتريه/عربي)",
+     "match": "03_00_19 PM-3.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Living Room Sofa Sets (انتريه/عربي)"
+  },
+  {
+   "id": "pv-lr-07",
+   "slug": "sculpted-white-sofa",
+   "category": "living-rooms",
+   "name": {
+    "en": "Sculpted White Sofa",
+    "ar": "كنبة بيضاء منحوتة"
+   },
+   "images": [
+    {
+     "folder": "Living Room Sofa Sets (انتريه/عربي)",
+     "match": "11_46_02 AM-3.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Living Room Sofa Sets (انتريه/عربي)"
+  },
+  {
+   "id": "pv-lr-08",
+   "slug": "burnt-orange-curve-sofa",
+   "category": "living-rooms",
+   "name": {
+    "en": "Burnt Orange Curve Sofa",
+    "ar": "كنبة منحنية برتقالي محروق"
+   },
+   "images": [
+    {
+     "folder": "Living Room Sofa Sets (انتريه/عربي)",
+     "match": "11_46_04 AM-4.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Living Room Sofa Sets (انتريه/عربي)"
+  },
+  {
+   "id": "pv-lr-09",
+   "slug": "classic-white-chaise",
+   "category": "living-rooms",
+   "name": {
+    "en": "Classic White Chaise",
+    "ar": "شيزلونج أبيض كلاسيك"
+   },
+   "images": [
+    {
+     "folder": "Living Room Sofa Sets (انتريه/عربي)",
+     "match": "11_46_08 AM-5.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Living Room Sofa Sets (انتريه/عربي)",
+   "note": "Single chaise longue (not a sofa set); kept in Living Room Sofa Sets per its Drive folder."
+  },
+  {
+   "id": "pv-lr-10",
+   "slug": "plush-curve-sofa",
+   "category": "living-rooms",
+   "name": {
+    "en": "Plush Curve Sofa",
+    "ar": "كنبة منحنيات فاخرة"
+   },
+   "images": [
+    {
+     "folder": "Living Room Sofa Sets (انتريه/عربي)",
+     "match": "03_00_28 PM-6.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Living Room Sofa Sets (انتريه/عربي)",
+   "review": {
+    "possibleDuplicateOf": "pv-lr-07",
+    "note": "Similar sculpted white sofa family as pv-lr-04 / pv-lr-07; owner to confirm whether distinct."
+   }
+  },
+  {
+   "id": "pv-lr-11",
+   "slug": "ivory-boucle-sofa",
+   "category": "living-rooms",
+   "name": {
+    "en": "Ivory Bouclé Sofa",
+    "ar": "كنبة بوكليه عاجية"
+   },
+   "images": [
+    {
+     "folder": "Living Room Sofa Sets (انتريه/عربي)",
+     "match": "11_46_13 AM-7.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Living Room Sofa Sets (انتريه/عربي)"
+  },
+  {
+   "id": "pv-lr-12",
+   "slug": "emerald-ribbed-sofa",
+   "category": "living-rooms",
+   "name": {
+    "en": "Emerald Ribbed Sofa",
+    "ar": "كنبة زمردية مضلعة"
+   },
+   "images": [
+    {
+     "folder": "Living Room Sofa Sets (انتريه/عربي)",
+     "match": "11_46_16 AM-8.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Living Room Sofa Sets (انتريه/عربي)"
+  },
+  {
+   "id": "pv-lr-13",
+   "slug": "pearl-ribbed-sofa",
+   "category": "living-rooms",
+   "name": {
+    "en": "Pearl Ribbed Sofa",
+    "ar": "كنبة لؤلؤية مضلعة"
+   },
+   "images": [
+    {
+     "folder": "Living Room Sofa Sets (انتريه/عربي)",
+     "match": "11_46_25 AM-9.png",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "Living Room Sofa Sets (انتريه/عربي)"
+  },
+  {
+   "id": "pv-cc-04",
+   "slug": "modern-buffet-and-display-set",
+   "category": "china-cabinets",
+   "name": {
+    "en": "Modern Buffet & Display Set",
+    "ar": "طقم بوفيه ونيش مودرن"
+   },
+   "images": [
+    {
+     "folder": "China/Dining (نيش و سفرة/عربي)",
+     "match": "03_34_03 PM-6.png",
+     "locale": "ar",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    },
+    {
+     "folder": "China/Dining (نيش و سفرة/انجليزي)",
+     "match": "03_27_06 PM-6.png",
+     "locale": "en",
+     "label": {
+      "en": "Catalog poster",
+      "ar": "بوستر الكتالوج"
+     },
+     "poster": true
+    }
+   ],
+   "folder": "China/Dining"
+  }
+ ]
+}

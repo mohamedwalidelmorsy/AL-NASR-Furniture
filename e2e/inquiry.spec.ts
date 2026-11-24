@@ -40,7 +40,7 @@ test.describe('Inquiry List', () => {
   });
 
   test('stale prototype IDs are ignored but not destroyed; empty state has no flash', async ({ page }) => {
-    await page.addInitScript(([k]) => localStorage.setItem(k, JSON.stringify([{ id: 'SAMPLE-CS-01', qty: 2, note: '' }, { id: 'pv-kb-01', qty: 1, note: '' }])), [INQUIRY_KEY]);
+    await page.addInitScript(([k]) => localStorage.setItem(k, JSON.stringify([{ id: 'SAMPLE-CS-01', qty: 2, note: '' }, { id: 'pv-kb-04', qty: 1, note: '' }])), [INQUIRY_KEY]);
     await gotoReady(page, '/en/inquiry');
     await expect(page.getByText('1 collection selected')).toBeVisible();
     expect(await inquiryStorage(page)).toHaveLength(2);

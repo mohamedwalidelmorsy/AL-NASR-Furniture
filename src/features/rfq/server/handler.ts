@@ -3,7 +3,7 @@ import { randomBytes } from 'node:crypto';
 import { rfqPayloadSchema } from '../schema';
 import { DeliveryError, getDelivery, type RfqDelivery } from './delivery';
 import { createRateLimiter } from '@/lib/rate-limit';
-import { allProducts } from '@/lib/catalog';
+import { allProducts, isActive } from '@/lib/catalog';
 
 const MAX_BODY_BYTES = 64 * 1024;
 
@@ -61,8 +61,19 @@ export async function handleRfq(req: Request, deps: RfqHandlerDeps = {}): Promis
   if (rfq.website) return json(400, { error: 'rejected' }); // honeypot
 
   // Items must reference real catalog entries.
+  // Archived products are known but not orderable: rejected with a distinct code (never silently mapped to another design).
   const products = allProducts();
-  if (rfq.items.some((i) => !products.some((p) => p.id === i.collection_id && p.code === i.code))) {
+  // Approved duplicate records are never accepted as items (clients send the continuing product id); no silent re-mapping server-side.
+  const mergedHit = rfq.items.find((i) => products.some((p) => p.id === i.collection_id && p.status === 'merged'));
+  if (mergedHit) {
+    const target = products.find((p) => p.id === mergedHit.collection_id)?.mergedInto;
+    return json(422, { error: 'validation', issues: [{ path: 'items', code: 'merged_item', id: mergedHit.collection_id, use: target }] });
+  }
+  const archivedHit = rfq.items.find((i) => products.some((p) => p.id === i.collection_id && p.code === i.code && !isActive(p) && p.status === 'archived'));
+  if (archivedHit) {
+    return json(422, { error: 'validation', issues: [{ path: 'items', code: 'archived_item', id: archivedHit.collection_id }] });
+  }
+  if (rfq.items.some((i) => !products.some((p) => p.id === i.collection_id && p.code === i.code && isActive(p)))) {
     return json(422, { error: 'validation', issues: [{ path: 'items', code: 'unknown_item' }] });
   }
 

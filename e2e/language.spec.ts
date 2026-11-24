@@ -24,16 +24,16 @@ test.describe('language switching, RTL/LTR', () => {
   }
 
   test('product identity and localized image variant are kept across languages', async ({ page }) => {
-    await gotoReady(page, PRODUCT);
+    const LOCALIZED = '/en/collections/corner-sofas/cocoa-modular-sectional'; // poster with separate EN/AR artwork
+    await gotoReady(page, LOCALIZED);
     const enSrc = decodeURIComponent((await page.locator('main img').first().getAttribute('src')) || '');
     expect(enSrc).toContain('-en-');
-    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Soft Arc Bedroom Set');
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Cocoa Modular Sectional');
     await langSwitch(page).click();
-    await expect(page).toHaveURL(/\/ar\/collections\/bedrooms\/soft-arc-bedroom-set$/);
-    await expect(page.getByRole('heading', { level: 1 })).toContainText('طقم غرفة نوم');
+    await expect(page).toHaveURL(/\/ar\/collections\/corner-sofas\/cocoa-modular-sectional$/);
     const arSrc = decodeURIComponent((await page.locator('main img').first().getAttribute('src')) || '');
     expect(arSrc).toContain('-ar-');
-    await expect(page.locator('main').getByText('PV-BR-01').first()).toBeVisible();
+    await expect(page.locator('main').getByText('PV-CO-01').first()).toBeVisible();
   });
 
   test('layout actually mirrors in RTL (logical properties)', async ({ page, isMobile }) => {

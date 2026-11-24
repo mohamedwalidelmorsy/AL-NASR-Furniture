@@ -1,0 +1,19 @@
+{
+  "unit": "cm",
+  "customizable": true,
+  "profiles": {
+    "bedroom-standard": {
+      "wardrobe": { "width": 250, "height": 230, "depth": null },
+      "bed": { "size": 160 },
+      "nightstand": { "count": 2, "size": 50 },
+      "dressingTable": { "min": 120, "max": 150 }
+    },
+    "kids-standard": {
+      "beds": { "count": 2, "size": 120 },
+      "wardrobe": { "size": 150 },
+      "nightstand": { "count": 1 },
+      "dressingTable": "on-request"
+    },
+    "made-to-measure": {}
+  }
+}

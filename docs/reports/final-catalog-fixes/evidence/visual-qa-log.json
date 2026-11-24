@@ -1,0 +1,382 @@
+[
+  {
+    "page": "home",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "home-ar",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "bedrooms",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "bedrooms-ar",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "corner-sofas",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "living-rooms",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "kids-ar",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "product-bedroom",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "product-corner",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "archived-kids",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "archived-kids-ar",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "dressing-detail",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "not-found",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "inquiry-migrated",
+    "width": 360,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "hero",
+    "width": 360,
+    "cssWidth": 320,
+    "servedW": 360
+  },
+  {
+    "page": "home",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "home-ar",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "bedrooms",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "bedrooms-ar",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "corner-sofas",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "living-rooms",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "kids-ar",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "product-bedroom",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "product-corner",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "archived-kids",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "archived-kids-ar",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "dressing-detail",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "not-found",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "inquiry-migrated",
+    "width": 390,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "hero",
+    "width": 390,
+    "cssWidth": 350,
+    "servedW": 480
+  },
+  {
+    "page": "home",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "home-ar",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "bedrooms",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "bedrooms-ar",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "corner-sofas",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "living-rooms",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "kids-ar",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "product-bedroom",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "product-corner",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "archived-kids",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "archived-kids-ar",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "dressing-detail",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "not-found",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "inquiry-migrated",
+    "width": 768,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "hero",
+    "width": 768,
+    "cssWidth": 707,
+    "servedW": 768
+  },
+  {
+    "page": "home",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "home-ar",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "bedrooms",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "bedrooms-ar",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "corner-sofas",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "living-rooms",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "kids-ar",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "product-bedroom",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "product-corner",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "archived-kids",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "archived-kids-ar",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "dressing-detail",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "not-found",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "inquiry-migrated",
+    "width": 1280,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "hero",
+    "width": 1280,
+    "cssWidth": 568,
+    "servedW": 640
+  },
+  {
+    "page": "home",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "home-ar",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "bedrooms",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "bedrooms-ar",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "corner-sofas",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "living-rooms",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "kids-ar",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "product-bedroom",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "product-corner",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "archived-kids",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "archived-kids-ar",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "dressing-detail",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "not-found",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "inquiry-migrated",
+    "width": 1440,
+    "horizontalOverflowPx": 0
+  },
+  {
+    "page": "hero",
+    "width": 1440,
+    "cssWidth": 564,
+    "servedW": 640
+  }
+]

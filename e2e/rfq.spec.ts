@@ -64,6 +64,44 @@ test.describe('Request a Quote', () => {
     await expect(page.getByRole('button', { name: 'Try again' })).toBeVisible();
   });
 
+  test('rate limit (429) and limiter outage (503) show their own messages and keep the data', async ({ page }) => {
+    await gotoReady(page, '/en/contact');
+    await fillValid(page);
+    await page.route('**/api/rfq', (r) => r.fulfill({ status: 429, headers: { 'Retry-After': '540' }, json: { error: 'rate_limited' } }));
+    await page.getByRole('button', { name: 'Send quote request' }).click();
+    const limited = page.getByRole('alert').filter({ hasText: 'Too many requests' });
+    await expect(limited).toBeVisible();
+    await expect(limited).toContainText('about 9 minutes');
+    await expect(limited).toBeFocused();
+
+    await page.unroute('**/api/rfq');
+    await page.route('**/api/rfq', (r) => r.fulfill({ status: 503, headers: { 'Retry-After': '120' }, json: { error: 'rfq_unavailable' } }));
+    await page.getByRole('button', { name: 'Try again' }).click();
+    await expect(page.getByRole('alert').filter({ hasText: 'Requests temporarily unavailable' })).toBeVisible();
+    await expect(page.getByText('Request received')).toHaveCount(0);
+    await expect(page.locator('#f-name')).toHaveValue('Ahmed Test');
+  });
+
+  test('Arabic: 429 uses the dual form and 503 its own localized message', async ({ page }) => {
+    await gotoReady(page, '/ar/contact');
+    await page.locator('#f-name').fill('أحمد');
+    await page.locator('#f-country').selectOption('SA');
+    await page.locator('#f-email').fill('ahmed@example.com');
+    await page.locator('#f-message').fill('نحتاج حاويتين من غرف النوم.');
+    await page.locator('#f-consent').check();
+    await page.route('**/api/rfq', (r) => r.fulfill({ status: 429, headers: { 'Retry-After': '120' }, json: { error: 'rate_limited' } }));
+    await page.locator('form button[type="submit"]').click();
+    const limited = page.getByRole('alert').filter({ hasText: 'عدد كبير من الطلبات' });
+    await expect(limited).toBeVisible();
+    await expect(limited).toContainText('بعد دقيقتين تقريبًا');
+
+    await page.unroute('**/api/rfq');
+    await page.route('**/api/rfq', (r) => r.fulfill({ status: 503, json: { error: 'rfq_unavailable' } }));
+    await page.locator('form button[type="submit"]').click();
+    await expect(page.getByRole('alert').filter({ hasText: 'استقبال الطلبات متوقف مؤقتًا' })).toBeVisible();
+    await expect(page.locator('#f-name')).toHaveValue('أحمد');
+  });
+
   test('server and network failures show distinct errors; success shows the reference and clears the draft', async ({ page }) => {
     await gotoReady(page, '/en/contact');
     await fillValid(page);

@@ -14,8 +14,11 @@
     "catalog:import": "node scripts/import-drive-catalog.ts",
     "catalog:extract": "node scripts/extract-prototype-data.mjs",
     "cf:build:staging": "sh ./cloudflare/staging/build.sh",
-    "cf:preview:staging": "sh ./cloudflare/staging/build.sh && wrangler dev",
-    "cf:deploy:staging": "sh ./cloudflare/staging/build.sh && wrangler deploy"
+    "cf:preview:staging": "sh ./cloudflare/staging/build.sh && wrangler dev -c wrangler.jsonc",
+    "cf:deploy:staging": "sh ./cloudflare/staging/build.sh && node ./cloudflare/shared/check-target.mjs staging && wrangler deploy -c wrangler.jsonc --tag \"$(git rev-parse --short HEAD)\" --message \"git-$(git rev-parse --short HEAD)\"",
+    "cf:build:production": "sh ./cloudflare/production/build.sh",
+    "cf:check:production": "node ./cloudflare/shared/check-target.mjs production production-incomplete && wrangler deploy -c wrangler.production.jsonc --dry-run --outdir .wrangler/dry-run-production",
+    "cf:deploy:production": "sh ./cloudflare/production/build.sh && node ./cloudflare/shared/check-target.mjs production --clean && wrangler deploy -c wrangler.production.jsonc --tag \"$(git rev-parse --short HEAD)\" --message \"git-$(git rev-parse --short HEAD)\""
   },
   "dependencies": {
     "@hookform/resolvers": "^7.0.3",

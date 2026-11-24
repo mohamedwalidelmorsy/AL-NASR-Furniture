@@ -70,10 +70,19 @@ describe('POST /api/rfq handler', () => {
     expect(json.reference).toMatch(/^RFQ-\d{8}-[0-9A-F]{6}$/);
     expect(d.send).toHaveBeenCalledOnce();
   });
-  it('never fakes success when delivery is not configured (503)', async () => {
-    const res = await handleRfq(req(body()), { delivery: getDelivery({}), limiter: fresh() });
+  it('never fakes success when delivery is not configured (503) and logs it', async () => {
+    const log = vi.fn();
+    const res = await handleRfq(req(body()), { delivery: getDelivery({}), limiter: fresh(), log });
     expect(res.status).toBe(503);
     expect(await res.json()).toEqual({ error: 'not_configured' });
+    expect(log).toHaveBeenCalledWith('rfq.not_configured', {});
+  });
+  it('logs a sent RFQ with its reference only (no personal data)', async () => {
+    const log = vi.fn();
+    const res = await handleRfq(req(body()), { delivery: okDelivery(), limiter: fresh(), log });
+    const { reference } = (await res.json()) as { reference: string };
+    expect(log).toHaveBeenCalledWith('rfq.sent', { reference, items: expect.any(Number) });
+    expect(JSON.stringify(log.mock.calls)).not.toMatch(/Ahmed|a@b\.co|Need 3 sets|1\.2\.3\.4/);
   });
   it('reports delivery failure as 502 and logs no personal data', async () => {
     const log = vi.fn();
@@ -148,15 +157,23 @@ describe('delivery adapter', () => {
 
 describe('browser submit client — success only on a real 2xx', () => {
   const p = buildRfqPayload(valid(), [], 'en', 'https://x');
-  const resp = (status: number, json?: unknown) => (async () => new Response(json === undefined ? 'oops' : JSON.stringify(json), { status })) as unknown as typeof fetch;
+  const resp = (status: number, json?: unknown, headers?: Record<string, string>) => (async () => new Response(json === undefined ? 'oops' : JSON.stringify(json), { status, headers })) as unknown as typeof fetch;
   it('returns the reference on 200', async () => expect(await submitRfq(p, resp(200, { reference: 'RFQ-1' }))).toEqual({ reference: 'RFQ-1' }));
   it('succeeds without a reference', async () => expect(await submitRfq(p, resp(200, {}))).toEqual({ reference: null }));
   it('maps 503 not_configured', async () => {
     await expect(submitRfq(p, resp(503, { error: 'not_configured' }))).rejects.toMatchObject({ code: 'not_configured' });
   });
+  it('maps 429 to rate_limited with the Retry-After seconds', async () => {
+    await expect(submitRfq(p, resp(429, { error: 'rate_limited' }, { 'Retry-After': '540' }))).rejects.toMatchObject({ code: 'rate_limited', retryAfterSeconds: 540 });
+    await expect(submitRfq(p, resp(429))).rejects.toMatchObject({ code: 'rate_limited', retryAfterSeconds: null });
+  });
+  it('maps any other 503 (limiter fail-closed) to unavailable', async () => {
+    await expect(submitRfq(p, resp(503, { error: 'rfq_unavailable' }, { 'Retry-After': '120' }))).rejects.toMatchObject({ code: 'unavailable', retryAfterSeconds: 120 });
+    await expect(submitRfq(p, resp(503))).rejects.toMatchObject({ code: 'unavailable' });
+  });
   it('maps other failures to server, and transport errors to network', async () => {
     await expect(submitRfq(p, resp(500))).rejects.toBeInstanceOf(RfqSubmitError);
-    await expect(submitRfq(p, resp(429, { error: 'rate_limited' }))).rejects.toMatchObject({ code: 'server' });
+    await expect(submitRfq(p, resp(502, { error: 'delivery_failed' }))).rejects.toMatchObject({ code: 'server' });
     await expect(submitRfq(p, (async () => { throw new TypeError('fail'); }) as unknown as typeof fetch)).rejects.toMatchObject({ code: 'network' });
   });
 });

@@ -19,7 +19,7 @@
   // next/image → Cloudflare Images binding. On the Images Free plan, transformations beyond
   // 5,000 unique/month return error 9422 instead of being billed (nothing paid is enabled).
   "images": { "binding": "IMAGES" },
-  // Global per-IP RFQ rate limit (cloudflare/staging/worker.mjs → RfqRateLimiter). SQLite-backed Durable
+  // Global per-IP RFQ rate limit (cloudflare/shared/rfq-limiter-do.mjs → RfqRateLimiter; fail-closed in cloudflare/shared/rfq-guard.ts). SQLite-backed Durable
   // Objects are included in Workers Free (100k requests + 100k rows written/day; over-limit operations fail,
   // nothing is billed). The Workers Rate Limiting binding was rejected: its period is 10 or 60 s only and its
   // counts are approximate and per Cloudflare location, so it cannot express "5 per 600 s per IP".

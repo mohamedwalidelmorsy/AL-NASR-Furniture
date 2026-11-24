@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { positiveInt, step, type WindowState } from '../cloudflare/staging/rate-window.ts';
+import { positiveInt, step, type WindowState } from '../cloudflare/shared/rate-window.ts';
 import { createRateLimiter } from '@/lib/rate-limit';
 
 const WIN = 600_000;

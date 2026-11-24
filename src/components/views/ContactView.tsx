@@ -16,7 +16,8 @@ import { useInquiry } from '@/features/inquiry/inquiry-provider';
 import { useInquiryRows } from '@/features/inquiry/use-rows';
 import { emptyRfqForm, rfqFormSchema, INQUIRY_TYPES, type RfqFormValues } from '@/features/rfq/schema';
 import { availablePrefs, buildRfqPayload, effectivePref, resolveItems } from '@/features/rfq/payload';
-import { RfqSubmitError, submitRfq } from '@/features/rfq/client';
+import { RfqSubmitError, submitRfq, type RfqFailure } from '@/features/rfq/client';
+import { fmt } from '@/lib/messages';
 import type { ProductCard } from '@/lib/product-cards';
 import type { Locale } from '@/i18n/routing';
 
@@ -50,7 +51,8 @@ export function ContactView({ products }: { products: ProductCard[] }) {
   const errs = formState.errors as FieldErrors<RfqFormValues>;
 
   const [submit, setSubmit] = useState<SubmitState>('idle');
-  const [submitErr, setSubmitErr] = useState<'not_configured' | 'server' | 'network' | null>(null);
+  const [submitErr, setSubmitErr] = useState<RfqFailure | null>(null);
+  const [retryAfterSec, setRetryAfterSec] = useState<number | null>(null);
   const [reference, setReference] = useState<string | null>(null);
   const [askClear, setAskClear] = useState(false);
   const summaryRef = useRef<HTMLDivElement>(null);
@@ -81,6 +83,8 @@ export function ContactView({ products }: { products: ProductCard[] }) {
   }, [watch]);
   // Selecting/removing items changes whether a message is required.
   useEffect(() => { if (formState.isSubmitted) void trigger(); }, [hasInq, formState.isSubmitted, trigger]);
+  // Move focus to the error alert once it is rendered (a setTimeout before the render left focus on <body>).
+  useEffect(() => { if (submit === 'error') errorRef.current?.focus(); }, [submit, submitErr]);
 
   const errKey = (k: FieldKey): string | undefined => (showErrors ? (errs[k]?.message as string | undefined) : undefined);
   const fv = (k: FieldKey) => {
@@ -137,9 +141,15 @@ export function ContactView({ products }: { products: ProductCard[] }) {
   const isSuccess = submit === 'success';
   const notSuccess = !isSuccess;
   const isError = submit === 'error';
-  const errBase = submitErr === 'not_configured' ? 'notConfigured' : submitErr === 'server' ? 'server' : 'network';
-  const submitErrTitle = t.form[(errBase + 'Title') as 'networkTitle'];
-  const submitErrBody = t.form[errBase as 'network'];
+  const errBase = ({ not_configured: 'notConfigured', rate_limited: 'rateLimited', unavailable: 'unavailable', server: 'server', network: 'network' } as const)[submitErr ?? 'network'];
+  const submitErrTitle = t.form[`${errBase}Title`];
+  // 429: tell the buyer how long to wait (Retry-After, rounded up to minutes; 10 = the default window).
+  const waitMinutes = Math.max(1, Math.ceil((retryAfterSec ?? 600) / 60));
+  const submitErrBody = errBase === 'rateLimited'
+    ? fmt(t.form.rateLimited, { duration: countMessage(lang, waitMinutes, t.form.minutes) })
+    : t.form[errBase];
+  // Alternative contact inside the error: WhatsApp when configured, otherwise the sales e-mail.
+  const altEmail = !waReady && emailReady;
   const messageReqLabel = hasInq ? t.form.optional : t.form.required;
   const messagePh = ({ custom: t.form.messagePhCustom, project: t.form.messagePhProject, shipping: t.form.messagePhShipping } as Record<string, string>)[f.inquiryType] || (hasInq ? t.form.messagePhItems : t.form.messagePhGeneral);
   const submitLabel = busy ? t.form.submitting : submit === 'error' ? t.form.retry : t.form.submit;
@@ -152,7 +162,7 @@ export function ContactView({ products }: { products: ProductCard[] }) {
     if (values.website) return; // honeypot: likely a bot — do not send, do not fake success
     const items = resolveItems(inq.validItems);
     const payload = buildRfqPayload(values, items, lang, window.location.href);
-    setSubmit('submitting'); setSubmitErr(null);
+    setSubmit('submitting'); setSubmitErr(null); setRetryAfterSec(null);
     try {
       const r = await submitRfq(payload);
       reset(emptyRfqForm());
@@ -160,8 +170,9 @@ export function ContactView({ products }: { products: ProductCard[] }) {
       setReference(r.reference); setAskClear(items.length > 0); setSubmit('success');
       setTimeout(() => successRef.current?.focus(), 0);
     } catch (e) {
-      setSubmitErr(e instanceof RfqSubmitError ? e.code : 'network'); setSubmit('error');
-      setTimeout(() => errorRef.current?.focus(), 0);
+      setSubmitErr(e instanceof RfqSubmitError ? e.code : 'network');
+      setRetryAfterSec(e instanceof RfqSubmitError ? e.retryAfterSeconds : null);
+      setSubmit('error');
     }
   };
   const onSubmit = (ev: FormEvent<HTMLFormElement>) => { void handleSubmit(send)(ev); };
@@ -319,6 +330,7 @@ export function ContactView({ products }: { products: ProductCard[] }) {
                   <p style={{ margin: "0", fontWeight: "600", color: "#B42318" }}>{submitErrTitle}</p>
                   <p style={{ margin: "0", fontSize: "15px", color: "#252525" }}>{submitErrBody}</p>
                   {(waReady) && (<><A href={waGeneral} target="_blank" rel="noopener noreferrer" style={{ alignSelf: "flex-start", fontWeight: "600" }}>{t.contact.waBtn}</A></>)}
+                  {(altEmail) && (<><A href={emailHref} style={{ alignSelf: "flex-start", fontWeight: "600" }}>{t.form.emailSales} <span dir="ltr">({email})</span></A></>)}
                 </div>
               </>)}
 

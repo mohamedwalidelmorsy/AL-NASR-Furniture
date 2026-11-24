@@ -1,19 +1,29 @@
 #!/usr/bin/env node
 /**
- * Staging smoke test for the Cloudflare Workers deployment. Read-only except for RFQ checks, which
- * never send e-mail unless RFQ_SEND_REAL=1 (then exactly ONE valid RFQ is submitted).
+ * Smoke test for the Cloudflare Workers deployments (staging and production). Read-only: the RFQ checks
+ * only send invalid payloads, so no e-mail is ever sent.
  *
  * Usage:
- *   BASE_URL=https://al-nasr-furniture-staging.<sub>.workers.dev STAGING_AUTH='user:pass' \
- *     node cloudflare/staging/smoke-test.mjs [--json out.json]
+ *   Staging (Basic Auth, always noindex):
+ *     BASE_URL=https://al-nasr-furniture-staging.<sub>.workers.dev STAGING_AUTH='user:pass' \
+ *       node cloudflare/shared/smoke-test.mjs [--json out.json]
+ *   Production (public, no credentials):
+ *     SMOKE_MODE=production BASE_URL=https://<host> [EXPECT_INDEXING=true] [SITE_URL=https://alnasrfurniture.com] \
+ *       node cloudflare/shared/smoke-test.mjs [--json out.json]
+ *   EXPECT_INDEXING defaults to false (pre-launch); set it to true only after the launch indexing switch.
+ *   SITE_URL, if set, must be the origin every sitemap <loc> uses.
  */
 import fs from 'node:fs';
 import path from 'node:path';
 
 const BASE = (process.env.BASE_URL ?? '').replace(/\/$/, '');
+const MODE = process.env.SMOKE_MODE ?? 'staging';
 const AUTH = process.env.STAGING_AUTH ?? '';
-if (!BASE || !AUTH) { console.error('BASE_URL and STAGING_AUTH are required'); process.exit(2); }
-const authH = { Authorization: `Basic ${Buffer.from(AUTH).toString('base64')}` };
+const EXPECT_INDEXING = MODE === 'production' && process.env.EXPECT_INDEXING === 'true';
+const SITE_URL = (process.env.SITE_URL ?? '').replace(/\/$/, '');
+if (!['staging', 'production'].includes(MODE)) { console.error('SMOKE_MODE must be staging or production'); process.exit(2); }
+if (!BASE || (MODE === 'staging' && !AUTH)) { console.error('BASE_URL (and STAGING_AUTH in staging mode) are required'); process.exit(2); }
+const authH = AUTH ? { Authorization: `Basic ${Buffer.from(AUTH).toString('base64')}` } : {};
 const jsonOut = process.argv.includes('--json') ? process.argv[process.argv.indexOf('--json') + 1] : null;
 
 const results = [];
@@ -27,11 +37,15 @@ const categories = readJson('src/data/catalog/categories.json');
 const catSlug = (id) => categories.find((c) => c.id === id)?.slug ?? id;
 
 // 1. Access control
-{
+if (MODE === 'staging') {
   const r = await fetch(BASE + '/en', { redirect: 'manual' });
   record('access', 'no credentials → 401', r.status === 401, `got ${r.status}`);
   const r2 = await fetch(BASE + '/en', { redirect: 'manual', headers: { Authorization: 'Basic ' + Buffer.from('x:wrong').toString('base64') } });
   record('access', 'wrong credentials → 401', r2.status === 401, `got ${r2.status}`);
+} else {
+  const r = await fetch(BASE + '/en', { redirect: 'manual' });
+  record('access', 'production is public: /en without credentials → 200', r.status === 200, `got ${r.status}`);
+  record('access', 'production asks for no credentials', !r.headers.get('www-authenticate'));
 }
 
 // 2. Locale routing
@@ -78,10 +92,15 @@ for (const p of urls) {
   const r = await get(p);
   times.push(performance.now() - t0);
   const html = r.status === 200 ? await r.text() : '';
-  if (r.status !== 200 || !html.includes('noindex')) { pageFail++; record('pages', p, false, `status ${r.status}${html && !html.includes('noindex') ? ' (no noindex)' : ''}`); }
+  const robotsOk = EXPECT_INDEXING ? !/<meta[^>]+name="robots"[^>]+noindex/.test(html) : html.includes('noindex');
+  if (r.status !== 200 || !robotsOk) { pageFail++; record('pages', p, false, `status ${r.status}${html && !robotsOk ? (EXPECT_INDEXING ? ' (noindex present)' : ' (no noindex)') : ''}`); }
   for (const m of html.matchAll(/\/_next\/image\?url=[^"\s,]+/g)) imgSet.add(m[0].replace(/&amp;/g, '&'));
 }
-record('pages', `all sitemap pages 200 + noindex (${urls.length})`, pageFail === 0, `${pageFail} failed`);
+record('pages', `all sitemap pages 200 + ${EXPECT_INDEXING ? 'indexable' : 'noindex'} (${urls.length})`, pageFail === 0, `${pageFail} failed`);
+if (SITE_URL) {
+  const origins = [...new Set([...sm.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).origin))];
+  record('pages', `sitemap URLs use ${SITE_URL}`, origins.length === 1 && origins[0] === SITE_URL, origins.join(','));
+}
 // Archived product pages are generated but not in the sitemap
 const archived = products.filter((p) => p.status === 'archived');
 for (const p of archived) for (const l of ['en', 'ar']) {
@@ -92,9 +111,13 @@ for (const p of ['/en/inquiry', '/ar/inquiry']) { const r = await get(p); record
 for (const p of ['/robots.txt', '/sitemap.xml']) { const r = await get(p); record('pages', `${p} 200`, r.status === 200, `got ${r.status}`); }
 {
   const robots = await (await get('/robots.txt')).text();
-  record('indexing', 'robots.txt disallows all', /Disallow:\s*\/\s*$/m.test(robots), robots.replace(/\n/g, ' | '));
+  const disallowAll = /Disallow:\s*\/\s*$/m.test(robots);
+  if (EXPECT_INDEXING) record('indexing', 'robots.txt allows crawling and lists the sitemap', !disallowAll && /Sitemap:\s*https:\/\//i.test(robots), robots.replace(/\n/g, ' | '));
+  else record('indexing', 'robots.txt disallows all', disallowAll, robots.replace(/\n/g, ' | '));
   const r = await get('/en');
-  record('indexing', 'X-Robots-Tag noindex on pages', (r.headers.get('x-robots-tag') ?? '').includes('noindex'));
+  const xrt = r.headers.get('x-robots-tag') ?? '';
+  if (EXPECT_INDEXING) record('indexing', 'no X-Robots-Tag noindex on pages', !xrt.includes('noindex'), xrt);
+  else record('indexing', 'X-Robots-Tag noindex on pages', xrt.includes('noindex'), xrt);
 }
 
 // 4. Redirects and 404
@@ -168,7 +191,7 @@ for (const p of ['/en/does-not-exist', '/ar/collections/bedrooms/not-a-product']
 }
 
 const pct = (a, q) => a.sort((x, y) => x - y)[Math.min(a.length - 1, Math.floor(q * a.length))];
-const summary = { base: BASE, when: new Date().toISOString(), pages: urls.length, pass: results.filter((r) => r.ok).length, fail: results.filter((r) => !r.ok).length, ttfbMs: { p50: Math.round(pct(times, 0.5)), p95: Math.round(pct(times, 0.95)), max: Math.round(Math.max(...times)) } };
+const summary = { base: BASE, mode: MODE, expectIndexing: EXPECT_INDEXING, when: new Date().toISOString(), pages: urls.length, pass: results.filter((r) => r.ok).length, fail: results.filter((r) => !r.ok).length, ttfbMs: { p50: Math.round(pct(times, 0.5)), p95: Math.round(pct(times, 0.95)), max: Math.round(Math.max(...times)) } };
 console.log(JSON.stringify(summary));
 if (jsonOut) fs.writeFileSync(jsonOut, JSON.stringify({ summary, results }, null, 2));
 process.exit(summary.fail ? 1 : 0);

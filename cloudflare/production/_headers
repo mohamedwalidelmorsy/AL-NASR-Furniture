@@ -1,0 +1,12 @@
+# Workers Static Assets headers (production). next.config.ts headers() do not apply to static files on Workers,
+# so the app's four security headers are mirrored here; plus long-cache for hashed build output.
+# No X-Robots-Tag here: until launch, noindex comes from the app (robots.txt + meta) and the Worker
+# (X-Robots-Tag while ALLOW_INDEXING != "true"). Staging keeps its own noindex _headers.
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable

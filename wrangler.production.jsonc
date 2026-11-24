@@ -1,0 +1,40 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // PRODUCTION worker. Deployed ONLY with `npm run cf:deploy:production` (wrangler -c wrangler.production.jsonc);
+  // a plain `wrangler deploy` uses wrangler.jsonc = staging. Separate Worker name ⇒ separate secrets, Durable
+  // Object namespace, logs and versions from staging.
+  "name": "al-nasr-furniture",
+  "main": "cloudflare/production/worker.mjs",
+  "compatibility_date": "2026-11-01",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  // workers.dev stays on for the pre-cut-over check (runbook step 2); turn it off once the custom domain is live.
+  "workers_dev": true,
+  "preview_urls": false,
+  // Custom domain is attached at cut-over (DNS runbook), not before:
+  // "routes": [{ "pattern": "alnasrfurniture.com", "custom_domain": true }, { "pattern": "www.alnasrfurniture.com", "custom_domain": true }],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    // Self-reference required by OpenNext; must name THIS worker, never staging.
+    { "binding": "WORKER_SELF_REFERENCE", "service": "al-nasr-furniture" }
+  ],
+  // Cloudflare Images Free: beyond 5,000 unique transformations/month → error 9422, not billed.
+  "images": { "binding": "IMAGES" },
+  // Global per-IP RFQ rate limit (SQLite Durable Object, Workers Free); fail-closed when unavailable.
+  "durable_objects": {
+    "bindings": [{ "name": "RFQ_LIMITER", "class_name": "RfqRateLimiter" }]
+  },
+  "migrations": [{ "tag": "v1-rfq-limiter", "new_sqlite_classes": ["RfqRateLimiter"] }],
+  // Workers Logs (Free: 200k events/day, 3-day retention).
+  "observability": { "enabled": true, "head_sampling_rate": 1 },
+  // Non-secret runtime config. Secrets (RESEND_API_KEY, RFQ_TO_EMAIL, RFQ_FROM_EMAIL) are set with
+  // `wrangler secret put <NAME> -c wrangler.production.jsonc`, never committed. No STAGING_BASIC_AUTH here.
+  "vars": {
+    "RFQ_RATE_LIMIT_MAX": "5",
+    "RFQ_RATE_LIMIT_WINDOW_SECONDS": "600",
+    // Second indexing gate (Worker X-Robots-Tag). "true" only at launch, together with NEXT_PUBLIC_ALLOW_INDEXING.
+    "ALLOW_INDEXING": "false"
+  }
+}

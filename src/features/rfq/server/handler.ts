@@ -29,7 +29,10 @@ const defaultLimiter = createRateLimiter(
   Number(process.env.RFQ_RATE_LIMIT_WINDOW_SECONDS) || 600,
 );
 // Structured logs carry only IDs / status codes — never names, e-mails, phones or message text.
-const defaultLog = (evt: string, data: Record<string, unknown>) => console.error(JSON.stringify({ evt, ...data }));
+// Failures go to the error level (counted as errors by Workers Logs); `rfq.sent` is informational.
+const ERROR_EVENTS = new Set(['rfq.delivery_failed', 'rfq.not_configured']);
+const defaultLog = (evt: string, data: Record<string, unknown>) =>
+  (ERROR_EVENTS.has(evt) ? console.error : console.info)(JSON.stringify({ evt, ...data }));
 
 export async function handleRfq(req: Request, deps: RfqHandlerDeps = {}): Promise<Response> {
   const delivery = deps.delivery ?? getDelivery();
@@ -77,7 +80,10 @@ export async function handleRfq(req: Request, deps: RfqHandlerDeps = {}): Promis
     return json(422, { error: 'validation', issues: [{ path: 'items', code: 'unknown_item' }] });
   }
 
-  if (!delivery.isConfigured()) return json(503, { error: 'not_configured' });
+  if (!delivery.isConfigured()) {
+    log('rfq.not_configured', {});
+    return json(503, { error: 'not_configured' });
+  }
 
   const reference = newReference();
   try {
@@ -86,5 +92,6 @@ export async function handleRfq(req: Request, deps: RfqHandlerDeps = {}): Promis
     log('rfq.delivery_failed', { reference, status: e instanceof DeliveryError ? e.status : 'unknown' });
     return json(502, { error: 'delivery_failed' });
   }
+  log('rfq.sent', { reference, items: rfq.items.length });
   return json(200, { reference });
 }

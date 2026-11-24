@@ -2,19 +2,20 @@
 
 **Scope:** controlled staging trial only. **Not** the production launch.
 The production domain, Spaceship DNS, nameservers and Spacemail records are **not touched**.
-Nothing paid is enabled: no R2, KV, D1, Durable Objects, Queues, Images Paid or Workers Paid.
+Nothing paid is enabled: no R2, KV, D1, Queues, Images Paid or Workers Paid. The only Durable Object is the SQLite-backed RFQ rate limiter, which is included in Workers Free.
 
 ## What this branch adds (deployment configuration only; no application source changed)
 
 | File | Purpose |
 |---|---|
-| `wrangler.jsonc` | Worker `al-nasr-furniture-staging`. It is served on `workers.dev` only and has no routes or custom domain. Uses `nodejs_compat`, Static Assets, Images binding, self-reference service binding, observability logs, and non-secret rate-limit vars |
+| `wrangler.jsonc` | Worker `al-nasr-furniture-staging`. It is served on `workers.dev` only and has no routes or custom domain. Uses `nodejs_compat`, Static Assets, Images binding, self-reference service binding, observability logs, non-secret rate-limit vars, and the `RFQ_LIMITER` Durable Object binding (SQLite migration `v1-rfq-limiter`) |
 | `open-next.config.ts` | OpenNext config. Uses the read-only **static-assets incremental cache**, so no paid storage is needed |
-| `cloudflare/staging/worker.mjs` | Staging wrapper around the unmodified OpenNext worker. It adds:<ul><li>HTTP Basic Auth (fails closed);</li><li>`X-Forwarded-For` overwritten with `CF-Connecting-IP`, which closes the rate-limit bypass;</li><li>`X-Robots-Tag: noindex`.</li></ul> |
+| `cloudflare/staging/worker.mjs` | Staging wrapper around the unmodified OpenNext worker. It adds:<ul><li>HTTP Basic Auth (fails closed);</li><li>`X-Forwarded-For` overwritten with `CF-Connecting-IP`, which closes the rate-limit bypass;</li><li>`X-Robots-Tag: noindex`;</li><li>a **global** per-IP RFQ rate limit in the `RfqRateLimiter` Durable Object (one object per IP; same 5 per 600 s as the app). The app's in-memory limiter counts per isolate on Workers, so on its own it gives no global limit. Fails open, without logging the IP, if the Durable Object is unreachable.</li></ul> |
 | `cloudflare/staging/_headers` | Security headers + `noindex` for static files; immutable cache for `/_next/static/*` |
 | `cloudflare/staging/build.env` | Public build-time values. Indexing off, WhatsApp/e-mail empty ("PENDING"), consent version `STAGING-TEST` |
 | `cloudflare/staging/build.sh` | `opennextjs-cloudflare build` with the staging env, then copies `_headers` |
-| `cloudflare/staging/smoke-test.mjs` | Automated checks covering access control, every sitemap page, locale redirects, catalog 308 redirects, 404s, headers, AVIF/WebP, RFQ validation and the spoofed-IP rate-limit test |
+| `cloudflare/staging/rate-window.ts` | Pure fixed-window step used by the Durable Object; unit-tested in `tests/staging-rate-window.test.ts` |
+| `cloudflare/staging/smoke-test.mjs` | Automated checks covering access control, every sitemap page, locale redirects, catalog 308 redirects, 404s, headers, AVIF/WebP, RFQ validation, the spoofed-IP rate-limit test and a global-limit check (every request after the first 429 must also be 429) |
 | `package.json` | Pinned devDeps `@opennextjs/cloudflare@1.20.18`, `wrangler@4.168.0`; scripts `cf:build:staging`, `cf:preview:staging`, `cf:deploy:staging` |
 | `.gitignore`, `eslint.config.mjs` | Ignore `.open-next/`, `.wrangler/`, `.dev.vars` |
 
@@ -93,4 +94,6 @@ npx wrangler secret put STAGING_BASIC_AUTH
 ## Free-tier safety notes
 - **Workers Free:** over 100,000 requests/day, requests fail with error 1027 and you are **not billed**. Over 10 ms CPU, requests fail with error 1102.
 - **Images Free:** beyond 5,000 unique transformations/month, new transforms return error 9422 and are **not billed**. Only the 11 configured widths are accepted; any other width gets HTTP 400 (tested).
+- **Durable Objects Free (SQLite only):** 100,000 requests/day and 100,000 rows written/day. Each counted RFQ POST uses about 1 request and 1 row write, plus 1 alarm per IP window. Over the limit, operations fail and nothing is billed; the limiter then fails open.
+- **Why not the Workers Rate Limiting binding:** its `period` is 10 or 60 s only, and its counts are approximate and per Cloudflare location, so it cannot express "5 per 600 s per IP".
 - No payment method is needed for any of the above. If Cloudflare ever asks for a card to "continue", stop and ask before entering one.

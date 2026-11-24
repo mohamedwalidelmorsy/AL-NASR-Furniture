@@ -129,11 +129,20 @@ for (const p of ['/en/does-not-exist', '/ar/collections/bedrooms/not-a-product']
   record('rfq', 'cross-origin → 403', x.status === 403, `got ${x.status}`);
   const ct = await fetch(BASE + '/api/rfq', { method: 'POST', headers: { ...authH, 'Content-Type': 'text/plain', Origin: BASE }, body: 'x' });
   record('rfq', 'wrong content-type → 415', ct.status === 415, `got ${ct.status}`);
-  // Spoofed X-Forwarded-For must NOT reset the limiter (each request claims a new IP).
-  const codes = [];
-  for (let i = 0; i < 8; i++) codes.push((await post('{}', { 'X-Forwarded-For': `198.51.100.${i + 1}` })).status);
-  const limited = codes.includes(429);
-  record('rfq', 'spoofed X-Forwarded-For cannot bypass rate limit (expects 429 within 8)', limited, codes.join(','));
+  // Spoofed X-Forwarded-For must NOT reset the limiter (each request claims a new IP), and the limit must be
+  // global: once refused, every later request in the window is refused too (a per-isolate counter flips
+  // between 422 and 429). The 403/415 probes above are not counted, like in the app.
+  const MAX = Number(process.env.RFQ_RATE_LIMIT_MAX) || 5;
+  const codes = []; let retryAfterOk = true;
+  for (let i = 0; i < 8; i++) {
+    const r = await post('{}', { 'X-Forwarded-For': `198.51.100.${i + 1}` });
+    codes.push(r.status);
+    if (r.status === 429 && !(Number(r.headers.get('retry-after')) > 0)) retryAfterOk = false;
+  }
+  const first = codes.indexOf(429);
+  record('rfq', `spoofed X-Forwarded-For cannot bypass rate limit (429 by request ${MAX + 1} of 8)`, first !== -1 && first <= MAX, codes.join(','));
+  record('rfq', 'rate limit is global (every request after the first 429 is 429)', first !== -1 && codes.slice(first).every((c) => c === 429), codes.join(','));
+  record('rfq', '429 carries a positive Retry-After', first !== -1 && retryAfterOk);
 }
 
 const pct = (a, q) => a.sort((x, y) => x - y)[Math.min(a.length - 1, Math.floor(q * a.length))];

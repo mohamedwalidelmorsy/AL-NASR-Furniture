@@ -52,12 +52,33 @@ This uses **Resend's sandbox sender**. Resend only delivers sandbox mail to the 
 - You can rotate it any time in **Settings → Variables and Secrets**.
 - Removing it locks the site: it then answers 503.
 
-## How to deploy or re-deploy yourself (macOS / Linux / WSL)
+## Status on 2026-11-24 (done by Claude)
+- Cloudflare account verified via the scoped API token. It has no zones: DNS stays at Spaceship.
+- workers.dev subdomain **`alnasr-staging`** created. Staging URL: **https://al-nasr-furniture-staging.alnasr-staging.workers.dev**
+- **A deploy from Claude's cloud session failed** at the static-asset upload step, with `401` on `/workers/assets/upload`.
+  - Cause: that step authenticates with a short-lived upload JWT. The session's network proxy replaces the `Authorization` header with the saved API token.
+  - **Nothing was created** in the account (0 Workers). Use one of the two deploy paths below.
+
+## Deploy path A (recommended): Cloudflare Workers Builds from GitHub (no local tools)
+Workers Builds Free: 3,000 build minutes/month, 8 GB RAM, 20-minute timeout ([limits](https://developers.cloudflare.com/workers/ci-cd/builds/limits-and-pricing/)). One build of this site takes a few minutes.
+1. Go to https://dash.cloudflare.com/?to=/:account/workers-and-pages, then **Create application**, then **GitHub**.
+2. Authorize the Cloudflare GitHub app for **only** `mohamedwalidelmorsy/AL-NASR-Furniture`, and select that repository.
+3. Configure:
+   - **Project / Worker name:** `al-nasr-furniture-staging`. This must equal `name` in `wrangler.jsonc`.
+   - **Production branch:** `deployment/cloudflare-staging`. "Production" is only Cloudflare's term here; this Worker has no custom domain.
+   - **Build command:** `npm run cf:build:staging`
+   - **Deploy command:** `npx wrangler deploy`
+   - **Non-production branch builds:** **disabled**, so other branches and `main` are never built.
+   - **Build variable:** `NODE_VERSION` = `22`
+4. Select **Save and Deploy**, then wait for the build to finish.
+5. The site answers **503 "Staging is locked"** until the password secret exists. That is expected. Tell Claude, and Claude will set `STAGING_BASIC_AUTH` through the API and run the tests.
+
+## Deploy path B: from your MacBook (macOS / Linux / WSL)
 ```bash
 git checkout deployment/cloudflare-staging && npm ci
 ```
 ```bash
-sed -i.bak 's/CHANGE-ME-SUBDOMAIN/<your-subdomain>/' cloudflare/staging/build.env
+git pull
 ```
 ```bash
 npx wrangler login

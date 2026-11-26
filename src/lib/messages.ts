@@ -12,7 +12,7 @@ export const allMessages: Record<Locale, Messages> = { en, ar };
 /** Namespaces needed by client components. Large static-page copy stays server-only. */
 export const CLIENT_NAMESPACES = [
   'dir', 'arrow', 'back', 'switchTo', 'skip', 'nav', 'sample', 'illustrative', 'illustrativeAlt', 'wa', 'ph',
-  'crumbs', 'featured', 'collections', 'category', 'card', 'detail', 'dimensions', 'inquiry', 'toast', 'contact', 'form', 'footer',
+  'crumbs', 'featured', 'collections', 'category', 'card', 'detail', 'dimensions', 'inquiry', 'toast', 'contact', 'contactInfo', 'form', 'footer',
 ] as const satisfies readonly (keyof Messages)[];
 
 export function pickClientMessages(m: Messages): Pick<Messages, (typeof CLIENT_NAMESPACES)[number]> {

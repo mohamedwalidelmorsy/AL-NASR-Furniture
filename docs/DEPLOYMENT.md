@@ -10,7 +10,9 @@ Copy `.env.example` → `.env.local` (dev) or set them in the host (prod). Never
 |---|---|---|---|
 | `NEXT_PUBLIC_SITE_URL` | public | Canonical origin (no trailing slash) for canonicals, hreflang, sitemap, OG, WhatsApp product links | `http://localhost:3000` — **must be set in production** |
 | `NEXT_PUBLIC_WHATSAPP_NUMBER` | public | Digits incl. country code (`201XXXXXXXXX`) | WhatsApp controls show "PENDING" and explain via toast |
-| `NEXT_PUBLIC_SALES_EMAIL` | public | E-mail shown on contact page/footer | shows "PENDING" |
+| `NEXT_PUBLIC_PHONE_NUMBERS` | public | Comma-separated digits, primary first; each gets `tel:` + `wa.me` links (WhatsApp defaults to the first) | phone rows hidden |
+| `NEXT_PUBLIC_GENERAL_EMAIL` | public | General inquiries e-mail (contact page, footer, About, JSON-LD) | shows "PENDING" |
+| `NEXT_PUBLIC_EXPORT_EMAIL` | public | Export inquiries e-mail (contact page, footer, export guides, RFQ alternatives, JSON-LD) | shows "PENDING" |
 | `NEXT_PUBLIC_CONSENT_TEXT_VERSION` | public | Version label stored with each RFQ's consent | `PENDING` |
 | `NEXT_PUBLIC_ALLOW_INDEXING` | public | `true` lifts `robots.txt` disallow + `noindex` | **indexing blocked** |
 | `RESEND_API_KEY`, `RFQ_TO_EMAIL`, `RFQ_FROM_EMAIL` | **server only** | RFQ notification via Resend | `POST /api/rfq` → `503 not_configured`; the form says "Request not sent" and keeps the buyer's data |

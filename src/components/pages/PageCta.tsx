@@ -11,6 +11,7 @@ export function PageCta({ pc }: { pc: PageCtaData }) {
       <div style={{ maxWidth: "640px", display: "flex", flexDirection: "column", gap: "14px" }}>
         <h2 style={{ margin: "0", fontSize: "clamp(26px,3vw,34px)", lineHeight: "1.25", fontWeight: "600" }}>{pc.title}</h2>
         {(pcHasBody) && (<><p style={{ margin: "0", fontSize: "17px", color: "#E9E4DC" }}>{pc.body}</p></>)}
+        {(pc.mail) && (<><p style={{ margin: "0", fontSize: "15px", color: "#E9E4DC" }}>{pc.mail.label}: <A href={pc.mail.href} dir="ltr" style={{ color: "#FAF9F6", fontWeight: "600" }}>{pc.mail.text}</A></p></>)}
       </div>
       <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
         <A href={pc.href1} style={{ display: "inline-flex", alignItems: "center", minHeight: "48px", padding: "0 24px", borderRadius: "6px", background: "#FAF9F6", color: "#584838", fontSize: "15px", fontWeight: "600", textDecoration: "none" }} className="sh4">{pc.label1}</A>

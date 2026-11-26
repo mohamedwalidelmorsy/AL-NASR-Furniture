@@ -123,13 +123,20 @@
     "guides": "Buyer guides",
     "company": "Company",
     "contact": "Contact",
-    "email": "Email",
-    "whatsapp": "WhatsApp",
     "pending": "Pending confirmation",
     "privacy": "Privacy notice",
     "legal": "AL NASR FURNITURE is the commercial brand of Al Nasr for Import & Export (مؤسسة النصر للاستيراد والتصدير). Registration details will be published once confirmed.",
     "wordmark": "Provisional text wordmark — final logo pending.",
     "rights": "AL NASR FURNITURE"
+  },
+  "contactInfo": {
+    "phoneWa": "Phone / WhatsApp",
+    "general": "General Inquiries",
+    "export": "Export Inquiries",
+    "website": "Website",
+    "whatsapp": "WhatsApp",
+    "callAria": "Call {num}",
+    "waAria": "WhatsApp {num}"
   },
   "crumbs": {
     "home": "Home",
@@ -288,7 +295,6 @@
     "eyebrow": "Contact",
     "title": "Contact our export sales team",
     "intro": "Choose the channel that suits you: a direct WhatsApp conversation, or a quotation request through the form below.",
-    "waTitle": "Chat on WhatsApp",
     "waBody": "Opens a direct conversation with sales. No form required.",
     "waBtn": "Chat with Sales on WhatsApp",
     "callBtn": "Call sales:",

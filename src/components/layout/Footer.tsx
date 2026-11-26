@@ -4,7 +4,10 @@ import type { PageCtx } from '@/lib/page-ctx';
 import { LangSwitch } from '@/components/lang-switch';
 
 export function Footer({ ctx }: { ctx: PageCtx }) {
-  const { t, links, navItems, footerGuides, email, emailHref, emailReady, emailNotReady, waGeneral, waNum, waReady, waNotReady, year } = ctx;
+  const { t, links, navItems, footerGuides, email, emailHref, emailReady, waGeneral, waNum, waReady, phones, exportEmail, exportEmailHref, exportEmailReady, website, year } = ctx;
+  const ci = t.contactInfo;
+  const dt = { color: "#CFC8BD", fontSize: "13px" };
+  const pending = <span style={{ color: "#CFC8BD" }}>{t.footer.pending}</span>;
   return (
     <>
 <footer style={{ background: "#252525", color: "#E9E4DC" }}>
@@ -34,8 +37,14 @@ export function Footer({ ctx }: { ctx: PageCtx }) {
       <div>
         <h2 style={{ margin: "0 0 16px", fontSize: "13px", fontWeight: "600", letterSpacing: ".14em", textTransform: "uppercase", color: "#A58B64" }}>{t.footer.contact}</h2>
         <dl style={{ margin: "0", display: "flex", flexDirection: "column", gap: "14px", fontSize: "15px" }}>
-          <div><dt style={{ color: "#CFC8BD", fontSize: "13px" }}>{t.footer.whatsapp}</dt><dd style={{ margin: "2px 0 0" }}>{(waReady) && (<><A href={waGeneral} target="_blank" rel="noopener noreferrer" dir="ltr" style={{ color: "#FAF9F6" }}>+{waNum}</A></>)}{(waNotReady) && (<><span style={{ color: "#CFC8BD" }}>{t.footer.pending}</span></>)}</dd></div>
-          <div><dt style={{ color: "#CFC8BD", fontSize: "13px" }}>{t.footer.email}</dt><dd style={{ margin: "2px 0 0" }}>{(emailReady) && (<><A href={emailHref} dir="ltr" style={{ color: "#FAF9F6" }}>{email}</A></>)}{(emailNotReady) && (<><span style={{ color: "#CFC8BD" }}>{t.footer.pending}</span></>)}</dd></div>
+          <div data-testid="footer-phones"><dt style={dt}>{ci.phoneWa}</dt>
+            {phones.length > 0
+              ? phones.map((ph) => (<dd key={ph.num} style={{ margin: "2px 0 0" }}><A href={ph.tel} dir="ltr" aria-label={ci.callAria.replace('{num}', ph.text)} style={{ color: "#FAF9F6" }}>{ph.text}</A> · <A href={ph.wa} target="_blank" rel="noopener noreferrer" aria-label={ci.waAria.replace('{num}', ph.text)} style={{ color: "#E9E4DC" }}>{ci.whatsapp}</A></dd>))
+              : <dd style={{ margin: "2px 0 0" }}>{waReady ? <A href={waGeneral} target="_blank" rel="noopener noreferrer" dir="ltr" style={{ color: "#FAF9F6" }}>+{waNum}</A> : pending}</dd>}
+          </div>
+          <div><dt style={dt}>{ci.general}</dt><dd style={{ margin: "2px 0 0" }}>{emailReady ? <A href={emailHref} dir="ltr" style={{ color: "#FAF9F6" }}>{email}</A> : pending}</dd></div>
+          <div><dt style={dt}>{ci.export}</dt><dd style={{ margin: "2px 0 0" }}>{exportEmailReady ? <A href={exportEmailHref} dir="ltr" style={{ color: "#FAF9F6" }}>{exportEmail}</A> : pending}</dd></div>
+          <div><dt style={dt}>{ci.website}</dt><dd style={{ margin: "2px 0 0", color: "#FAF9F6" }}><span dir="ltr">{website}</span></dd></div>
         </dl>
       </div>
       <div>

@@ -11,7 +11,7 @@ import countries from '@/data/countries.json';
 import { useT } from '@/lib/use-t';
 import { buildLinks } from '@/lib/links';
 import { countMessage } from '@/lib/plural';
-import { siteConfig, telLink, waLink, whatsappReady } from '@/lib/site-config';
+import { phoneContacts, siteConfig, waLink, whatsappReady } from '@/lib/site-config';
 import { useInquiry } from '@/features/inquiry/inquiry-provider';
 import { useInquiryRows } from '@/features/inquiry/use-rows';
 import { emptyRfqForm, rfqFormSchema, INQUIRY_TYPES, PAYMENT_TERMS, type RfqFormValues } from '@/features/rfq/schema';
@@ -40,9 +40,15 @@ export function ContactView({ products }: { products: ProductCard[] }) {
   const waGeneral = waLink(siteConfig.whatsappNumber, t.wa.general);
   const email = siteConfig.email ?? '';
   const emailReady = !!email;
-  const tel = telLink(siteConfig.phoneNumber);
+  const phones = phoneContacts(t.wa.general);
   const emailNotReady = !email;
   const emailHref = email ? 'mailto:' + email : '';
+  const exportEmail = siteConfig.exportEmail ?? '';
+  const exportEmailHref = exportEmail ? 'mailto:' + exportEmail : '';
+  // Quote requests are export business: offer the export address, falling back to the general one.
+  const quoteEmail = exportEmail || email;
+  const quoteEmailHref = exportEmail ? exportEmailHref : emailHref;
+  const ci = t.contactInfo;
 
   const resolver = useMemo(() => zodResolver(rfqFormSchema(hasInq)), [hasInq]);
   const form = useForm<RfqFormValues>({ defaultValues: emptyRfqForm(), resolver, mode: 'onSubmit', reValidateMode: 'onChange' });
@@ -154,7 +160,7 @@ export function ContactView({ products }: { products: ProductCard[] }) {
     ? fmt(t.form.rateLimited, { duration: countMessage(lang, waitMinutes, t.form.minutes) })
     : t.form[errBase];
   // Alternative contact inside the error: WhatsApp when configured, otherwise the sales e-mail.
-  const altEmail = !waReady && emailReady;
+  const altEmail = !waReady && !!quoteEmail;
   const messageReqLabel = hasInq ? t.form.optional : t.form.required;
   const messagePh = ({ custom: t.form.messagePhCustom, project: t.form.messagePhProject, shipping: t.form.messagePhShipping } as Record<string, string>)[f.inquiryType] || (hasInq ? t.form.messagePhItems : t.form.messagePhGeneral);
   const submitLabel = busy ? t.form.submitting : submit === 'error' ? t.form.retry : t.form.submit;
@@ -190,16 +196,27 @@ export function ContactView({ products }: { products: ProductCard[] }) {
     <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 clamp(20px,4vw,40px)", boxSizing: "content-box", display: "flex", flexDirection: "column", gap: "clamp(40px,6vw,72px)" }}>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,300px),1fr))", gap: "clamp(16px,2vw,24px)" }}>
         <div style={{ padding: "28px", border: "1px solid #D8D2C9", borderRadius: "10px", background: "#fff", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
-          <h2 style={{ margin: "0", fontSize: "20px", fontWeight: "600" }}>{t.contact.waTitle}</h2>
+          <h2 style={{ margin: "0", fontSize: "20px", fontWeight: "600" }}>{ci.phoneWa}</h2>
           <p style={{ margin: "0", fontSize: "15px", color: "#625C54" }}>{t.contact.waBody}</p>
           {(waReady) && (<><A href={waGeneral} target="_blank" rel="noopener noreferrer" style={{ marginTop: "8px", display: "inline-flex", alignItems: "center", height: "48px", padding: "0 20px", borderRadius: "6px", background: "#584838", color: "#fff", fontSize: "15px", fontWeight: "600", textDecoration: "none" }} className="sh3">{t.contact.waBtn}</A></>)}
           {(waNotReady) && (<><p style={{ margin: "8px 0 0", padding: "10px 14px", border: "1px dashed #D8D2C9", borderRadius: "6px", fontSize: "14px", color: "#625C54" }}>{t.contact.waPending} · <span dir="ltr">PENDING</span></p></>)}
-          {(tel) && (<><A href={tel.href} data-testid="contact-call" style={{ fontSize: "15px", fontWeight: "600" }}>{t.contact.callBtn} <span dir="ltr">{tel.text}</span></A></>)}
+          {(phones.length > 0) && (<>
+            <ul data-testid="contact-phones" style={{ listStyle: "none", margin: "4px 0 0", padding: "0", display: "flex", flexDirection: "column", gap: "10px" }}>
+              {phones.map((ph, __i) => (<li key={ph.num} style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: "6px 14px" }}>
+                <A href={ph.tel} data-testid={__i === 0 ? 'contact-call' : undefined} aria-label={ci.callAria.replace('{num}', ph.text)} style={{ fontSize: "16px", fontWeight: "600" }}><span dir="ltr">{ph.text}</span></A>
+                <A href={ph.wa} target="_blank" rel="noopener noreferrer" aria-label={ci.waAria.replace('{num}', ph.text)} style={{ display: "inline-flex", alignItems: "center", minHeight: "32px", fontSize: "14px" }}>{ci.whatsapp}</A>
+              </li>))}
+            </ul>
+          </>)}
         </div>
         <div style={{ padding: "28px", border: "1px solid #D8D2C9", borderRadius: "10px", background: "#fff", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
           <h2 style={{ margin: "0", fontSize: "20px", fontWeight: "600" }}>{t.contact.emailTitle}</h2>
-          {(emailReady) && (<><A href={emailHref} dir="ltr" style={{ fontSize: "16px", fontWeight: "600" }}>{email}</A></>)}
-          {(emailNotReady) && (<><p style={{ margin: "0", padding: "10px 14px", border: "1px dashed #D8D2C9", borderRadius: "6px", fontSize: "14px", color: "#625C54" }}>{t.contact.emailPending} · <span dir="ltr">PENDING</span></p></>)}
+          {(emailNotReady && !exportEmail) && (<><p style={{ margin: "0", padding: "10px 14px", border: "1px dashed #D8D2C9", borderRadius: "6px", fontSize: "14px", color: "#625C54" }}>{t.contact.emailPending} · <span dir="ltr">PENDING</span></p></>)}
+          <dl data-testid="contact-emails" style={{ margin: "0", display: "flex", flexDirection: "column", gap: "12px" }}>
+            {(emailReady) && (<><div><dt style={{ fontSize: "13px", color: "#625C54" }}>{ci.general}</dt><dd style={{ margin: "2px 0 0" }}><A href={emailHref} dir="ltr" style={{ fontSize: "16px", fontWeight: "600" }}>{email}</A></dd></div></>)}
+            {(!!exportEmail) && (<><div><dt style={{ fontSize: "13px", color: "#625C54" }}>{ci.export}</dt><dd style={{ margin: "2px 0 0" }}><A href={exportEmailHref} dir="ltr" style={{ fontSize: "16px", fontWeight: "600" }}>{exportEmail}</A></dd></div></>)}
+            <div><dt style={{ fontSize: "13px", color: "#625C54" }}>{ci.website}</dt><dd style={{ margin: "2px 0 0", fontSize: "16px", fontWeight: "600" }}><span dir="ltr">{siteConfig.website}</span></dd></div>
+          </dl>
         </div>
       </div>
 
@@ -233,8 +250,8 @@ export function ContactView({ products }: { products: ProductCard[] }) {
                   <p style={{ margin: "0", fontWeight: "600" }}>{t.form.disabledTitle}</p>
                   <p id="rfq-off-note" style={{ margin: "0", fontSize: "15px" }}>{t.form.disabledBody}</p>
                   {(waReady) && (<><A href={waGeneral} target="_blank" rel="noopener noreferrer" style={{ alignSelf: "flex-start", fontWeight: "600" }}>{t.contact.waBtn}</A></>)}
-                  {(tel) && (<><A href={tel.href} style={{ alignSelf: "flex-start", fontWeight: "600" }}>{t.contact.callBtn} <span dir="ltr">{tel.text}</span></A></>)}
-                  {(emailReady) && (<><A href={emailHref} style={{ alignSelf: "flex-start", fontWeight: "600" }}>{t.form.emailSales} <span dir="ltr">({email})</span></A></>)}
+                  {phones.map((ph) => (<A key={ph.num} href={ph.tel} style={{ alignSelf: "flex-start", fontWeight: "600" }}>{t.contact.callBtn} <span dir="ltr">{ph.text}</span></A>))}
+                  {(!!quoteEmail) && (<><A href={quoteEmailHref} style={{ alignSelf: "flex-start", fontWeight: "600" }}>{exportEmail ? ci.export : t.form.emailSales} <span dir="ltr">({quoteEmail})</span></A></>)}
                 </div>
               </>)}
               {(hasErrors) && (<>
@@ -345,7 +362,7 @@ export function ContactView({ products }: { products: ProductCard[] }) {
                   <p style={{ margin: "0", fontWeight: "600", color: "#B42318" }}>{submitErrTitle}</p>
                   <p style={{ margin: "0", fontSize: "15px", color: "#252525" }}>{submitErrBody}</p>
                   {(waReady) && (<><A href={waGeneral} target="_blank" rel="noopener noreferrer" style={{ alignSelf: "flex-start", fontWeight: "600" }}>{t.contact.waBtn}</A></>)}
-                  {(altEmail) && (<><A href={emailHref} style={{ alignSelf: "flex-start", fontWeight: "600" }}>{t.form.emailSales} <span dir="ltr">({email})</span></A></>)}
+                  {(altEmail) && (<><A href={quoteEmailHref} style={{ alignSelf: "flex-start", fontWeight: "600" }}>{exportEmail ? ci.export : t.form.emailSales} <span dir="ltr">({quoteEmail})</span></A></>)}
                 </div>
               </>)}
 

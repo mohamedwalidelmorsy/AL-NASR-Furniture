@@ -3,7 +3,7 @@ import type { Locale } from '@/i18n/routing';
 import { dirOf, otherLocale } from '@/i18n/routing';
 import { allMessages, type Messages } from '@/lib/messages';
 import { buildLinks, href, type Links } from '@/lib/links';
-import { siteConfig, waLink, whatsappReady } from '@/lib/site-config';
+import { phoneContacts, siteConfig, waLink, whatsappReady } from '@/lib/site-config';
 import { categories, galleryFor, loc, productsInCategory, productById, type Category } from '@/lib/catalog';
 import { HERO_IMAGE } from '@/lib/hero';
 import { countMessage } from '@/lib/plural';
@@ -37,6 +37,12 @@ export interface PageCtx {
   emailReady: boolean;
   emailNotReady: boolean;
   emailHref: string;
+  /** Official phone / WhatsApp numbers with call and WhatsApp links (primary first). */
+  phones: { num: string; text: string; tel: string; wa: string }[];
+  exportEmail: string;
+  exportEmailReady: boolean;
+  exportEmailHref: string;
+  website: string;
   year: number;
 }
 
@@ -94,11 +100,14 @@ export function getPageCtx(lang: Locale): PageCtx {
     waReady, waNotReady: !waReady, waNum,
     waGeneral: waLink(siteConfig.whatsappNumber, t.wa.general),
     email, emailReady: !!email, emailNotReady: !email, emailHref: email ? `mailto:${email}` : '',
+    phones: phoneContacts(t.wa.general),
+    exportEmail: siteConfig.exportEmail ?? '', exportEmailReady: !!siteConfig.exportEmail, exportEmailHref: siteConfig.exportEmail ? `mailto:${siteConfig.exportEmail}` : '',
+    website: siteConfig.website,
     year: new Date().getFullYear(),
   };
 }
 
-export interface PageCtaData { title: string; body: string; label1: string; href1: string; label2: string; href2: string; target2?: string; rel2?: string }
+export interface PageCtaData { title: string; body: string; label1: string; href1: string; label2: string; href2: string; target2?: string; rel2?: string; mail?: { label: string; href: string; text: string } }
 
 /** CTA band shown under About / Sourcing / Shipping / Custom pages (same wiring as the prototype). */
 export function pageCta(ctx: PageCtx, page: 'about' | 'sourcing' | 'shipping' | 'custom'): PageCtaData {
@@ -107,10 +116,13 @@ export function pageCta(ctx: PageCtx, page: 'about' | 'sourcing' | 'shipping' | 
     ? { label2: label, href2: waGeneral, target2: '_blank', rel2: 'noopener noreferrer' }
     : { label2: t.nav.contact, href2: links.contact });
   const H = (p: string) => href(lang, p);
+  // General e-mail for the company page, export e-mail for the export guides (omitted when not configured).
+  const general = ctx.emailReady ? { mail: { label: t.contactInfo.general, href: ctx.emailHref, text: ctx.email } } : {};
+  const exportMail = ctx.exportEmailReady ? { mail: { label: t.contactInfo.export, href: ctx.exportEmailHref, text: ctx.exportEmail } } : {};
   switch (page) {
-    case 'about': return { title: t.about.ctaTitle, body: t.about.ctaBody, label1: t.about.cta1, href1: links.collections, ...waOr(t.about.cta2) };
-    case 'sourcing': return { title: t.sourcing.ctaTitle, body: '', label1: t.cta.rfq, href1: links.contact, ...waOr(t.cta.wa) };
-    case 'shipping': return { title: t.ship.ctaTitle, body: t.ship.ctaBody, label1: t.ship.cta, href1: H('contact?type=shipping'), ...waOr(t.cta.wa) };
+    case 'about': return { title: t.about.ctaTitle, body: t.about.ctaBody, label1: t.about.cta1, href1: links.collections, ...waOr(t.about.cta2), ...general };
+    case 'sourcing': return { title: t.sourcing.ctaTitle, body: '', label1: t.cta.rfq, href1: links.contact, ...waOr(t.cta.wa), ...exportMail };
+    case 'shipping': return { title: t.ship.ctaTitle, body: t.ship.ctaBody, label1: t.ship.cta, href1: H('contact?type=shipping'), ...waOr(t.cta.wa), ...exportMail };
     case 'custom': return { title: t.custom.ctaTitle, body: t.custom.ctaBody, label1: t.custom.cta, href1: H('contact?type=project'), label2: t.custom.cta2, href2: H('contact?type=custom') };
   }
 }

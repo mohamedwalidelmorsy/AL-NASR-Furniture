@@ -21,3 +21,21 @@ export function pageMetadata(opts: { locale: Locale; path?: string; title: strin
     robots: siteConfig.allowIndexing && !noindex ? { index: true, follow: true } : { index: false, follow: false },
   };
 }
+
+/** schema.org Organization for the home page; contact details come from siteConfig (omitted when not configured). */
+export function organizationJsonLd(locale: Locale) {
+  const phones = siteConfig.phoneNumbers.map((n) => `+${n}`);
+  const point = (contactType: string, email: string | null) => ({
+    '@type': 'ContactPoint', contactType, availableLanguage: ['English', 'Arabic'],
+    ...(phones.length ? { telephone: phones[0] } : {}), ...(email ? { email } : {}),
+  });
+  return {
+    '@context': 'https://schema.org', '@type': 'Organization',
+    name: siteConfig.brand.en, alternateName: siteConfig.brand.ar, url: absoluteUrl(`/${locale}`),
+    ...(siteConfig.email ? { email: siteConfig.email } : {}),
+    ...(phones.length ? { telephone: phones } : {}),
+    ...(phones.length || siteConfig.email || siteConfig.exportEmail
+      ? { contactPoint: [point('customer service', siteConfig.email), point('sales', siteConfig.exportEmail)] }
+      : {}),
+  };
+}

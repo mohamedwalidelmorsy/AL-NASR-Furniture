@@ -291,6 +291,7 @@
     "waTitle": "Chat on WhatsApp",
     "waBody": "Opens a direct conversation with sales. No form required.",
     "waBtn": "Chat with Sales on WhatsApp",
+    "callBtn": "Call sales:",
     "waPending": "WhatsApp number pending",
     "emailTitle": "Email",
     "emailPending": "Business email pending",

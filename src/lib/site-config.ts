@@ -13,6 +13,8 @@ export const siteConfig = {
   },
   siteUrl: (process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000').replace(/\/$/, ''),
   whatsappNumber: digits(process.env.NEXT_PUBLIC_WHATSAPP_NUMBER) || null,
+  /** Sales phone for calls, international digits (e.g. 2010…). Shown as a tel: link; null = hidden. */
+  phoneNumber: digits(process.env.NEXT_PUBLIC_PHONE_NUMBER) || null,
   email: process.env.NEXT_PUBLIC_SALES_EMAIL?.trim() || null,
   consentTextVersion: process.env.NEXT_PUBLIC_CONSENT_TEXT_VERSION?.trim() || 'PENDING',
   /** Search engines are blocked until the business confirms real content (set NEXT_PUBLIC_ALLOW_INDEXING=true at launch). */
@@ -27,3 +29,6 @@ export const whatsappReady = (n: string | null) => !!n && n.length >= 8;
 
 export const waLink = (number: string | null, text?: string) =>
   whatsappReady(number) ? `https://wa.me/${number}${text ? `?text=${encodeURIComponent(text)}` : ''}` : '';
+
+/** tel: link and display text for a phone number in international digits; null when not configured. */
+export const telLink = (number: string | null) => (number && number.length >= 8 ? { href: `tel:+${number}`, text: `+${number}` } : null);

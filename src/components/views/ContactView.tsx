@@ -11,7 +11,7 @@ import countries from '@/data/countries.json';
 import { useT } from '@/lib/use-t';
 import { buildLinks } from '@/lib/links';
 import { countMessage } from '@/lib/plural';
-import { siteConfig, waLink, whatsappReady } from '@/lib/site-config';
+import { siteConfig, telLink, waLink, whatsappReady } from '@/lib/site-config';
 import { useInquiry } from '@/features/inquiry/inquiry-provider';
 import { useInquiryRows } from '@/features/inquiry/use-rows';
 import { emptyRfqForm, rfqFormSchema, INQUIRY_TYPES, type RfqFormValues } from '@/features/rfq/schema';
@@ -40,6 +40,7 @@ export function ContactView({ products }: { products: ProductCard[] }) {
   const waGeneral = waLink(siteConfig.whatsappNumber, t.wa.general);
   const email = siteConfig.email ?? '';
   const emailReady = !!email;
+  const tel = telLink(siteConfig.phoneNumber);
   const emailNotReady = !email;
   const emailHref = email ? 'mailto:' + email : '';
 
@@ -191,6 +192,7 @@ export function ContactView({ products }: { products: ProductCard[] }) {
           <p style={{ margin: "0", fontSize: "15px", color: "#625C54" }}>{t.contact.waBody}</p>
           {(waReady) && (<><A href={waGeneral} target="_blank" rel="noopener noreferrer" style={{ marginTop: "8px", display: "inline-flex", alignItems: "center", height: "48px", padding: "0 20px", borderRadius: "6px", background: "#584838", color: "#fff", fontSize: "15px", fontWeight: "600", textDecoration: "none" }} className="sh3">{t.contact.waBtn}</A></>)}
           {(waNotReady) && (<><p style={{ margin: "8px 0 0", padding: "10px 14px", border: "1px dashed #D8D2C9", borderRadius: "6px", fontSize: "14px", color: "#625C54" }}>{t.contact.waPending} · <span dir="ltr">PENDING</span></p></>)}
+          {(tel) && (<><A href={tel.href} data-testid="contact-call" style={{ fontSize: "15px", fontWeight: "600" }}>{t.contact.callBtn} <span dir="ltr">{tel.text}</span></A></>)}
         </div>
         <div style={{ padding: "28px", border: "1px solid #D8D2C9", borderRadius: "10px", background: "#fff", display: "flex", flexDirection: "column", gap: "12px", alignItems: "flex-start" }}>
           <h2 style={{ margin: "0", fontSize: "20px", fontWeight: "600" }}>{t.contact.emailTitle}</h2>
@@ -229,6 +231,7 @@ export function ContactView({ products }: { products: ProductCard[] }) {
                   <p style={{ margin: "0", fontWeight: "600" }}>{t.form.disabledTitle}</p>
                   <p id="rfq-off-note" style={{ margin: "0", fontSize: "15px" }}>{t.form.disabledBody}</p>
                   {(waReady) && (<><A href={waGeneral} target="_blank" rel="noopener noreferrer" style={{ alignSelf: "flex-start", fontWeight: "600" }}>{t.contact.waBtn}</A></>)}
+                  {(tel) && (<><A href={tel.href} style={{ alignSelf: "flex-start", fontWeight: "600" }}>{t.contact.callBtn} <span dir="ltr">{tel.text}</span></A></>)}
                   {(emailReady) && (<><A href={emailHref} style={{ alignSelf: "flex-start", fontWeight: "600" }}>{t.form.emailSales} <span dir="ltr">({email})</span></A></>)}
                 </div>
               </>)}

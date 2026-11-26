@@ -35,8 +35,8 @@ if [ "$TARGET" = production ]; then
   if [ "${NEXT_PUBLIC_RFQ_ENABLED:-true}" = "false" ]; then
     # Online RFQ off (MVP launch before e-mail delivery): no personal data is collected, but buyers need at least
     # one real contact channel.
-    if unset_or_placeholder "${NEXT_PUBLIC_WHATSAPP_NUMBER:-}" && unset_or_placeholder "${NEXT_PUBLIC_SALES_EMAIL:-}"; then
-      missing="$missing NEXT_PUBLIC_WHATSAPP_NUMBER|NEXT_PUBLIC_SALES_EMAIL(at-least-one)"
+    if unset_or_placeholder "${NEXT_PUBLIC_WHATSAPP_NUMBER:-}" && unset_or_placeholder "${NEXT_PUBLIC_SALES_EMAIL:-}" && unset_or_placeholder "${NEXT_PUBLIC_PHONE_NUMBER:-}"; then
+      missing="$missing NEXT_PUBLIC_WHATSAPP_NUMBER|NEXT_PUBLIC_PHONE_NUMBER|NEXT_PUBLIC_SALES_EMAIL(at-least-one)"
     fi
   else
     for v in NEXT_PUBLIC_WHATSAPP_NUMBER NEXT_PUBLIC_SALES_EMAIL NEXT_PUBLIC_CONSENT_TEXT_VERSION; do

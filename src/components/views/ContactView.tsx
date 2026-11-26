@@ -14,7 +14,7 @@ import { countMessage } from '@/lib/plural';
 import { siteConfig, telLink, waLink, whatsappReady } from '@/lib/site-config';
 import { useInquiry } from '@/features/inquiry/inquiry-provider';
 import { useInquiryRows } from '@/features/inquiry/use-rows';
-import { emptyRfqForm, rfqFormSchema, INQUIRY_TYPES, type RfqFormValues } from '@/features/rfq/schema';
+import { emptyRfqForm, rfqFormSchema, INQUIRY_TYPES, PAYMENT_TERMS, type RfqFormValues } from '@/features/rfq/schema';
 import { availablePrefs, buildRfqPayload, effectivePref, resolveItems } from '@/features/rfq/payload';
 import { RfqSubmitError, submitRfq, type RfqFailure } from '@/features/rfq/client';
 import { fmt } from '@/lib/messages';
@@ -64,6 +64,8 @@ export function ContactView({ products }: { products: ProductCard[] }) {
   useEffect(() => {
     let draft: Partial<RfqFormValues> = {};
     try { draft = JSON.parse(localStorage.getItem(siteConfig.storageKeys.draft) || 'null') ?? {}; } catch { /* corrupt draft */ }
+    // Drafts saved before the 2026-11-26 payment-terms change may hold a retired value: drop it instead of failing validation.
+    if (draft.payTerm && !(PAYMENT_TERMS as readonly string[]).includes(draft.payTerm)) draft = { ...draft, payTerm: '' };
     const preset = typeParam && (INQUIRY_TYPES as readonly string[]).includes(typeParam) ? { inquiryType: typeParam as RfqFormValues['inquiryType'] } : {};
     reset({ ...emptyRfqForm(), ...draft, ...preset, website: '' });
     // eslint-disable-next-line react-hooks/exhaustive-deps

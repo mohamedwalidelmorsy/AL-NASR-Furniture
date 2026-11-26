@@ -139,14 +139,14 @@ test.describe('Request a Quote', () => {
     await expect(page.locator('#f-inquiryType')).toHaveValue('shipping');
     await fillValid(page);
     await page.locator('#f-shipTerm').selectOption('FOB');
-    await page.locator('#f-payTerm').selectOption('lc-at-sight');
+    await page.locator('#f-payTerm').selectOption('lc');
     await page.locator('#f-destPort').fill('Jeddah');
     let body: { trade_preferences?: unknown; inquiry_type?: string } = {};
     await page.route('**/api/rfq', async (r) => { body = r.request().postDataJSON(); await r.fulfill({ status: 200, json: {} }); });
     await page.getByRole('button', { name: 'Send quote request' }).click();
     await expect(page.getByText('Request received')).toBeVisible();
     expect(body.inquiry_type).toBe('shipping');
-    expect(body.trade_preferences).toEqual({ delivery_term: 'FOB', payment_term: 'lc-at-sight', destination_port_city: 'Jeddah' });
+    expect(body.trade_preferences).toEqual({ delivery_term: 'FOB', payment_term: 'lc', destination_port_city: 'Jeddah' });
   });
 
   test('Arabic form validates in Arabic', async ({ page }) => {

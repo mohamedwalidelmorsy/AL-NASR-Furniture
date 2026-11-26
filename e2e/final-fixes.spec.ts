@@ -51,10 +51,10 @@ test.describe('approved final fixes', () => {
     expect(sm).not.toContain('arch-line-kids-bedroom-set');
   });
 
-  test('bedroom category lists exactly 8 distinct designs; duplicates are not discoverable', async ({ page }) => {
+  test('bedroom category lists exactly 15 distinct designs; duplicates are not discoverable', async ({ page }) => {
     await gotoReady(page, '/en/collections/bedrooms');
-    await expect(page.locator('main h2')).toHaveCount(8);
-    await expect(page.getByText('8 collections')).toBeVisible();
+    await expect(page.locator('main h2')).toHaveCount(15);
+    await expect(page.getByText('15 collections')).toBeVisible();
     await page.getByLabel('Search in this category').fill('arc');
     await expect(page.locator('main h2')).toHaveCount(1);
     await gotoReady(page, '/en/collections');
@@ -73,7 +73,7 @@ test.describe('approved final fixes', () => {
       }
     }
     await gotoReady(page, '/en/collections/kids-bedrooms');
-    await expect(page.locator('main h2')).toHaveCount(8);
+    await expect(page.locator('main h2')).toHaveCount(14);
   });
 
   test('Inquiry List with a persisted archived item (EN + AR): kept with qty/note, removable, valid items still submittable', async ({ page }) => {
@@ -153,11 +153,11 @@ test.describe('approved final fixes', () => {
     await expect(page.getByText('Requested quantity (bedroom sets)')).toBeVisible();
   });
 
-  test('Arabic counts: 11+ uses the singular form', async ({ page }) => {
-    await gotoReady(page, '/ar/collections/bedrooms');
-    await expect(page.getByText('8 مجموعات')).toBeVisible();
+  test('Arabic counts: 3–10 use the plural, 11+ the singular form', async ({ page }) => {
+    await gotoReady(page, '/ar/collections/dressing-rooms');
+    await expect(page.getByText('6 مجموعات')).toBeVisible();
     await gotoReady(page, '/ar/collections/living-rooms');
-    await expect(page.getByText('11 مجموعة', { exact: true })).toBeVisible();
+    await expect(page.getByText('17 مجموعة', { exact: true })).toBeVisible();
   });
 
   test('404 pages have a localized document title', async ({ page }) => {

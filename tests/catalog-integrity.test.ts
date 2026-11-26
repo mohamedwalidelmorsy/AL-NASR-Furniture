@@ -4,7 +4,7 @@ import path from 'node:path';
 import { activeProducts, allProducts, categories, categoryById, dimensionProfileOf, galleryFor, productBySlug, productsInCategory, standardDimensions } from '@/lib/catalog';
 import { buildDimensions } from '@/lib/dimensions';
 import { allMessages } from '@/lib/messages';
-import inventory from '../data/catalog-import/drive-inventory-2026-11-09.json';
+import inventory from '../data/catalog-import/drive-inventory-2026-11-26.json';
 import legacy from '../src/data/catalog/products.json';
 
 const pub = path.resolve(__dirname, '../public');

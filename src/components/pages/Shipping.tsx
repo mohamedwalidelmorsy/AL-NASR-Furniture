@@ -8,18 +8,18 @@ export function Shipping({ ctx }: { ctx: PageCtx }) {
   <section id="ship-pay" tabIndex={-1} aria-labelledby="pay-title" style={{ padding: "clamp(48px,6vw,80px) 0", outline: "none" }}>
     <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 clamp(20px,4vw,40px)", boxSizing: "content-box" }}>
       <h2 id="pay-title" style={{ margin: "0 0 20px", fontSize: "clamp(28px,3vw,36px)", lineHeight: "1.25", fontWeight: "600", letterSpacing: "-.015em" }}>{t.ship.payTitle}</h2>
-      <p style={{ margin: "0 0 clamp(28px,3vw,40px)", fontSize: "17px", color: "#625C54", maxWidth: "62ch" }}>{t.ship.payIntro}</p>
+      {t.ship.payIntro ? <p style={{ margin: "0 0 clamp(28px,3vw,40px)", fontSize: "17px", color: "#625C54", maxWidth: "62ch" }}>{t.ship.payIntro}</p> : <div style={{ height: "clamp(8px,1vw,20px)" }} />}
       <ol style={{ listStyle: "none", margin: "0", padding: "0", display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(100%,280px),1fr))", gap: "clamp(16px,2vw,24px)" }}>
         {payItems.map((p, __i) => (<Fragment key={__i}>
           <li style={{ padding: "28px 24px", border: "1px solid #D8D2C9", borderRadius: "10px", background: "#fff", display: "flex", flexDirection: "column", gap: "12px" }}>
             <span dir="ltr" style={{ fontSize: "13px", fontWeight: "600", color: "#584838" }}>{p.num}</span>
             <h3 style={{ margin: "0", fontSize: "19px", lineHeight: "1.45", fontWeight: "600" }}>{p.title}</h3>
             {(p.hasTerm) && (<><span dir="ltr" lang="en" style={{ alignSelf: "flex-start", font: "500 12px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace", color: "#4F4943" }}>{p.term}</span></>)}
-            <p style={{ margin: "0", fontSize: "15px", color: "#4F4943" }}>{p.body}</p>
+            {p.body ? <p style={{ margin: "0", fontSize: "15px", color: "#4F4943" }}>{p.body}</p> : null}
           </li>
         </Fragment>))}
       </ol>
-      <p style={{ margin: "24px 0 0", padding: "16px 20px", borderRadius: "8px", background: "#E9E4DC", fontSize: "15px", maxWidth: "80ch" }}>{t.ship.payNote}</p>
+      {t.ship.payNote ? <p style={{ margin: "24px 0 0", padding: "16px 20px", borderRadius: "8px", background: "#E9E4DC", fontSize: "15px", maxWidth: "80ch" }}>{t.ship.payNote}</p> : null}
     </div>
   </section>
 

@@ -12,6 +12,8 @@ export interface ImageSource {
   originalFilename?: string;
   sha256?: string | null;
   previousDriveFileId?: string;
+  /** Older Drive ids of the same file, oldest first (each re-upload adds one). */
+  earlierDriveFileIds?: string[];
   note?: string;
 }
 

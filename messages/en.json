@@ -373,16 +373,12 @@
     ],
     "payTerms": [
       {
-        "v": "advance-30-70",
-        "l": "30% advance + 70% against shipping documents"
-      },
-      {
-        "v": "lc-at-sight",
-        "l": "Irrevocable L/C at sight"
-      },
-      {
         "v": "tt",
-        "l": "Direct bank transfer (T/T)"
+        "l": "T/T"
+      },
+      {
+        "v": "lc",
+        "l": "L/C"
       }
     ],
     "termsGuide": "Shipping & payment guide",
@@ -461,7 +457,12 @@
     "emailSales": "Email the sales team",
     "disabledTitle": "Online quote requests are not open yet",
     "disabledBody": "This form cannot be sent online for now. Please send your request to our sales team directly using the contact option below. Your product selections are kept in this browser.",
-    "minutes": {"one": "1 minute", "two": "{n} minutes", "few": "{n} minutes", "many": "{n} minutes"},
+    "minutes": {
+      "one": "1 minute",
+      "two": "{n} minutes",
+      "few": "{n} minutes",
+      "many": "{n} minutes"
+    },
     "retry": "Try again",
     "successTitle": "Request received",
     "successBody": "Thank you. Our sales team will review your requirements and follow up using your preferred contact method.",
@@ -602,7 +603,7 @@
       },
       {
         "q": "Which delivery and payment terms are available?",
-        "a": "We work with EXW, FOB, CFR and CIF delivery terms and three payment options. The applicable terms are agreed for each order before confirmation; not every option is available for every order."
+        "a": "We work with EXW, FOB, CFR and CIF delivery terms. Payment methods: T/T or L/C."
       },
       {
         "q": "What details help us prepare a quotation?",
@@ -621,33 +622,28 @@
     "lead": "How payment, delivery terms, ports, containers and shipment volume are handled for furniture export orders from Egypt. All terms are agreed per order before confirmation.",
     "tocLabel": "On this page",
     "toc": [
-      "Payment terms",
+      "Payment methods",
       "Delivery terms",
       "Export ports",
       "Containers",
       "CBM",
       "Transit time"
     ],
-    "payTitle": "Payment terms",
-    "payIntro": "We offer three payment options. The appropriate method is chosen according to the nature of the transaction and the contract terms.",
+    "payTitle": "Payment methods",
+    "payIntro": "",
     "payments": [
       {
-        "title": "30% advance payment + 70% against shipping documents",
+        "title": "T/T",
         "term": "",
-        "body": "30% of the order value is paid in advance on order confirmation. The remaining 70% is paid against the shipping documents, according to the document-release terms agreed in the contract."
+        "body": ""
       },
       {
-        "title": "Irrevocable letter of credit at sight",
-        "term": "L/C at Sight",
-        "body": "Transactions can be made through an irrevocable documentary credit, with payment on presentation of shipping documents that comply with the credit terms, under the banking procedures agreed between both parties."
-      },
-      {
-        "title": "Direct bank transfer",
-        "term": "T/T",
-        "body": "The order value can be paid by direct bank transfer according to the payment terms agreed between both parties and set out in the quotation and commercial contract."
+        "title": "L/C",
+        "term": "",
+        "body": ""
       }
     ],
-    "payNote": "The payment method, its conditions and the required documents are agreed before the order is confirmed and execution begins. Not every option is automatically available for every order.",
+    "payNote": "",
     "incoTitle": "Delivery terms (Incoterms® 2020)",
     "incoIntro": "We offer different delivery terms depending on the shipment destination, the nature of the order and the buyer's requirements. Terms are interpreted under Incoterms® 2020 and apply to the named place or port stated in the contract.",
     "incoLabels": {

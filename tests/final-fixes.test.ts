@@ -14,7 +14,7 @@ describe('approved bedroom merges', () => {
   it('maps the four duplicates onto the legacy ids and keeps those ids active', () => {
     expect(mergeMap()).toEqual(KEEP);
     for (const keep of Object.values(KEEP)) expect(activeProducts().some((p) => p.id === keep)).toBe(true);
-    expect(productsInCategory('bedrooms')).toHaveLength(8);
+    expect(productsInCategory('bedrooms')).toHaveLength(15);
   });
   it('duplicates are not routable or active', () => {
     for (const dup of Object.keys(KEEP)) {
@@ -26,7 +26,7 @@ describe('approved bedroom merges', () => {
   it('counts are computed from data and add up', () => {
     const active = activeProducts().length;
     expect(active + archivedProducts().length + Object.keys(mergeMap()).length).toBe(allProducts().length);
-    expect(active).toBe(48);
+    expect(active).toBe(76);
     expect(archivedProducts().map((p) => p.id).sort()).toEqual(['pv-kb-01', 'pv-kb-02', 'pv-kb-03']);
   });
 });

@@ -7,7 +7,8 @@ export type RfqErrorKey = 'name' | 'country' | 'contact' | 'email' | 'phone' | '
 export const BUYER_TYPES = ['showroom', 'importer', 'wholesaler', 'distributor', 'retail-chain', 'project', 'other'] as const;
 export const INQUIRY_TYPES = ['wholesale', 'custom', 'project', 'shipping', 'general'] as const;
 export const DELIVERY_TERMS = ['EXW', 'FOB', 'CFR', 'CIF'] as const;
-export const PAYMENT_TERMS = ['advance-30-70', 'lc-at-sight', 'tt'] as const;
+/** Approved public payment methods (2026-11-26): T/T or L/C only. Arrangements are negotiated per customer. */
+export const PAYMENT_TERMS = ['tt', 'lc'] as const;
 export const CONTACT_METHODS = ['email', 'whatsapp', 'phone'] as const;
 
 export const COUNTRY_CODES = countries.map((c) => c.code);

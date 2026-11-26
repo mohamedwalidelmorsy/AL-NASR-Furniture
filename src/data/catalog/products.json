@@ -31,12 +31,14 @@
             "ar": "منظر كامل"
           },
           "source": {
-            "driveFileId": "1pmZpNxup37zwUs37jCQh1lmfSEk7WLWZ",
+            "driveFileId": "1nauJIPimsljomLNTBctyy3oMfb8qO6tN",
             "locale": "en",
-            "drivePath": "Bedroom/room 8",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 8",
             "originalFilename": "ChatGPT Image Nov 1, 2026, 01_52_41 PM-1.png",
             "sha256": "f7f76da3409317fa00cc0244341b583beaff8c0d82d473974d2a35b0d8e77c79",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1pmZpNxup37zwUs37jCQh1lmfSEk7WLWZ",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -50,12 +52,14 @@
             "ar": "تفصيلة الهيدبورد"
           },
           "source": {
-            "driveFileId": "1QAmgkmALAmHIcd9LVanMSUoX220uJgJx",
+            "driveFileId": "1sHZiGMDj4E_vEb7X6yQ8Jdy-PqWdNg0g",
             "locale": "en",
-            "drivePath": "Bedroom/room 8",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 8",
             "originalFilename": "ChatGPT Image Nov 1, 2026, 01_52_43 PM-2.png",
             "sha256": "c29a0638690c0ea604a956275a0c833fb0f8e8b59760e9e3134bebd118834463",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1QAmgkmALAmHIcd9LVanMSUoX220uJgJx",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -69,12 +73,14 @@
             "ar": "تفصيلة الدولاب"
           },
           "source": {
-            "driveFileId": "19bkjJUySmTegvyQ0guGrt2hDo8qxRwqr",
+            "driveFileId": "1CVEA4pAmRy2hNNyM5MsA9b3wjCZMYJuS",
             "locale": "en",
-            "drivePath": "Bedroom/room 8",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 8",
             "originalFilename": "ChatGPT Image Nov 1, 2026, 01_52_47 PM-3.png",
             "sha256": "a15c59e9f094cef3db7bc3913da17e740dcae2cf0f5268e408da3316ca78e9af",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "19bkjJUySmTegvyQ0guGrt2hDo8qxRwqr",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -88,12 +94,14 @@
             "ar": "تفصيلة التسريحة"
           },
           "source": {
-            "driveFileId": "19fcxFMf9-j-iEpyIz8yycinFnaG86yUB",
+            "driveFileId": "1eb8kfL7pfzuKA_cRWHCDA_Z5gsTsdEcH",
             "locale": "en",
-            "drivePath": "Bedroom/room 8",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 8",
             "originalFilename": "ChatGPT Image Nov 1, 2026, 01_52_51 PM-4.png",
             "sha256": "f8e6bea0f88ad0bb2ae223757f9a2ead8347232bf6c6396a5a8cdd629bf37471",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "19fcxFMf9-j-iEpyIz8yycinFnaG86yUB",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -107,12 +115,14 @@
             "ar": "تفصيلة البنش"
           },
           "source": {
-            "driveFileId": "1_1hKStBh-z8riyos8Ovy2LthqcZx51Bj",
+            "driveFileId": "17K7NoJPCzokG3jbYmrfIS9Zn-s17pYTF",
             "locale": "en",
-            "drivePath": "Bedroom/room 8",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 8",
             "originalFilename": "ChatGPT Image Nov 1, 2026, 01_52_54 PM-5.png",
             "sha256": "f696cd6e83c7bb686f9a3862bf12ed505ad8d204ee98018334c87445a1771f76",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1_1hKStBh-z8riyos8Ovy2LthqcZx51Bj",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         }
       ],
@@ -128,12 +138,14 @@
             "ar": "منظر كامل"
           },
           "source": {
-            "driveFileId": "1pmZpNxup37zwUs37jCQh1lmfSEk7WLWZ",
+            "driveFileId": "1nauJIPimsljomLNTBctyy3oMfb8qO6tN",
             "locale": "ar",
-            "drivePath": "Bedroom/room 8",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 8",
             "originalFilename": "ChatGPT Image Nov 1, 2026, 01_52_41 PM-1.png",
             "sha256": "f7f76da3409317fa00cc0244341b583beaff8c0d82d473974d2a35b0d8e77c79",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1pmZpNxup37zwUs37jCQh1lmfSEk7WLWZ",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -147,12 +159,14 @@
             "ar": "تفصيلة الهيدبورد"
           },
           "source": {
-            "driveFileId": "1QAmgkmALAmHIcd9LVanMSUoX220uJgJx",
+            "driveFileId": "1sHZiGMDj4E_vEb7X6yQ8Jdy-PqWdNg0g",
             "locale": "ar",
-            "drivePath": "Bedroom/room 8",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 8",
             "originalFilename": "ChatGPT Image Nov 1, 2026, 01_52_43 PM-2.png",
             "sha256": "c29a0638690c0ea604a956275a0c833fb0f8e8b59760e9e3134bebd118834463",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1QAmgkmALAmHIcd9LVanMSUoX220uJgJx",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -166,12 +180,14 @@
             "ar": "تفصيلة الدولاب"
           },
           "source": {
-            "driveFileId": "19bkjJUySmTegvyQ0guGrt2hDo8qxRwqr",
+            "driveFileId": "1CVEA4pAmRy2hNNyM5MsA9b3wjCZMYJuS",
             "locale": "ar",
-            "drivePath": "Bedroom/room 8",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 8",
             "originalFilename": "ChatGPT Image Nov 1, 2026, 01_52_47 PM-3.png",
             "sha256": "a15c59e9f094cef3db7bc3913da17e740dcae2cf0f5268e408da3316ca78e9af",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "19bkjJUySmTegvyQ0guGrt2hDo8qxRwqr",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -185,12 +201,14 @@
             "ar": "تفصيلة التسريحة"
           },
           "source": {
-            "driveFileId": "19fcxFMf9-j-iEpyIz8yycinFnaG86yUB",
+            "driveFileId": "1eb8kfL7pfzuKA_cRWHCDA_Z5gsTsdEcH",
             "locale": "ar",
-            "drivePath": "Bedroom/room 8",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 8",
             "originalFilename": "ChatGPT Image Nov 1, 2026, 01_52_51 PM-4.png",
             "sha256": "f8e6bea0f88ad0bb2ae223757f9a2ead8347232bf6c6396a5a8cdd629bf37471",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "19fcxFMf9-j-iEpyIz8yycinFnaG86yUB",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -204,12 +222,14 @@
             "ar": "تفصيلة البنش"
           },
           "source": {
-            "driveFileId": "1_1hKStBh-z8riyos8Ovy2LthqcZx51Bj",
+            "driveFileId": "17K7NoJPCzokG3jbYmrfIS9Zn-s17pYTF",
             "locale": "ar",
-            "drivePath": "Bedroom/room 8",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 8",
             "originalFilename": "ChatGPT Image Nov 1, 2026, 01_52_54 PM-5.png",
             "sha256": "f696cd6e83c7bb686f9a3862bf12ed505ad8d204ee98018334c87445a1771f76",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1_1hKStBh-z8riyos8Ovy2LthqcZx51Bj",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         }
       ]
@@ -261,12 +281,14 @@
             "ar": "منظر كامل"
           },
           "source": {
-            "driveFileId": "1KtX-r0NycBe2psrFFpMRiXEIi1r8ImrG",
+            "driveFileId": "149Oa5ZCkiyfNjuoSq34-Bfvrs6TQ5Ham",
             "locale": "en",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "01_Main_Room (3).jpg",
             "sha256": "88f68478bda4cffef1859d1477f7d09a4813d0c89bb8c7d17529d79c1b1181dd",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1KtX-r0NycBe2psrFFpMRiXEIi1r8ImrG",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -280,12 +302,14 @@
             "ar": "تفصيلة الهيدبورد"
           },
           "source": {
-            "driveFileId": "1K1v2egxBRytL_HAr0QDzaXFdd3ChlIfl",
+            "driveFileId": "1kTPEu8btP1dgf0CRw2VIGpNg6tnK5Jw7",
             "locale": "en",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "02_Headboard_Detail.jpg",
             "sha256": "ef8eed22e87c6ec3893059208884e7b31cba138dac9cea2890b8d79e0b7c1464",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1K1v2egxBRytL_HAr0QDzaXFdd3ChlIfl",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -299,12 +323,14 @@
             "ar": "تفصيلة الدولاب"
           },
           "source": {
-            "driveFileId": "1JHlnWRMFPpMn0O26Pj_ANZSeCE34uDAF",
+            "driveFileId": "139Oz_ENHiI1OF1Pf_eRrXckkMXpnNC5S",
             "locale": "en",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "03_Wardrobe_Detail (1).jpg",
             "sha256": "7a2ea73ed070afd6cce0649e26ef0610efae5629cc0b1d0ca82265ebf0108f20",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1JHlnWRMFPpMn0O26Pj_ANZSeCE34uDAF",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -318,12 +344,14 @@
             "ar": "تفصيلة التسريحة"
           },
           "source": {
-            "driveFileId": "1Rxy-uwrcRpTCkO3lrF9C5v2wncG9AMEZ",
+            "driveFileId": "1MVNjIzhA6-S30f4imqewFTMkDnSLuNlD",
             "locale": "en",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "04_Dressing_Table_Detail (1).jpg",
             "sha256": "0d93d65090d721273ced0fbb272ca29b8af913919c35595c450016fc5d782b3f",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1Rxy-uwrcRpTCkO3lrF9C5v2wncG9AMEZ",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -337,12 +365,14 @@
             "ar": "تفصيلة البنش"
           },
           "source": {
-            "driveFileId": "1MVQrJCOPpJXm4gUyaUpwk6Wtg5YDrb6o",
+            "driveFileId": "14JQoxtOP_cgu2H0bCPhEjvv47J1GrLoj",
             "locale": "en",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "05_Bench_Detail.jpg",
             "sha256": "eb22dba9ce8aedf8d8593bd40f21d7ec5a30ce281f96f12f9713956c54060081",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1MVQrJCOPpJXm4gUyaUpwk6Wtg5YDrb6o",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -356,12 +386,14 @@
             "ar": "تفصيلة الكومود"
           },
           "source": {
-            "driveFileId": "1cwvNiR2m1fnfxD3jZD65vuboQrKIYVVU",
+            "driveFileId": "1faAVZKCnbtA23ix0FCi82R1oSPppm-p_",
             "locale": "en",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "06_Nightstand_Detail.jpg",
             "sha256": "c6da6e8ff0d4c89196b27b555d50b39606c21c6810e2d4c62cc1d7f933d2dac3",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1cwvNiR2m1fnfxD3jZD65vuboQrKIYVVU",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -375,12 +407,14 @@
             "ar": "تفصيلة الدرج"
           },
           "source": {
-            "driveFileId": "149yugQTcEJpLD97jcILy7n0Pnrf4jUCd",
+            "driveFileId": "1KQpJH3G0gwaWQAhM8tXMzXYAAKUrNrZA",
             "locale": "en",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "07_Drawer_Detail.jpg",
             "sha256": "5f3ffbef84ac918f973859072949988c675b5f1656c391c56af9405312fd81af",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "149yugQTcEJpLD97jcILy7n0Pnrf4jUCd",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         }
       ],
@@ -396,12 +430,14 @@
             "ar": "منظر كامل"
           },
           "source": {
-            "driveFileId": "1KtX-r0NycBe2psrFFpMRiXEIi1r8ImrG",
+            "driveFileId": "149Oa5ZCkiyfNjuoSq34-Bfvrs6TQ5Ham",
             "locale": "ar",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "01_Main_Room (3).jpg",
             "sha256": "88f68478bda4cffef1859d1477f7d09a4813d0c89bb8c7d17529d79c1b1181dd",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1KtX-r0NycBe2psrFFpMRiXEIi1r8ImrG",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -415,12 +451,14 @@
             "ar": "تفصيلة الهيدبورد"
           },
           "source": {
-            "driveFileId": "1K1v2egxBRytL_HAr0QDzaXFdd3ChlIfl",
+            "driveFileId": "1kTPEu8btP1dgf0CRw2VIGpNg6tnK5Jw7",
             "locale": "ar",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "02_Headboard_Detail.jpg",
             "sha256": "ef8eed22e87c6ec3893059208884e7b31cba138dac9cea2890b8d79e0b7c1464",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1K1v2egxBRytL_HAr0QDzaXFdd3ChlIfl",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -434,12 +472,14 @@
             "ar": "تفصيلة الدولاب"
           },
           "source": {
-            "driveFileId": "1JHlnWRMFPpMn0O26Pj_ANZSeCE34uDAF",
+            "driveFileId": "139Oz_ENHiI1OF1Pf_eRrXckkMXpnNC5S",
             "locale": "ar",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "03_Wardrobe_Detail (1).jpg",
             "sha256": "7a2ea73ed070afd6cce0649e26ef0610efae5629cc0b1d0ca82265ebf0108f20",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1JHlnWRMFPpMn0O26Pj_ANZSeCE34uDAF",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -453,12 +493,14 @@
             "ar": "تفصيلة التسريحة"
           },
           "source": {
-            "driveFileId": "1Rxy-uwrcRpTCkO3lrF9C5v2wncG9AMEZ",
+            "driveFileId": "1MVNjIzhA6-S30f4imqewFTMkDnSLuNlD",
             "locale": "ar",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "04_Dressing_Table_Detail (1).jpg",
             "sha256": "0d93d65090d721273ced0fbb272ca29b8af913919c35595c450016fc5d782b3f",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1Rxy-uwrcRpTCkO3lrF9C5v2wncG9AMEZ",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -472,12 +514,14 @@
             "ar": "تفصيلة البنش"
           },
           "source": {
-            "driveFileId": "1MVQrJCOPpJXm4gUyaUpwk6Wtg5YDrb6o",
+            "driveFileId": "14JQoxtOP_cgu2H0bCPhEjvv47J1GrLoj",
             "locale": "ar",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "05_Bench_Detail.jpg",
             "sha256": "eb22dba9ce8aedf8d8593bd40f21d7ec5a30ce281f96f12f9713956c54060081",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1MVQrJCOPpJXm4gUyaUpwk6Wtg5YDrb6o",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -491,12 +535,14 @@
             "ar": "تفصيلة الكومود"
           },
           "source": {
-            "driveFileId": "1cwvNiR2m1fnfxD3jZD65vuboQrKIYVVU",
+            "driveFileId": "1faAVZKCnbtA23ix0FCi82R1oSPppm-p_",
             "locale": "ar",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "06_Nightstand_Detail.jpg",
             "sha256": "c6da6e8ff0d4c89196b27b555d50b39606c21c6810e2d4c62cc1d7f933d2dac3",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1cwvNiR2m1fnfxD3jZD65vuboQrKIYVVU",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -510,12 +556,14 @@
             "ar": "تفصيلة الدرج"
           },
           "source": {
-            "driveFileId": "149yugQTcEJpLD97jcILy7n0Pnrf4jUCd",
+            "driveFileId": "1KQpJH3G0gwaWQAhM8tXMzXYAAKUrNrZA",
             "locale": "ar",
-            "drivePath": "Bedroom/room 4",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 4",
             "originalFilename": "07_Drawer_Detail.jpg",
             "sha256": "5f3ffbef84ac918f973859072949988c675b5f1656c391c56af9405312fd81af",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "149yugQTcEJpLD97jcILy7n0Pnrf4jUCd",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         }
       ]
@@ -567,12 +615,14 @@
             "ar": "منظر كامل"
           },
           "source": {
-            "driveFileId": "1QrocMg7tJJ9ZQBUXGnJEAD2FWOvensf4",
+            "driveFileId": "1RimiavKZjLzOWefJS1q8EEumk_DPmZa2",
             "locale": "en",
-            "drivePath": "Bedroom/room 5",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 5",
             "originalFilename": "01_Main_Room (4).jpg",
             "sha256": "5bd3e5329ace64cc87d5407c34e7195a29186c919241e08c4cac6fc0ec615772",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1QrocMg7tJJ9ZQBUXGnJEAD2FWOvensf4",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -586,12 +636,14 @@
             "ar": "تفصيلة الهيدبورد"
           },
           "source": {
-            "driveFileId": "1kwlbJJN1giqV9t9gQ3Xfa4e85CA9pNLy",
+            "driveFileId": "1gezFdHvELR3BiKuLxytFpMMxph1puDjn",
             "locale": "en",
-            "drivePath": "Bedroom/room 5",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 5",
             "originalFilename": "02_Headboard_Detail (1).jpg",
             "sha256": "6b8702f56cfc13e8366b7ac35c525041de6110f2a867e0c047b516d6e67b935a",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1kwlbJJN1giqV9t9gQ3Xfa4e85CA9pNLy",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -605,12 +657,14 @@
             "ar": "تفصيلة الدولاب"
           },
           "source": {
-            "driveFileId": "17oXLPAr371Cco7Lk-PTZ64qe7xFy54h1",
+            "driveFileId": "19-4kOrJYQwpPo4GQq6aPUu-4Q-HYh-F8",
             "locale": "en",
-            "drivePath": "Bedroom/room 5",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 5",
             "originalFilename": "03_Wardrobe_Detail (2).jpg",
             "sha256": "be9e8e6af5e9f0a31fba4eaccc8beef5e44df0f0f27a900f464543ce09de7159",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "17oXLPAr371Cco7Lk-PTZ64qe7xFy54h1",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -624,12 +678,14 @@
             "ar": "تفصيلة الكومود"
           },
           "source": {
-            "driveFileId": "1lu-IUrhSZGRHL8W_dmjz-hwV_b5sB67P",
+            "driveFileId": "1QlWTiAFTPEQ8LMUBAALjbo1aB7hw0yRw",
             "locale": "en",
-            "drivePath": "Bedroom/room 5",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 5",
             "originalFilename": "04_Nightstand_Detail.jpg",
             "sha256": "267bd234086e458e4ea3deeb72a011e0ebb6291d855aa89b88e4ffaf742ea8e3",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1lu-IUrhSZGRHL8W_dmjz-hwV_b5sB67P",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -643,12 +699,14 @@
             "ar": "تفصيلة البنش"
           },
           "source": {
-            "driveFileId": "17oSOhwGEtGvN7TRAzbSOYSkvc_jY40hg",
+            "driveFileId": "1u0luEeV7r4YQujpuaBcB55GbCX3j3yQv",
             "locale": "en",
-            "drivePath": "Bedroom/room 5",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 5",
             "originalFilename": "05_Bench_Detail (1).jpg",
             "sha256": "8855c337701b6e80fdde3f2b95508937032872ddfac4ecd4268101289d043cd1",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "17oSOhwGEtGvN7TRAzbSOYSkvc_jY40hg",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -662,12 +720,14 @@
             "ar": "تفصيلة التسريحة"
           },
           "source": {
-            "driveFileId": "18247Fnms8fyEvYtFq2Dbzg6b-2B6fB0f",
+            "driveFileId": "1dzcsGiog8qG_YkaB9HF4a7a2CJExjk9D",
             "locale": "en",
-            "drivePath": "Bedroom/room 5",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 5",
             "originalFilename": "06_Dressing_Table_Detail.jpg",
             "sha256": "7886dc711e88ef76e375a03189529a251ea984f1af3c1ed2c1224dbd9f5be526",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "18247Fnms8fyEvYtFq2Dbzg6b-2B6fB0f",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         }
       ],
@@ -683,12 +743,14 @@
             "ar": "منظر كامل"
           },
           "source": {
-            "driveFileId": "1QrocMg7tJJ9ZQBUXGnJEAD2FWOvensf4",
+            "driveFileId": "1RimiavKZjLzOWefJS1q8EEumk_DPmZa2",
             "locale": "ar",
-            "drivePath": "Bedroom/room 5",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 5",
             "originalFilename": "01_Main_Room (4).jpg",
             "sha256": "5bd3e5329ace64cc87d5407c34e7195a29186c919241e08c4cac6fc0ec615772",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1QrocMg7tJJ9ZQBUXGnJEAD2FWOvensf4",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -702,12 +764,14 @@
             "ar": "تفصيلة الهيدبورد"
           },
           "source": {
-            "driveFileId": "1kwlbJJN1giqV9t9gQ3Xfa4e85CA9pNLy",
+            "driveFileId": "1gezFdHvELR3BiKuLxytFpMMxph1puDjn",
             "locale": "ar",
-            "drivePath": "Bedroom/room 5",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 5",
             "originalFilename": "02_Headboard_Detail (1).jpg",
             "sha256": "6b8702f56cfc13e8366b7ac35c525041de6110f2a867e0c047b516d6e67b935a",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1kwlbJJN1giqV9t9gQ3Xfa4e85CA9pNLy",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -721,12 +785,14 @@
             "ar": "تفصيلة الدولاب"
           },
           "source": {
-            "driveFileId": "17oXLPAr371Cco7Lk-PTZ64qe7xFy54h1",
+            "driveFileId": "19-4kOrJYQwpPo4GQq6aPUu-4Q-HYh-F8",
             "locale": "ar",
-            "drivePath": "Bedroom/room 5",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 5",
             "originalFilename": "03_Wardrobe_Detail (2).jpg",
             "sha256": "be9e8e6af5e9f0a31fba4eaccc8beef5e44df0f0f27a900f464543ce09de7159",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "17oXLPAr371Cco7Lk-PTZ64qe7xFy54h1",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -740,12 +806,14 @@
             "ar": "تفصيلة الكومود"
           },
           "source": {
-            "driveFileId": "1lu-IUrhSZGRHL8W_dmjz-hwV_b5sB67P",
+            "driveFileId": "1QlWTiAFTPEQ8LMUBAALjbo1aB7hw0yRw",
             "locale": "ar",
-            "drivePath": "Bedroom/room 5",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 5",
             "originalFilename": "04_Nightstand_Detail.jpg",
             "sha256": "267bd234086e458e4ea3deeb72a011e0ebb6291d855aa89b88e4ffaf742ea8e3",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1lu-IUrhSZGRHL8W_dmjz-hwV_b5sB67P",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -759,12 +827,14 @@
             "ar": "تفصيلة البنش"
           },
           "source": {
-            "driveFileId": "17oSOhwGEtGvN7TRAzbSOYSkvc_jY40hg",
+            "driveFileId": "1u0luEeV7r4YQujpuaBcB55GbCX3j3yQv",
             "locale": "ar",
-            "drivePath": "Bedroom/room 5",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 5",
             "originalFilename": "05_Bench_Detail (1).jpg",
             "sha256": "8855c337701b6e80fdde3f2b95508937032872ddfac4ecd4268101289d043cd1",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "17oSOhwGEtGvN7TRAzbSOYSkvc_jY40hg",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -778,12 +848,14 @@
             "ar": "تفصيلة التسريحة"
           },
           "source": {
-            "driveFileId": "18247Fnms8fyEvYtFq2Dbzg6b-2B6fB0f",
+            "driveFileId": "1dzcsGiog8qG_YkaB9HF4a7a2CJExjk9D",
             "locale": "ar",
-            "drivePath": "Bedroom/room 5",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 5",
             "originalFilename": "06_Dressing_Table_Detail.jpg",
             "sha256": "7886dc711e88ef76e375a03189529a251ea984f1af3c1ed2c1224dbd9f5be526",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "18247Fnms8fyEvYtFq2Dbzg6b-2B6fB0f",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         }
       ]
@@ -835,12 +907,14 @@
             "ar": "منظر كامل"
           },
           "source": {
-            "driveFileId": "1B_oVymslMi4JAJYs3L4BuuYErsVpBFPH",
+            "driveFileId": "12C4T2WqQy55OWEe_YBwjUJc1Ep9E6_Qj",
             "locale": "en",
-            "drivePath": "Bedroom/room 3",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 3",
             "originalFilename": "ChatGPT Image Oct 31, 2026, 02_26_16 PM-1.png",
             "sha256": "4b11c56a5b2d1dffb62a3aa4ef145d9d8b2df1428492ba2ff2af9b5153fdaf5e",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1B_oVymslMi4JAJYs3L4BuuYErsVpBFPH",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -854,12 +928,14 @@
             "ar": "السرير"
           },
           "source": {
-            "driveFileId": "1IRvO0cnSr3r0iQ2rfPNIeSWSXBbjiKnv",
+            "driveFileId": "1GzFD-XnFlWqfEYXul83JudViBsP3AsbY",
             "locale": "en",
-            "drivePath": "Bedroom/room 3",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 3",
             "originalFilename": "ChatGPT Image Oct 31, 2026, 02_26_19 PM-2.png",
             "sha256": "0360f08fbf1bf55b316907051874463710c3cde2a10fa30769435331e317d56e",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1IRvO0cnSr3r0iQ2rfPNIeSWSXBbjiKnv",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -873,12 +949,14 @@
             "ar": "تفصيلة الدولاب"
           },
           "source": {
-            "driveFileId": "1w5Yn1eDfiKY0eyoPCgPPs_weeSq5cBum",
+            "driveFileId": "1cYNQurFhAKYlVc6EbOC38A8jajjI3_jL",
             "locale": "en",
-            "drivePath": "Bedroom/room 3",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 3",
             "originalFilename": "ChatGPT Image Oct 31, 2026, 02_26_22 PM-3.png",
             "sha256": "730d9fc1b32925278abf53e3f10cd2a5a31aa37f7df441b63b954477617ad73d",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1w5Yn1eDfiKY0eyoPCgPPs_weeSq5cBum",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -892,12 +970,14 @@
             "ar": "تفصيلة التسريحة"
           },
           "source": {
-            "driveFileId": "1gPhvjQ3hCBuTMXcRbcKl2D8007iYAX6V",
+            "driveFileId": "12e27qB-mMmm_wpCmf_uugI3zDc9anTif",
             "locale": "en",
-            "drivePath": "Bedroom/room 3",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 3",
             "originalFilename": "ChatGPT Image Oct 31, 2026, 02_26_26 PM-4.png",
             "sha256": "daeb7b38ac98b76c7b0a55d6b0d9b36811d5aa605bb020d9f463d0e4ccc65196",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1gPhvjQ3hCBuTMXcRbcKl2D8007iYAX6V",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         }
       ],
@@ -913,12 +993,14 @@
             "ar": "منظر كامل"
           },
           "source": {
-            "driveFileId": "1B_oVymslMi4JAJYs3L4BuuYErsVpBFPH",
+            "driveFileId": "12C4T2WqQy55OWEe_YBwjUJc1Ep9E6_Qj",
             "locale": "ar",
-            "drivePath": "Bedroom/room 3",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 3",
             "originalFilename": "ChatGPT Image Oct 31, 2026, 02_26_16 PM-1.png",
             "sha256": "4b11c56a5b2d1dffb62a3aa4ef145d9d8b2df1428492ba2ff2af9b5153fdaf5e",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1B_oVymslMi4JAJYs3L4BuuYErsVpBFPH",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -932,12 +1014,14 @@
             "ar": "السرير"
           },
           "source": {
-            "driveFileId": "1IRvO0cnSr3r0iQ2rfPNIeSWSXBbjiKnv",
+            "driveFileId": "1GzFD-XnFlWqfEYXul83JudViBsP3AsbY",
             "locale": "ar",
-            "drivePath": "Bedroom/room 3",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 3",
             "originalFilename": "ChatGPT Image Oct 31, 2026, 02_26_19 PM-2.png",
             "sha256": "0360f08fbf1bf55b316907051874463710c3cde2a10fa30769435331e317d56e",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1IRvO0cnSr3r0iQ2rfPNIeSWSXBbjiKnv",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -951,12 +1035,14 @@
             "ar": "تفصيلة الدولاب"
           },
           "source": {
-            "driveFileId": "1w5Yn1eDfiKY0eyoPCgPPs_weeSq5cBum",
+            "driveFileId": "1cYNQurFhAKYlVc6EbOC38A8jajjI3_jL",
             "locale": "ar",
-            "drivePath": "Bedroom/room 3",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 3",
             "originalFilename": "ChatGPT Image Oct 31, 2026, 02_26_22 PM-3.png",
             "sha256": "730d9fc1b32925278abf53e3f10cd2a5a31aa37f7df441b63b954477617ad73d",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1w5Yn1eDfiKY0eyoPCgPPs_weeSq5cBum",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         },
         {
@@ -970,12 +1056,14 @@
             "ar": "تفصيلة التسريحة"
           },
           "source": {
-            "driveFileId": "1gPhvjQ3hCBuTMXcRbcKl2D8007iYAX6V",
+            "driveFileId": "12e27qB-mMmm_wpCmf_uugI3zDc9anTif",
             "locale": "ar",
-            "drivePath": "Bedroom/room 3",
+            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 3",
             "originalFilename": "ChatGPT Image Oct 31, 2026, 02_26_26 PM-4.png",
             "sha256": "daeb7b38ac98b76c7b0a55d6b0d9b36811d5aa605bb020d9f463d0e4ccc65196",
-            "status": "valid"
+            "status": "remapped",
+            "previousDriveFileId": "1gPhvjQ3hCBuTMXcRbcKl2D8007iYAX6V",
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         }
       ]
@@ -1234,13 +1322,17 @@
           "width": 1024,
           "height": 1536,
           "source": {
-            "driveFileId": "1pZxvINQiQ6w5jITIeRxu7Nk1IxuvIX35",
+            "driveFileId": "1LHUrlf31Jzb2O17b2avtsu8rER5oGVs0",
             "locale": "ar",
             "status": "remapped",
-            "previousDriveFileId": "1zOdxzqGpcZxGnZQW7T2nTpKydSSiBZ8r",
-            "drivePath": "Corner Sofas (ركن/عربي)",
+            "previousDriveFileId": "1pZxvINQiQ6w5jITIeRxu7Nk1IxuvIX35",
+            "drivePath": "ركن/عربي",
             "originalFilename": "ChatGPT Image Oct 6, 2026, 11_46_11 AM-6.png",
-            "sha256": "c3aa372040ab3b729c12a3cabd28e860a6509341b3a6a502da89e6f4c63704b0"
+            "sha256": "c3aa372040ab3b729c12a3cabd28e860a6509341b3a6a502da89e6f4c63704b0",
+            "earlierDriveFileIds": [
+              "1zOdxzqGpcZxGnZQW7T2nTpKydSSiBZ8r"
+            ],
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         }
       ]
@@ -1293,13 +1385,17 @@
           "width": 1024,
           "height": 1536,
           "source": {
-            "driveFileId": "1P_0ViBHCdnlYshYIduBsiBFl3Ds8vh5X",
+            "driveFileId": "1r_RRQMyGd08K-b1Sp9JU5YRSGQKffqbz",
             "locale": "ar",
             "status": "remapped",
-            "previousDriveFileId": "1nl1u1ydGB4dnLKFeyutK85MnfaC4l0UF",
-            "drivePath": "Corner Sofas (ركن/عربي)",
+            "previousDriveFileId": "1P_0ViBHCdnlYshYIduBsiBFl3Ds8vh5X",
+            "drivePath": "ركن/عربي",
             "originalFilename": "ChatGPT Image Oct 6, 2026, 11_46_27 AM-10.png",
-            "sha256": "9e7b7e12d14a4aa7f95243aed6260ed3279959f1fa11bb1052659d4394c7e12c"
+            "sha256": "9e7b7e12d14a4aa7f95243aed6260ed3279959f1fa11bb1052659d4394c7e12c",
+            "earlierDriveFileIds": [
+              "1nl1u1ydGB4dnLKFeyutK85MnfaC4l0UF"
+            ],
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         }
       ]
@@ -1352,13 +1448,17 @@
           "width": 1024,
           "height": 1536,
           "source": {
-            "driveFileId": "1Ya8-l5pyW83O5dnqx2czv9aQ4ljBTLB-",
+            "driveFileId": "1sw4siYS3LVoSdEeQvIa27773kc7TKPkU",
             "locale": "ar",
             "status": "remapped",
-            "previousDriveFileId": "1Nw1YgwyZRIwY6RGk0CGMSYxPB1Z3TTfA",
-            "drivePath": "Living Room Sofa Sets (انتريه/عربي)",
+            "previousDriveFileId": "1Ya8-l5pyW83O5dnqx2czv9aQ4ljBTLB-",
+            "drivePath": "انتريه/عربي",
             "originalFilename": "ChatGPT Image Oct 6, 2026, 11_45_56 AM-1.png",
-            "sha256": "5d48b75f9130f27da52b72d58150e4d7a61573a27547c8081b95f7cb66773d1b"
+            "sha256": "5d48b75f9130f27da52b72d58150e4d7a61573a27547c8081b95f7cb66773d1b",
+            "earlierDriveFileIds": [
+              "1Nw1YgwyZRIwY6RGk0CGMSYxPB1Z3TTfA"
+            ],
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           }
         }
       ]
@@ -1403,13 +1503,17 @@
           "width": 1055,
           "height": 1491,
           "source": {
-            "driveFileId": "1CQ4IjWmruj5igbok2Cdc8oJvelO1zwXx",
+            "driveFileId": "1rdvuDfvXjAK-I_FBVBi_bQ4t2m4ZBYUS",
             "locale": "en",
             "status": "remapped",
-            "previousDriveFileId": "1q7IIpFGsV5c56aqcAtogz3MI_v37UBQe",
-            "drivePath": "Corner Sofas (ركن/عربي)",
+            "previousDriveFileId": "1CQ4IjWmruj5igbok2Cdc8oJvelO1zwXx",
+            "drivePath": "ركن/عربي",
             "originalFilename": "ChatGPT Image Oct 5, 2026, 03_00_32 PM-7.png",
-            "sha256": "ea23aa8757088542bc5f4dc37460813e09b7a5f66fa3341dc85ce1366f08f81e"
+            "sha256": "ea23aa8757088542bc5f4dc37460813e09b7a5f66fa3341dc85ce1366f08f81e",
+            "earlierDriveFileIds": [
+              "1q7IIpFGsV5c56aqcAtogz3MI_v37UBQe"
+            ],
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           },
           "role": "cover",
           "hasEmbeddedText": true
@@ -1422,13 +1526,17 @@
           "width": 1055,
           "height": 1491,
           "source": {
-            "driveFileId": "1CQ4IjWmruj5igbok2Cdc8oJvelO1zwXx",
+            "driveFileId": "1rdvuDfvXjAK-I_FBVBi_bQ4t2m4ZBYUS",
             "locale": "ar",
             "status": "remapped",
-            "previousDriveFileId": "1q7IIpFGsV5c56aqcAtogz3MI_v37UBQe",
-            "drivePath": "Corner Sofas (ركن/عربي)",
+            "previousDriveFileId": "1CQ4IjWmruj5igbok2Cdc8oJvelO1zwXx",
+            "drivePath": "ركن/عربي",
             "originalFilename": "ChatGPT Image Oct 5, 2026, 03_00_32 PM-7.png",
-            "sha256": "ea23aa8757088542bc5f4dc37460813e09b7a5f66fa3341dc85ce1366f08f81e"
+            "sha256": "ea23aa8757088542bc5f4dc37460813e09b7a5f66fa3341dc85ce1366f08f81e",
+            "earlierDriveFileIds": [
+              "1q7IIpFGsV5c56aqcAtogz3MI_v37UBQe"
+            ],
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           },
           "role": "cover",
           "hasEmbeddedText": true
@@ -1475,13 +1583,17 @@
           "width": 1055,
           "height": 1491,
           "source": {
-            "driveFileId": "1KUrPWbZqyRY95zN45sgL7CBibeeQwCJ5",
+            "driveFileId": "1RSiOjHyVuGvtsjVYDTH_aSI0_Y_TZZyp",
             "locale": "en",
             "status": "remapped",
-            "previousDriveFileId": "1o9GU9BDsNmH59-BLFp5ZvMMYDwTEUbMh",
-            "drivePath": "Corner Sofas (ركن/عربي)",
+            "previousDriveFileId": "1KUrPWbZqyRY95zN45sgL7CBibeeQwCJ5",
+            "drivePath": "ركن/عربي",
             "originalFilename": "ChatGPT Image Oct 5, 2026, 03_00_35 PM-8.png",
-            "sha256": "c4019a4625290f67ef212eb6ac223bfc20956c88b9532d24c91b64c5f7c45b5b"
+            "sha256": "c4019a4625290f67ef212eb6ac223bfc20956c88b9532d24c91b64c5f7c45b5b",
+            "earlierDriveFileIds": [
+              "1o9GU9BDsNmH59-BLFp5ZvMMYDwTEUbMh"
+            ],
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           },
           "role": "cover",
           "hasEmbeddedText": true
@@ -1494,13 +1606,17 @@
           "width": 1055,
           "height": 1491,
           "source": {
-            "driveFileId": "1KUrPWbZqyRY95zN45sgL7CBibeeQwCJ5",
+            "driveFileId": "1RSiOjHyVuGvtsjVYDTH_aSI0_Y_TZZyp",
             "locale": "ar",
             "status": "remapped",
-            "previousDriveFileId": "1o9GU9BDsNmH59-BLFp5ZvMMYDwTEUbMh",
-            "drivePath": "Corner Sofas (ركن/عربي)",
+            "previousDriveFileId": "1KUrPWbZqyRY95zN45sgL7CBibeeQwCJ5",
+            "drivePath": "ركن/عربي",
             "originalFilename": "ChatGPT Image Oct 5, 2026, 03_00_35 PM-8.png",
-            "sha256": "c4019a4625290f67ef212eb6ac223bfc20956c88b9532d24c91b64c5f7c45b5b"
+            "sha256": "c4019a4625290f67ef212eb6ac223bfc20956c88b9532d24c91b64c5f7c45b5b",
+            "earlierDriveFileIds": [
+              "1o9GU9BDsNmH59-BLFp5ZvMMYDwTEUbMh"
+            ],
+            "note": "Re-uploaded to Drive on 2026-11-19 with a new id; matched by filename and byte size (2026-11-26 inventory)."
           },
           "role": "cover",
           "hasEmbeddedText": true
@@ -1549,11 +1665,12 @@
           "source": {
             "driveFileId": "1CM5txRqB1fZNIvV52jXJLFXGit3veNvn",
             "locale": "en",
-            "status": "remapped",
+            "status": "orphaned",
             "previousDriveFileId": "1qDSM3rT1fDdHFtxuqDgE58naJXWCZbBI",
             "drivePath": "Corner Sofas (ركن/عربي)",
             "originalFilename": "ChatGPT Image Oct 5, 2026, 03_00_54 PM-10.png",
-            "sha256": "304ab82c455bd78707024437b570920e857d6386818a41f6eb3005d0b46e29b9"
+            "sha256": "304ab82c455bd78707024437b570920e857d6386818a41f6eb3005d0b46e29b9",
+            "note": "Source image is no longer in Drive (2026-11-26 listing); the published web image is kept."
           },
           "role": "cover",
           "hasEmbeddedText": true
@@ -1568,11 +1685,12 @@
           "source": {
             "driveFileId": "1CM5txRqB1fZNIvV52jXJLFXGit3veNvn",
             "locale": "ar",
-            "status": "remapped",
+            "status": "orphaned",
             "previousDriveFileId": "1qDSM3rT1fDdHFtxuqDgE58naJXWCZbBI",
             "drivePath": "Corner Sofas (ركن/عربي)",
             "originalFilename": "ChatGPT Image Oct 5, 2026, 03_00_54 PM-10.png",
-            "sha256": "304ab82c455bd78707024437b570920e857d6386818a41f6eb3005d0b46e29b9"
+            "sha256": "304ab82c455bd78707024437b570920e857d6386818a41f6eb3005d0b46e29b9",
+            "note": "Source image is no longer in Drive (2026-11-26 listing); the published web image is kept."
           },
           "role": "cover",
           "hasEmbeddedText": true
@@ -1622,7 +1740,7 @@
             "driveFileId": "1GngAdIo8zynnLE6gGcbk_ixsLIi4-VWx",
             "locale": "en",
             "status": "valid",
-            "drivePath": "China/Dining (نيش و سفرة/انجليزي)",
+            "drivePath": "نيش و سفرة/انجليزي",
             "originalFilename": "ChatGPT Image Oct 6, 2026, 03_26_56 PM-2.png",
             "sha256": "02653e37ea8c9d33e31570cb37cff3054428489798dd3694fd95bc7a4dcfd158"
           }
@@ -1638,7 +1756,7 @@
             "driveFileId": "1d5kSqiC1YYwG69uQfaGD9zyMcNJUwGan",
             "locale": "ar",
             "status": "valid",
-            "drivePath": "China/Dining (نيش و سفرة/عربي)",
+            "drivePath": "نيش و سفرة/عربي",
             "originalFilename": "ChatGPT Image Oct 6, 2026, 03_33_49 PM-2.png",
             "sha256": "40d35c020014e3b2991a6d25c44a21bdeae5c99302fd84592ac3d1f7776ef420"
           }
@@ -1682,7 +1800,7 @@
             "driveFileId": "1UfSi3PEWsroKEfS-_grcLRLT_HoJTYAO",
             "locale": "en",
             "status": "valid",
-            "drivePath": "China/Dining (نيش و سفرة/انجليزي)",
+            "drivePath": "نيش و سفرة/انجليزي",
             "originalFilename": "ChatGPT Image Oct 6, 2026, 03_27_01 PM-4.png",
             "sha256": "87e90e6fede115da2010c7d54a3f74d0b26bc667b3e424112ae4362c7e609090"
           }
@@ -1698,7 +1816,7 @@
             "driveFileId": "1N9OwoNBXxeeitriCu3aptzP3FzBQ1XJU",
             "locale": "ar",
             "status": "valid",
-            "drivePath": "China/Dining (نيش و سفرة/عربي)",
+            "drivePath": "نيش و سفرة/عربي",
             "originalFilename": "ChatGPT Image Oct 6, 2026, 03_33_54 PM-4.png",
             "sha256": "6af0cbcc7d8240a0bdbf2387bb89d71efe449ac5c97915f9d46be0c1059a91b1"
           }
@@ -1742,7 +1860,7 @@
             "driveFileId": "1Epd_1D8AKMnN4OGcT05gh3FDcoMfusBw",
             "locale": "en",
             "status": "valid",
-            "drivePath": "China/Dining (نيش و سفرة/انجليزي)",
+            "drivePath": "نيش و سفرة/انجليزي",
             "originalFilename": "ChatGPT Image Oct 6, 2026, 03_27_04 PM-5.png",
             "sha256": "b5c39299f72d7f3f9b455204776fdd50f7e12b8adf923968b4dd55c35744b646"
           }
@@ -1758,7 +1876,7 @@
             "driveFileId": "1W88pro7ivDKSE94N7l9mAxj_Lo6w93V0",
             "locale": "ar",
             "status": "valid",
-            "drivePath": "China/Dining (نيش و سفرة/عربي)",
+            "drivePath": "نيش و سفرة/عربي",
             "originalFilename": "ChatGPT Image Oct 6, 2026, 03_33_59 PM-5.png",
             "sha256": "04d4e79889eca74889e66ee4bce42c540e90ef163a71ab57058202158dfdd042"
           }
@@ -1802,7 +1920,7 @@
             "driveFileId": "1XqGqMxxJ7XMlrlD78P1-eu6g43jokxNl",
             "locale": "en",
             "status": "valid",
-            "drivePath": "China/Dining (نيش و سفرة/انجليزي)",
+            "drivePath": "نيش و سفرة/انجليزي",
             "originalFilename": "ChatGPT Image Oct 6, 2026, 03_26_59 PM-3.png",
             "sha256": "1e6480e453be8086678653e899c4596ee741fddd8b43c4639a614a9f96515b67"
           }
@@ -1818,7 +1936,7 @@
             "driveFileId": "1CPcm40iyLyUthou1c1Un1Ap7aY1Qw8Mo",
             "locale": "ar",
             "status": "valid",
-            "drivePath": "China/Dining (نيش و سفرة/عربي)",
+            "drivePath": "نيش و سفرة/عربي",
             "originalFilename": "ChatGPT Image Oct 6, 2026, 03_33_52 PM-3.png",
             "sha256": "81da16e1d7b3fda79ea9105874cc02a60bd4322a6f166a2e34db555d354463f7"
           }
@@ -1865,7 +1983,7 @@
             "driveFileId": "1k24X5fqRxekds9Zjz4Ee3q2UGbT2gJv5",
             "locale": "en",
             "status": "valid",
-            "drivePath": "China/Dining (نيش و سفرة/انجليزي)",
+            "drivePath": "نيش و سفرة/انجليزي",
             "originalFilename": "ChatGPT Image Oct 6, 2026, 03_27_08 PM-7.png",
             "sha256": "9bac9a1b92e4d863e3a12c32a214b8736d24f380a2405e440fd7a4120e468d6a"
           }
@@ -1881,7 +1999,7 @@
             "driveFileId": "1eVUNtUqHeJli9q6jD3KM1Z1QXo8zS-Qj",
             "locale": "ar",
             "status": "valid",
-            "drivePath": "China/Dining (نيش و سفرة/عربي)",
+            "drivePath": "نيش و سفرة/عربي",
             "originalFilename": "ChatGPT Image Oct 6, 2026, 03_34_05 PM-7.png",
             "sha256": "43027fc188976078b9a781c310e01a45fad23045f7cf9e662e9b07d43945dee8"
           }

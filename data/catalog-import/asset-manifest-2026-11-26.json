@@ -1,0 +1,1177 @@
+{
+  "builtFrom": "drive-inventory-2026-11-26.json + catalog-update-2026-11-26.json",
+  "newProducts": 28,
+  "images": 64,
+  "excluded": [
+    {
+      "driveFileId": "1Wded_uF5A1XsBhkjZFxlxvJS3fLUqufg",
+      "reason": "byte-identical duplicate (SHA-256) of 1_dYdADLAec3tnTnc_SMH8CvOBpiyTv5N"
+    },
+    {
+      "driveFileId": "1fb78UB_YVLkfpoCha2vDH1-xsNvc-uqb",
+      "reason": "visual duplicate of 1l6UbD-uwH3LHnp7xJWfxH0NpiEdkI2tL (same sectional, lounge chair and table; different render)"
+    },
+    {
+      "driveFileId": "1KZoygbgToOP15BDs1Ab_t5Cfms35LQc2",
+      "reason": "WhatsApp photo, bedroom room 8 — kept unpublished (2026-11-09 decision: needs business confirmation)"
+    },
+    {
+      "driveFileId": "1Djlkl7xdYjjHS0BJEck1ZU3WlWPm-uy4",
+      "reason": "kids room 3 infographic poster with unverified specs — kept unpublished (2026-11-09 decision)"
+    }
+  ],
+  "manifest": [
+    {
+      "driveFileId": "1Gnn3oMm945aS9DZG-u51RVBucFwYKoqK",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/Room 9",
+      "originalFilename": "01_Full_Room.png",
+      "sha256": "ba2691f14edc41b54002b788734dab64f2922bbf1f23230583f1f76061b02731",
+      "originalDimensions": [
+        1535,
+        1024
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/cushioned-ivory-bedroom-set/01-cover-640.webp",
+        "full": "/images/catalog/bedrooms/cushioned-ivory-bedroom-set/01-cover-1400.webp",
+        "width": 1400,
+        "height": 934
+      },
+      "productId": "pv-br-13",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1ni_JCIYqT-JWXvRQoEjEd85cBXakB9mb",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/Room 9",
+      "originalFilename": "02_Bed_Detail.png",
+      "sha256": "ac3b32b1e650172652fa55600bd1dcb6f3a5c06d1cc67b88a09b535000941001",
+      "originalDimensions": [
+        306,
+        507
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/cushioned-ivory-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/bedrooms/cushioned-ivory-bedroom-set/02-detail-1400.webp",
+        "width": 306,
+        "height": 507
+      },
+      "productId": "pv-br-13",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1-7mcNjIXmymJeXVzVk2_UpW-jMmW1x_f",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/Room 9",
+      "originalFilename": "03_Wardrobe_Detail.png",
+      "sha256": "bba380b5af8accb300d9aef363435fbe25c88d311a715dc4d193357ed1824ae3",
+      "originalDimensions": [
+        1278,
+        1230
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/cushioned-ivory-bedroom-set/03-detail-640.webp",
+        "full": "/images/catalog/bedrooms/cushioned-ivory-bedroom-set/03-detail-1400.webp",
+        "width": 1278,
+        "height": 1230
+      },
+      "productId": "pv-br-13",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1xpCPeSzSbKsDoHtrZpGJrmkIVjwblPNI",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/Room 9",
+      "originalFilename": "04_Nightstand_Detail.png",
+      "sha256": "b9ad66431512daaa43bc4a8a8380c3b43600abb74d1658c31bdc2334793071ae",
+      "originalDimensions": [
+        289,
+        509
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/cushioned-ivory-bedroom-set/04-detail-640.webp",
+        "full": "/images/catalog/bedrooms/cushioned-ivory-bedroom-set/04-detail-1400.webp",
+        "width": 289,
+        "height": 509
+      },
+      "productId": "pv-br-13",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1dHHYUMXFv2SepDc3tYiP_XiV2W0SqunJ",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/Room 10",
+      "originalFilename": "01_Full_Room.png",
+      "sha256": "708080390b4cbc11221c5a84f53325e9b6e8c346d0279a32ca4cff59434b6a6e",
+      "originalDimensions": [
+        1536,
+        1024
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/slatted-wall-grey-bedroom-set/01-cover-640.webp",
+        "full": "/images/catalog/bedrooms/slatted-wall-grey-bedroom-set/01-cover-1400.webp",
+        "width": 1400,
+        "height": 933
+      },
+      "productId": "pv-br-14",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1BllZ-7i7x86MVHxqpSR2lAnK2JyRirz8",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/Room 10",
+      "originalFilename": "02_Bed_Detail.png",
+      "sha256": "96e74fabaf8512cd6da3d2d107d5868cd0641cb0a19e473cd8ef318bee0700c5",
+      "originalDimensions": [
+        1536,
+        1024
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/slatted-wall-grey-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/bedrooms/slatted-wall-grey-bedroom-set/02-detail-1400.webp",
+        "width": 1400,
+        "height": 933
+      },
+      "productId": "pv-br-14",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1sB9mEszzfA8-wpE7CKC7MjxPz7GbcVKU",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/Room 10",
+      "originalFilename": "03_Wardrobe_Detail.png",
+      "sha256": "ea0d1fa08a5ded43c20948087e51e8bd3cfc93a7c1645d49ee0309bb8138a3dc",
+      "originalDimensions": [
+        763,
+        507
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/slatted-wall-grey-bedroom-set/03-detail-640.webp",
+        "full": "/images/catalog/bedrooms/slatted-wall-grey-bedroom-set/03-detail-1400.webp",
+        "width": 763,
+        "height": 507
+      },
+      "productId": "pv-br-14",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "19LAeJB8c0udGJN9cVEHH_0EHpCl6oKZC",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/Room 10",
+      "originalFilename": "04_Nightstand_Detail.png",
+      "sha256": "cc9296cc59f1afd0aaa7eef67fd699337e53a11af8afc1fa5da7dbb2a5ec598b",
+      "originalDimensions": [
+        289,
+        497
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/slatted-wall-grey-bedroom-set/04-detail-640.webp",
+        "full": "/images/catalog/bedrooms/slatted-wall-grey-bedroom-set/04-detail-1400.webp",
+        "width": 289,
+        "height": 497
+      },
+      "productId": "pv-br-14",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1a0Hce830aZ6-lirRBgkrl-O88ThMm9Zc",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 11",
+      "originalFilename": "Luxurious Warm-Toned Modern Bedroom-3.png",
+      "sha256": "6481bbb6c5d8601e448bcacfdfcb7c37d74064e800db012394e94ab89880976e",
+      "originalDimensions": [
+        1478,
+        1024
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/walnut-walk-in-bedroom-set/01-cover-640.webp",
+        "full": "/images/catalog/bedrooms/walnut-walk-in-bedroom-set/01-cover-1400.webp",
+        "width": 1400,
+        "height": 970
+      },
+      "productId": "pv-br-15",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "14zPp1z-Zl4ThStQkV1ypC-69llwlPYg6",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 11",
+      "originalFilename": "Elegant Warm-Toned Bedroom Vanity-12.png",
+      "sha256": "a1bd70eccef5e93016c68ea2006a1ccdff3de87999a843eda80ebcef346dd71c",
+      "originalDimensions": [
+        1199,
+        1312
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/walnut-walk-in-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/bedrooms/walnut-walk-in-bedroom-set/02-detail-1400.webp",
+        "width": 1199,
+        "height": 1312
+      },
+      "productId": "pv-br-15",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "13JujyYolEQDlsRUl4IYc91R3ub3V8VWO",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 11",
+      "originalFilename": "Warmly Lit Luxury Walk-In Wardrobe-11.png",
+      "sha256": "3a077e7a409e217dc00bf9938266b4fe839dc3be04edcf65b173c7dd428ee989",
+      "originalDimensions": [
+        1536,
+        1024
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/walnut-walk-in-bedroom-set/03-detail-640.webp",
+        "full": "/images/catalog/bedrooms/walnut-walk-in-bedroom-set/03-detail-1400.webp",
+        "width": 1400,
+        "height": 933
+      },
+      "productId": "pv-br-15",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1IOGf7dAQ8dZvDy1MqKKxPSldSfLXBOpf",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 12",
+      "originalFilename": "Luxury Walnut Bedroom Retreat-5.png",
+      "sha256": "d7e8a51462f7954e48b2c35505d4b054f0ffc60f349f7e9d9d4eb32fa11725f3",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/rounded-walnut-bedroom-set/01-cover-640.webp",
+        "full": "/images/catalog/bedrooms/rounded-walnut-bedroom-set/01-cover-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-br-16",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "14LuQTsUpDRTe2W6404opCcp4FW-nQokG",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 12",
+      "originalFilename": "Warm Neutral Bedroom Vanity Corner-14.png",
+      "sha256": "e52709a36a3c4fb4a0e9a431600dbb2de7c5c0437bf6c235368029df55c84439",
+      "originalDimensions": [
+        1199,
+        1312
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/rounded-walnut-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/bedrooms/rounded-walnut-bedroom-set/02-detail-1400.webp",
+        "width": 1199,
+        "height": 1312
+      },
+      "productId": "pv-br-16",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1xIP6nwVucONS_f9QqWjYerflGyyJknj3",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 13",
+      "originalFilename": "Warm Minimalist Bedroom Retreat-1.png",
+      "sha256": "7eebc6160e7a736d9f3df4b2cf8c02b8f6d240aac818cfc3c81dd690fd19f104",
+      "originalDimensions": [
+        1536,
+        1024
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/01-cover-640.webp",
+        "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/01-cover-1400.webp",
+        "width": 1400,
+        "height": 933
+      },
+      "productId": "pv-br-17",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1yQjkDu9RByYMwmks6r46Irjwn2OZid1s",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 13",
+      "originalFilename": "Luxurious Neutral Bedroom Retreat-7.png",
+      "sha256": "81bed50979bbc1a8c9356c417736dbfd6c1ca76ac3dc3945ac6482a47e452d64",
+      "originalDimensions": [
+        1536,
+        1024
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/02-detail-1400.webp",
+        "width": 1400,
+        "height": 933
+      },
+      "productId": "pv-br-17",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1SAy5ght4thiIWl1RJsYLNSxioM3_laaZ",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 13",
+      "originalFilename": "Warmly Lit Contemporary Vanity Corner-13.png",
+      "sha256": "42b97ae102ee7e900f9ff1dcd95816bea8dc8c98c24fc19564b84027d5ce659e",
+      "originalDimensions": [
+        1199,
+        1312
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-640.webp",
+        "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-1400.webp",
+        "width": 1199,
+        "height": 1312
+      },
+      "productId": "pv-br-17",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1jTFfvF3f2BFbb2Phy5IKJ9JfAc4CWABY",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 13",
+      "originalFilename": "Warm Modern Walk-In Wardrobe-10.png",
+      "sha256": "319b43ac394b1c5933ba0b25d823df34b45fbe1ddfc4caf07ab2270a3e9530bb",
+      "originalDimensions": [
+        1190,
+        1322
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/04-detail-640.webp",
+        "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/04-detail-1400.webp",
+        "width": 1190,
+        "height": 1322
+      },
+      "productId": "pv-br-17",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1A0s2yOxJYdNT_2M3qNJgKfsIq6Nj5gvl",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 14",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 12_34_39 PM-5.png",
+      "sha256": "4de236c4899f01a1ee738e854144c4d1ddcbbf249d41ac181f185645b984e102",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/classic-white-panel-bedroom-set/01-cover-640.webp",
+        "full": "/images/catalog/bedrooms/classic-white-panel-bedroom-set/01-cover-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-br-18",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1RuvYb0kGJcXqMTYbK7INuiQLyt6-239x",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 14",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 12_34_42 PM-8.png",
+      "sha256": "6d4366123f2252873513c878aa9c9c6a26efc0ea89629ba832ed71e04509f1b2",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/classic-white-panel-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/bedrooms/classic-white-panel-bedroom-set/02-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-br-18",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1PbPQX8Pa2bZLNtXzXK4N_GJqZc6HYC0t",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 14",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 12_34_41 PM-7.png",
+      "sha256": "162e04e9182a754ea0f2a0945ba9d31948d628ef17a0863c8ae45a43997d4de5",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/classic-white-panel-bedroom-set/03-detail-640.webp",
+        "full": "/images/catalog/bedrooms/classic-white-panel-bedroom-set/03-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-br-18",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1bnxZA5rxrt7VEL7Jik75ilcIJsiFNbzi",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 14",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 12_34_40 PM-6.png",
+      "sha256": "68b9b5d2651ddf2097ba6d7c5f391679bff6262295af3ce4b14285818d685316",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/classic-white-panel-bedroom-set/04-detail-640.webp",
+        "full": "/images/catalog/bedrooms/classic-white-panel-bedroom-set/04-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-br-18",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1D9qdtICkn8AevbQR2ak-gBMMBrMdRZfq",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 15",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 12_34_35 PM-1.png",
+      "sha256": "8fde7125494ee8f5b4b55f882d9a64efdf065ec71cbd36406522e00a8c20cc86",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/walnut-gloss-bedroom-set/01-cover-640.webp",
+        "full": "/images/catalog/bedrooms/walnut-gloss-bedroom-set/01-cover-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-br-19",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1gYm_m-Se81vk8-eAYkh8ioDJNdoDgVcN",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 15",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 12_34_36 PM-2.png",
+      "sha256": "dcc2a7c729065b49501b5afd0ba9ebbc51213a3b20a41143f8812f43e06b949a",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/walnut-gloss-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/bedrooms/walnut-gloss-bedroom-set/02-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-br-19",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1ZKmKJorDpBQebvnEeJL-bfZzboQvuemw",
+      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 15",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 12_34_37 PM-3.png",
+      "sha256": "e56b503b591b9360d6aaa0cb0e75dd1e1e062267d277657ae5ccb7b6512074ee",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/bedrooms/walnut-gloss-bedroom-set/03-detail-640.webp",
+        "full": "/images/catalog/bedrooms/walnut-gloss-bedroom-set/03-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-br-19",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1c9zJbwLzjhUwUbZ-Cu7HSB4D4Cdb7Q1w",
+      "drivePath": "اطفال/New folder/room 9",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 01_05_16 PM-5.png",
+      "sha256": "7724d2d2c5b779dc409fadf5b7932b06de204ff8e457cefe8371539c97b94547",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/oak-white-twin-kids-bedroom-set/01-cover-640.webp",
+        "full": "/images/catalog/kids-bedrooms/oak-white-twin-kids-bedroom-set/01-cover-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-kb-12",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1rXoInofa_F-9cXatKIGFycdVC5Jj-fKk",
+      "drivePath": "اطفال/New folder/room 9",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 01_05_17 PM-6.png",
+      "sha256": "dc8f21c71b3e8e227bf91d51d4435a90400bebd7b816378976ed0ff5b1e61cbb",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/oak-white-twin-kids-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/oak-white-twin-kids-bedroom-set/02-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-kb-12",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1fXThKW-o21M0rEVSEf0bJDiWIilHcc-x",
+      "drivePath": "اطفال/New folder/room 9",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 01_05_19 PM-7.png",
+      "sha256": "38ee7a6688dd04439cec2c3367bed0eb02f0e0edb6903b1eb9184dca21ccb27d",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/oak-white-twin-kids-bedroom-set/03-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/oak-white-twin-kids-bedroom-set/03-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-kb-12",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1CKlV_0azkcQhF-XWeVQL8sC9RW7LQgZX",
+      "drivePath": "اطفال/New folder/room 9",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 01_05_20 PM-8.png",
+      "sha256": "bd8081dffffbb844d0dfd5969a9ff3da5f8da4260c649df3ab3477c705ad1993",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/oak-white-twin-kids-bedroom-set/04-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/oak-white-twin-kids-bedroom-set/04-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-kb-12",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "13D0lIRhMbm8FdnaojY6FNO2pm6jSQm8U",
+      "drivePath": "اطفال/New folder/room 10",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 01_05_12 PM-1.png",
+      "sha256": "fccb4b67f815a268e13ac43f3972774292305dbafaba388f4fe193ce0752d610",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/walnut-cream-twin-kids-bedroom-set/01-cover-640.webp",
+        "full": "/images/catalog/kids-bedrooms/walnut-cream-twin-kids-bedroom-set/01-cover-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-kb-13",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1XOSW-sWmUoDRX-uBvvKOZrHaPgR0wyO5",
+      "drivePath": "اطفال/New folder/room 10",
+      "originalFilename": "Warm Modern Wardrobe Bedroom.png",
+      "sha256": "5eb1738ec21c8172dc4c1414d6dc8b0e94f9d8cc738f3645842b3d355ff5f48c",
+      "originalDimensions": [
+        1449,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/walnut-cream-twin-kids-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/walnut-cream-twin-kids-bedroom-set/02-detail-1400.webp",
+        "width": 1400,
+        "height": 1049
+      },
+      "productId": "pv-kb-13",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "160N3yT11lNyKF2MhJC48SY2owyP3gsJa",
+      "drivePath": "اطفال/New folder/room 10",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 01_05_15 PM-4.png",
+      "sha256": "3f94ed77bd647c79228e23eb019a14217c6a2a2d6188665b91b09a39674bfce6",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/walnut-cream-twin-kids-bedroom-set/03-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/walnut-cream-twin-kids-bedroom-set/03-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-kb-13",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1kH644xjx4XqmIudmSOsDchfuDHn9jWYU",
+      "drivePath": "اطفال/New folder/room 11",
+      "originalFilename": "Warm Contemporary Twin Bedroom.png",
+      "sha256": "cc1a1d6c7ce67634f598efe244fdb1ce80d230e92df42526c1fe853f6c5ce13a",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/chevron-headboard-twin-kids-bedroom-set/01-cover-640.webp",
+        "full": "/images/catalog/kids-bedrooms/chevron-headboard-twin-kids-bedroom-set/01-cover-1400.webp",
+        "width": 1400,
+        "height": 788
+      },
+      "productId": "pv-kb-14",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1IDFcyiQ3_McNg-ADPPS_gXcgXMt4as6I",
+      "drivePath": "اطفال/New folder/room 11",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 01_39_25 PM-1.png",
+      "sha256": "47ece0f2860017fc7692072c70bf1133185448f248382d530d9f545d622e8de8",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/chevron-headboard-twin-kids-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/chevron-headboard-twin-kids-bedroom-set/02-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-kb-14",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1PVgTdogx6OOGkjQL-A8k7EOu9r4nPoR6",
+      "drivePath": "اطفال/New folder/room 11",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 01_39_26 PM-2.png",
+      "sha256": "84aac5b24d658fd92cdcc282e371a09a33c2144b0aedfd943f98c7ae063b2209",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/chevron-headboard-twin-kids-bedroom-set/03-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/chevron-headboard-twin-kids-bedroom-set/03-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-kb-14",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1AEaa5OIDCdez2cfeuE4KS7jLS8mj3oYp",
+      "drivePath": "اطفال/New folder/room 12",
+      "originalFilename": "Warm Symmetry in a Modern Bedroom-1.png",
+      "sha256": "9a30e2d0deb37762bda1569965f9989c6d82e0379f34ed5020253a330ef48f9b",
+      "originalDimensions": [
+        1536,
+        1024
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/arched-walnut-twin-kids-bedroom-set/01-cover-640.webp",
+        "full": "/images/catalog/kids-bedrooms/arched-walnut-twin-kids-bedroom-set/01-cover-1400.webp",
+        "width": 1400,
+        "height": 933
+      },
+      "productId": "pv-kb-15",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "153ACJf2IpPFCaLNwKobPxqQoaHcmIUAx",
+      "drivePath": "اطفال/New folder/room 12",
+      "originalFilename": "Elegant Twin Beds in a Warm Modern Bedroom-2.png",
+      "sha256": "102b7c37970c3eee0809fb6e39188b3c80f142eeec7a35e8c044358db376b67c",
+      "originalDimensions": [
+        1536,
+        1024
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/arched-walnut-twin-kids-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/arched-walnut-twin-kids-bedroom-set/02-detail-1400.webp",
+        "width": 1400,
+        "height": 933
+      },
+      "productId": "pv-kb-15",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1yYgVr9b4icY-RtNpEE13vumFYWYBxrpg",
+      "drivePath": "اطفال/New folder/room 12",
+      "originalFilename": "Modern Walnut Wardrobe with Illuminated Mirrors-3.png",
+      "sha256": "8e03990cf34580c20b4291c51eda6593ab8e1a71792618d018a69f39c41a4661",
+      "originalDimensions": [
+        1199,
+        1312
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/arched-walnut-twin-kids-bedroom-set/03-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/arched-walnut-twin-kids-bedroom-set/03-detail-1400.webp",
+        "width": 1199,
+        "height": 1312
+      },
+      "productId": "pv-kb-15",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1phSqNTiaMyBBuX6-6LdngMIsIcA1BxIt",
+      "drivePath": "اطفال/New folder/room 12",
+      "originalFilename": "Warm Walnut Vanity with Sculptural Accents-4.png",
+      "sha256": "c60169f37ab2df5240f86a2519bbe5018bd5dfc73e63e2019c6d36cb2cd7ec95",
+      "originalDimensions": [
+        1122,
+        1402
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/arched-walnut-twin-kids-bedroom-set/04-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/arched-walnut-twin-kids-bedroom-set/04-detail-1400.webp",
+        "width": 1122,
+        "height": 1402
+      },
+      "productId": "pv-kb-15",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1l67S_JZrYUi_t3ix7tfpNi3Zflwyk023",
+      "drivePath": "اطفال/New folder/room 13",
+      "originalFilename": "Pastel Twin Bedroom with Teddy and Bunny-2.png",
+      "sha256": "00dc1f1cb433af1ae51e3984444d2c1ae0f55e11945262af2b5a580c0210b965",
+      "originalDimensions": [
+        1536,
+        1024
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/grey-arch-twin-kids-bedroom-set/01-cover-640.webp",
+        "full": "/images/catalog/kids-bedrooms/grey-arch-twin-kids-bedroom-set/01-cover-1400.webp",
+        "width": 1400,
+        "height": 933
+      },
+      "productId": "pv-kb-16",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1akWxlrg01yYbWr6rbkE018oLNJMuKt3G",
+      "drivePath": "اطفال/New folder/room 13",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 10_42_01 AM-4.png",
+      "sha256": "228b527579d899228d6740158d3c665a095db1e941fbf4a37c9d5b213424c09c",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/grey-arch-twin-kids-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/grey-arch-twin-kids-bedroom-set/02-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-kb-16",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1PtVR5awU7x_4R_Nf5foSWPQ1XZ4j8tQ2",
+      "drivePath": "اطفال/New folder/room 13",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 10_42_09 AM-6.png",
+      "sha256": "89dba00a5c7bfaebc70805ca0d0bee5dcaa0461224c76f8f9c25cf516e1c14c2",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/grey-arch-twin-kids-bedroom-set/03-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/grey-arch-twin-kids-bedroom-set/03-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-kb-16",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1LBLadhhr2jl5AX_ZUXGnCXLyO8kpcIgN",
+      "drivePath": "اطفال/New folder/room 14",
+      "originalFilename": "Modern Pastel Twin Bedroom Retreat-3.png",
+      "sha256": "9da8df713d7d878c10f9a3dd8af35a1c44f83e2caeca35d743fb6934d239ffff",
+      "originalDimensions": [
+        1536,
+        1024
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/scalloped-twin-kids-bedroom-set/01-cover-640.webp",
+        "full": "/images/catalog/kids-bedrooms/scalloped-twin-kids-bedroom-set/01-cover-1400.webp",
+        "width": 1400,
+        "height": 933
+      },
+      "productId": "pv-kb-17",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1DRRgv0Bl0DIq2vzHPifxHe_c8CRwHXaR",
+      "drivePath": "اطفال/New folder/room 14",
+      "originalFilename": "Elegant Dusty Rose Upholstered Bed-5.png",
+      "sha256": "6f9e2545257e289c92f3b32d4dbfb08694f5ccf79c7fd109b6350d5bd9d6a51d",
+      "originalDimensions": [
+        1536,
+        1024
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/scalloped-twin-kids-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/scalloped-twin-kids-bedroom-set/02-detail-1400.webp",
+        "width": 1400,
+        "height": 933
+      },
+      "productId": "pv-kb-17",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1oB8hgi7qsytaa51-AQIoZttN-d_efYzr",
+      "drivePath": "اطفال/New folder/room 14",
+      "originalFilename": "Scalloped Modern Wardrobe in Beige Interior-8.png",
+      "sha256": "844c6f7d8ec96a7f0d99f2ab6c7238b1ab5005b6438322a90202613c7a50655c",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/scalloped-twin-kids-bedroom-set/03-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/scalloped-twin-kids-bedroom-set/03-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-kb-17",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "12MN2XQicBZE3XW7ytXyPipaxuovANCZZ",
+      "drivePath": "ركن/عربي",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 02_05_56 PM-1.png",
+      "sha256": "104a57e337f5dd568aaebe7469c2f4c098515617200ad9ed8d90024cdd242239",
+      "originalDimensions": [
+        1024,
+        1536
+      ],
+      "local": {
+        "card": "/images/catalog/corner-sofas/modular-chaise-corner-sofa/01-cover-640.webp",
+        "full": "/images/catalog/corner-sofas/modular-chaise-corner-sofa/01-cover-1400.webp",
+        "width": 1024,
+        "height": 1536
+      },
+      "productId": "pv-co-08",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1yUdyQI1WrEc0HwCH2zM3XJxX8eX8dGfw",
+      "drivePath": "ركن/عربي",
+      "originalFilename": "ChatGPT Image Nov 10, 2026, 02_06_09 PM-4.png",
+      "sha256": "a45087c204851340582dd4905e0bad14718a759cc5e70d6d0daac8913a7501d9",
+      "originalDimensions": [
+        1024,
+        1536
+      ],
+      "local": {
+        "card": "/images/catalog/corner-sofas/modular-chaise-corner-sofa/02-detail-640.webp",
+        "full": "/images/catalog/corner-sofas/modular-chaise-corner-sofa/02-detail-1400.webp",
+        "width": 1024,
+        "height": 1536
+      },
+      "productId": "pv-co-08",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "10Dj-8aoa_OJqIzZvMMpyTiKTG50aMltO",
+      "drivePath": "ركن/عربي",
+      "originalFilename": "ChatGPT Image Nov 18, 2026, 01_21_10 PM-2.png",
+      "sha256": "b42bc579ead7ea4229ce28abe4c3c306bc732c21d36d255ef3fe13753e830d3e",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/corner-sofas/grey-storage-sofa-bed-corner/01-cover-640.webp",
+        "full": "/images/catalog/corner-sofas/grey-storage-sofa-bed-corner/01-cover-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-co-09",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1FokYyRrLbxjZ83KwT58HejfkxFw6lFXe",
+      "drivePath": "ركن/عربي",
+      "originalFilename": "ChatGPT Image Nov 18, 2026, 01_21_09 PM-1.png",
+      "sha256": "f2bd9aeb0fdeab446cb058701a4ae10d00a501a2890b51713856f4f4ed0b71f8",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/corner-sofas/grey-storage-sofa-bed-corner/02-detail-640.webp",
+        "full": "/images/catalog/corner-sofas/grey-storage-sofa-bed-corner/02-detail-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-co-09",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1QAfrM0IwwmmwIvECzG9lppIxv-sitdQ2",
+      "drivePath": "ركن/عربي",
+      "originalFilename": "ChatGPT Image Nov 18, 2026, 03_41_01 PM-1.png",
+      "sha256": "5eb9e5f3b0b0b70dae87003f6b46bc83563c4d94f62a3ca71d64a203dfccf7ed",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/corner-sofas/cream-modular-corner-sofa/01-cover-640.webp",
+        "full": "/images/catalog/corner-sofas/cream-modular-corner-sofa/01-cover-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-co-10",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1l6UbD-uwH3LHnp7xJWfxH0NpiEdkI2tL",
+      "drivePath": "ركن/عربي",
+      "originalFilename": "ChatGPT Image Nov 18, 2026, 03_41_07 PM-3.png",
+      "sha256": "dbd62f8a913cf82c6d4e12dd9330ecef668ed0ca4337b7049941f7efe123ebbf",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/corner-sofas/cream-sectional-with-lounge-chair/01-cover-640.webp",
+        "full": "/images/catalog/corner-sofas/cream-sectional-with-lounge-chair/01-cover-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-co-11",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1L1i-Phl7hqObef2iIxCDZSPQ8gtRZQUh",
+      "drivePath": "ركن/عربي",
+      "originalFilename": "ChatGPT Image Nov 18, 2026, 03_41_08 PM-4.png",
+      "sha256": "b165e80a53b51424b2d7088f1143f94760029e655226adcd3820e32ac5efdb88",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/corner-sofas/curved-chaise-corner-sofa/01-cover-640.webp",
+        "full": "/images/catalog/corner-sofas/curved-chaise-corner-sofa/01-cover-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-co-12",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1W0XcM6bF9P1cBUrJrfX6J41lbNjdthpy",
+      "drivePath": "ركن/عربي",
+      "originalFilename": "Luxurious Walnut and Beige Corner Sofa-4.png",
+      "sha256": "d9ddc9f375f313d4aef8e307933ee18fface7f6de0f396998393cb436f8c34e1",
+      "originalDimensions": [
+        1055,
+        1491
+      ],
+      "local": {
+        "card": "/images/catalog/corner-sofas/walnut-beige-corner-sofa/01-cover-640.webp",
+        "full": "/images/catalog/corner-sofas/walnut-beige-corner-sofa/01-cover-1400.webp",
+        "width": 1055,
+        "height": 1491
+      },
+      "productId": "pv-co-13",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1EZkNinIwfUjihWZMKPJMZWaeD9GIOuDN",
+      "drivePath": "ركن/عربي",
+      "originalFilename": "Olive and Walnut Luxury Living Room-4.png",
+      "sha256": "698b5fd875b2b3417243749625f030015a0d3f605fca008318f8e48f1536d418",
+      "originalDimensions": [
+        1752,
+        897
+      ],
+      "local": {
+        "card": "/images/catalog/corner-sofas/olive-chaise-sectional/01-cover-640.webp",
+        "full": "/images/catalog/corner-sofas/olive-chaise-sectional/01-cover-1400.webp",
+        "width": 1400,
+        "height": 717
+      },
+      "productId": "pv-co-14",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1_dYdADLAec3tnTnc_SMH8CvOBpiyTv5N",
+      "drivePath": "ركن/عربي",
+      "originalFilename": "ChatGPT Image Nov 17, 2026, 02_27_55 PM-2.png",
+      "sha256": "e3a6668929eb7c09cec265ba5e7f35fa92f195756ef7049378a5666d8d7158b7",
+      "originalDimensions": [
+        1448,
+        1086
+      ],
+      "local": {
+        "card": "/images/catalog/corner-sofas/ribbed-chaise-corner-sofa/01-cover-640.webp",
+        "full": "/images/catalog/corner-sofas/ribbed-chaise-corner-sofa/01-cover-1400.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      "productId": "pv-co-15",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "119-wT-hRLfuLyPGzGwc-yQOytR0ReVAs",
+      "drivePath": "ركن/عربي",
+      "originalFilename": "Sunlit Neutral Luxury Living Room.png",
+      "sha256": "64d2acce75c604fea594aeb2c4ada01ce9e1882e43361831825f7b39bd5831c5",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "local": {
+        "card": "/images/catalog/corner-sofas/ribbed-chaise-corner-sofa/02-detail-640.webp",
+        "full": "/images/catalog/corner-sofas/ribbed-chaise-corner-sofa/02-detail-1400.webp",
+        "width": 1400,
+        "height": 788
+      },
+      "productId": "pv-co-15",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1iHyURSOpMO9hl6tyybgtuCZt21WFlbf0",
+      "drivePath": "ركن/عربي",
+      "originalFilename": "Warm Ivory Bouclé Sectional in Illuminated Showroom-1 (1).png",
+      "sha256": "872b3905cea5f7eaff70a7906603b2fe65e7770f514a66758304a0be1e044e06",
+      "originalDimensions": [
+        1055,
+        1491
+      ],
+      "local": {
+        "card": "/images/catalog/corner-sofas/ivory-l-shape-sectional/01-cover-640.webp",
+        "full": "/images/catalog/corner-sofas/ivory-l-shape-sectional/01-cover-1400.webp",
+        "width": 1055,
+        "height": 1491
+      },
+      "productId": "pv-co-16",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1fxQMyubVOnWZ_B7X3YNXB9Kz6M89V1Ti",
+      "drivePath": "انتريه/عربي",
+      "originalFilename": "ChatGPT Image Nov 19, 2026, 12_59_18 PM-1.png",
+      "sha256": "2719f06bae1c27dc128cf9a4c72b5518b14e15db7c8f62836674edaeb6ef680f",
+      "originalDimensions": [
+        1055,
+        1491
+      ],
+      "local": {
+        "card": "/images/catalog/living-rooms/soft-curve-living-set/01-cover-640.webp",
+        "full": "/images/catalog/living-rooms/soft-curve-living-set/01-cover-1400.webp",
+        "width": 1055,
+        "height": 1491
+      },
+      "productId": "pv-lr-14",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1TYVDfeIOxlDDs-KQg7q8L4FSaDG7t5H-",
+      "drivePath": "انتريه/عربي",
+      "originalFilename": "ChatGPT Image Nov 19, 2026, 12_59_21 PM-2.png",
+      "sha256": "e7c3700558029e3e6dd86de30d943e5d5f0a8b803b40d7e19fc98e4b73368e81",
+      "originalDimensions": [
+        1055,
+        1491
+      ],
+      "local": {
+        "card": "/images/catalog/living-rooms/twin-curve-living-set/01-cover-640.webp",
+        "full": "/images/catalog/living-rooms/twin-curve-living-set/01-cover-1400.webp",
+        "width": 1055,
+        "height": 1491
+      },
+      "productId": "pv-lr-15",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1khdSGrLMvHFm_h9v17cmswgHZJvyaRoC",
+      "drivePath": "انتريه/عربي",
+      "originalFilename": "ChatGPT Image Nov 19, 2026, 12_59_23 PM-3.png",
+      "sha256": "1c4ce7177dd036817ff1a3b984562cfd92a605e06563564bfd411b66723f57be",
+      "originalDimensions": [
+        1055,
+        1491
+      ],
+      "local": {
+        "card": "/images/catalog/living-rooms/elegant-beige-living-set/01-cover-640.webp",
+        "full": "/images/catalog/living-rooms/elegant-beige-living-set/01-cover-1400.webp",
+        "width": 1055,
+        "height": 1491
+      },
+      "productId": "pv-lr-16",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1N6EuOnepB0vO9KaB60_b2xZL5XLXgpmR",
+      "drivePath": "انتريه/عربي",
+      "originalFilename": "ChatGPT Image Nov 19, 2026, 12_59_26 PM-4.png",
+      "sha256": "9eba0fabe157191fb76b861ef326a3c722ec9bd3c892572603daa86fc6451a2e",
+      "originalDimensions": [
+        1055,
+        1491
+      ],
+      "local": {
+        "card": "/images/catalog/living-rooms/classic-wood-frame-living-set/01-cover-640.webp",
+        "full": "/images/catalog/living-rooms/classic-wood-frame-living-set/01-cover-1400.webp",
+        "width": 1055,
+        "height": 1491
+      },
+      "productId": "pv-lr-17",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1Tu4cRf0isROU8T_HWiPGYJVyRAh6bVYY",
+      "drivePath": "انتريه/عربي",
+      "originalFilename": "Cream Curve Sofa Advertisement-2.png",
+      "sha256": "8340c408f9556bcdae76695f97cbc75fcdd1acebb8b7dc24eff62887cb3d5d3c",
+      "originalDimensions": [
+        1025,
+        1535
+      ],
+      "local": {
+        "card": "/images/catalog/living-rooms/cream-curve-sofa/01-cover-640.webp",
+        "full": "/images/catalog/living-rooms/cream-curve-sofa/01-cover-1400.webp",
+        "width": 1025,
+        "height": 1535
+      },
+      "productId": "pv-lr-18",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1MpJszrM_dkEW1eWjjBiDoK-wkQ6uR_ED",
+      "drivePath": "انتريه/عربي",
+      "originalFilename": "Warm Neutral Luxury Living Room (3).png",
+      "sha256": "24cdbc87e0949e21c7e8444155faa01d246f7d726f1954b5f5e5df953eb25015",
+      "originalDimensions": [
+        1122,
+        1402
+      ],
+      "local": {
+        "card": "/images/catalog/living-rooms/walnut-arm-cream-sofa/01-cover-640.webp",
+        "full": "/images/catalog/living-rooms/walnut-arm-cream-sofa/01-cover-1400.webp",
+        "width": 1122,
+        "height": 1402
+      },
+      "productId": "pv-lr-19",
+      "role": "cover"
+    },
+    {
+      "driveFileId": "1T_rhWU7H9G0S1NIY21STmdNlewFgfI7m",
+      "drivePath": "اطفال/New folder/room 2",
+      "originalFilename": "07_Wardrobe_Interior_Detail.jpg",
+      "sha256": "fa92dfd1405435862f1b5082204ca73f7e8b0d82c5920350df5bc23e19aca5bd",
+      "originalDimensions": [
+        462,
+        175
+      ],
+      "local": {
+        "card": "/images/catalog/kids-bedrooms/study-wall-twin-kids-bedroom-set/07-detail-640.webp",
+        "full": "/images/catalog/kids-bedrooms/study-wall-twin-kids-bedroom-set/07-detail-1400.webp",
+        "width": 462,
+        "height": 175
+      },
+      "productId": "pv-kb-05",
+      "role": "detail"
+    },
+    {
+      "driveFileId": "1IrfnoK2ikHPbMGyRjXkSwj2mbwGXD9h5",
+      "drivePath": "انتريه/عربي",
+      "originalFilename": "Warm Neutral Luxury Living Room (2).png",
+      "sha256": "70361746e800c6d90dacada21905e9331d34d2dba9f5dca750a93604f69c187b",
+      "originalDimensions": [
+        1672,
+        941
+      ],
+      "local": {
+        "card": "/images/catalog/living-rooms/pearl-ribbed-sofa/02-detail-640.webp",
+        "full": "/images/catalog/living-rooms/pearl-ribbed-sofa/02-detail-1400.webp",
+        "width": 1400,
+        "height": 788
+      },
+      "productId": "pv-lr-13",
+      "role": "detail"
+    }
+  ]
+}

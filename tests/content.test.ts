@@ -16,7 +16,7 @@ describe('translations', () => {
   });
   it('has no empty visible strings except intentionally blank optional fields', () => {
     const empties = (o: unknown, p = ''): string[] =>
-      typeof o === 'string' ? (o.trim() === '' && !/(\.term|\.alt|body)$/.test(p) ? [p] : []) :
+      typeof o === 'string' ? (o.trim() === '' && !/(\.term|\.alt|body|^ship\.payIntro|^ship\.payNote)$/.test(p) ? [p] : []) :
       Array.isArray(o) ? o.flatMap((v, i) => empties(v, `${p}[${i}]`)) :
       o && typeof o === 'object' ? Object.entries(o).flatMap(([k, v]) => empties(v, p ? `${p}.${k}` : k)) : [];
     expect(empties(en)).toEqual([]);
@@ -86,7 +86,7 @@ describe('catalog import tooling', () => {
     expect(renditionPath(rec, 640)).toBe('public/assets/furniture/bedroom-sets/en/img-x-640.webp');
   });
   it('every image source references the active Drive inventory, or is explicitly flagged (remapped / orphaned / deleted-by-decision)', async () => {
-    const inv = (await import('../data/catalog-import/drive-inventory-2026-11-09.json')).default as { activeImages: number; files: { driveFileId: string }[]; deletedExcludedIds: string[] };
+    const inv = (await import('../data/catalog-import/drive-inventory-2026-11-26.json')).default as { activeImages: number; files: { driveFileId: string }[]; deletedExcludedIds: string[] };
     expect(inv.activeImages).toBe(inv.files.length);
     const ids = new Set(inv.files.map((f) => f.driveFileId));
     for (const p of allProducts()) for (const loc of ['en', 'ar'] as const) for (const im of p.gallery[loc]) {

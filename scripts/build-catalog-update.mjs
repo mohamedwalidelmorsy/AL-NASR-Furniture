@@ -89,6 +89,7 @@ const added = [];
 for (const g of upd.products) {
   const unitKind = g.unitKind ?? UNIT_KIND[g.category];
   const gallery = { en: [], ar: [] };
+  fs.rmSync(path.join(root, 'public/images/catalog', g.category, g.slug), { recursive: true, force: true }); // no stale renditions when a gallery shrinks
   for (const [i, sel] of g.images.entries()) {
     const { f, buf } = original(sel.id);
     const role = i === 0 ? 'cover' : 'detail';
@@ -109,13 +110,18 @@ const all = [...legacy, ...kept];
 for (const x of upd.extraImages) {
   const p = all.find((q) => q.id === x.productId);
   if (!p) throw new Error(`unknown product ${x.productId}`);
-  if (p.gallery.en.some((im) => im.source.driveFileId === x.driveFileId)) continue;
+  if (x.review) p.review = { ...(p.review ?? {}), extraImage: { driveFileId: x.driveFileId, ...x.review } };
+  const present = p.gallery.en.find((im) => im.source.driveFileId === x.driveFileId);
+  if (present) {
+    const f = byId.get(x.driveFileId);
+    manifest.push({ driveFileId: f.driveFileId, drivePath: f.drivePath, originalFilename: f.originalFilename, sha256: f.sha256, originalDimensions: [f.width, f.height], local: { card: present.card, full: present.full, width: present.width, height: present.height }, productId: p.id, role: 'detail' });
+    continue;
+  }
   const { f, buf } = original(x.driveFileId);
   const n = String(p.gallery.en.length + 1).padStart(2, '0');
   const rend = await render(buf, `images/catalog/${p.categoryId}/${p.slug}/${n}-detail`);
   for (const loc of ['en', 'ar']) p.gallery[loc].push({ ...rend, role: 'detail', alt: x.label, source: source(f, loc) });
   if (x.clearsSourceGap) delete p.sourceGap;
-  if (x.review) p.review = { ...(p.review ?? {}), extraImage: { driveFileId: x.driveFileId, ...x.review } };
   manifest.push({ driveFileId: f.driveFileId, drivePath: f.drivePath, originalFilename: f.originalFilename, sha256: f.sha256, originalDimensions: [f.width, f.height], local: rend, productId: p.id, role: 'detail' });
 }
 

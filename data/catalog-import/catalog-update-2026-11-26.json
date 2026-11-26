@@ -2,183 +2,959 @@
   "generatedFor": "catalog update 2026-11-26",
   "notes": "Hand-reviewed groups. Every new image was downloaded and looked at; product = Drive room folder (bedrooms, kids). The flat Corner/Living folders were grouped by visual comparison (same design = one product). Names on posters are taken from the poster; other names describe only what is visible. No materials, dimensions or specifications are stated.",
   "excluded": [
-    { "driveFileId": "1Wded_uF5A1XsBhkjZFxlxvJS3fLUqufg", "reason": "byte-identical duplicate (SHA-256) of 1_dYdADLAec3tnTnc_SMH8CvOBpiyTv5N" },
-    { "driveFileId": "1fb78UB_YVLkfpoCha2vDH1-xsNvc-uqb", "reason": "visual duplicate of 1l6UbD-uwH3LHnp7xJWfxH0NpiEdkI2tL (same sectional, lounge chair and table; different render)" },
-    { "driveFileId": "1KZoygbgToOP15BDs1Ab_t5Cfms35LQc2", "reason": "WhatsApp photo, bedroom room 8 — kept unpublished (2026-11-09 decision: needs business confirmation)" },
-    { "driveFileId": "1Djlkl7xdYjjHS0BJEck1ZU3WlWPm-uy4", "reason": "kids room 3 infographic poster with unverified specs — kept unpublished (2026-11-09 decision)" }
+    {
+      "driveFileId": "1Wded_uF5A1XsBhkjZFxlxvJS3fLUqufg",
+      "reason": "byte-identical duplicate (SHA-256) of 1_dYdADLAec3tnTnc_SMH8CvOBpiyTv5N"
+    },
+    {
+      "driveFileId": "1fb78UB_YVLkfpoCha2vDH1-xsNvc-uqb",
+      "reason": "visual duplicate of 1l6UbD-uwH3LHnp7xJWfxH0NpiEdkI2tL (same sectional, lounge chair and table; different render)",
+      "decision": {
+        "status": "approved",
+        "by": "owner",
+        "date": "2026-11-26",
+        "basis": "visual review report (AL-NASR-VISUAL-REVIEW-2026-11-26)",
+        "note": "Exclusion confirmed: same scene as pv-co-11."
+      }
+    },
+    {
+      "driveFileId": "1KZoygbgToOP15BDs1Ab_t5Cfms35LQc2",
+      "reason": "WhatsApp photo, bedroom room 8 — kept unpublished (2026-11-09 decision: needs business confirmation)"
+    },
+    {
+      "driveFileId": "1Djlkl7xdYjjHS0BJEck1ZU3WlWPm-uy4",
+      "reason": "kids room 3 infographic poster with unverified specs — kept unpublished (2026-11-09 decision)"
+    },
+    {
+      "driveFileId": "1yQjkDu9RByYMwmks6r46Irjwn2OZid1s",
+      "reason": "Drive room 13 bed detail: gold-strip headboard matches neither pv-br-17 nor pv-br-15 full views",
+      "decision": {
+        "status": "approved",
+        "by": "owner",
+        "date": "2026-11-26",
+        "basis": "visual review report (AL-NASR-VISUAL-REVIEW-2026-11-26)",
+        "note": "Removed from pv-br-17."
+      }
+    }
   ],
   "extraImages": [
-    { "productId": "pv-kb-05", "driveFileId": "1T_rhWU7H9G0S1NIY21STmdNlewFgfI7m", "label": { "en": "Wardrobe interior detail", "ar": "تفصيلة داخل الدولاب" }, "clearsSourceGap": true },
-    { "productId": "pv-lr-13", "driveFileId": "1IrfnoK2ikHPbMGyRjXkSwj2mbwGXD9h5", "label": { "en": "Room view with matching armchair", "ar": "منظر داخل الغرفة مع كرسي مطابق" }, "review": { "note": "Same ribbed design, gold-tone arm slot and sled legs as the Pearl Ribbed Sofa poster; owner confirmation requested.", "confidence": "high" } }
+    {
+      "productId": "pv-kb-05",
+      "driveFileId": "1T_rhWU7H9G0S1NIY21STmdNlewFgfI7m",
+      "label": {
+        "en": "Wardrobe interior detail",
+        "ar": "تفصيلة داخل الدولاب"
+      },
+      "clearsSourceGap": true
+    },
+    {
+      "productId": "pv-lr-13",
+      "driveFileId": "1IrfnoK2ikHPbMGyRjXkSwj2mbwGXD9h5",
+      "label": {
+        "en": "Room view with matching armchair",
+        "ar": "منظر داخل الغرفة مع كرسي مطابق"
+      },
+      "review": {
+        "note": "Same ribbed design, gold-tone arm slot and sled legs as the Pearl Ribbed Sofa poster; owner confirmation requested.",
+        "confidence": "high",
+        "decision": {
+          "status": "approved",
+          "by": "owner",
+          "date": "2026-11-26",
+          "basis": "visual review report (AL-NASR-VISUAL-REVIEW-2026-11-26)",
+          "note": "The added room view shows the Pearl Ribbed Sofa design."
+        }
+      }
+    }
   ],
   "products": [
-    { "id": "pv-br-13", "slug": "cushioned-ivory-bedroom-set", "category": "bedrooms",
-      "name": { "en": "Cushioned Ivory Bedroom Set", "ar": "طقم غرفة نوم عاجي بسرير مبطّن" },
-      "desc": { "en": "Bedroom set with a cushioned ivory upholstered bed, floating nightstands and a light wood-tone wardrobe wall with a lit glass-door section and open display shelves.", "ar": "طقم غرفة نوم بسرير مبطّن بلون عاجي وكومودات معلّقة، مع حائط دواليب بدرجة الخشب الفاتح بجزء بأبواب زجاجية مضاءة ورفوف عرض مفتوحة." },
+    {
+      "id": "pv-br-13",
+      "slug": "cushioned-ivory-bedroom-set",
+      "category": "bedrooms",
+      "name": {
+        "en": "Cushioned Ivory Bedroom Set",
+        "ar": "طقم غرفة نوم عاجي بسرير مبطّن"
+      },
+      "desc": {
+        "en": "Bedroom set with a cushioned ivory upholstered bed, floating nightstands and a light wood-tone wardrobe wall with a lit glass-door section and open display shelves.",
+        "ar": "طقم غرفة نوم بسرير مبطّن بلون عاجي وكومودات معلّقة، مع حائط دواليب بدرجة الخشب الفاتح بجزء بأبواب زجاجية مضاءة ورفوف عرض مفتوحة."
+      },
       "images": [
-        { "id": "1Gnn3oMm945aS9DZG-u51RVBucFwYKoqK", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "1ni_JCIYqT-JWXvRQoEjEd85cBXakB9mb", "label": { "en": "Bed detail", "ar": "تفصيلة السرير" } },
-        { "id": "1-7mcNjIXmymJeXVzVk2_UpW-jMmW1x_f", "label": { "en": "Wardrobe detail", "ar": "تفصيلة الدولاب" } },
-        { "id": "1xpCPeSzSbKsDoHtrZpGJrmkIVjwblPNI", "label": { "en": "Nightstand detail", "ar": "تفصيلة الكومود" } } ] },
-    { "id": "pv-br-14", "slug": "slatted-wall-grey-bedroom-set", "category": "bedrooms",
-      "name": { "en": "Slatted-Wall Grey Bedroom Set", "ar": "طقم غرفة نوم رمادي بحائط شرائح خشبية" },
-      "desc": { "en": "Bedroom set with a grey upholstered bed and panel headboard, floating wood-tone nightstands, a slatted wood-tone wall and a glass-door wardrobe with lit shelving.", "ar": "طقم غرفة نوم بسرير رمادي مُنجَّد بهيدبورد بألواح، وكومودات معلّقة بدرجة الخشب، وحائط شرائح بدرجة الخشب، ودولاب بأبواب زجاجية ورفوف مضاءة." },
+        {
+          "id": "1Gnn3oMm945aS9DZG-u51RVBucFwYKoqK",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "1ni_JCIYqT-JWXvRQoEjEd85cBXakB9mb",
+          "label": {
+            "en": "Bed detail",
+            "ar": "تفصيلة السرير"
+          }
+        },
+        {
+          "id": "1-7mcNjIXmymJeXVzVk2_UpW-jMmW1x_f",
+          "label": {
+            "en": "Wardrobe detail",
+            "ar": "تفصيلة الدولاب"
+          }
+        },
+        {
+          "id": "1xpCPeSzSbKsDoHtrZpGJrmkIVjwblPNI",
+          "label": {
+            "en": "Nightstand detail",
+            "ar": "تفصيلة الكومود"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-br-14",
+      "slug": "slatted-wall-grey-bedroom-set",
+      "category": "bedrooms",
+      "name": {
+        "en": "Slatted-Wall Grey Bedroom Set",
+        "ar": "طقم غرفة نوم رمادي بحائط شرائح خشبية"
+      },
+      "desc": {
+        "en": "Bedroom set with a grey upholstered bed and panel headboard, floating wood-tone nightstands, a slatted wood-tone wall and a glass-door wardrobe with lit shelving.",
+        "ar": "طقم غرفة نوم بسرير رمادي مُنجَّد بهيدبورد بألواح، وكومودات معلّقة بدرجة الخشب، وحائط شرائح بدرجة الخشب، ودولاب بأبواب زجاجية ورفوف مضاءة."
+      },
       "images": [
-        { "id": "1dHHYUMXFv2SepDc3tYiP_XiV2W0SqunJ", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "1BllZ-7i7x86MVHxqpSR2lAnK2JyRirz8", "label": { "en": "Bed detail", "ar": "تفصيلة السرير" } },
-        { "id": "1sB9mEszzfA8-wpE7CKC7MjxPz7GbcVKU", "label": { "en": "Wardrobe detail", "ar": "تفصيلة الدولاب" } },
-        { "id": "19LAeJB8c0udGJN9cVEHH_0EHpCl6oKZC", "label": { "en": "Nightstand detail", "ar": "تفصيلة الكومود" } } ] },
-    { "id": "pv-br-15", "slug": "walnut-walk-in-bedroom-set", "category": "bedrooms",
-      "name": { "en": "Walnut Walk-In Bedroom Set", "ar": "طقم غرفة نوم جوزي مع غرفة ملابس زجاجية" },
-      "desc": { "en": "Bedroom set with an ivory channel-tufted headboard, an upholstered bench, walnut-tone nightstands and dresser with a framed mirror, and a glass-front walk-in wardrobe.", "ar": "طقم غرفة نوم بهيدبورد عاجي بتقسيم طولي وبنش مُنجَّد، مع كومودات وتسريحة بدرجة الجوز بمرآة بإطار، وغرفة ملابس بواجهة زجاجية." },
-      "review": { "possibleDuplicateOf": "pv-br-17", "note": "Drive rooms 11 and 13 come from one render batch and look alike (beige bed, glass walk-in wardrobe). Published separately as the owner's folders define them; owner confirmation requested." },
+        {
+          "id": "1dHHYUMXFv2SepDc3tYiP_XiV2W0SqunJ",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "1BllZ-7i7x86MVHxqpSR2lAnK2JyRirz8",
+          "label": {
+            "en": "Bed detail",
+            "ar": "تفصيلة السرير"
+          }
+        },
+        {
+          "id": "1sB9mEszzfA8-wpE7CKC7MjxPz7GbcVKU",
+          "label": {
+            "en": "Wardrobe detail",
+            "ar": "تفصيلة الدولاب"
+          }
+        },
+        {
+          "id": "19LAeJB8c0udGJN9cVEHH_0EHpCl6oKZC",
+          "label": {
+            "en": "Nightstand detail",
+            "ar": "تفصيلة الكومود"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-br-15",
+      "slug": "walnut-walk-in-bedroom-set",
+      "category": "bedrooms",
+      "name": {
+        "en": "Walnut Walk-In Bedroom Set",
+        "ar": "طقم غرفة نوم جوزي مع غرفة ملابس زجاجية"
+      },
+      "desc": {
+        "en": "Bedroom set with an ivory channel-tufted headboard, an upholstered bench, walnut-tone nightstands and dresser with a framed mirror, and a glass-front walk-in wardrobe.",
+        "ar": "طقم غرفة نوم بهيدبورد عاجي بتقسيم طولي وبنش مُنجَّد، مع كومودات وتسريحة بدرجة الجوز بمرآة بإطار، وغرفة ملابس بواجهة زجاجية."
+      },
+      "review": {
+        "possibleDuplicateOf": "pv-br-17",
+        "note": "Drive rooms 11 and 13 come from one render batch and look alike (beige bed, glass walk-in wardrobe). Published separately as the owner's folders define them; owner confirmation requested.",
+        "decision": {
+          "status": "approved",
+          "by": "owner",
+          "date": "2026-11-26",
+          "basis": "visual review report (AL-NASR-VISUAL-REVIEW-2026-11-26)",
+          "note": "Kept as two separate products: headboard, nightstands and dressing table differ from pv-br-17."
+        }
+      },
       "images": [
-        { "id": "1a0Hce830aZ6-lirRBgkrl-O88ThMm9Zc", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "14zPp1z-Zl4ThStQkV1ypC-69llwlPYg6", "label": { "en": "Dresser and mirror", "ar": "التسريحة والمرآة" } },
-        { "id": "13JujyYolEQDlsRUl4IYc91R3ub3V8VWO", "label": { "en": "Walk-in wardrobe", "ar": "غرفة الملابس" } } ] },
-    { "id": "pv-br-16", "slug": "rounded-walnut-bedroom-set", "category": "bedrooms",
-      "name": { "en": "Rounded Walnut Bedroom Set", "ar": "طقم غرفة نوم جوزي بحواف مستديرة" },
-      "desc": { "en": "Walnut-tone bedroom set with rounded edges: an upholstered headboard with lit side panels, a storage bench, nightstands and a dressing table with twin mirrors and a pouf.", "ar": "طقم غرفة نوم بدرجة الجوز بحواف مستديرة: هيدبورد مُنجَّد بجوانب مضاءة، وبنش تخزين، وكومودات، وتسريحة بمرآتين وبوف." },
+        {
+          "id": "1a0Hce830aZ6-lirRBgkrl-O88ThMm9Zc",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "14zPp1z-Zl4ThStQkV1ypC-69llwlPYg6",
+          "label": {
+            "en": "Dresser and mirror",
+            "ar": "التسريحة والمرآة"
+          }
+        },
+        {
+          "id": "13JujyYolEQDlsRUl4IYc91R3ub3V8VWO",
+          "label": {
+            "en": "Walk-in wardrobe",
+            "ar": "غرفة الملابس"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-br-16",
+      "slug": "rounded-walnut-bedroom-set",
+      "category": "bedrooms",
+      "name": {
+        "en": "Rounded Walnut Bedroom Set",
+        "ar": "طقم غرفة نوم جوزي بحواف مستديرة"
+      },
+      "desc": {
+        "en": "Walnut-tone bedroom set with rounded edges: an upholstered headboard with lit side panels, a storage bench, nightstands and a dressing table with twin mirrors and a pouf.",
+        "ar": "طقم غرفة نوم بدرجة الجوز بحواف مستديرة: هيدبورد مُنجَّد بجوانب مضاءة، وبنش تخزين، وكومودات، وتسريحة بمرآتين وبوف."
+      },
       "images": [
-        { "id": "1IOGf7dAQ8dZvDy1MqKKxPSldSfLXBOpf", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "14LuQTsUpDRTe2W6404opCcp4FW-nQokG", "label": { "en": "Dressing table detail", "ar": "تفصيلة التسريحة" } } ] },
-    { "id": "pv-br-17", "slug": "neutral-walk-in-bedroom-set", "category": "bedrooms",
-      "name": { "en": "Neutral Walk-In Bedroom Set", "ar": "طقم غرفة نوم بيج مع غرفة ملابس زجاجية" },
-      "desc": { "en": "Neutral bedroom set with an upholstered headboard, wood-tone nightstands, a dressing table with a round lit mirror and pouf, and a glass-door walk-in wardrobe.", "ar": "طقم غرفة نوم بدرجات البيج بهيدبورد مُنجَّد وكومودات بدرجة الخشب، مع تسريحة بمرآة دائرية مضاءة وبوف، وغرفة ملابس بأبواب زجاجية." },
-      "review": { "possibleDuplicateOf": "pv-br-15", "note": "See pv-br-15. The bed detail image shows a headboard with gold-tone strips that differs from the full view; owner confirmation requested." },
+        {
+          "id": "1IOGf7dAQ8dZvDy1MqKKxPSldSfLXBOpf",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "14LuQTsUpDRTe2W6404opCcp4FW-nQokG",
+          "label": {
+            "en": "Dressing table detail",
+            "ar": "تفصيلة التسريحة"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-br-17",
+      "slug": "neutral-walk-in-bedroom-set",
+      "category": "bedrooms",
+      "name": {
+        "en": "Neutral Walk-In Bedroom Set",
+        "ar": "طقم غرفة نوم بيج مع غرفة ملابس زجاجية"
+      },
+      "desc": {
+        "en": "Neutral bedroom set with an upholstered headboard, wood-tone nightstands, a dressing table with a round lit mirror and pouf, and a glass-door walk-in wardrobe.",
+        "ar": "طقم غرفة نوم بدرجات البيج بهيدبورد مُنجَّد وكومودات بدرجة الخشب، مع تسريحة بمرآة دائرية مضاءة وبوف، وغرفة ملابس بأبواب زجاجية."
+      },
+      "review": {
+        "possibleDuplicateOf": "pv-br-15",
+        "note": "Drive rooms 11 and 13 come from one render batch and look alike; reviewed by the owner.",
+        "decision": {
+          "status": "approved",
+          "by": "owner",
+          "date": "2026-11-26",
+          "basis": "visual review report (AL-NASR-VISUAL-REVIEW-2026-11-26)",
+          "note": "Kept as a separate product; the bed-detail image (gold-strip headboard, matches neither full view) removed from the gallery."
+        }
+      },
       "images": [
-        { "id": "1xIP6nwVucONS_f9QqWjYerflGyyJknj3", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "1yQjkDu9RByYMwmks6r46Irjwn2OZid1s", "label": { "en": "Bed detail", "ar": "تفصيلة السرير" } },
-        { "id": "1SAy5ght4thiIWl1RJsYLNSxioM3_laaZ", "label": { "en": "Dressing table detail", "ar": "تفصيلة التسريحة" } },
-        { "id": "1jTFfvF3f2BFbb2Phy5IKJ9JfAc4CWABY", "label": { "en": "Walk-in wardrobe", "ar": "غرفة الملابس" } } ] },
-    { "id": "pv-br-18", "slug": "classic-white-panel-bedroom-set", "category": "bedrooms",
-      "name": { "en": "Classic White Panel Bedroom Set", "ar": "طقم غرفة نوم أبيض كلاسيك بألواح" },
-      "desc": { "en": "White bedroom set with raised-panel fronts and black handles: a panel headboard and storage bed, nightstands, a dressing table with a lit mirror and pouf, and a full-wall wardrobe with mirror doors.", "ar": "طقم غرفة نوم أبيض بواجهات بألواح بارزة ومقابض سوداء: هيدبورد بألواح وسرير بأدراج تخزين، وكومودات، وتسريحة بمرآة مضاءة وبوف، ودولاب بعرض الحائط بأبواب مرآة." },
+        {
+          "id": "1xIP6nwVucONS_f9QqWjYerflGyyJknj3",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "1SAy5ght4thiIWl1RJsYLNSxioM3_laaZ",
+          "label": {
+            "en": "Dressing table detail",
+            "ar": "تفصيلة التسريحة"
+          }
+        },
+        {
+          "id": "1jTFfvF3f2BFbb2Phy5IKJ9JfAc4CWABY",
+          "label": {
+            "en": "Walk-in wardrobe",
+            "ar": "غرفة الملابس"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-br-18",
+      "slug": "classic-white-panel-bedroom-set",
+      "category": "bedrooms",
+      "name": {
+        "en": "Classic White Panel Bedroom Set",
+        "ar": "طقم غرفة نوم أبيض كلاسيك بألواح"
+      },
+      "desc": {
+        "en": "White bedroom set with raised-panel fronts and black handles: a panel headboard and storage bed, nightstands, a dressing table with a lit mirror and pouf, and a full-wall wardrobe with mirror doors.",
+        "ar": "طقم غرفة نوم أبيض بواجهات بألواح بارزة ومقابض سوداء: هيدبورد بألواح وسرير بأدراج تخزين، وكومودات، وتسريحة بمرآة مضاءة وبوف، ودولاب بعرض الحائط بأبواب مرآة."
+      },
       "images": [
-        { "id": "1A0s2yOxJYdNT_2M3qNJgKfsIq6Nj5gvl", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "1RuvYb0kGJcXqMTYbK7INuiQLyt6-239x", "label": { "en": "Bed detail", "ar": "تفصيلة السرير" } },
-        { "id": "1PbPQX8Pa2bZLNtXzXK4N_GJqZc6HYC0t", "label": { "en": "Wardrobe detail", "ar": "تفصيلة الدولاب" } },
-        { "id": "1bnxZA5rxrt7VEL7Jik75ilcIJsiFNbzi", "label": { "en": "Dressing table detail", "ar": "تفصيلة التسريحة" } } ] },
-    { "id": "pv-br-19", "slug": "walnut-gloss-bedroom-set", "category": "bedrooms",
-      "name": { "en": "Walnut & Gloss Bedroom Set", "ar": "طقم غرفة نوم جوزي بدولاب لامع" },
-      "desc": { "en": "Bedroom set with a cream padded headboard on a walnut-tone platform bed, walnut-tone nightstands and a sliding wardrobe with glossy cream panels in a walnut-tone frame.", "ar": "طقم غرفة نوم بهيدبورد كريمي مبطن على سرير بقاعدة بدرجة الجوز، وكومودات بدرجة الجوز، ودولاب بأبواب منزلقة بألواح كريمية لامعة بإطار بدرجة الجوز." },
+        {
+          "id": "1A0s2yOxJYdNT_2M3qNJgKfsIq6Nj5gvl",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "1RuvYb0kGJcXqMTYbK7INuiQLyt6-239x",
+          "label": {
+            "en": "Bed detail",
+            "ar": "تفصيلة السرير"
+          }
+        },
+        {
+          "id": "1PbPQX8Pa2bZLNtXzXK4N_GJqZc6HYC0t",
+          "label": {
+            "en": "Wardrobe detail",
+            "ar": "تفصيلة الدولاب"
+          }
+        },
+        {
+          "id": "1bnxZA5rxrt7VEL7Jik75ilcIJsiFNbzi",
+          "label": {
+            "en": "Dressing table detail",
+            "ar": "تفصيلة التسريحة"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-br-19",
+      "slug": "walnut-gloss-bedroom-set",
+      "category": "bedrooms",
+      "name": {
+        "en": "Walnut & Gloss Bedroom Set",
+        "ar": "طقم غرفة نوم جوزي بدولاب لامع"
+      },
+      "desc": {
+        "en": "Bedroom set with a cream padded headboard on a walnut-tone platform bed, walnut-tone nightstands and a sliding wardrobe with glossy cream panels in a walnut-tone frame.",
+        "ar": "طقم غرفة نوم بهيدبورد كريمي مبطن على سرير بقاعدة بدرجة الجوز، وكومودات بدرجة الجوز، ودولاب بأبواب منزلقة بألواح كريمية لامعة بإطار بدرجة الجوز."
+      },
       "images": [
-        { "id": "1D9qdtICkn8AevbQR2ak-gBMMBrMdRZfq", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "1gYm_m-Se81vk8-eAYkh8ioDJNdoDgVcN", "label": { "en": "Bed detail", "ar": "تفصيلة السرير" } },
-        { "id": "1ZKmKJorDpBQebvnEeJL-bfZzboQvuemw", "label": { "en": "Wardrobe detail", "ar": "تفصيلة الدولاب" } } ] },
-
-    { "id": "pv-kb-12", "slug": "oak-white-twin-kids-bedroom-set", "category": "kids-bedrooms",
-      "name": { "en": "Oak & White Twin Kids' Bedroom Set", "ar": "طقم غرفة نوم أطفال توأم بلون خشبي وأبيض" },
-      "desc": { "en": "Twin kids' bedroom set with cream padded headboards on wood-tone storage beds, a white wardrobe with a lit open-shelf column, a nightstand and a two-tone chest of drawers.", "ar": "غرفة نوم أطفال توأم بهيدبورد كريمي مبطن على سريرين بدرجة الخشب، مع دولاب أبيض بعمود رفوف مفتوحة مضاءة، وكومود، وشيفونيرة بلونين." },
+        {
+          "id": "1D9qdtICkn8AevbQR2ak-gBMMBrMdRZfq",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "1gYm_m-Se81vk8-eAYkh8ioDJNdoDgVcN",
+          "label": {
+            "en": "Bed detail",
+            "ar": "تفصيلة السرير"
+          }
+        },
+        {
+          "id": "1ZKmKJorDpBQebvnEeJL-bfZzboQvuemw",
+          "label": {
+            "en": "Wardrobe detail",
+            "ar": "تفصيلة الدولاب"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-kb-12",
+      "slug": "oak-white-twin-kids-bedroom-set",
+      "category": "kids-bedrooms",
+      "name": {
+        "en": "Oak & White Twin Kids' Bedroom Set",
+        "ar": "طقم غرفة نوم أطفال توأم بلون خشبي وأبيض"
+      },
+      "desc": {
+        "en": "Twin kids' bedroom set with cream padded headboards on wood-tone storage beds, a white wardrobe with a lit open-shelf column, a nightstand and a two-tone chest of drawers.",
+        "ar": "غرفة نوم أطفال توأم بهيدبورد كريمي مبطن على سريرين بدرجة الخشب، مع دولاب أبيض بعمود رفوف مفتوحة مضاءة، وكومود، وشيفونيرة بلونين."
+      },
       "images": [
-        { "id": "1c9zJbwLzjhUwUbZ-Cu7HSB4D4Cdb7Q1w", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "1rXoInofa_F-9cXatKIGFycdVC5Jj-fKk", "label": { "en": "Beds", "ar": "السريران" } },
-        { "id": "1fXThKW-o21M0rEVSEf0bJDiWIilHcc-x", "label": { "en": "Wardrobe detail", "ar": "تفصيلة الدولاب" } },
-        { "id": "1CKlV_0azkcQhF-XWeVQL8sC9RW7LQgZX", "label": { "en": "Chest of drawers", "ar": "الشيفونيرة" } } ] },
-    { "id": "pv-kb-13", "slug": "walnut-cream-twin-kids-bedroom-set", "category": "kids-bedrooms",
-      "name": { "en": "Walnut & Cream Twin Kids' Bedroom Set", "ar": "طقم غرفة نوم أطفال توأم بدرجة الجوز والكريمي" },
-      "desc": { "en": "Twin kids' bedroom set with gold-trimmed upholstered headboards on walnut-tone bed bases, a two-tone wardrobe with mirror doors, nightstands and a dresser with a mirror.", "ar": "غرفة نوم أطفال توأم بهيدبورد مُنجَّد بخطوط ذهبية على قواعد بدرجة الجوز، مع دولاب بلونين بأبواب مرآة، وكومودات، وتسريحة بمرآة." },
+        {
+          "id": "1c9zJbwLzjhUwUbZ-Cu7HSB4D4Cdb7Q1w",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "1rXoInofa_F-9cXatKIGFycdVC5Jj-fKk",
+          "label": {
+            "en": "Beds",
+            "ar": "السريران"
+          }
+        },
+        {
+          "id": "1fXThKW-o21M0rEVSEf0bJDiWIilHcc-x",
+          "label": {
+            "en": "Wardrobe detail",
+            "ar": "تفصيلة الدولاب"
+          }
+        },
+        {
+          "id": "1CKlV_0azkcQhF-XWeVQL8sC9RW7LQgZX",
+          "label": {
+            "en": "Chest of drawers",
+            "ar": "الشيفونيرة"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-kb-13",
+      "slug": "walnut-cream-twin-kids-bedroom-set",
+      "category": "kids-bedrooms",
+      "name": {
+        "en": "Walnut & Cream Twin Kids' Bedroom Set",
+        "ar": "طقم غرفة نوم أطفال توأم بدرجة الجوز والكريمي"
+      },
+      "desc": {
+        "en": "Twin kids' bedroom set with gold-trimmed upholstered headboards on walnut-tone bed bases, a two-tone wardrobe with mirror doors, nightstands and a dresser with a mirror.",
+        "ar": "غرفة نوم أطفال توأم بهيدبورد مُنجَّد بخطوط ذهبية على قواعد بدرجة الجوز، مع دولاب بلونين بأبواب مرآة، وكومودات، وتسريحة بمرآة."
+      },
       "images": [
-        { "id": "13D0lIRhMbm8FdnaojY6FNO2pm6jSQm8U", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "1XOSW-sWmUoDRX-uBvvKOZrHaPgR0wyO5", "label": { "en": "Wardrobe detail", "ar": "تفصيلة الدولاب" } },
-        { "id": "160N3yT11lNyKF2MhJC48SY2owyP3gsJa", "label": { "en": "Dresser and mirror", "ar": "التسريحة والمرآة" } } ] },
-    { "id": "pv-kb-14", "slug": "chevron-headboard-twin-kids-bedroom-set", "category": "kids-bedrooms",
-      "name": { "en": "Chevron-Headboard Twin Kids' Bedroom Set", "ar": "طقم غرفة نوم أطفال توأم بهيدبورد مثلث" },
-      "desc": { "en": "Twin kids' bedroom set in walnut tones with patterned chevron headboards, a sliding wardrobe with black-glass and walnut-tone chevron panels, a nightstand and a dressing table with a mirror.", "ar": "غرفة نوم أطفال توأم بدرجات الجوز بهيدبورد بتصميم مثلث مزخرف، مع دولاب بأبواب منزلقة بألواح زجاج أسود ودرجة الجوز، وكومود، وتسريحة بمرآة." },
+        {
+          "id": "13D0lIRhMbm8FdnaojY6FNO2pm6jSQm8U",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "1XOSW-sWmUoDRX-uBvvKOZrHaPgR0wyO5",
+          "label": {
+            "en": "Wardrobe detail",
+            "ar": "تفصيلة الدولاب"
+          }
+        },
+        {
+          "id": "160N3yT11lNyKF2MhJC48SY2owyP3gsJa",
+          "label": {
+            "en": "Dresser and mirror",
+            "ar": "التسريحة والمرآة"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-kb-14",
+      "slug": "chevron-headboard-twin-kids-bedroom-set",
+      "category": "kids-bedrooms",
+      "name": {
+        "en": "Chevron-Headboard Twin Kids' Bedroom Set",
+        "ar": "طقم غرفة نوم أطفال توأم بهيدبورد مثلث"
+      },
+      "desc": {
+        "en": "Twin kids' bedroom set in walnut tones with patterned chevron headboards, a sliding wardrobe with black-glass and walnut-tone chevron panels, a nightstand and a dressing table with a mirror.",
+        "ar": "غرفة نوم أطفال توأم بدرجات الجوز بهيدبورد بتصميم مثلث مزخرف، مع دولاب بأبواب منزلقة بألواح زجاج أسود ودرجة الجوز، وكومود، وتسريحة بمرآة."
+      },
       "images": [
-        { "id": "1kH644xjx4XqmIudmSOsDchfuDHn9jWYU", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "1IDFcyiQ3_McNg-ADPPS_gXcgXMt4as6I", "label": { "en": "Beds", "ar": "السريران" } },
-        { "id": "1PVgTdogx6OOGkjQL-A8k7EOu9r4nPoR6", "label": { "en": "Wardrobe detail", "ar": "تفصيلة الدولاب" } } ] },
-    { "id": "pv-kb-15", "slug": "arched-walnut-twin-kids-bedroom-set", "category": "kids-bedrooms",
-      "name": { "en": "Arched Walnut Twin Kids' Bedroom Set", "ar": "طقم غرفة نوم أطفال توأم جوزي بهيدبورد مقوّس" },
-      "desc": { "en": "Twin kids' bedroom set in walnut tones with arched upholstered headboards, a nightstand, a wardrobe with two mirror doors and a dressing desk with a lit mirror and a shelf tower.", "ar": "غرفة نوم أطفال توأم بدرجات الجوز بهيدبورد مُنجَّد مقوّس، مع كومود، ودولاب ببابين مرآة، وتسريحة مكتب بمرآة مضاءة ووحدة رفوف." },
+        {
+          "id": "1kH644xjx4XqmIudmSOsDchfuDHn9jWYU",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "1IDFcyiQ3_McNg-ADPPS_gXcgXMt4as6I",
+          "label": {
+            "en": "Beds",
+            "ar": "السريران"
+          }
+        },
+        {
+          "id": "1PVgTdogx6OOGkjQL-A8k7EOu9r4nPoR6",
+          "label": {
+            "en": "Wardrobe detail",
+            "ar": "تفصيلة الدولاب"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-kb-15",
+      "slug": "arched-walnut-twin-kids-bedroom-set",
+      "category": "kids-bedrooms",
+      "name": {
+        "en": "Arched Walnut Twin Kids' Bedroom Set",
+        "ar": "طقم غرفة نوم أطفال توأم جوزي بهيدبورد مقوّس"
+      },
+      "desc": {
+        "en": "Twin kids' bedroom set in walnut tones with arched upholstered headboards, a nightstand, a wardrobe with two mirror doors and a dressing desk with a lit mirror and a shelf tower.",
+        "ar": "غرفة نوم أطفال توأم بدرجات الجوز بهيدبورد مُنجَّد مقوّس، مع كومود، ودولاب ببابين مرآة، وتسريحة مكتب بمرآة مضاءة ووحدة رفوف."
+      },
       "images": [
-        { "id": "1AEaa5OIDCdez2cfeuE4KS7jLS8mj3oYp", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "153ACJf2IpPFCaLNwKobPxqQoaHcmIUAx", "label": { "en": "Beds", "ar": "السريران" } },
-        { "id": "1yYgVr9b4icY-RtNpEE13vumFYWYBxrpg", "label": { "en": "Wardrobe detail", "ar": "تفصيلة الدولاب" } },
-        { "id": "1phSqNTiaMyBBuX6-6LdngMIsIcA1BxIt", "label": { "en": "Dressing desk detail", "ar": "تفصيلة التسريحة المكتب" } } ] },
-    { "id": "pv-kb-16", "slug": "grey-arch-twin-kids-bedroom-set", "category": "kids-bedrooms",
-      "name": { "en": "Grey Arch Twin Kids' Bedroom Set", "ar": "طقم غرفة نوم أطفال توأم رمادي بأقواس" },
-      "desc": { "en": "Twin kids' bedroom set with grey upholstered headboards in white frames, a nightstand and a grey-and-cream wardrobe wall with arched doors, a study desk and lit shelves.", "ar": "غرفة نوم أطفال توأم بهيدبورد رمادي مُنجَّد بإطار أبيض، مع كومود، وحائط دواليب رمادي وكريمي بأبواب مقوّسة ومكتب مذاكرة ورفوف مضاءة." },
+        {
+          "id": "1AEaa5OIDCdez2cfeuE4KS7jLS8mj3oYp",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "153ACJf2IpPFCaLNwKobPxqQoaHcmIUAx",
+          "label": {
+            "en": "Beds",
+            "ar": "السريران"
+          }
+        },
+        {
+          "id": "1yYgVr9b4icY-RtNpEE13vumFYWYBxrpg",
+          "label": {
+            "en": "Wardrobe detail",
+            "ar": "تفصيلة الدولاب"
+          }
+        },
+        {
+          "id": "1phSqNTiaMyBBuX6-6LdngMIsIcA1BxIt",
+          "label": {
+            "en": "Dressing desk detail",
+            "ar": "تفصيلة التسريحة المكتب"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-kb-16",
+      "slug": "grey-arch-twin-kids-bedroom-set",
+      "category": "kids-bedrooms",
+      "name": {
+        "en": "Grey Arch Twin Kids' Bedroom Set",
+        "ar": "طقم غرفة نوم أطفال توأم رمادي بأقواس"
+      },
+      "desc": {
+        "en": "Twin kids' bedroom set with grey upholstered headboards in white frames, a nightstand and a grey-and-cream wardrobe wall with arched doors, a study desk and lit shelves.",
+        "ar": "غرفة نوم أطفال توأم بهيدبورد رمادي مُنجَّد بإطار أبيض، مع كومود، وحائط دواليب رمادي وكريمي بأبواب مقوّسة ومكتب مذاكرة ورفوف مضاءة."
+      },
       "images": [
-        { "id": "1l67S_JZrYUi_t3ix7tfpNi3Zflwyk023", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "1akWxlrg01yYbWr6rbkE018oLNJMuKt3G", "label": { "en": "Beds", "ar": "السريران" } },
-        { "id": "1PtVR5awU7x_4R_Nf5foSWPQ1XZ4j8tQ2", "label": { "en": "Wardrobe and desk unit", "ar": "وحدة الدولاب والمكتب" } } ] },
-    { "id": "pv-kb-17", "slug": "scalloped-twin-kids-bedroom-set", "category": "kids-bedrooms",
-      "name": { "en": "Scalloped Twin Kids' Bedroom Set", "ar": "طقم غرفة نوم أطفال توأم بهيدبورد متموّج" },
-      "desc": { "en": "Twin kids' bedroom set with scalloped upholstered headboards in grey and dusty rose on white bed bases, a sliding wardrobe with cloud-shaped panels, a nightstand and a mirror.", "ar": "غرفة نوم أطفال توأم بهيدبورد مُنجَّد متموّج بلونين رمادي ووردي هادئ على قواعد بيضاء، مع دولاب بأبواب منزلقة بألواح على شكل سحاب، وكومود، ومرآة." },
+        {
+          "id": "1l67S_JZrYUi_t3ix7tfpNi3Zflwyk023",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "1akWxlrg01yYbWr6rbkE018oLNJMuKt3G",
+          "label": {
+            "en": "Beds",
+            "ar": "السريران"
+          }
+        },
+        {
+          "id": "1PtVR5awU7x_4R_Nf5foSWPQ1XZ4j8tQ2",
+          "label": {
+            "en": "Wardrobe and desk unit",
+            "ar": "وحدة الدولاب والمكتب"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-kb-17",
+      "slug": "scalloped-twin-kids-bedroom-set",
+      "category": "kids-bedrooms",
+      "name": {
+        "en": "Scalloped Twin Kids' Bedroom Set",
+        "ar": "طقم غرفة نوم أطفال توأم بهيدبورد متموّج"
+      },
+      "desc": {
+        "en": "Twin kids' bedroom set with scalloped upholstered headboards in grey and dusty rose on white bed bases, a sliding wardrobe with cloud-shaped panels, a nightstand and a mirror.",
+        "ar": "غرفة نوم أطفال توأم بهيدبورد مُنجَّد متموّج بلونين رمادي ووردي هادئ على قواعد بيضاء، مع دولاب بأبواب منزلقة بألواح على شكل سحاب، وكومود، ومرآة."
+      },
       "images": [
-        { "id": "1LBLadhhr2jl5AX_ZUXGnCXLyO8kpcIgN", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "1DRRgv0Bl0DIq2vzHPifxHe_c8CRwHXaR", "label": { "en": "Bed detail", "ar": "تفصيلة السرير" } },
-        { "id": "1oB8hgi7qsytaa51-AQIoZttN-d_efYzr", "label": { "en": "Wardrobe detail", "ar": "تفصيلة الدولاب" } } ] },
-
-    { "id": "pv-co-08", "slug": "modular-chaise-corner-sofa", "category": "corner-sofas",
-      "name": { "en": "Modular Chaise Corner Sofa", "ar": "كنبة زاوية معيارية بشيزلونج" },
-      "desc": { "en": "Compact corner sofa with adjustable headrests, angled arms and a tufted chaise ottoman, shown in cream and in taupe.", "ar": "كنبة زاوية صغيرة بمساند رأس قابلة للتعديل وأذرع مائلة وشيزلونج مُنجَّد، معروضة بلون كريمي وبلون بيج داكن." },
-      "review": { "note": "Two Drive images show the same design in two colours; grouped as one product with a colour view. Owner confirmation requested." },
+        {
+          "id": "1LBLadhhr2jl5AX_ZUXGnCXLyO8kpcIgN",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "1DRRgv0Bl0DIq2vzHPifxHe_c8CRwHXaR",
+          "label": {
+            "en": "Bed detail",
+            "ar": "تفصيلة السرير"
+          }
+        },
+        {
+          "id": "1oB8hgi7qsytaa51-AQIoZttN-d_efYzr",
+          "label": {
+            "en": "Wardrobe detail",
+            "ar": "تفصيلة الدولاب"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-co-08",
+      "slug": "modular-chaise-corner-sofa",
+      "category": "corner-sofas",
+      "name": {
+        "en": "Modular Chaise Corner Sofa",
+        "ar": "كنبة زاوية معيارية بشيزلونج"
+      },
+      "desc": {
+        "en": "Compact corner sofa with adjustable headrests, angled arms and a tufted chaise ottoman, shown in cream and in taupe.",
+        "ar": "كنبة زاوية صغيرة بمساند رأس قابلة للتعديل وأذرع مائلة وشيزلونج مُنجَّد، معروضة بلون كريمي وبلون بيج داكن."
+      },
+      "review": {
+        "note": "Two Drive images show the same design in two colours; grouped as one product with a colour view. Owner confirmation requested.",
+        "decision": {
+          "status": "approved",
+          "by": "owner",
+          "date": "2026-11-26",
+          "basis": "visual review report (AL-NASR-VISUAL-REVIEW-2026-11-26)",
+          "note": "One product shown in two colours (cream, taupe)."
+        }
+      },
       "images": [
-        { "id": "12MN2XQicBZE3XW7ytXyPipaxuovANCZZ", "label": { "en": "Cream view", "ar": "اللون الكريمي" } },
-        { "id": "1yUdyQI1WrEc0HwCH2zM3XJxX8eX8dGfw", "label": { "en": "Taupe view", "ar": "اللون البيج الداكن" } } ] },
-    { "id": "pv-co-09", "slug": "grey-storage-sofa-bed-corner", "category": "corner-sofas",
-      "name": { "en": "Grey Storage Sofa-Bed Corner", "ar": "كنبة زاوية سرير رمادية بتخزين" },
-      "desc": { "en": "Grey L-shaped corner sofa with a pull-out bed and a lift-up storage chaise, with patterned scatter cushions.", "ar": "كنبة زاوية رمادية بشكل حرف L بسرير قابل للسحب وشيزلونج بتخزين يُفتح لأعلى، مع وسائد بنقوش." },
+        {
+          "id": "12MN2XQicBZE3XW7ytXyPipaxuovANCZZ",
+          "label": {
+            "en": "Cream view",
+            "ar": "اللون الكريمي"
+          }
+        },
+        {
+          "id": "1yUdyQI1WrEc0HwCH2zM3XJxX8eX8dGfw",
+          "label": {
+            "en": "Taupe view",
+            "ar": "اللون البيج الداكن"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-co-09",
+      "slug": "grey-storage-sofa-bed-corner",
+      "category": "corner-sofas",
+      "name": {
+        "en": "Grey Storage Sofa-Bed Corner",
+        "ar": "كنبة زاوية سرير رمادية بتخزين"
+      },
+      "desc": {
+        "en": "Grey L-shaped corner sofa with a pull-out bed and a lift-up storage chaise, with patterned scatter cushions.",
+        "ar": "كنبة زاوية رمادية بشكل حرف L بسرير قابل للسحب وشيزلونج بتخزين يُفتح لأعلى، مع وسائد بنقوش."
+      },
       "images": [
-        { "id": "10Dj-8aoa_OJqIzZvMMpyTiKTG50aMltO", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "1FokYyRrLbxjZ83KwT58HejfkxFw6lFXe", "label": { "en": "Bed and storage open", "ar": "السرير والتخزين مفتوحان" } } ] },
-    { "id": "pv-co-10", "slug": "cream-modular-corner-sofa", "category": "corner-sofas",
-      "name": { "en": "Cream Modular Corner Sofa", "ar": "كنبة زاوية معيارية كريمي" },
-      "desc": { "en": "Cream modular corner sofa with a chaise end, deep cushions and wood-tone plinth feet.", "ar": "كنبة زاوية معيارية بلون كريمي بطرف شيزلونج ووسائد عميقة وقاعدة بأرجل بدرجة الخشب." },
-      "images": [ { "id": "1QAfrM0IwwmmwIvECzG9lppIxv-sitdQ2", "label": { "en": "Full view", "ar": "منظر كامل" } } ] },
-    { "id": "pv-co-11", "slug": "cream-sectional-with-lounge-chair", "category": "corner-sofas",
-      "name": { "en": "Cream Sectional with Lounge Chair", "ar": "كنبة زاوية كريمي مع كرسي استرخاء" },
-      "desc": { "en": "Cream sectional sofa with a rounded chaise end on a walnut-tone base with gold-tone trim, shown with a matching walnut-backed lounge chair.", "ar": "كنبة زاوية كريمية بطرف شيزلونج مستدير على قاعدة بدرجة الجوز بحافة ذهبية، معروضة مع كرسي استرخاء مطابق بظهر بدرجة الجوز." },
-      "images": [ { "id": "1l6UbD-uwH3LHnp7xJWfxH0NpiEdkI2tL", "label": { "en": "Full view", "ar": "منظر كامل" } } ] },
-    { "id": "pv-co-12", "slug": "curved-chaise-corner-sofa", "category": "corner-sofas",
-      "name": { "en": "Curved Chaise Corner Sofa", "ar": "كنبة زاوية منحنية بشيزلونج" },
-      "desc": { "en": "Cream curved sofa with a rounded chaise end on a walnut-tone base.", "ar": "كنبة منحنية بلون كريمي بطرف شيزلونج مستدير على قاعدة بدرجة الجوز." },
-      "images": [ { "id": "1L1i-Phl7hqObef2iIxCDZSPQ8gtRZQUh", "label": { "en": "Full view", "ar": "منظر كامل" } } ] },
-    { "id": "pv-co-13", "slug": "walnut-beige-corner-sofa", "category": "corner-sofas",
-      "name": { "en": "Walnut & Beige Corner Sofa", "ar": "كنبة زاوية بني وبيج" },
-      "desc": { "en": "L-shaped corner sofa in chocolate-brown fabric with a cream button-tufted base and gold-tone piping.", "ar": "كنبة زاوية بشكل حرف L بقماش بني شوكولاتة وقاعدة كريمية مكسوّة بالأزرار وحواف ذهبية." },
-      "images": [ { "id": "1W0XcM6bF9P1cBUrJrfX6J41lbNjdthpy", "label": { "en": "Full view", "ar": "منظر كامل" } } ] },
-    { "id": "pv-co-14", "slug": "olive-chaise-sectional", "category": "corner-sofas",
-      "name": { "en": "Olive Chaise Sectional", "ar": "كنبة زاوية زيتوني بشيزلونج" },
-      "desc": { "en": "Olive-green sectional sofa with a chaise, channelled arms and a walnut-tone base with gold-tone trim.", "ar": "كنبة زاوية بلون أخضر زيتوني بشيزلونج وأذرع بتقسيم طولي وقاعدة بدرجة الجوز بحافة ذهبية." },
-      "images": [ { "id": "1EZkNinIwfUjihWZMKPJMZWaeD9GIOuDN", "label": { "en": "Full view", "ar": "منظر كامل" } } ] },
-    { "id": "pv-co-15", "slug": "ribbed-chaise-corner-sofa", "category": "corner-sofas",
-      "name": { "en": "Ribbed Chaise Corner Sofa", "ar": "كنبة زاوية مضلعة بشيزلونج" },
-      "desc": { "en": "Cream corner sofa with adjustable headrests, ribbed arm panels with gold-tone trim and a chaise end on gold-tone legs.", "ar": "كنبة زاوية كريمية بمساند رأس قابلة للتعديل وأذرع مضلعة بحافة ذهبية وطرف شيزلونج على أرجل ذهبية." },
+        {
+          "id": "10Dj-8aoa_OJqIzZvMMpyTiKTG50aMltO",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "1FokYyRrLbxjZ83KwT58HejfkxFw6lFXe",
+          "label": {
+            "en": "Bed and storage open",
+            "ar": "السرير والتخزين مفتوحان"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-co-10",
+      "slug": "cream-modular-corner-sofa",
+      "category": "corner-sofas",
+      "name": {
+        "en": "Cream Modular Corner Sofa",
+        "ar": "كنبة زاوية معيارية كريمي"
+      },
+      "desc": {
+        "en": "Cream modular corner sofa with a chaise end, deep cushions and wood-tone plinth feet.",
+        "ar": "كنبة زاوية معيارية بلون كريمي بطرف شيزلونج ووسائد عميقة وقاعدة بأرجل بدرجة الخشب."
+      },
       "images": [
-        { "id": "1_dYdADLAec3tnTnc_SMH8CvOBpiyTv5N", "label": { "en": "Full view", "ar": "منظر كامل" } },
-        { "id": "119-wT-hRLfuLyPGzGwc-yQOytR0ReVAs", "label": { "en": "Room view", "ar": "منظر داخل الغرفة" } } ] },
-    { "id": "pv-co-16", "slug": "ivory-l-shape-sectional", "category": "corner-sofas",
-      "name": { "en": "Ivory L-Shape Sectional", "ar": "كنبة زاوية عاجي حرف L" },
-      "desc": { "en": "Ivory L-shaped sectional with adjustable headrests, contrast piping and slim dark legs.", "ar": "كنبة زاوية عاجية بشكل حرف L بمساند رأس قابلة للتعديل وحواف بلون مختلف وأرجل رفيعة داكنة." },
-      "images": [ { "id": "1iHyURSOpMO9hl6tyybgtuCZt21WFlbf0", "label": { "en": "Full view", "ar": "منظر كامل" } } ] },
-
-    { "id": "pv-lr-14", "slug": "soft-curve-living-set", "category": "living-rooms", "unitKind": "sofa-set", "poster": true,
-      "name": { "en": "Soft Curve Living Set", "ar": "طقم معيشة منحني ناعم" },
-      "desc": { "en": "Living room set with a curved cream sofa and loveseat with wood-tone arm inlays, and two rounded brown lounge chairs.", "ar": "طقم معيشة بكنبة وكنبة صغيرة منحنيتين بلون كريمي بتفصيلة بدرجة الخشب على الذراع، مع كرسيين مستديرين بلون بني." },
-      "images": [ { "id": "1fxQMyubVOnWZ_B7X3YNXB9Kz6M89V1Ti", "label": { "en": "Catalog poster", "ar": "بوستر الكتالوج" } } ] },
-    { "id": "pv-lr-15", "slug": "twin-curve-living-set", "category": "living-rooms", "unitKind": "sofa-set", "poster": true,
-      "name": { "en": "Twin Curve Living Set", "ar": "طقم معيشة منحني مزدوج" },
-      "desc": { "en": "Living room set with two curved cream sofas on wood-tone legs and a rounded lounge chair.", "ar": "طقم معيشة بكنبتين منحنيتين بلون كريمي على أرجل بدرجة الخشب، مع كرسي مستدير." },
-      "images": [ { "id": "1TYVDfeIOxlDDs-KQg7q8L4FSaDG7t5H-", "label": { "en": "Catalog poster", "ar": "بوستر الكتالوج" } } ] },
-    { "id": "pv-lr-16", "slug": "elegant-beige-living-set", "category": "living-rooms", "unitKind": "sofa-set", "poster": true,
-      "name": { "en": "Elegant Beige Living Set", "ar": "طقم معيشة بيج أنيق" },
-      "desc": { "en": "Living room set with two beige sofas and two armchairs on wood-tone legs, with patterned scatter cushions.", "ar": "طقم معيشة بكنبتين وكرسيين بلون بيج على أرجل بدرجة الخشب، مع وسائد بنقوش." },
-      "images": [ { "id": "1khdSGrLMvHFm_h9v17cmswgHZJvyaRoC", "label": { "en": "Catalog poster", "ar": "بوستر الكتالوج" } } ] },
-    { "id": "pv-lr-17", "slug": "classic-wood-frame-living-set", "category": "living-rooms", "unitKind": "sofa-set", "poster": true,
-      "name": { "en": "Classic Wood-Frame Living Set", "ar": "طقم معيشة بإطار خشبي" },
-      "desc": { "en": "Living room set with cream-upholstered sofas and armchairs in dark wood-tone frames.", "ar": "طقم معيشة بكنب وكراسي مُنجَّدة بلون كريمي بإطارات بدرجة الخشب الداكن." },
-      "images": [ { "id": "1N6EuOnepB0vO9KaB60_b2xZL5XLXgpmR", "label": { "en": "Catalog poster", "ar": "بوستر الكتالوج" } } ] },
-    { "id": "pv-lr-18", "slug": "cream-curve-sofa", "category": "living-rooms", "poster": true,
-      "name": { "en": "Cream Curve Sofa", "ar": "كنبة منحنية كريمي" },
-      "desc": { "en": "Curved cream sofa with rounded arms and textured upholstery.", "ar": "كنبة منحنية بلون كريمي بأذرع مستديرة وتنجيد بملمس بارز." },
-      "images": [ { "id": "1Tu4cRf0isROU8T_HWiPGYJVyRAh6bVYY", "label": { "en": "Catalog poster", "ar": "بوستر الكتالوج" } } ] },
-    { "id": "pv-lr-19", "slug": "walnut-arm-cream-sofa", "category": "living-rooms",
-      "name": { "en": "Walnut-Arm Cream Sofa", "ar": "كنبة كريمي بذراع جوزي" },
-      "desc": { "en": "Cream sofa with rounded arms framed in walnut-tone side panels with gold-tone edge detail.", "ar": "كنبة كريمية بأذرع مستديرة بألواح جانبية بدرجة الجوز وتفصيلة ذهبية على الحافة." },
-      "images": [ { "id": "1MpJszrM_dkEW1eWjjBiDoK-wkQ6uR_ED", "label": { "en": "Full view", "ar": "منظر كامل" } } ] }
+        {
+          "id": "1QAfrM0IwwmmwIvECzG9lppIxv-sitdQ2",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-co-11",
+      "slug": "cream-sectional-with-lounge-chair",
+      "category": "corner-sofas",
+      "name": {
+        "en": "Cream Sectional with Lounge Chair",
+        "ar": "كنبة زاوية كريمي مع كرسي استرخاء"
+      },
+      "desc": {
+        "en": "Cream sectional sofa with a rounded chaise end on a walnut-tone base with gold-tone trim, shown with a matching walnut-backed lounge chair.",
+        "ar": "كنبة زاوية كريمية بطرف شيزلونج مستدير على قاعدة بدرجة الجوز بحافة ذهبية، معروضة مع كرسي استرخاء مطابق بظهر بدرجة الجوز."
+      },
+      "images": [
+        {
+          "id": "1l6UbD-uwH3LHnp7xJWfxH0NpiEdkI2tL",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-co-12",
+      "slug": "curved-chaise-corner-sofa",
+      "category": "corner-sofas",
+      "name": {
+        "en": "Curved Chaise Corner Sofa",
+        "ar": "كنبة زاوية منحنية بشيزلونج"
+      },
+      "desc": {
+        "en": "Cream curved sofa with a rounded chaise end on a walnut-tone base.",
+        "ar": "كنبة منحنية بلون كريمي بطرف شيزلونج مستدير على قاعدة بدرجة الجوز."
+      },
+      "images": [
+        {
+          "id": "1L1i-Phl7hqObef2iIxCDZSPQ8gtRZQUh",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-co-13",
+      "slug": "walnut-beige-corner-sofa",
+      "category": "corner-sofas",
+      "name": {
+        "en": "Walnut & Beige Corner Sofa",
+        "ar": "كنبة زاوية بني وبيج"
+      },
+      "desc": {
+        "en": "L-shaped corner sofa in chocolate-brown fabric with a cream button-tufted base and gold-tone piping.",
+        "ar": "كنبة زاوية بشكل حرف L بقماش بني شوكولاتة وقاعدة كريمية مكسوّة بالأزرار وحواف ذهبية."
+      },
+      "images": [
+        {
+          "id": "1W0XcM6bF9P1cBUrJrfX6J41lbNjdthpy",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-co-14",
+      "slug": "olive-chaise-sectional",
+      "category": "corner-sofas",
+      "name": {
+        "en": "Olive Chaise Sectional",
+        "ar": "كنبة زاوية زيتوني بشيزلونج"
+      },
+      "desc": {
+        "en": "Olive-green sectional sofa with a chaise, channelled arms and a walnut-tone base with gold-tone trim.",
+        "ar": "كنبة زاوية بلون أخضر زيتوني بشيزلونج وأذرع بتقسيم طولي وقاعدة بدرجة الجوز بحافة ذهبية."
+      },
+      "images": [
+        {
+          "id": "1EZkNinIwfUjihWZMKPJMZWaeD9GIOuDN",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-co-15",
+      "slug": "ribbed-chaise-corner-sofa",
+      "category": "corner-sofas",
+      "name": {
+        "en": "Ribbed Chaise Corner Sofa",
+        "ar": "كنبة زاوية مضلعة بشيزلونج"
+      },
+      "desc": {
+        "en": "Cream corner sofa with adjustable headrests, ribbed arm panels with gold-tone trim and a chaise end on gold-tone legs.",
+        "ar": "كنبة زاوية كريمية بمساند رأس قابلة للتعديل وأذرع مضلعة بحافة ذهبية وطرف شيزلونج على أرجل ذهبية."
+      },
+      "images": [
+        {
+          "id": "1_dYdADLAec3tnTnc_SMH8CvOBpiyTv5N",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        },
+        {
+          "id": "119-wT-hRLfuLyPGzGwc-yQOytR0ReVAs",
+          "label": {
+            "en": "Room view",
+            "ar": "منظر داخل الغرفة"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-co-16",
+      "slug": "ivory-l-shape-sectional",
+      "category": "corner-sofas",
+      "name": {
+        "en": "Ivory L-Shape Sectional",
+        "ar": "كنبة زاوية عاجي حرف L"
+      },
+      "desc": {
+        "en": "Ivory L-shaped sectional with adjustable headrests, contrast piping and slim dark legs.",
+        "ar": "كنبة زاوية عاجية بشكل حرف L بمساند رأس قابلة للتعديل وحواف بلون مختلف وأرجل رفيعة داكنة."
+      },
+      "images": [
+        {
+          "id": "1iHyURSOpMO9hl6tyybgtuCZt21WFlbf0",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-lr-14",
+      "slug": "soft-curve-living-set",
+      "category": "living-rooms",
+      "unitKind": "sofa-set",
+      "poster": true,
+      "name": {
+        "en": "Soft Curve Living Set",
+        "ar": "طقم معيشة منحني ناعم"
+      },
+      "desc": {
+        "en": "Living room set with a curved cream sofa and loveseat with wood-tone arm inlays, and two rounded brown lounge chairs.",
+        "ar": "طقم معيشة بكنبة وكنبة صغيرة منحنيتين بلون كريمي بتفصيلة بدرجة الخشب على الذراع، مع كرسيين مستديرين بلون بني."
+      },
+      "images": [
+        {
+          "id": "1fxQMyubVOnWZ_B7X3YNXB9Kz6M89V1Ti",
+          "label": {
+            "en": "Catalog poster",
+            "ar": "بوستر الكتالوج"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-lr-15",
+      "slug": "twin-curve-living-set",
+      "category": "living-rooms",
+      "unitKind": "sofa-set",
+      "poster": true,
+      "name": {
+        "en": "Twin Curve Living Set",
+        "ar": "طقم معيشة منحني مزدوج"
+      },
+      "desc": {
+        "en": "Living room set with two curved cream sofas on wood-tone legs and a rounded lounge chair.",
+        "ar": "طقم معيشة بكنبتين منحنيتين بلون كريمي على أرجل بدرجة الخشب، مع كرسي مستدير."
+      },
+      "images": [
+        {
+          "id": "1TYVDfeIOxlDDs-KQg7q8L4FSaDG7t5H-",
+          "label": {
+            "en": "Catalog poster",
+            "ar": "بوستر الكتالوج"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-lr-16",
+      "slug": "elegant-beige-living-set",
+      "category": "living-rooms",
+      "unitKind": "sofa-set",
+      "poster": true,
+      "name": {
+        "en": "Elegant Beige Living Set",
+        "ar": "طقم معيشة بيج أنيق"
+      },
+      "desc": {
+        "en": "Living room set with two beige sofas and two armchairs on wood-tone legs, with patterned scatter cushions.",
+        "ar": "طقم معيشة بكنبتين وكرسيين بلون بيج على أرجل بدرجة الخشب، مع وسائد بنقوش."
+      },
+      "images": [
+        {
+          "id": "1khdSGrLMvHFm_h9v17cmswgHZJvyaRoC",
+          "label": {
+            "en": "Catalog poster",
+            "ar": "بوستر الكتالوج"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-lr-17",
+      "slug": "classic-wood-frame-living-set",
+      "category": "living-rooms",
+      "unitKind": "sofa-set",
+      "poster": true,
+      "name": {
+        "en": "Classic Wood-Frame Living Set",
+        "ar": "طقم معيشة بإطار خشبي"
+      },
+      "desc": {
+        "en": "Living room set with cream-upholstered sofas and armchairs in dark wood-tone frames.",
+        "ar": "طقم معيشة بكنب وكراسي مُنجَّدة بلون كريمي بإطارات بدرجة الخشب الداكن."
+      },
+      "images": [
+        {
+          "id": "1N6EuOnepB0vO9KaB60_b2xZL5XLXgpmR",
+          "label": {
+            "en": "Catalog poster",
+            "ar": "بوستر الكتالوج"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-lr-18",
+      "slug": "cream-curve-sofa",
+      "category": "living-rooms",
+      "poster": true,
+      "name": {
+        "en": "Cream Curve Sofa",
+        "ar": "كنبة منحنية كريمي"
+      },
+      "desc": {
+        "en": "Curved cream sofa with rounded arms and textured upholstery.",
+        "ar": "كنبة منحنية بلون كريمي بأذرع مستديرة وتنجيد بملمس بارز."
+      },
+      "images": [
+        {
+          "id": "1Tu4cRf0isROU8T_HWiPGYJVyRAh6bVYY",
+          "label": {
+            "en": "Catalog poster",
+            "ar": "بوستر الكتالوج"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pv-lr-19",
+      "slug": "walnut-arm-cream-sofa",
+      "category": "living-rooms",
+      "name": {
+        "en": "Walnut-Arm Cream Sofa",
+        "ar": "كنبة كريمي بذراع جوزي"
+      },
+      "desc": {
+        "en": "Cream sofa with rounded arms framed in walnut-tone side panels with gold-tone edge detail.",
+        "ar": "كنبة كريمية بأذرع مستديرة بألواح جانبية بدرجة الجوز وتفصيلة ذهبية على الحافة."
+      },
+      "images": [
+        {
+          "id": "1MpJszrM_dkEW1eWjjBiDoK-wkQ6uR_ED",
+          "label": {
+            "en": "Full view",
+            "ar": "منظر كامل"
+          }
+        }
+      ]
+    }
   ]
 }

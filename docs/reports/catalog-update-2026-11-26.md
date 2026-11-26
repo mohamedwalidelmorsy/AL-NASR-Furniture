@@ -70,10 +70,17 @@ The site now shows exactly **T/T or L/C** (Arabic: **T/T أو L/C**).
 - **RFQ form:** options are `tt` and `lc`. A browser draft that still holds a retired value drops it on restore.
 - **Removed:** 30/70 deposit, L/C-at-sight conditions and all explanations.
 
-## Owner review
+## Owner review — decided 2026-11-26 (visual review report)
 
-1. Bedrooms `pv-br-15` and `pv-br-17` (Drive rooms 11 and 13) look alike. Should they stay two products?
-2. `pv-co-08`: is it one design in two colours (current grouping), or two products?
-3. Does the extra `pv-lr-13` image show the Pearl Ribbed Sofa?
-4. `pv-co-11` vs the excluded `1fb78…`: is it the same sofa?
-5. All images are AI renders, so the "Illustrative design" label stays.
+All four recommendations were approved by the owner:
+
+| # | Item | Decision | Applied in data |
+|---|---|---|---|
+| 1 | `pv-br-15` / `pv-br-17` | Keep as two separate products | `pv-br-17` bed-detail image (gold-strip headboard) removed; that product now has 3 images |
+| 2 | `pv-co-08` | One product shown in two colours | Kept as is |
+| 3 | `pv-lr-13` extra image | Shows the Pearl Ribbed Sofa | Kept as is |
+| 4 | `pv-co-11` vs `1fb78…` | Exclusion confirmed | Kept as is |
+
+Each decision is recorded as `review.decision` in the catalog data and as `decision` in `catalog-update-2026-11-26.json`.
+
+All images are still AI renders, so the "Illustrative design" label stays.

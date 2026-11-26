@@ -1,7 +1,7 @@
 {
   "builtFrom": "drive-inventory-2026-11-26.json + catalog-update-2026-11-26.json",
   "newProducts": 28,
-  "images": 64,
+  "images": 63,
   "excluded": [
     {
       "driveFileId": "1Wded_uF5A1XsBhkjZFxlxvJS3fLUqufg",
@@ -9,7 +9,14 @@
     },
     {
       "driveFileId": "1fb78UB_YVLkfpoCha2vDH1-xsNvc-uqb",
-      "reason": "visual duplicate of 1l6UbD-uwH3LHnp7xJWfxH0NpiEdkI2tL (same sectional, lounge chair and table; different render)"
+      "reason": "visual duplicate of 1l6UbD-uwH3LHnp7xJWfxH0NpiEdkI2tL (same sectional, lounge chair and table; different render)",
+      "decision": {
+        "status": "approved",
+        "by": "owner",
+        "date": "2026-11-26",
+        "basis": "visual review report (AL-NASR-VISUAL-REVIEW-2026-11-26)",
+        "note": "Exclusion confirmed: same scene as pv-co-11."
+      }
     },
     {
       "driveFileId": "1KZoygbgToOP15BDs1Ab_t5Cfms35LQc2",
@@ -18,6 +25,17 @@
     {
       "driveFileId": "1Djlkl7xdYjjHS0BJEck1ZU3WlWPm-uy4",
       "reason": "kids room 3 infographic poster with unverified specs — kept unpublished (2026-11-09 decision)"
+    },
+    {
+      "driveFileId": "1yQjkDu9RByYMwmks6r46Irjwn2OZid1s",
+      "reason": "Drive room 13 bed detail: gold-strip headboard matches neither pv-br-17 nor pv-br-15 full views",
+      "decision": {
+        "status": "approved",
+        "by": "owner",
+        "date": "2026-11-26",
+        "basis": "visual review report (AL-NASR-VISUAL-REVIEW-2026-11-26)",
+        "note": "Removed from pv-br-17."
+      }
     }
   ],
   "manifest": [
@@ -274,24 +292,6 @@
       "role": "cover"
     },
     {
-      "driveFileId": "1yQjkDu9RByYMwmks6r46Irjwn2OZid1s",
-      "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 13",
-      "originalFilename": "Luxurious Neutral Bedroom Retreat-7.png",
-      "sha256": "81bed50979bbc1a8c9356c417736dbfd6c1ca76ac3dc3945ac6482a47e452d64",
-      "originalDimensions": [
-        1536,
-        1024
-      ],
-      "local": {
-        "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/02-detail-640.webp",
-        "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/02-detail-1400.webp",
-        "width": 1400,
-        "height": 933
-      },
-      "productId": "pv-br-17",
-      "role": "detail"
-    },
-    {
       "driveFileId": "1SAy5ght4thiIWl1RJsYLNSxioM3_laaZ",
       "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 13",
       "originalFilename": "Warmly Lit Contemporary Vanity Corner-13.png",
@@ -301,8 +301,8 @@
         1312
       ],
       "local": {
-        "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-640.webp",
-        "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-1400.webp",
+        "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/02-detail-640.webp",
+        "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/02-detail-1400.webp",
         "width": 1199,
         "height": 1312
       },
@@ -319,8 +319,8 @@
         1322
       ],
       "local": {
-        "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/04-detail-640.webp",
-        "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/04-detail-1400.webp",
+        "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-640.webp",
+        "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-1400.webp",
         "width": 1190,
         "height": 1322
       },

@@ -109,7 +109,12 @@ export interface Product {
   dimensionProfile?: DimensionProfile | null;
   migration?: MigrationInfo;
   /** Flags for manual review (possible duplicate of another record, etc.). Never changes behaviour. */
-  review?: { possibleDuplicateOf?: string; confidence?: 'low' | 'medium'; note?: string };
+  review?: {
+    possibleDuplicateOf?: string; confidence?: 'low' | 'medium' | 'high'; note?: string;
+    /** Owner decision on a flagged item (data only, not rendered). */
+    decision?: { status: 'approved' | 'rejected'; by: 'owner'; date: string; basis?: string; note?: string };
+    extraImage?: { driveFileId: string; note?: string; confidence?: string; decision?: { status: 'approved' | 'rejected'; by: 'owner'; date: string; basis?: string; note?: string } };
+  };
   archived?: { archivedAt: string; reason: string; equivalentId: string | null };
   note?: string;
   sourceGap?: string;

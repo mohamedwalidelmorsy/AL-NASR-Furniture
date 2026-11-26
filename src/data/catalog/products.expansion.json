@@ -5747,7 +5747,14 @@
       "extraImage": {
         "driveFileId": "1IrfnoK2ikHPbMGyRjXkSwj2mbwGXD9h5",
         "note": "Same ribbed design, gold-tone arm slot and sled legs as the Pearl Ribbed Sofa poster; owner confirmation requested.",
-        "confidence": "high"
+        "confidence": "high",
+        "decision": {
+          "status": "approved",
+          "by": "owner",
+          "date": "2026-11-26",
+          "basis": "visual review report (AL-NASR-VISUAL-REVIEW-2026-11-26)",
+          "note": "The added room view shows the Pearl Ribbed Sofa design."
+        }
       }
     }
   },
@@ -6326,7 +6333,14 @@
     "unitKind": "bedroom-set",
     "review": {
       "possibleDuplicateOf": "pv-br-17",
-      "note": "Drive rooms 11 and 13 come from one render batch and look alike (beige bed, glass walk-in wardrobe). Published separately as the owner's folders define them; owner confirmation requested."
+      "note": "Drive rooms 11 and 13 come from one render batch and look alike (beige bed, glass walk-in wardrobe). Published separately as the owner's folders define them; owner confirmation requested.",
+      "decision": {
+        "status": "approved",
+        "by": "owner",
+        "date": "2026-11-26",
+        "basis": "visual review report (AL-NASR-VISUAL-REVIEW-2026-11-26)",
+        "note": "Kept as two separate products: headboard, nightstands and dressing table differ from pv-br-17."
+      }
     }
   },
   {
@@ -6479,25 +6493,6 @@
         {
           "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/02-detail-640.webp",
           "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/02-detail-1400.webp",
-          "width": 1400,
-          "height": 933,
-          "role": "detail",
-          "alt": {
-            "en": "Bed detail",
-            "ar": "تفصيلة السرير"
-          },
-          "source": {
-            "driveFileId": "1yQjkDu9RByYMwmks6r46Irjwn2OZid1s",
-            "locale": "en",
-            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 13",
-            "originalFilename": "Luxurious Neutral Bedroom Retreat-7.png",
-            "sha256": "81bed50979bbc1a8c9356c417736dbfd6c1ca76ac3dc3945ac6482a47e452d64",
-            "status": "valid"
-          }
-        },
-        {
-          "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-640.webp",
-          "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-1400.webp",
           "width": 1199,
           "height": 1312,
           "role": "detail",
@@ -6515,8 +6510,8 @@
           }
         },
         {
-          "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/04-detail-640.webp",
-          "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/04-detail-1400.webp",
+          "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-640.webp",
+          "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-1400.webp",
           "width": 1190,
           "height": 1322,
           "role": "detail",
@@ -6557,25 +6552,6 @@
         {
           "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/02-detail-640.webp",
           "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/02-detail-1400.webp",
-          "width": 1400,
-          "height": 933,
-          "role": "detail",
-          "alt": {
-            "en": "Bed detail",
-            "ar": "تفصيلة السرير"
-          },
-          "source": {
-            "driveFileId": "1yQjkDu9RByYMwmks6r46Irjwn2OZid1s",
-            "locale": "ar",
-            "drivePath": "اوض نوم/اوض نوم/اوض نوم/room 13",
-            "originalFilename": "Luxurious Neutral Bedroom Retreat-7.png",
-            "sha256": "81bed50979bbc1a8c9356c417736dbfd6c1ca76ac3dc3945ac6482a47e452d64",
-            "status": "valid"
-          }
-        },
-        {
-          "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-640.webp",
-          "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-1400.webp",
           "width": 1199,
           "height": 1312,
           "role": "detail",
@@ -6593,8 +6569,8 @@
           }
         },
         {
-          "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/04-detail-640.webp",
-          "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/04-detail-1400.webp",
+          "card": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-640.webp",
+          "full": "/images/catalog/bedrooms/neutral-walk-in-bedroom-set/03-detail-1400.webp",
           "width": 1190,
           "height": 1322,
           "role": "detail",
@@ -6616,7 +6592,14 @@
     "unitKind": "bedroom-set",
     "review": {
       "possibleDuplicateOf": "pv-br-15",
-      "note": "See pv-br-15. The bed detail image shows a headboard with gold-tone strips that differs from the full view; owner confirmation requested."
+      "note": "Drive rooms 11 and 13 come from one render batch and look alike; reviewed by the owner.",
+      "decision": {
+        "status": "approved",
+        "by": "owner",
+        "date": "2026-11-26",
+        "basis": "visual review report (AL-NASR-VISUAL-REVIEW-2026-11-26)",
+        "note": "Kept as a separate product; the bed-detail image (gold-strip headboard, matches neither full view) removed from the gallery."
+      }
     }
   },
   {
@@ -7982,7 +7965,14 @@
     },
     "unitKind": "corner-sofa",
     "review": {
-      "note": "Two Drive images show the same design in two colours; grouped as one product with a colour view. Owner confirmation requested."
+      "note": "Two Drive images show the same design in two colours; grouped as one product with a colour view. Owner confirmation requested.",
+      "decision": {
+        "status": "approved",
+        "by": "owner",
+        "date": "2026-11-26",
+        "basis": "visual review report (AL-NASR-VISUAL-REVIEW-2026-11-26)",
+        "note": "One product shown in two colours (cream, taupe)."
+      }
     }
   },
   {
